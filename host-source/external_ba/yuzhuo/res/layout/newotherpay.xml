@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:background="@drawable/header_bg"
+            >
+
+            <!-- <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shangdi" />
+                 -->
+
+            <!-- <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/btnback"
+                android:src="@drawable/bt" />
+                 -->
+
+            <!-- <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                
+                android:text="付费提示"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" 
+                android:gravity="center"
+                />
+               -->
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/abs_bt2" />
+
+            <!-- <ImageButton
+                android:id="@+id/btnback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/btn_back_normal" />
+                 -->
+            
+            <ImageView
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView1"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_back_normal" />
+            
+            
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/otherpay_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="商品名称:"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/otherpay_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="商品价格:"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+		
+        <TextView
+            android:id="@+id/otherpay_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="商品描述:"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        
+        <!-- <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="话费支付"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝支付" 
+            android:visibility="gone" 
+            />
+        
+         <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="财付通支付" 
+            android:visibility="gone" 
+            />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡支付" 
+            android:visibility="gone" 
+            />
+        
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值卡支付" 
+            android:visibility="gone" 
+            />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="游戏点卡支付" 
+            android:visibility="gone" 
+            />
+             -->
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/abs_xian2" />
+
+    </LinearLayout>
+
+    
+
+        
+    </ScrollView>
+    <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+        	android:layout_marginTop="10dp"
+            android:text="请选择支付方式:" 
+            android:textColor="@color/yellowtxtcolor"
+            android:textSize="18sp"
+            />
+        
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="150dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="auto_fit" 
+        android:layout_margin="10dp"
+        android:gravity="center"
+        >
+    </GridView>
+
+</LinearLayout>

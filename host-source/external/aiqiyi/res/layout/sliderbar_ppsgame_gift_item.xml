@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/slidebar_MatchParent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/slidebar_MatchWrap"
+        android:background="@drawable/sliderbar_reportlistview_press_color"
+        android:padding="8dip" >
+
+        <ImageView
+            android:id="@+id/slidebar_gift_item_gift_icon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/slidebar_gift_icon" />
+
+        <Button
+            android:id="@+id/slidebar_gift_item_gift_btn"
+            style="@style/OneKeyCopyBtn"
+            android:text="@string/slidebar_gift_item_get" />
+
+        <LinearLayout
+            style="@style/slidebar_MatchWrap"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/slidebar_gift_item_gift_btn"
+            android:layout_toRightOf="@+id/slidebar_gift_item_gift_icon"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <RelativeLayout style="@style/slidebar_MatchWrap" >
+
+                <TextView
+                    android:id="@+id/slidebar_gift_item_gift_name"
+                    style="@style/slidebar_WrapContent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:layout_toLeftOf="@+id/slidebar_gift_item_gift_status_img"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    android:textColor="@color/slidebar_black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/slidebar_gift_item_gift_status_img"
+                    android:layout_width="50dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dip"
+                    android:src="@drawable/slidebar_gift_item_has_get_status"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/slidebar_MatchWrap"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ProgressBar
+                    android:id="@+id/slidebar_gift_item_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0.0dip"
+                    android:layout_height="4dip"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="6"
+                    android:max="100"
+                    android:progressDrawable="@drawable/slidebar_progress_bar" />
+
+                <TextView
+                    android:id="@+id/slidebar_gift_item_progress"
+                    style="@style/slidebar_WrapContent"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="9sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/slidebar_gift_item_gift_content"
+                style="@style/slidebar_WrapContent"
+                android:ellipsize="end"
+                android:textSize="11sp"
+                android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

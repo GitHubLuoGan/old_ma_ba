@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kuyou.appcenter.widgets.UnpressableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="45dip" >
+
+    <TextView
+        android:id="@+id/loading_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ac_selector_btn_common"
+        android:padding="10dip"
+        android:minWidth="50dp"
+        android:textColor="@color/ac_common_gray_darker"
+        android:textSize="@dimen/ac_common_small" />
+
+    <com.kuyou.appcenter.widgets.CustomProgressBar
+        android:id="@+id/loading_progress_bar"
+        android:src="@drawable/ac_loading_small_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toLeftOf="@+id/loading_tips"
+        android:layout_centerVertical="true" />
+
+</com.kuyou.appcenter.widgets.UnpressableRelativeLayout>

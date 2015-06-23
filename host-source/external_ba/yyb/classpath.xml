@@ -1,0 +1,5 @@
+<!-- Crittercism -->
+<classpathentry kind="lib" path="libs/mta-sdk-1.6.2.jar"/>
+<classpathentry kind="lib" path="libs/open_sdk_r3833.jar"/>
+<classpathentry kind="lib" path="libs/TencentUnipaySDK.jar"/>
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>

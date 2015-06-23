@@ -1,0 +1,119 @@
+<activity
+            android:name="com.sjsdk.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@style/Sj_Transparent" />
+        <activity
+            android:name="com.sjsdk.activity.RegisterActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Sj_Transparent" />
+        <activity
+            android:name="com.sjsdk.activity.Modify_pwdActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Sj_Transparent" />
+        <activity
+            android:name="com.sjsdk.activity.FindpwdActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Sj_Transparent" />
+        <activity
+            android:name="com.sjsdk.tianxiapay.TianxiaActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Sj_Transparent" />       
+        <activity
+            android:name="com.sjsdk.common.util.UpdateActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Sj_Transparent" />
+        <activity
+            android:name="com.sjsdk.payment.RecordsActivity"
+            android:configChanges="orientation|keyboard" 
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.sjsdk.assitive.GiftActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.sjsdk.assitive.JinActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.sjsdk.assitive.ChangPWActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.sjsdk.assitive.BandingActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.sjsdk.assitive.JinGameSubActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.sjsdk.assitive.SActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.sjsdk.assitive.DownActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="landscape"
+            android:theme="@style/Sj_Transparent" />        
+        <activity
+            android:name="com.sjsdk.push.PushActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"/>
+       
+        <!-- 需要修改横竖屏的布局文件 -->
+        <activity
+            android:name="com.sjsdk.activity.PaymentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" />
+        
+        <activity
+            android:name="com.sjsdk.activity.YeepayWebActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden" />
+        
+        <!-- 短信 -->
+        <activity
+            android:name="com.vsofo.vpaysmszf.MActivity_vpaysmszf"
+            android:label="@string/app_name_vpaysmszf" 
+            android:screenOrientation="landscape">
+        </activity>
+        
+        <!-- 银联 -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.unionpay.uppay.PayActivityEx"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize" />
+        
+         <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+
+          <service android:name="com.sjsdk.push.PushService"/>
+
+        <!-- 开机启动监听 -->
+        <receiver
+            android:name="com.sjsdk.push.BootReceive">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>

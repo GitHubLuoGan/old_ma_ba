@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/slidebar_ppsgame_fragment_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/accountcenter_table1"
+        android:layout_width="fill_parent"
+        android:layout_height="66dip"
+        android:layout_marginTop="6dip"
+        android:background="@color/slidebar_ppsgame_white"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="16.0dip" >
+
+        <ImageView
+            android:id="@+id/accountcenter_face"
+            android:layout_width="53.0dip"
+            android:layout_height="53.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sliderbar_noavatar_face_bg"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16.0dp"
+            android:layout_toRightOf="@id/accountcenter_face"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/accountcenter_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/slidebar_account_nickname"
+                android:textColor="@color/slidebar_account_text"
+                android:textSize="17.5sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="12dip"
+                android:layout_marginTop="5dip" >
+
+                <ProgressBar
+                    android:id="@+id/slidebar_experience_pro"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="130dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:progressDrawable="@drawable/slidebar_progress_bar_experience" />
+                <TextView
+                    android:id="@+id/slidebar_experience_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:text="LV 0"
+                    android:gravity="center"
+                    android:textColor="@color/slidebar_black"
+                    android:textSize="9sp" >
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/slidebar_singin_btn"
+            android:layout_width="68dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/slidebar_no_singin_btn_bg"
+            android:text="签到"
+            android:textColor="@color/slidebar_white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/slidebar_account_modify_pass_id"
+                style="@style/AccountLayout" >
+
+                <ImageView
+                    android:id="@+id/slidebar_account_modify_pass_icon"
+                    style="@style/AccountIcon"
+                    android:src="@drawable/slidebar_account_modify_pass_icon" />
+
+                <TextView
+                    style="@style/AccountTxt"
+                    android:layout_toRightOf="@+id/slidebar_account_modify_pass_icon"
+                    android:text="@string/slidebar_account_modify_pass" />
+
+                <ImageView style="@style/ArrowRight" />
+            </RelativeLayout>
+
+            <include layout="@layout/slidebar_account_line" />
+
+            <RelativeLayout
+                android:id="@+id/slidebar_account_phone_binding_id"
+                style="@style/AccountLayout" >
+
+                <ImageView
+                    android:id="@+id/slidebar_account_phone_binding_icon"
+                    style="@style/AccountIcon"
+                    android:src="@drawable/slidebar_account_phone_binding_icon" />
+
+                <TextView
+                    style="@style/AccountTxt"
+                    android:layout_toRightOf="@+id/slidebar_account_phone_binding_icon"
+                    android:text="@string/slidebar_account_phone_binding" />
+
+                <ImageView
+                    android:id="@+id/slidebar_account_phone_binding_arrow_right"
+                    style="@style/ArrowRight" />
+
+                <TextView
+                    android:id="@+id/slidebar_account_phone_binding_tishi_id"
+                    style="@style/slidebar_WrapContent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/slidebar_account_phone_binding_arrow_right"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/slidebar_account_phone_binding_no"
+                    android:textColor="#aaaaaa"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/slidebar_account_line" />
+
+            <RelativeLayout
+                android:id="@+id/slidebar_account_common_problem_id"
+                style="@style/AccountLayout" >
+
+                <ImageView
+                    android:id="@+id/slidebar_account_common_problem_icon"
+                    style="@style/AccountIcon"
+                    android:src="@drawable/slidebar_account_common_problem_icon" />
+
+                <TextView
+                    style="@style/AccountTxt"
+                    android:layout_toRightOf="@+id/slidebar_account_common_problem_icon"
+                    android:text="@string/slidebar_account_common_problem" />
+
+                <ImageView style="@style/ArrowRight" />
+            </RelativeLayout>
+
+            <include layout="@layout/slidebar_account_line" />
+
+            <RelativeLayout
+                android:id="@+id/slidebar_account_recharge_check_id"
+                style="@style/AccountLayout" >
+
+                <ImageView
+                    android:id="@+id/slidebar_account_recharge_check_icon"
+                    style="@style/AccountIcon"
+                    android:src="@drawable/slidebar_account_recharge_check_icon" />
+
+                <TextView
+                    style="@style/AccountTxt"
+                    android:layout_toRightOf="@+id/slidebar_account_recharge_check_icon"
+                    android:text="@string/slidebar_account_recharge_check" />
+
+                <ImageView style="@style/ArrowRight" />
+            </RelativeLayout>
+
+            <include layout="@layout/slidebar_account_line" />
+
+            <RelativeLayout
+                android:id="@+id/slidebar_account_recharge_news"
+                style="@style/AccountLayout"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/slidebar_account_phone_news_icon"
+                    style="@style/AccountIcon"
+                    android:src="@drawable/slidebar_ppsgame_msg" />
+
+                <TextView
+                    android:id="@+id/slidebar_account_recharge_news_txt"
+                    style="@style/AccountTxt"
+                    android:layout_toRightOf="@+id/slidebar_account_phone_news_icon"
+                    android:text="@string/slidebar_account_recharge_news" />
+
+                <ImageView style="@style/ArrowRight" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sildebar_gethelp_tw"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_margin="10dip"
+                android:background="@drawable/sliderbar_tw_help_btn" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/contact_us_tw"
+                        android:textColor="@color/slidebar_white"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/contact_us_tw_email"
+                        android:textColor="@color/slidebar_white" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    
+    <ImageView
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:background="@android:color/transparent"
+       android:src="@drawable/hucn_loadrefresh_bg" 
+       android:contentDescription="@null"
+       android:layout_gravity="center"
+    />  
+    <ImageView
+       android:id="@+id/hucn_img_loading"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:background="@android:color/transparent"
+       android:src="@drawable/hucn_loadrefresh" 
+       android:contentDescription="@null"
+       android:layout_gravity="center"
+     />
+    
+    <TextView
+        android:id="@+id/hucn_tv_msg"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:textSize="@dimen/hucn_default_text_size"
+    	android:gravity="center"
+    	android:paddingTop="80dp"
+    	android:textColor="#ffffff"
+        android:background="@android:color/transparent" 
+        />
+</FrameLayout>

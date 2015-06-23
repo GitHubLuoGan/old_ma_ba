@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNBg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/hucn_chat_message_tip_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:background="#f7f5d0"
+        android:textSize="@dimen/hucn_default_text_size"
+        android:visibility="gone" />
+
+    <cn.edg.applib.view.PullToRefreshView
+        xmlns:sat="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/hucn_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <ScrollView
+            xmlns:sat="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/hucn_scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <cn.edg.applib.view.BBSChatView
+                xmlns:sat="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/hucn_chat_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </cn.edg.applib.view.BBSChatView>
+        </ScrollView>
+    </cn.edg.applib.view.PullToRefreshView>
+
+    <cn.edg.applib.view.ReplayBottomView
+        xmlns:sat="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/hucn_replay_bottom_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+</LinearLayout>

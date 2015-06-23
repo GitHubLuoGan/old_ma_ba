@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/dpay_default_padding"
+    android:layout_marginTop="@dimen/dpay_default_padding"
+    android:orientation="vertical"
+    android:padding="@dimen/dpay_default_padding" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80.0dip"
+        android:clickable="false" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:indeterminateDrawable="@drawable/dpay_progress_bar" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@id/dpay_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

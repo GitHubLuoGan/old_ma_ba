@@ -1,0 +1,70 @@
+<!-- sijia start-->
+<activity android:name="com.sjyxsdk.activity.LoginActivity"
+	android:configChanges="orientation|keyboard"
+	android:screenOrientation="landscape"
+	android:theme="@style/Transparent"></activity>       
+<activity android:name="com.sjyxsdk.activity.AdverActivity"
+	android:configChanges="orientation|keyboard"
+	android:screenOrientation="landscape"
+	android:theme="@style/Transparent"></activity>
+ <activity android:name="com.sjyxsdk.activity.Recharge_recordsActivity"
+	android:configChanges="orientation|keyboardHidden|navigation" 
+	 android:screenOrientation="landscape"></activity>
+ <activity android:name="com.sjyxsdk.activity.Select_rechargeActivity" 
+	android:configChanges="orientation|keyboardHidden|navigation" 
+	android:screenOrientation="landscape"></activity>
+ <activity android:name="com.sjyxsdk.activity.PaymentActivity"
+	android:configChanges="orientation|keyboardHidden|navigation"  
+	android:screenOrientation="landscape"></activity>
+ <activity android:name="com.sjyxsdk.activity.QuestionActivity"
+	android:configChanges="orientation|keyboardHidden|navigation"  
+	android:screenOrientation="landscape"
+	android:theme="@style/Transparent"></activity>
+ 
+ 
+ <activity           
+	android:name="com.unionpay.upomp.lthj.plugin.ui.SplashActivity"
+	android:screenOrientation="portrait" >
+	<intent-filter>
+		<action android:name="com.unionpay.upomp.lthj.android.plugin.init.test" /> 
+		<category android:name="android.intent.category.DEFAULT" />    
+	</intent-filter>
+</activity>
+
+<activity
+	android:name="com.unionpay.upomp.lthj.plugin.ui.IndexActivityGroup"
+	android:screenOrientation="portrait" >
+	 <intent-filter>
+		<action android:name="com.unionpay.upomp.lthj.android.plugin.index.test" /> 
+		<category android:name="android.intent.category.DEFAULT" />    
+	</intent-filter>
+</activity>
+<activity
+	android:name="com.unionpay.upomp.lthj.plugin.ui.HomeActivity"
+	android:screenOrientation="portrait" >
+</activity>
+<activity
+	android:name="com.unionpay.upomp.lthj.plugin.ui.PayActivity"
+	android:screenOrientation="portrait" >
+</activity>
+<activity
+	android:name="com.unionpay.upomp.lthj.plugin.ui.AccountActivity"
+	android:screenOrientation="portrait" >
+</activity>
+<activity
+	android:name="com.unionpay.upomp.lthj.plugin.ui.BankCardInfoActivity"
+	android:screenOrientation="portrait" >
+</activity>
+<activity
+	android:name="com.unionpay.upomp.lthj.plugin.ui.SupportCardActivity"
+	android:screenOrientation="portrait" >
+</activity>
+<activity
+	android:name="com.unionpay.upomp.lthj.plugin.ui.UserProtocolActivity"
+	android:screenOrientation="portrait" >
+</activity>
+<activity
+	android:name="com.unionpay.upomp.lthj.plugin.ui.AboutActivity"
+	android:screenOrientation="portrait" >
+</activity>
+<!-- sijia end-->

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="btn_user">用户</string>
+    <string name="btn_gift">礼包</string>
+    <string name="btn_server">客服</string>
+    <string name="btn_bbs">论坛</string>
+    <string name="btn_more">更多</string>
+    <string name="title_user">用户中心</string>
+    <string name="tv_account">欢迎登陆:</string>
+    <string name="tv_welcome">您好:</string>
+    <string name="tv_gift">礼包</string>
+    <string name="tv_bind_mobile">绑定手机</string>
+    <string name="tv_register_explain">用户协议</string>
+    <string name="tv_decript_alert">温馨提示:\n1.每种礼包每个账号仅限兑换一次。\n2.请在有效期内兑换，超过有效期则视为无效。</string>
+    <string name="tv_bind_mobile_pre">您已绑定手机号:</string>
+    <string name="tv_server">联系客服</string>
+    <string name="tv_more_game">更多游戏</string>
+    <string name="tv_my_gift">我的礼包</string>
+    <string name="tv_update_password">修改密码</string>
+    <string name="btn_update_password">修改密码</string>
+    <string name="btn_bind_mobile">绑定手机</string>
+    <string name="btn_my_gift">我的礼包</string>
+    <string name="float_back_game">返回游戏</string>
+    <string name="float_agree">同意</string>
+    <string name="mogoo_version">©2014 蘑菇游戏17mogu.com 版权所有</string>
+    <string name="float_server_qq_tv">QQ:&#160;&#160;1114862442</string>
+  	<string name="float_server_phone_tv">热线:&#160;&#160;0755-82723718</string>
+  	<string name="float_copy_tv">复制</string>
+  	<string name="float_download_tv">下载</string>
+  	<string name="float_change_tv">兑换</string>
+  	<string name="float_submit_btn">提交</string>
+  	<string name="float_code_tv">获取验证码</string>
+  	<string name="float_countdown_tv">120秒后重新获取</string>
+  	<string name="tv_bind_mobile_descript">温馨提示:\n1.同一手机号只限绑定一个账号，不可重复绑定。\n2.手机号码仅作为身份验证和密码找回,我们不会收取任何费用,请放心使用。</string>
+  	<string name="tv_bind_mobile_success_descript">如需进行其他操作,请登录官网</string>
+  	<string name="tv_net_url">www.17mogu.com</string>
+  	
+  	<string name="float_update_password_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+	<string name="float_old_pwd_hint">旧密码</string>
+	<string name="float_new_pwd_hint">新密码</string>
+	<string name="float_check_pwd_hint">确认密码</string>
+	<string name="float_mobile_hint">手机号</string>
+	<string name="float_mobile_code_hint">手机验证码</string>
+	
+	<string name="float_update_pwd_success_msg">密码修改成功，将在下次登录时生效</string>
+	<string name="float_update_pwd_false_msg">修改密码失败.</string>
+	<string name="float_bind_mobile_false_msg">验证码错误,请重新获取验证码.</string>
+	<string name="float_check_code_send_success_msg">验证码已发送到您的手机，请注意查收</string>
+	<string name="float_gift_change_success_msg">恭喜您兑换成功，卡号已复制请及时进入游戏兑换</string>
+	
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNBg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/hucn_reply_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#e5e8ed"
+        android:orientation="vertical"
+        android:paddingBottom="2dp" >
+
+        <RelativeLayout
+            android:id="@+id/hucn_reply_content_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#c3c9d1" />
+
+            <Button
+                android:id="@+id/hucn_reply_btn"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hucn_btn_white"
+                android:text="@string/hucn_reply"
+                android:textColor="@drawable/hucn_btn_text_color"
+                android:textSize="@dimen/hucn_default_text_size" />
+
+            <ImageView
+                android:id="@+id/hucn_reply_img_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/hucn_btn_add"
+                android:contentDescription="@null" />
+
+            <EditText
+                android:id="@+id/hucn_reply_ev"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@id/hucn_reply_btn"
+                android:layout_toRightOf="@id/hucn_reply_img_btn"
+                android:background="@drawable/hucn_bg_shape_corner"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint=""
+                android:maxLines="3"
+                android:minHeight="36dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:textColor="@color/hucn_text_color" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/hucn_reply_images_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/hucn_reply_content_layout"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/hucn_reply_images_item_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/hucn_reply_iv1"
+                android:layout_width="80dp"
+                android:layout_height="fill_parent"
+                android:contentDescription="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hucn_chat_message_tip_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#f7f5d0"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/hucn_default_text_size"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/hucn_message_details_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/hucn_reply_lay"
+        android:layout_below="@id/hucn_chat_message_tip_tv"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hucn_bg"
+    android:orientation="vertical" >
+
+    <!-- 帖子列表 -->
+
+    <cn.edg.applib.view.SwipeListView
+        android:id="@+id/hucn_message_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#c2c2c2"
+        android:dividerHeight="0.1dp"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:drawSelectorOnTop="false" >
+    </cn.edg.applib.view.SwipeListView>
+
+</LinearLayout>

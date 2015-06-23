@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.uucun.android.passport.layout.DlgTokenLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sdk_dialog_width"
+    android:layout_height="@dimen/sdk_dialog_height"
+    android:minWidth="@dimen/sdk_dialog_width"
+    android:background="@drawable/sdk_dialog_background" >
+
+    <RelativeLayout
+        android:id="@id/sdk_dlg_title_container"
+        android:layout_width="@dimen/sdk_dialog_width"
+        android:layout_height="@dimen/sdk_dialog_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/sdk_dialog_title_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@id/sdk_dlg_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/dlg_token_tile"
+            android:textColor="@color/color_dlg_text"
+            android:textSize="@dimen/sdk_dlg_title_text_size" />
+
+        <TextView
+            android:id="@id/sdk_dlg_title_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:drawableLeft="@drawable/tip_drawable"
+            android:drawablePadding="5.0dip"
+            android:text="@string/dlg_token_title_tip"
+            android:textColor="@color/color_dlg_text"
+            android:textSize="@dimen/sdk_dlg_content_text_size" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/sdk_dlg_content_process_container"
+        android:layout_width="@dimen/sdk_dialog_width"
+        android:layout_height="@dimen/sdk_dlg_content_height_large"
+        android:layout_below="@id/sdk_dlg_title_container"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@id/sdk_empty_loading"
+            style="@style/FinskyProgressInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" 
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@id/sdk_load_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdk_empty_loading"
+            android:layout_marginTop="@dimen/margin_vertical"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_dlg_text"
+            android:text="@string/dlg_token_loading_text"
+            android:textSize="@dimen/sdk_dlg_content_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/sdk_dlg_content_container"
+        android:layout_width="@dimen/sdk_dialog_width"
+        android:layout_height="@dimen/sdk_dlg_content_height_large"
+        android:visibility="gone"
+        android:layout_below="@id/sdk_dlg_title_container" >
+
+        <ImageView
+            android:id="@id/sdk_detail_icon"
+            android:layout_width="@dimen/passport_icon_width"
+            android:layout_height="@dimen/passport_icon_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_vertical"
+            android:contentDescription="@string/content_description" />
+
+        <TextView
+            android:id="@id/sdk_tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdk_detail_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textColor="@color/color_tip_text"
+            android:textSize="@dimen/sdk_dlg_content_text_size" />
+
+        <TextView
+            android:id="@id/sdk_tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdk_tv_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/dlg_token_welcom"
+            android:textColor="@color/color_dlg_text"
+            android:textSize="@dimen/sdk_dlg_content_text_size" />
+
+        <Button
+            android:id="@id/sdk_dlg_btn_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sdk_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/sdk_dlg_btn_margin"
+            android:background="@drawable/sdk_btn_blue_selector"
+            android:text="@string/sdk_switch_user"
+            android:textColor="@color/color_button_text"
+            android:textSize="@dimen/button_generic_size" />
+    </RelativeLayout>
+
+</com.uucun.android.passport.layout.DlgTokenLayout>

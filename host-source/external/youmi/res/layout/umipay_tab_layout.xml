@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		style = "@style/um_wr"
+		xmlns:android = "http://schemas.android.com/apk/res/android" >
+
+	<LinearLayout
+			android:id = "@+id/umipay_tab_content_layout"
+			style = "@style/um_tab_content_ly"
+			android:layout_marginLeft = "26dp" >
+
+		<View
+				style = "@style/um_tab_bound_bg"
+				android:background = "@drawable/umipay_tab_bg_left" >
+		</View >
+
+		<LinearLayout
+				style = "@style/um_tab_bg"
+				android:gravity = "center_vertical" >
+
+			<TextView
+					android:id = "@+id/umipay_tab_toaccount"
+					style = "@style/um_tab_toaccount" />
+
+			<View
+					style = "@style/um_tab_divider" />
+
+			<TextView
+					android:id = "@+id/umipay_tab_tocommunity"
+					style = "@style/um_tab_tocommunity" />
+
+			<View
+					style = "@style/um_tab_divider" />
+
+			<TextView
+					android:id = "@+id/umipay_tab_tohelp"
+					style = "@style/um_tab_tohelp" />
+		</LinearLayout >
+
+		<View
+				style = "@style/um_tab_bound_bg"
+				android:background = "@drawable/umipay_tab_bg_right" >
+		</View >
+	</LinearLayout >
+
+</LinearLayout >

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0ff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/start_login_button_oldUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录" >
+        </Button>
+
+        <Button
+            android:id="@+id/recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="非定额充值" />
+
+        <EditText
+            android:id="@+id/rechargeEditText"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入定额充值的金额"
+            android:numeric="decimal" />
+
+        <Button
+            android:id="@+id/rechargequato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定额充值" />
+
+        <Button
+            android:id="@+id/userCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人中心" />
+
+        <Button
+            android:id="@+id/loginout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注销" />
+        <Button
+            android:id="@+id/exit_SDK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出sdk" />
+          <Button
+            android:id="@+id/sendStatics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="统计选服务器" />
+           <Button
+            android:id="@+id/bbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BBS论坛" />
+    </LinearLayout>
+
+</ScrollView>

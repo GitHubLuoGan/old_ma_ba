@@ -1,0 +1,12 @@
+<resources>
+    
+	<dimen name="mg_login_dialog_width">292dp</dimen>
+	<dimen name="mg_logo_max_width">120dp</dimen>
+	<dimen name="mg_logo_max_height">68dp</dimen>
+	<dimen name="mg_btn_height">36dp</dimen>
+	
+	<dimen name="text_max">20sp</dimen>
+    <dimen name="text_normal">16sp</dimen>
+    <dimen name="text_normal_two">18sp</dimen>
+	<dimen name="text_min">14sp</dimen>
+</resources>

@@ -1,0 +1,5 @@
+<!-- Crittercism -->
+<classpathentry kind="lib" path="libs/alipay_msp.jar"/>
+<classpathentry kind="lib" path="libs/HSDK_2.2.5.jar"/>
+<classpathentry kind="lib" path="libs/UPPayAssistEx.jar"/>
+<classpathentry kind="lib" path="libs/UPPayPluginEx.jar"/>

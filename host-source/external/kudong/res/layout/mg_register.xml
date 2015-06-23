@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body_lay"
+    android:layout_width="@dimen/mg_login_dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/mg_login_bg" >
+
+    <!-- android:layout_width="@dimen/mg_login_dialog_width" -->
+
+	<!-- titlebar区域 -->
+    <include
+        android:id="@+id/mg_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        layout="@layout/mg_header" />
+    
+    <ImageView 
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/mg_head"
+        android:src="@drawable/float_ic_action_cancel"
+
+    />
+
+    <!-- 可滑动区域 -->
+
+    <!-- <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mg_head"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@drawable/mg_scrollbar_gray" >  -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/mg_head"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/mg_account_input_edit_register"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/mg_btn_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:digits="@string/mg_register_name_digits"
+                    android:maxLength="20"
+                    android:gravity="bottom"
+                    android:hint="@string/mg_register_username_hint"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/mg_color_999999"
+                    android:textSize="@dimen/text_normal_two" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/mg_pwd_input_edit_register"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@null"
+                        android:digits="@string/mg_register_pwd_digits"
+                        android:gravity="bottom"
+                        android:maxLength="20"
+                        android:inputType="textPassword"
+                        android:imeOptions="actionDone"
+                        android:typeface="sans"
+                        android:hint="@string/mg_register_pwd_hint"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/mg_color_999999"
+                        android:textSize="@dimen/text_normal_two" />
+
+                    <View
+                        android:id="@+id/mg_account_pop_fold_unfold_container"
+                        android:layout_width="108dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@color/mg_transparent" />
+
+                    
+                </FrameLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d7d7d7" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+
+                    <CheckBox
+                        android:id="@+id/mg_user_checkbox_register"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:button="@drawable/mg_login_checkbox_selector"
+                        android:checked="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center"
+                        android:text="@string/mg_register_agreement_hint"
+                        android:textColor="@color/mg_color_666666"
+                        android:textSize="@dimen/text_normal" />
+
+                    <Button
+                        android:id="@+id/mg_btn_agreement_licence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mg_transparent"
+                        android:singleLine="true"
+                        android:text="@string/mg_register_licence"
+                        android:textColor="@color/mg_color_2764af"
+                        android:textSize="@dimen/text_normal" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+                <CheckBox
+                        android:id="@+id/mg_user_show_passord"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="left|bottom"
+                        android:button="@drawable/mg_login_checkbox_selector"
+                        android:checked="false"
+                        android:clickable="true"/>
+                
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="left"
+                        android:text="@string/mg_show_passord"
+                        android:textColor="@color/mg_color_666666"
+                        android:textSize="@dimen/text_normal" />
+                </LinearLayout>
+
+                <!--
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/mg_user_show_passord"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:button="@drawable/mg_login_checkbox_selector"
+                        android:checked="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center"
+                        android:text="@string/mg_show_passord"
+                        android:textColor="@color/mg_color_666666"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                -->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="6dp"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/mg_btn_register_comm"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/mg_btn_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/mg_login_btn_selector"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:text="@string/mg_register_now"
+                    android:textColor="@color/mg_color_white"
+                    android:textSize="@dimen/text_max" />
+
+                <!--
+                     <Button
+                    android:id="@+id/mg_btn_register_random_account"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mg_register_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/mg_random_account"
+                    android:textColor="@color/mg_color_333333"
+                    android:textSize="16sp" />
+                -->
+            </LinearLayout>
+        </LinearLayout>
+    <!-- </ScrollView> -->
+
+</RelativeLayout>

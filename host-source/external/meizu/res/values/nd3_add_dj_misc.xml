@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- color -->
+
+	
+	<color name="nd3_dj_migrate_step_selected">#ff00d6ef</color>
+	<color name="nd3_dj_migrate_text_clickable">#ff01037d</color>
+</resources>

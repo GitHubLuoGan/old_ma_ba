@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:background="@drawable/white_bg_buttom_more_count"
+    android:orientation="vertical" >
+    
+    <ListView 
+        android:id="@+id/poplist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+    	android:layout_marginRight="2dp"
+    	android:layout_marginBottom="3dp"
+        android:fadingEdge="none"
+        android:divider="#e2e6e9"
+        android:dividerHeight="0.5dp"         
+        android:cacheColorHint="#00000000" 
+        android:background="@color/white"/>    
+</LinearLayout>

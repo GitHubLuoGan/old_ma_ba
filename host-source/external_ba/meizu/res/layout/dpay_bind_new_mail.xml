@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dpay_main_bg_color" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dpay_align_bottom"
+        android:paddingLeft="@dimen/dpay_default_padding"
+        android:paddingRight="@dimen/dpay_default_padding"
+        android:paddingTop="@dimen/dpay_align_parent_top" >
+
+        <EditText
+            android:id="@id/dpay_bind_new_mail"
+            style="@style/dpay_edittext_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dpay_input_new_mail" />
+
+        <EditText
+            android:id="@id/dpay_et_password"
+            style="@style/dpay_edittext_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dpay_default_padding"
+            android:hint="@string/dpay_input_user_password_hint"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+</ScrollView>

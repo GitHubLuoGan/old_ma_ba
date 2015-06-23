@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNBg"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.3"
+        android:background="@android:color/white"
+        android:paddingTop="25dp" >
+
+        <TextView
+            android:id="@+id/hucn_recharge_pay_method_label"
+            style="@style/HUCNText"
+            android:paddingLeft="5dp"
+            android:text="@string/hucn_recharge_method"
+            android:textColor="@color/hucn_light_gray_" />
+
+        <TextView
+            android:id="@+id/hucn_recharge_pay_tv"
+            style="@style/HUCNText"
+            android:layout_alignBaseline="@id/hucn_recharge_pay_method_label"
+            android:layout_toRightOf="@id/hucn_recharge_pay_method_label"
+            android:textColor="@color/hucn_yellow"
+            android:textSize="@dimen/hucn_default_text_size18" />
+
+        <Button
+            android:id="@+id/hucn_recharge_pay_change_btn"
+            style="@style/HUCNText"
+            android:layout_below="@+id/hucn_recharge_pay_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/hucn_btn_gray"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:text="@string/hucn_recharge_other_method"
+            android:textColor="@color/hucn_blue" />
+
+        <LinearLayout
+            android:id="@+id/hucn_bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <include layout="@layout/hucn_bottom_layout" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hucn_recharge_details_layout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/hucn_layout_margin"
+            android:layout_marginRight="@dimen/hucn_layout_margin"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/hucn_pay_much_label"
+                style="@style/HUCNText"
+                android:text="@string/hucn_recharge_amount"
+                android:textColor="@color/hucn_light_gray_" />
+
+            <RelativeLayout
+                android:id="@+id/hucn_recharge_money_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/hucn_bg_white_corners"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/hucn_recharge_money_ed"
+                    style="@style/HUCNText"
+                    android:layout_width="fill_parent"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/hucn_light_gray_" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_recharge_extend_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/hucn_pay_yuan"
+                style="@style/HUCNText"
+                android:layout_marginLeft="5dp"
+                android:text="@string/hucn_recharge_amount_ution"
+                android:textColor="@color/hucn_light_gray_" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hucn_recharg_alipay_btn_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/hucn_recharg_by_client_btn"
+                style="@style/HUCNText"
+                android:layout_margin="@dimen/hucn_layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/hucn_btn_blue"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/hucn_recharg_by_wap_btn"
+                style="@style/HUCNText"
+                android:layout_margin="@dimen/hucn_layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/hucn_btn_white"
+                android:padding="10dp"
+                android:textColor="@drawable/hucn_btn_text_color"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hucn_recharge_tip_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/hucn_layout_margin"
+            android:layout_marginRight="@dimen/hucn_layout_margin"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/hucn_recharg_center_hint"
+                style="@style/HUCNSmallText"
+                android:text="@string/hucn_recharge_tip"
+                android:textColor="@color/hucn_red"
+                android:textSize="@dimen/hucn_small_text_size" />
+
+            <TextView
+                android:id="@+id/hucn_recharge_hint_tv"
+                style="@style/HUCNSmallText"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/hucn_recharg_mycard_hint"
+                android:textColor="@color/hucn_light_gray_"
+                android:textSize="@dimen/hucn_small_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

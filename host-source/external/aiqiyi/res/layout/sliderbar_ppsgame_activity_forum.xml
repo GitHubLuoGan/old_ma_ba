@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ppsgame_slider_forum_layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/slidebar_ppsgame_fragment_background">
+
+    <LinearLayout
+        android:id="@+id/ppsgame_slider_forum_progress_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/silder_load_more_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@anim/sliderbar_ppsgame_round"
+            android:contentDescription="@string/ppsgame_null_str" />
+
+        <ImageView
+            android:id="@+id/sliderbar_forum_load_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ppsgame_null_str"
+            android:src="@drawable/sliderbar_load_fail"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sliderbar_forum_empty_txt"
+            style="@style/BadNetworkTxt"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.pps.sdk.slidebar.widget.BaseWebView
+        android:id="@+id/ppsgame_slider_forum_webview"
+        android:layout_below="@+id/ppsgame_slider_forum_progress_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" />
+
+    <Button
+        android:id="@+id/ppsgame_slider_forum_refresh_btn"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:text="Refresh"
+        android:clickable="true"/>
+
+</RelativeLayout>

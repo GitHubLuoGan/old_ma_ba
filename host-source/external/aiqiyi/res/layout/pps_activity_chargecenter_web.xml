@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ppsgame_bg" >
+    
+    <RelativeLayout android:id="@+id/chargecenter_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ppsgame_top_bg"
+        android:orientation="horizontal">
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pps_rechargecenter"
+            android:textColor="@color/button_color"
+            android:textSize="20.0sp"
+            android:layout_centerInParent="true"
+            />
+        
+        <Button android:id="@+id/chargecenter_close"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/pps_close"
+        	android:textColor="@color/button_color"
+        	android:shadowDy="2"
+            android:shadowDx="0"
+            android:shadowRadius="1"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="10.0dp"
+        	android:padding="6.0dp"
+        	android:textSize="16.0sp"
+        	android:background="@drawable/ppsgame_back_btn_selector"/>
+        
+    </RelativeLayout>
+    
+    <WebView android:id="@+id/chargecenter_webview_web"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/chargecenter_title"
+        android:tag="0"/>
+        
+
+</RelativeLayout>

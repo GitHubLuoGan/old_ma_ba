@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/dpay_tv_toastview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dpay_toast_bg"
+    android:gravity="center"
+    android:padding="@dimen/dpay_default_padding"
+    android:textColor="@color/dpay_white"
+    android:textSize="@dimen/dpay_prompt_font_size"
+    android:textStyle="bold" />

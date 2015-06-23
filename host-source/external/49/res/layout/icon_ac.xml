@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/icon_ac_change" 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/icon_ac_menu_style">
+        
+        <ImageView 
+            android:layout_width="109dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ac_menu_change"/>
+        
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ac_down"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/icon_ac_bang" 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:background="@drawable/icon_ac_menu_style">
+        
+        <ImageView 
+            android:layout_width="109dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ac_menu_bang"/>
+        
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ac_down"/>
+        
+    </RelativeLayout>
+    
+    
+    
+    
+
+</LinearLayout>

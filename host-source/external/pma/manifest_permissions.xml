@@ -1,0 +1,26 @@
+ 
+<!-- 添加PMA必需要的权限。 -->
+<!-- 不黑屏 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 获取手机机型的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 查看网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 读写SD卡的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读写手机设置的权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 发送消息 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 写入消息 -->
+<uses-permission android:name="android.permission.WRITE_SMS" />
+ 
+<!-- 读取信息 --> 
+<uses-permission android:name="android.permission.READ_SMS" />
+  <!-- 接收消息 -->
+ <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+<!-- 添加PMA必需要的权限。 -->

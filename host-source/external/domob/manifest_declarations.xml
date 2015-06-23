@@ -1,0 +1,7 @@
+<!-- domob start-->
+<activity android:name="cn.dm.android.DMOfferActivity"                  
+    android:theme = "@android:style/Theme.NoTitleBar"  
+    android:configChanges ="keyboard|keyboardHidden|orientation"/> 
+    
+<service android:name= "cn.dm.android.DMService"/> 
+<!-- domob end-->

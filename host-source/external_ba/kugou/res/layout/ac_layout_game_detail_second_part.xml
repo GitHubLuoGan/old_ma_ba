@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ac_transparent" >
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" 
+            android:id="@+id/layout_intro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="20dip"
+            android:background="@drawable/ac_transparent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:background="@drawable/ac_transparent"
+                android:text="游戏介绍\n"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/ac_common_large" />
+
+			
+			<Button
+			    android:id="@+id/btn_unfold"
+			    android:layout_width="45dip"
+			    android:layout_height="35dip"
+			    android:background="@drawable/ac_transparent"
+			    android:layout_gravity="right"
+			    android:visibility="gone"
+			    android:gravity="center"
+			    android:text="展开"
+			    android:drawableLeft="@drawable/ac_spreed"
+			    android:textColor="@color/ac_common_gray_lighter"
+			    android:textSize="@dimen/ac_common_medium" />
+			
+			<TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="游戏信息"
+                android:background="@drawable/ac_transparent"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/ac_common_large" />
+			<TextView
+                android:id="@+id/tv_company"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:background="@drawable/ac_transparent"
+                android:text="公司："
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/ac_common_large" />
+			<TextView
+                android:id="@+id/tv_update_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:background="@drawable/ac_transparent"
+                android:text="更新时间："
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/ac_common_large" />
+			<TextView
+                android:id="@+id/tv_game_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:background="@drawable/ac_transparent"
+                android:text="游戏类型："
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/ac_common_large" />
+			<TextView
+                android:id="@+id/tv_fit_sys"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="适用固件："
+                android:background="@drawable/ac_transparent"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/ac_common_large" />
+			<TextView
+                android:id="@+id/tv_language"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:background="@drawable/ac_transparent"
+                android:text="语言："
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/ac_common_large" />
+        </LinearLayout>
+
+</ScrollView>

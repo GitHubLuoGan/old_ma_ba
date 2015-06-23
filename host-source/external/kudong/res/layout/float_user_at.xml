@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body_lay"
+    android:layout_width="292dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/float_bg" >
+        
+    <!-- header区域 -->
+    <include 
+        layout="@layout/float_header"
+        android:id="@+id/float_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+    <!-- body区域 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_account"
+            android:textSize="@dimen/float_normal_font"
+            android:textColor="@color/title_color" />
+        
+        <TextView 
+            android:id="@+id/tv_user_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text=""
+            android:textSize="@dimen/text_max"
+            android:textColor="@color/title_color" />
+       
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:orientation="vertical">
+        
+        <FrameLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/float_btn_up_padding"
+            android:background="@drawable/float_btn_green_bg">
+	        <TextView 
+	            android:id="@+id/tv_update_password"
+	            android:layout_width="fill_parent"
+	            android:layout_height="@dimen/float_btn_height"
+	            android:layout_marginLeft="12dp"
+	            android:gravity="left|center_vertical"
+	            android:text="@string/btn_update_password"
+	            android:textSize="@dimen/float_normal_font"
+	            android:textColor="#ffffff"/>
+	    </FrameLayout>
+        
+        <FrameLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/float_btn_up_padding"
+            android:background="@drawable/float_btn_green_bg">
+	        <TextView 
+	            android:id="@+id/tv_bind_mobile"
+	            android:layout_width="fill_parent"
+	            android:layout_height="@dimen/float_btn_height"
+	            android:layout_marginLeft="12dp"
+	            android:gravity="left|center_vertical"
+	            android:text="@string/btn_bind_mobile"
+	           	android:textSize="@dimen/float_normal_font"
+	            android:textColor="#ffffff"/>
+	        
+	        <TextView 
+	            android:id="@+id/tv_is_bind"
+	            android:layout_width="wrap_content"
+	            android:layout_height="@dimen/float_btn_height"
+	            android:layout_marginRight="12dp"
+	            android:layout_gravity="right"
+	            android:gravity="center_vertical"
+	            android:shadowColor="#5c9443"
+	            android:shadowDx="0.001"
+	            android:shadowDy="1"
+	            android:text="未绑定"
+	            android:textColor="@color/float_yellow_color"
+	            android:textSize="@dimen/float_min_font"/>
+        </FrameLayout>
+        
+        <FrameLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/float_btn_up_padding"
+            android:background="@drawable/float_btn_green_bg">
+	         <TextView 
+	            android:id="@+id/tv_my_gift"
+	            android:layout_width="fill_parent"
+	            android:layout_height="@dimen/float_btn_height"
+	            android:layout_marginLeft="12dp"
+	            android:gravity="left|center_vertical"
+	            android:text="@string/btn_my_gift"
+	            android:textSize="@dimen/float_normal_font"
+	            android:textColor="#ffffff"/>
+         </FrameLayout>
+         
+        <FrameLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/float_btn_up_padding"
+            android:background="@drawable/float_btn_green_bg">
+          <TextView 
+            android:id="@+id/tv_back_game"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/float_btn_height"
+            android:layout_marginLeft="12dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/float_back_game"
+            android:textSize="@dimen/float_normal_font"
+            android:textColor="#ffffff"/>
+         </FrameLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/mogoo_version"
+            android:textColor="@color/descript_color"
+            android:textSize="@dimen/float_min_font" />
+    </LinearLayout>
+
+
+</LinearLayout>

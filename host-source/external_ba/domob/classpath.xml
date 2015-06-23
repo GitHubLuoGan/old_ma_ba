@@ -1,0 +1,5 @@
+<!-- domob Start -->
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+<classpathentry kind="lib" path="libs/dm_offer_wall2.1.2.jar"/>
+
+<!-- domob End -->

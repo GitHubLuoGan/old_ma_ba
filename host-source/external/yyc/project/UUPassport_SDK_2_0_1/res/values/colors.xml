@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#ffffff</color>
+	<color name="black">#ff000000</color>
+    <color name="grey">#ff999999</color>
+	<color name="translucent">#00ffffff</color>
+	<color name="transparent">#00000000</color>
+	<color name="breadcrumb_text_color">#ffffff</color>
+	
+	<!-- Actionbar color -->
+	<color name="color_actionbar_text">#ffffff</color>
+	<color name="color_input_text">#454545</color>
+	<color name="color_button_text">#ffffff</color>
+	<color name="color_common_text">#706e6f</color>
+	<color name="color_tip_text">#eaa543</color>
+	<color name="color_secondary_text">#b9b9b9</color>
+	
+	<!-- code level -->
+	<color name="color_level_container_bg">#f9f9f9</color>
+	<color name="color_level_weak">#d75421</color>
+	<color name="color_level_medium">#e7a453</color>
+	<color name="color_level_strong">#a5cb5e</color>
+	
+	<!-- code show/hide -->
+	<color name="color_text_hide">#a0a0a0</color>
+	<color name="color_text_show">#87b81e</color>
+	
+	<!-- Background -->
+	<color name="color_fragment_background">#eeeeee</color>
+	
+	<!-- Toast color -->
+	<color name="color_toast_background_warning">#c4f1a39d</color>
+	<color name="color_toast_background">#c4f9d973</color>
+	<color name="color_toast_text">#454545</color>
+	
+	<!-- Tab text Color -->
+	<color name="color_tab_text_selected">#8ab71e</color>
+	<color name="color_tab_text">#a1a1a1</color>
+	<color name="color_btn_text_blue">#56a9cc</color>
+	
+	<!-- Dialog color -->
+	<color name="color_dlg_text">#454545</color>
+	<color name="color_dlg_second_text">#8b8b8b</color>
+	<color name="color_dlg_btn_text_blue">#56a9cc</color>
+	
+	<color name="text_large_color">#ffffff</color>
+    <color name="text_small_color">#828282</color>
+    
+    <color name="detail_text_back">#1c1d1d</color>
+    <color name="detail_text_color">#9f9f9f</color>
+    <color name="detail_des_color">#565656</color>
+    
+    <color name="primary_text">#d4d4d4</color>
+    <color name="secondary_text">#969696</color>
+    
+    <color name="text_color_second">#6c6c6c</color>
+    
+    <color name="pager_tab_text_color">#209bbf</color>
+    <color name="color_agree_bottom_bg">#a2a2a2</color>
+    
+    <color name="color_dlg_red_title">#f44e42</color>
+</resources>

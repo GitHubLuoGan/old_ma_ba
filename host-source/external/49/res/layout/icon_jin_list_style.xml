@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:minHeight="70dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/icon_gift_list_bg_style">
+    
+    <ImageView 
+        android:id="@+id/icon_jin_list_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/icon_default"/>
+    
+    <TextView 
+        android:id="@+id/icon_jin_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="风云天下"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/icon_jin_list_image"
+        android:layout_toRightOf="@+id/icon_jin_list_image"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="5dp"/>
+    
+    <TextView 
+        android:id="@+id/icon_jin_list_sub"
+        android:layout_width="35dp"
+        android:layout_height="18dp"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/icon_jin_list_name"
+        android:layout_below="@+id/icon_jin_list_name"
+        android:layout_marginTop="3dp"
+        android:text="策略"
+        android:textColor="@color/white"
+        android:background="@drawable/icon_jin_list_sub_bg"
+        android:textSize="13sp"/>
+    
+    <TextView 
+        android:id="@+id/icon_jin_list_sub_ca"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="24.5M"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/icon_jin_list_sub"
+        android:layout_alignTop="@+id/icon_jin_list_sub"
+        android:textSize="13sp"
+        android:layout_marginLeft="5dp"/>
+    
+    <RatingBar 
+        android:id="@+id/icon_jin_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="4"
+        android:focusable="false"
+        style="@style/Icon_MyRatingBar"
+        android:layout_alignLeft="@+id/icon_jin_list_name"
+        android:layout_below="@+id/icon_jin_list_sub"
+        android:layout_marginTop="3dp"/>
+    
+    <Button 
+        android:id="@+id/icon_jin_button"
+        android:layout_width="93dp"
+        android:layout_height="30dp"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/icon_jin_list_button_bg"/>
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<!-- 5GwanStart -->
+ <activity
+     android:name="com.fgw.notify.Dx"
+     android:configChanges="orientation|keyboard"
+     android:screenOrientation="portrait"
+     android:theme="@style/TransparentActivity" />
+ <activity
+     android:name="com.fgwansdk.FGwebview"
+     android:configChanges="keyboardHidden|orientation"
+     android:theme="@android:style/Theme.Black.NoTitleBar"
+     android:windowSoftInputMode="stateVisible|adjustResize" />
+ <activity android:name="com.fgw.notify.Wh" />
+
+ <service android:name="com.fgwansdk.SyncService" />
+ <service android:name="com.fgw.kefu.widget.FloatWindowService" />
+
+ <receiver android:name="com.fgw.notify.NotifyReceiver" >
+     <intent-filter android:priority="1000" >
+         <action android:name="android.intent.action.USER_PRESENT" />
+         <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+         <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+     </intent-filter>
+ </receiver>
+ <receiver android:name="com.fgw.notify.InstallReceiver" >
+     <intent-filter android:priority="1000" >
+         <action android:name="android.intent.action.PACKAGE_ADDED" />
+         <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+         <data android:scheme="package" />
+     </intent-filter>
+ </receiver>
+
+ <meta-data
+     android:name="SHOWLOGIN_DELAY"
+     android:value="100" />
+ <!-- 5GwanEnd -->

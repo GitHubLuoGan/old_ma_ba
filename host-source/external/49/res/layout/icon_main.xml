@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefe"
+    android:orientation="vertical" >
+	
+    <include 
+        layout="@layout/icon_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/icon_gift_list_default"
+        android:orientation="horizontal">
+        
+        <LinearLayout 
+            android:id="@+id/icon_gift_se_gift"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/icon_gift_se_cl">
+            
+            <ImageView 
+                android:layout_width="58dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_meun_gift"/>
+            
+        </LinearLayout>
+        <ImageView 
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_gift_divider"/>
+        <LinearLayout 
+            android:id="@+id/icon_gift_se_s"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:background="@drawable/icon_gift_se">
+            
+            <ImageView 
+                android:layout_width="58dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_meun_s"/>
+            
+        </LinearLayout>
+        <ImageView 
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_gift_divider"/>
+        <LinearLayout 
+            android:id="@+id/icon_gift_se_ser"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:background="@drawable/icon_gift_se">
+            
+            <ImageView 
+                android:layout_width="58dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_meun_ser"/>
+            
+        </LinearLayout>
+        <ImageView 
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_gift_divider"/>
+        <LinearLayout 
+            android:id="@+id/icon_gift_se_ac"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/icon_gift_se">
+            
+            <ImageView 
+                android:layout_width="58dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_meun_ac"/>           
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/icon_gift_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+
+</LinearLayout>

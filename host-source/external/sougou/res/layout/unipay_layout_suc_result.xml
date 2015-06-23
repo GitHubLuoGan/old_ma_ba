@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/unipay_sendprop"
+    android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/unipay_textview"
+            style="@style/unipay_text.smallthin2"
+            android:textSize="10sp"
+            android:gravity="right"
+            android:layout_weight="1.0"
+            android:singleLine="true"/>
+        
+        <TextView
+            android:id="@+id/unipay_textnum"
+            style="@style/unipay_text.smallthin2"
+            android:textSize="10sp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/unipay_btn_high1_color" />
+		<TextView 
+		    android:layout_width="1dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1.0"
+		   />
+
+</LinearLayout>
+

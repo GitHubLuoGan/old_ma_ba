@@ -1,0 +1,130 @@
+<!--添加360SDK必需的activity --> 
+<activity 
+    android:name="com.qihoo.gamecenter.sdk.activity.ContainerActivity" 
+    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode" 
+    android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+> 
+</activity> 
+ 
+<!-- 360SDK浮窗 浮窗相关配置在1.1.0以及以后的版本中删除了，如果以前接入过SDK的游戏配置中存在浮
+窗相关的配置，请手动删除 --> 
+<!-- 个人中心activity --> 
+<!-- activity 
+android:name="com.qihoo.gamecenter.sdk.suspend.personal.PersonalActivity" 
+android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|u
+iMode" 
+android:windowSoftInputMode="adjustPan" 
+android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+android:screenOrientation="portrait"  > 
+<intent-filter> 
+  <action android:name="" /> 
+  </intent-filter> 
+</activity --> 
+<!-- receiver 
+android:name="com.qihoo.gamecenter.sdk.suspend.local.QBootReceiver" 
+android:permission="android.permission.RECEIVE_BOOT_COMPLETED" > 
+<intent-filter> 
+<action android:name="android.intent.action.BOOT_COMPLETED" /> 
+</intent-filter> 
+</receiver --> 
+ 
+<!--service 
+android:name="com.qihoo.gamecenter.sdk.suspend.remote.QRemoteService" 
+android:exported="true" 
+android:process=":QSuspendRemote" > 
+<intent-filter> 
+<action android:name="com.qihoo.gamecenter.sdk.suspend.service.action.remote" /> 
+</intent-filter> 
+</service --> 
+<!-- service 
+android:name="com.qihoo.gamecenter.sdk.suspend.local.QLocalService" 
+android:exported="false" > 
+<intent-filter> 
+<action android:name="com.qihoo.gamecenter.sdk.suspend.local.QLocalService" /> 
+</intent-filter> 
+</service --> 
+<!-- 360SDK浮窗 End --> 
+ 
+<!-- payment activities begin --> 
+<!--添加360SDK必需的activity：com.qihoopp.qcoinpay.QcoinActivity --> 
+<activity 
+    android:name="com.qihoopp.qcoinpay.QcoinActivity" 
+    android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation" 
+    android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+    android:windowSoftInputMode="stateAlwaysHidden|adjustResize" > 
+</activity> 
+<!--alipay sdk begin --> 
+<activity 
+     android:name="com.alipay.sdk.app.H5PayActivity" 
+     android:screenOrientation="portrait" > 
+</activity> 
+<!--alipay sdk end --> 
+<!-- payment activities end --> 
+<!--如下是360游戏实时推送SDK必要声明，不可修改 --> 
+<receiver 
+    android:name="com.qihoo.psdk.local.QBootReceiver" 
+    android:permission="android.permission.RECEIVE_BOOT_COMPLETED" > 
+<intent-filter> 
+<action android:name="android.intent.action.BOOT_COMPLETED" /> 
+</intent-filter> 
+<intent-filter> 
+<action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> 
+</intent-filter> 
+</receiver> 
+ 
+<activity 
+    android:name="com.qihoo.psdk.app.QStatActivity" 
+    android:launchMode="singleInstance" 
+    android:theme="@android:style/Theme.Translucent.NoTitleBar" > 
+</activity> 
+ 
+<service 
+    android:name="com.qihoo.psdk.remote.QRemoteService" 
+    android:exported="true" 
+    android:process=":QRemote" > 
+<intent-filter> 
+<action android:name="com.qihoo.psdk.service.action.remote" /> 
+</intent-filter> 
+</service> 
+<service 
+    android:name="com.qihoo.psdk.local.QLocalService" 
+    android:exported="true" 
+    android:process=":QLocal" > 
+<intent-filter> 
+   <action android:name="com.qihoo.psdk.service.action.local" /> 
+</intent-filter> 
+</service> 
+<!-- push sdk end -->  
+<!--微信相关的activity，如需接入，请直接使用demo中的WXEntryActivity类的代码实现， 
+类的全名为：“应用包名.wxapi.WXEntryActivity” --> 
+<activity 
+    android:name=".wxapi.WXEntryActivity" 
+    android:label="@string/demo_app_name" 
+    android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+    android:exported="true" /> 
+    <!-- 添加360SDK必需的meta-data：QHOPENSDK_APPID。此处value为APPID。请在360应用开放平台注册
+申请--> 
+<meta-data 
+    android:name="QHOPENSDK_APPID" 
+    android:value="202169296"> 
+</meta-data> 
+ 
+<!--添加360SDK必需的meta-data：QHOPENSDK_APPKEY。此处value为APPKEY。请在360应用开放平台注册
+申请--> 
+<meta-data   
+    android:name="QHOPENSDK_APPKEY" 
+    android:value="71de82075bd90bdd8cd7f2bb4c6de7cd"> 
+</meta-data> 
+ 
+<!--必需的meta-data：QHOPENSDK_PRIVATEKEY。此处value为PRIVATEKEY不是APPSECRET，而是
+md5(app_secret +”#”+ app_key)，全小写，APPSECRET不允许保存在客户端！--> 
+<meta-data 
+    android:name="QHOPENSDK_PRIVATEKEY" 
+    android:value="b6b012b5161d2a79df96b5aac066c473"> 
+</meta-data> 
+<!-- 从微信分享相关的meta-data：QHOPENSDK_WEIXIN_APPID。此处value为在微信开放平台申请的APPID。
+请在微信开放平台申请 --> 
+<meta-data 
+    android:name="QHOPENSDK_WEIXIN_APPID" 
+    android:value="wx4e203f3fdd2d4a15" > 
+</meta-data> 

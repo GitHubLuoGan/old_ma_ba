@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="@dimen/ac_common_item_height" >
+
+    <com.kuyou.appcenter.widgets.UnpressableRelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/downloading_pannel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/ac_common_item_height"
+            android:background="@drawable/ac_kugou_game_list_item_bg_default"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/downloading_icon"
+                android:layout_width="@dimen/ac_common_icon_width_and_height"
+                android:layout_height="@dimen/ac_common_icon_width_and_height"
+                android:layout_margin="10dip"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/downloading_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingBottom="5dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="5dip"
+                    android:singleLine="true"
+                    android:textColor="@color/ac_common_gray_darker"
+                    android:textSize="@dimen/ac_common_medium" />
+
+                <ProgressBar
+                    android:id="@+id/downloading_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    android:paddingRight="5dip"
+                    android:progress="50"
+                    android:progressDrawable="@drawable/ac_download_seekbar_style" />
+
+                <TextView
+                    android:id="@+id/downloading_intro"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="1dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="1dip"
+                    android:textColor="@color/ac_common_gray_lighter"
+                    android:textSize="@dimen/ac_common_little" />
+            </LinearLayout>
+
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+				android:layout_marginRight="10dip"
+                android:layout_height="wrap_content">
+	            <ImageView
+	                android:id="@+id/downloading_delete"
+	                android:contentDescription="@string/ac_img_description"
+	                android:layout_height="0dip"
+	                android:layout_width="27dp"
+	                android:paddingLeft="7dip"
+	                android:paddingRight="7dip"
+	                android:layout_alignTop="@+id/downloading_btn"
+	                android:layout_alignBottom="@+id/downloading_btn"
+	                android:layout_marginLeft="5dip"
+	                android:scaleType="center"
+	                android:adjustViewBounds="true"
+		            android:background="@drawable/ac_comm_button_bg"
+		            android:src="@drawable/ac_download_delete" />
+	
+	            <com.kuyou.appcenter.widgets.MagicButton
+	                android:id="@+id/downloading_btn"
+	                android:layout_marginLeft="5dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@+id/downloading_delete"
+	                android:background="@drawable/ac_selector_app_btn"
+	                android:gravity="center"
+	                android:minHeight="@dimen/ac_app_button_height"
+	                android:minWidth="@dimen/ac_app_button_width"
+	                android:textColor="@color/ac_common_white"
+	                android:textSize="@dimen/ac_common_medium" />
+            </RelativeLayout>
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:id="@+id/downloaded_pannel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ac_kugou_game_list_item_bg_default"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/ac_common_item_height"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/downloaded_icon"
+                    android:layout_width="@dimen/ac_common_icon_width_and_height"
+                    android:layout_height="@dimen/ac_common_icon_width_and_height"
+                    android:layout_margin="10dip"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/downloaded_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingBottom="5dip"
+                        android:paddingRight="10dip"
+                        android:paddingTop="5dip"
+                        android:singleLine="true"
+                        android:textColor="@color/ac_common_gray_darker"
+                        android:textSize="@dimen/ac_common_medium" />
+
+                    <TextView
+                        android:id="@+id/downloaded_intro"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="1dip"
+                        android:paddingTop="1dip"
+                        android:textColor="@color/ac_common_gray_lighter"
+                        android:textSize="@dimen/ac_common_little" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/downloaded_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:visibility="gone"
+                    android:background="@drawable/ac_selector_download_share" />
+
+                <com.kuyou.appcenter.widgets.MagicButton
+                    android:id="@+id/downloaded_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/ac_selector_app_btn"
+                    android:gravity="center"
+                    android:minHeight="@dimen/ac_app_button_height"
+                    android:minWidth="@dimen/ac_app_button_width"
+                    android:textColor="@color/ac_common_white"
+                    android:textSize="@dimen/ac_common_medium" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/ac_download_menu_height"
+                android:background="@drawable/ac_download_menu_bg"
+                android:visibility="gone"
+                android:padding="10dip" >
+
+                <Button
+                    android:id="@+id/downloaded_see_appinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ac_selector_download_menu_btn"
+                    android:drawableLeft="@drawable/ac_download_see_info"
+                    android:drawablePadding="5dip"
+                    android:minHeight="@dimen/ac_app_button_height"
+                    android:padding="5dip"
+                    android:text="查看详情"
+                    android:textColor="@color/ac_common_gray_lighter"
+                    android:textSize="@dimen/ac_common_medium" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.kuyou.appcenter.widgets.UnpressableRelativeLayout>
+
+</RelativeLayout>

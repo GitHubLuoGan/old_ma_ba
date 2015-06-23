@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray_white_title" >
+
+        <TextView
+            android:id="@+id/yuanbao_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/yuanbao_item" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/yuanbao_number"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/records_pay_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_item" />
+
+            <TextView
+                android:id="@+id/item_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_item"
+                android:textColor="@color/blue_one" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yuan" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="36dp"
+            android:text="@string/state_item"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayout1"
+            android:layout_alignRight="@+id/item_state"
+            android:text="@string/time_item"
+            android:textSize="12sp"
+            android:textColor="@color/gray" />
+
+        <ImageView
+            android:id="@+id/item_button"
+            android:layout_width="20dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:background="@drawable/down" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/records_item_line" 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/line"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/records_relative" 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray_white"
+        android:visibility="gone">
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">            
+	         <TextView 
+	            android:id="@+id/item_order"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/order_item"
+	            android:textColor="@color/gray"/>
+			<LinearLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:layout_marginTop="5dp">			    
+				<TextView
+		            android:id="@+id/item_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/pay_item_state"
+		            android:textColor="@color/gray"/>		
+		        <TextView
+		            android:id="@+id/item_pay_result"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/pay_item_state_result"
+		            android:textColor="@color/gray"/>			    
+			</LinearLayout>
+	                              
+        </LinearLayout>
+        
+
+    </RelativeLayout>
+    
+
+    
+
+</LinearLayout>

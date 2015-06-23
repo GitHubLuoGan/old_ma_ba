@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <!-- 次进度条 -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <solid android:color="#00000000" />
+                <!--
+			渐变
+			<gradient 
+				android:startColor="@color/red"
+				android:endColor="@color/green"
+				android:centerColor="@color/yellow"
+				android:centerX="33%"
+				android:centerY="33%"
+				android:angle="45" />
+                -->
+                <stroke
+                    android:dashGap="0dip"
+                    android:dashWidth="0dip"
+                    android:width="0dip"
+                    android:color="@android:color/white" />
+                <!-- 圆角 -->
+                <corners
+                    android:bottomLeftRadius="0dip"
+                    android:bottomRightRadius="0dip"
+                    android:topLeftRadius="0dip"
+                    android:topRightRadius="0dip" />
+
+                <padding
+                    android:bottom="0dip"
+                    android:left="0dip"
+                    android:right="0dip"
+                    android:top="0dip" />
+            </shape>
+        </clip>
+    </item>
+
+    <!-- 主进度条 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="@color/ac_game_item_progressbar_progress" />
+                <!--
+			渐变
+			<gradient 
+				android:startColor="@color/red"
+				android:endColor="@color/green"
+				android:centerColor="@color/yellow"
+				android:centerX="33%"
+				android:centerY="33%"
+				android:angle="45" />
+                -->
+                <stroke
+                    android:dashGap="0dip"
+                    android:dashWidth="0dip"
+                    android:width="0dip"
+                    android:color="@android:color/white" />
+                <!-- 圆角 -->
+                <corners
+                    android:bottomLeftRadius="2dip"
+                    android:bottomRightRadius="2dip"
+                    android:topLeftRadius="2dip"
+                    android:topRightRadius="2dip" />
+
+                <padding
+                    android:bottom="0px"
+                    android:left="0px"
+                    android:right="0px"
+                    android:top="0px" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

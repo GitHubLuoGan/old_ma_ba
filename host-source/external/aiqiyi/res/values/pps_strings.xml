@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pps_username">账号：</string>
+    <string name="pps_password">密码：</string>
+    <string name="pps_repwd">确认：</string>
+    <string name="pps_username_hint">PPS账号/爱奇艺账号</string>
+    <string name="pps_password_hint">请输入密码</string>
+    <string name="pps_register_username_hint">务必正确填写手机号或邮箱</string>
+    <string name="pps_bind_email_hint">务必正确填写邮箱</string>
+    <string name="pps_register_pwd_hint">6&#8211;16位数字或字母&#044;分大小写</string>
+    <string name="pps_register_repwd_hint">请重复输入密码</string>
+    <string name="pps_login">登录游戏</string>
+    <string name="pps_login_normal">使用爱奇艺PPS账号登录</string>
+    <string name="pps_register">快速注册</string>
+    <string name="pps_register_phone">一键手机注册</string>
+    <string name="pps_register_phone_hint">将发送短信验证,查看</string>
+    <string name="pps_register_code">获取验证码</string>
+    <string name="pps_register_code_hint">请输入验证码</string>
+    <string name="pps_register_code_fail">获取验证码失败</string>
+    <string name="pps_cancel">取消</string>
+    <string name="pps_autoLogin">自动登录</string>
+    <string name="pps_findPwd">忘记密码</string>
+    <string name="pps_findpwd_info">请登录网站 http://i.pps.tv/passwd.php 通过客服中心找回密码</string>
+    <string name="pps_finish">完成</string>
+    <string name="pps_close">关闭</string>
+    <string name="pps_registerInfo">注：系统已为您自动生成一个有效账号，输入密码即可注册，您也可以使用自己的邮箱进行注册。</string>
+    <string name="pps_agree">同意</string>
+    <string name="pps_agreement">PPS游戏用户服务协议</string>
+    <string name="pps_face">用户头像</string>
+    <string name="pps_arrow">箭头</string>
+    <string name="pps_rechargecenter">充值中心</string>
+    <string name="pps_changeaccount">切换账号</string>
+    <string name="pps_customercare">联系客服</string>
+    <string name="pps_about">关于我们</string>
+    <string name="pps_user_verification">验证信息获取失败</string>
+	<string name="Ensure">"确定"</string>
+	<string name="Cancel">"取消"</string>
+	<string name="check_sign_failed">您的订单信息已被非法篡改。</string> 
+	<string name="confirm_install_hint">"安装提示"</string>	
+	<string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+	
+	<string name="remote_call_failed">Failure calling remote service</string>
+	<string name="pps_back">返回</string>
+	<string name="pps_registerTitle">注册账号</string>
+	<string name="pps_agreementTitle">PPS游戏用户服务协议</string>
+	<string name="pps_findTitle">找回密码</string>
+	<string name="pps_accountcenterTtitle">账户中心</string>
+	<string name="pps_third_login">其它登录：</string>
+	<string name="ppsgame_guest_login">游客登录</string>
+	<string name="ppsgame_guest">游客</string>
+	<string name="ppsgame_bind">绑定账号</string>
+	<string name="ppsgame_bind1">绑定账号(推荐)</string>
+	<string name="ppsgame_bind_no">暂不绑定</string>
+	<string name="ppsgame_bind_title1">注：</string>
+	<string name="ppsgame_bind_title2">注：您可以使用未注册过PPS账号或爱奇艺账号的邮箱进行绑定。</string>
+	<string name="ppsgame_bind_info">注：游客仅限于快速体验游戏，账号安全性不足，建议绑定账号登录(切换账号登录将丢失游客数据，无法找回，请谨慎选择)</string>
+	<string name="ppsgame_bind_info1">您当前为游客状态，为了您的账号安全，建议您马上绑定账号</string>
+	<string name="ppsgame_current_account">当前账号:</string>
+	<string name="ppsgame_account_type">账号类型:</string>
+	<string name="ppsgame_change_account">切换账号登录</string>
+	<string name="ppsgame_order_info">订单信息</string>
+	<string name="ppsgame_order_money">支付金额:</string>
+	<string name="ppsgame_order_diannum">商品数量:</string>
+	<string name="ppsgame_order_money_unit">元</string>
+	<string name="ppsgame_order_name">商品名称:</string>
+	<string name="ppsgame_order_account">当前账户:</string>
+	<string name="ppsgame_xuanzejine">您可以选择的支付金额</string>
+	<string name="ppsgame_qitajine">其它金额:</string>
+	<string name="ppsgame_order_error">联系客服</string>
+	<string name="ppsgame_order_commit">确认支付</string>
+	<string name="ppsgame_money_type">充值类型：</string>
+	<string name="ppsgame_payment_msg">提示：点击选择更多充值类型</string>
+	<string name="ppsgame_payment_othermoney">其他金额：</string>
+	<string name="ppsgame_order_mssage">提示：获得的商品数量，以实际充值点卡金额为准</string>
+	
+	<string name="ppsgame_order_cofim">确认无误后到%1$s去付款</string>
+	<string name="ppsgame_order_button_cofim">到%1$s去付款</string>
+	<string name="ppsgame_order_request_wrong">提示:提交订单失败</string>
+	<string name="ppsgame_payment_order_info_wrong">获取订单异常</string>
+	<string name="ppsgame_payment_order_creat_wrong">创建订单异常</string>
+	
+	<string name="ppsgame_payment_error">充值渠道正在维护中</string>
+	<string name="ppsgame_payment_card_type">类型:</string>
+	<string name="ppsgame_payment_card_money">面值:</string>
+	<string name="ppsgame_payment_card_number">卡号:</string>
+	<string name="ppsgame_payment_card_number_hint">请输入%1$s位卡号</string>
+	<string name="ppsgame_payment_card_pwd">密码:</string>
+	<string name="ppsgame_payment_card_pwd_hint">请输入%1$s位密码</string>
+	<string name="ppsgame_payment_card_info">温馨提示:请选择与支付金额和充值类型相符的%1$s进行充值，避免造成不必要的损失，由前面情况产生的损失由用户自行承担。</string>
+	<string name="ppsgame_payment_guest">游客充值前需绑定账号</string>
+	<string name="ppsgame_payment_notlogin">充值前请先登录</string>
+	<string name="ppsgame_payment_logout_msg">提示:请确认是否退出支付中心</string>
+	<string name="ppsgame_payment_success_msg">提示:支付已经成功</string>
+	<string name="ppsgame_payment_failed_msg">提示:支付失败,请回到游戏重新下单</string>
+	<string name="ppsgame_payment_cancel_msg">提示:取消支付,请回到游戏重新下单</string>	
+	<string name="ppsgame_payment_paycard">话费卡</string>
+	<string name="ppsgame_payment_qudao_close">充值系统已经关闭</string>
+	<string name="ppsgame_payment_qudao_update">充值系统正在维护中</string>
+	<string name="ppsgame_payment_qudao_loadsuccess">充值加载成功</string>
+	<string name="ppsgame_payment_qudao_loadfailed">充值渠道加载失败</string>
+	<string name="ppsgame_payment_qudao_loading">正在加载充值渠道</string>
+	<string name="ppsgame_payment_data_wrong">提示:数据解析异常</string>
+	<string name="ppsgame_payment_loading">正在连接中,请稍后&#8230;</string>
+	<string name="ppsgame_payment_max_money">提示:充值的最大金额为%1$d</string>
+	<string name="ppsgame_payment_min_money">提示:充值的最小金额为%1$d</string>
+	<string name="ppsgame_payment_need_login">提示:充值前请必须登录</string>
+	<string name="ppsgame_payment_wrong_account">提示:您输入的卡号和密码有误</string>
+	
+	<string name="ppsgame_payment_money_invalid">充值金额不能为0或负数</string>
+	<string name="ppsgame_payment_serverid_invalid">游戏的服务id不能为空;必须符合ppsmobile_s+数字的规范,其中数字要大于0</string>
+	<string name="ppsgame_payment_roleid_invalid">游戏的角色id不能为空</string>
+	<string name="ppsgame_payment_roleidandserverid_invalid">游戏的角色id和服务id不能为空</string>
+	<string name="ppsgame_paymen_choose_money">提示:请选择充值的金额</string>
+	<string name="ppsgame_paymen_weixin_error">提示:请安装最新版本微信</string>
+	<string name="psgame_paymen_weixin_msg">微信支付结果：%s</string>
+    <string name="wx_loading_pay">正在启动微信支付</string>
+	
+	<string name="ppsgame_account_logout">你确定要注销当前账号吗?</string>
+	<string name="ppsgame_account_login_msg">请您先登录</string>
+	
+	<string name="ppsgame_dialog_title">PPS支付中心</string>
+	<string name="ppsgame_dialog_title_normal">提示</string>
+	<string name="ppsgame_dialog_commit">确认</string>
+	<string name="ppsgame_dialog_cancel">取消</string>
+	<string name="ppsgame_dialog_loading">正在加载</string>
+	<string name="ppsgame_net_invalid">当前网络不可用,请检查网络设置</string>
+	
+	<string name="ppsgame_bind_account">正在绑定</string>
+	<string name="ppsgame_bind_account_failed">绑定失败</string>
+	<string name="ppsgame_bind_account_success">绑定成功</string>
+	<string name="ppsgame_bind_email_wrong">亲，邮箱是不是写错啦?</string>
+	<string name="ppsgame_bind_password_wrong">亲，密码必须为6&#8211;16位数字/字母哦</string>
+	
+	<string name="ppsgame_login_loading">正在登陆</string>
+	<string name="ppsgame_login_chooseuser">选择用户</string>
+	<string name="ppsgame_login_nouserid">亲，还没有填写账号哦</string>
+	<string name="ppsgame_login_nopassword">亲，还没有填写密码哦</string>
+	<string name="ppsgame_login_nouserid_or_nopassword">用户名或者密码为空</string>
+	<string name="ppsgame_getdeviceinfo_wrong">设备信息读取有误</string>
+	<string name="ppsgame_login_checkuserid">检测账号中&#8230;</string>
+	<string name="ppsgame_login_voluntary">正在自动登录中&#8230;</string>
+	<string name="ppsgame_login_request_exception">"登录请求异常"</string>
+	<string name="ppsgame_login_failed">登录失败</string>
+	<string name="ppsgame_logout_netfailed">由于网络问题注销失败。</string>
+	<string name="ppsgame_guest_login_failed">游客登录异常</string>
+	
+	<string name="ppsgame_login_account_tencent">腾讯</string>
+	<string name="ppsgame_login_account_baidu">百度</string>
+	<string name="ppsgame_login_account_iqiyi">爱奇艺/PPS</string>
+	<string name="ppsgame_login_account_sina">新浪</string>
+	<string name="ppsgame_login_account_rr">人人网</string>
+	<string name="ppsgame_login_account_zhifubao">支付宝</string>
+	<string name="ppsgame_login_account_kaixin">开心网</string>
+	<string name="ppsgame_login_account_fb">facebook</string>
+	
+	<string name="ppsgame_register_wrong">注册请求异常</string>
+	<string name="ppsgame_register_failed">注册失败</string>
+	<string name="ppsgame_register_loading">正在注册</string>
+	<string name="ppsgame_register_code_loading">正在获取验证码</string>
+	<string name="ppsgame_register_email_wrong">亲，账号是不是写错啦?</string>
+	<string name="ppsgame_register_password_wrong">亲，密码必须为6&#8211;16位数字/字母哦</string>
+	<string name="ppsgame_register_user_delegete">请同意用户服务协议</string>
+	<string name="ppsgame_register_code_wrong">验证码错误</string>
+	<string name="ppsgame_register_code_null">亲，请输入验证码</string>
+	
+	<string name="ppsgame_update_loading">版本检测中&#8230;</string>
+	<string name="ppsgame_update_later">以后更新</string>
+	<string name="ppsgame_update">更新</string>
+	<string name="ppsgame_update_url_wrong">更新链接异常</string>
+	<string name="ppsgame_update_downloaded">下载完成</string>
+	<string name="ppsgame_update_download_failed">更新包下载失败</string>
+	<string name="ppsgame_update_downloading">下载中</string>
+	
+	<string name="ppsgame_exit">退出游戏</string>
+	<string name="ppsgame_exit_action">进入论坛</string>
+	<string name="ppsgame_exit_url_error">跳转链接异常</string>
+	
+	<string name="ppsgame_welcome_toast">欢迎%1$s回到游戏</string>
+</resources>

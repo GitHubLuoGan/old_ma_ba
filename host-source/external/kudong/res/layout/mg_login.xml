@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/mg_login_bg" >
+
+    <!-- titlebar区域 -->
+
+    <include
+        android:id="@+id/mg_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        layout="@layout/mg_header" />
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/mg_head"
+        android:background="#00000000"
+        android:src="@drawable/float_ic_action_cancel" />
+
+    <!-- 可滑动区域 -->
+
+
+    <!--
+         <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/mg_head"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@drawable/mg_scrollbar_gray" >
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/mg_head"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical" >
+
+                <EditText
+                    android:id="@+id/mg_account_input_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:digits="@string/mg_register_name_digits"
+                    android:imeOptions="actionNext"
+                    android:gravity="bottom"
+                    android:hint="@string/mg_account_hint"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:textColorHint="@color/mg_color_999999"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_normal_two" />
+
+                <View
+                    android:id="@+id/mg_account_pop_fold_unfold_container"
+                    android:layout_width="108dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@color/mg_transparent" />
+
+                <!--
+                             <ImageButton android:id="@+id/mg_account_pop_fold_unfold"
+		                    android:layout_width="24dp"
+		                    android:layout_height="24dp"
+		                    android:layout_gravity="right|center_vertical"
+		                    android:layout_marginRight="8dp"
+		                    android:clickable="true" />
+
+                -->
+
+                <ImageView
+                    android:id="@+id/mg_account_pop_fold_unfold"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="8dp"
+                    android:clickable="true" />
+
+                <ImageView
+                    android:id="@+id/mg_account_pop_fold_error"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginRight="40dp"
+                    android:clickable="false"
+                    android:src="@android:drawable/ic_delete"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#d7d7d7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical" >
+
+                <EditText
+                    android:id="@+id/mg_pwd_input_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:digits="@string/mg_register_pwd_digits"
+                    android:imeOptions="actionDone"
+                    android:gravity="bottom"
+                    android:hint="@string/mg_pwd_login_hint"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:textColorHint="@color/mg_color_999999"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_normal_two" />
+
+                <View
+                    android:id="@+id/mg_account_unremain_container"
+                    android:layout_width="108dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@color/mg_transparent" />
+
+                <TextView
+                    android:id="@+id/mg_account_unremain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:clickable="true"
+                    android:gravity="bottom"
+                    android:text="@string/mg_remain_pwd"
+                    android:textColor="#789ce6"
+                    android:textSize="@dimen/text_normal" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#d7d7d7" />
+        </LinearLayout>
+
+        <!--
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+				
+                <LinearLayout android:id="@+id/mg_login_remember_state" 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/mg_user_login_checkbox"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:button="@drawable/mg_login_checkbox_selector"
+                    android:checked="true" 
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center"
+                    android:text="@string/mg_remember_login_state"
+                    android:textColor="@color/mg_color_666666"
+                    android:textSize="14sp" 
+                    android:layout_gravity="center_vertical"/>
+				</LinearLayout>
+                
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/mg_btn_forgot_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mg_transparent"
+                    android:singleLine="true"
+                    android:text="@string/mg_forget_pwd_text"
+                    android:textColor="@color/mg_color_2764af"
+                    android:textSize="14sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="6dp"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/mg_btn_register"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/mg_btn_height"
+                    android:layout_gravity="left|bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/mg_register_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/mg_free_register"
+                    android:textColor="@color/mg_color_white"
+                    android:textSize="@dimen/text_max" />
+
+                <Button
+                    android:id="@+id/mg_btn_login"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/mg_btn_height"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginLeft="24dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mg_login_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/mg_login"
+                    android:textColor="@color/mg_color_white"
+                    android:textSize="@dimen/text_max" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mg_message_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="6dp"
+                android:gravity="bottom|center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/mg_message_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mg_message_laba"
+                    android:maxWidth="24dp"
+                    android:maxHeight="24dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center_vertical" />
+
+                <com.mogoo.view.MessageTextView
+                    android:id="@+id/mg_message_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:focusable="true"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/mg_message_laba"
+                    android:textColor="@color/descript_color"
+                    android:textSize="@dimen/text_normal_two" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- </ScrollView> -->
+
+</RelativeLayout>

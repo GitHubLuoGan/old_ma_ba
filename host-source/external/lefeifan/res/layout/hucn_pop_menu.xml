@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/hucn_pop_menu4"
+        style="@style/HUCNMenuBtn"
+        android:layout_marginTop="20dp"
+        android:text="@string/hucn_findpwd_by_none" />
+
+    <Button
+        android:id="@+id/hucn_pop_menu1"
+        style="@style/HUCNMenuBtn"
+        android:text="@string/hucn_findpwd_by_mb" />
+
+    <Button
+        android:id="@+id/hucn_pop_menu2"
+        style="@style/HUCNMenuBtn"
+        android:text="@string/hucn_findpwd_by_sj" />
+
+    <Button
+        android:id="@+id/hucn_pop_menu3"
+        style="@style/HUCNMenuBtn"
+        android:text="@string/hucn_findpwd_by_wx" />
+
+    <Button
+        android:id="@+id/hucn_pop_menu5"
+        style="@style/HUCNMenuBtn"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/hucn_cancle"
+        android:textColor="#d13d3d" />
+
+</LinearLayout>

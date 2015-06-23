@@ -1,0 +1,4 @@
+<!-- xiami lib start -->
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+<classpathentry kind="lib" path="libs/SDK_TY_3.2.0.jar"/>
+<!-- xiami lib end -->

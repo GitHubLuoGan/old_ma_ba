@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/library_common_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/library_common_title_bar" />
+
+    <include layout="@layout/library_common_tips_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/library_layout_modiy_user_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/library_common_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:text="请点击适合您的充值方式！"
+                android:textColor="#ff999999"
+                android:textSize="18dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/library_selected_charge_by_mobile_card_caseCMMButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/library_mobilecard_button_bg_cmm_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="移动卡充值"
+                        android:textColor="#ff000000"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/library_selected_charge_by_mobile_card_caseUNCButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/library_mobilecard_button_bg_ctm_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联通卡充值 "
+                        android:textColor="#ff000000"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/library_selected_charge_by_mobile_card_caseCTMButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/library_mobilecard_button_bg_unc_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电信卡充值"
+                        android:textColor="#ff000000"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="20dip"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/library_selected_charge_by_alibaba_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/library_alibaba_button_bg_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:text="支付宝充值 "
+                        android:textColor="#ff000000"
+                        android:textSize="14dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/library_selected_charge_bank_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/library_bank_button_bg_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center_horizontal"
+                        android:text="银联支付 "
+                        android:textColor="#ff000000"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/library_selected_charge_line_card_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/library_credit_card_seletor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="信用卡"
+                        android:textColor="#ff000000"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/library_selected_charge_memory_card_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/library_bank_card_seletor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:text="储蓄卡 "
+                        android:textColor="#ff000000"
+                        android:textSize="14dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/library_charge_kubi_layout"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/library_selected_charge_exchange_kubi_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/library_kubi_button_bg_selector" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="酷狗酷币兑换"
+                        android:textColor="#ff000000"
+                        android:textSize="14dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/library_user_center_button_space_line" />
+
+    <include
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        layout="@layout/library_bottom_bar" />
+
+</LinearLayout>

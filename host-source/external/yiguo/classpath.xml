@@ -1,0 +1,4 @@
+<!-- yiduo Start -->
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+<classpathentry kind="lib" path="libs/padaGameSdk1.30.jar"/>
+<!-- yiduo End -->

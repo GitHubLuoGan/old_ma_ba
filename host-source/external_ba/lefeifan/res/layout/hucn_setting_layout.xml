@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/HUCNBg"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        style="@style/HUCNBg"
+        android:orientation="vertical" >
+
+        <Spinner
+            android:id="@+id/hucn_games_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <Spinner
+            android:id="@+id/hucn_appid_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/hucn_channel_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <Spinner
+            android:id="@+id/hucn_server_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <Button
+            android:id="@+id/hucn_save_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/hucn_btn_submit"
+            android:text="@string/hucn_confirm"
+            android:textColor="@drawable/hucn_btn_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

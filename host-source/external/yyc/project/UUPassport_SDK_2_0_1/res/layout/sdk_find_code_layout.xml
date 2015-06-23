@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/color_fragment_background"
+    android:paddingLeft="@dimen/margin_horizontal"
+    android:paddingRight="@dimen/margin_horizontal" >
+
+    <TextView
+        android:id="@id/sdk_tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:layout_marginTop="@dimen/margin_vertical"
+        android:drawableLeft="@drawable/tip_drawable"
+        android:drawablePadding="5.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:text="@string/sdk_find_code_tip"
+        android:textColor="@color/color_common_text"
+        android:textSize="@dimen/common_generic_size" />
+    
+    <com.uucun.android.passport.layout.InputCommonLayout
+        android:id="@id/common_input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_layout_background"
+        android:paddingLeft="@dimen/sdk_text_margin"
+        android:paddingRight="@dimen/sdk_text_margin"
+        android:layout_below="@id/sdk_tv_tip" >
+
+        <EditText
+            android:id="@id/sdk_et_input"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_layout_height"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/sdk_btn_clear"
+            android:drawableLeft="@drawable/sdk_user"
+            android:drawablePadding="@dimen/sdk_input_drawable_margin"
+            android:ems="10"
+            android:hint="@string/sdk_input_passport_hint"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColorHint="@color/color_secondary_text"
+            android:textColor="@color/color_input_text"
+            android:textSize="@dimen/input_generic_size" 
+            android:background="@null">
+        </EditText>
+
+        <ImageView
+            android:id="@id/sdk_btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/content_description"
+            android:visibility="invisible"
+            android:src="@drawable/sdk_deleter_selector" />
+    </com.uucun.android.passport.layout.InputCommonLayout>
+
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:layout_below="@id/common_input_layout" >
+
+        <Button
+            android:id="@id/sdk_btn_set_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sdk_button_height"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/margin_horizontal"
+            android:background="@drawable/sdk_btn_orange_selector"
+            android:text="@string/sdk_update_by_phone"
+            android:textColor="@color/color_button_text"
+            android:textSize="@dimen/button_generic_size"  />
+
+        <Button
+            android:id="@id/sdk_btn_set_question"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sdk_button_height"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/margin_horizontal"
+            android:background="@drawable/sdk_btn_blue_selector"
+            android:text="@string/sdk_update_by_question"
+            android:textColor="@color/color_button_text"
+            android:textSize="@dimen/button_generic_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/sdk_tv_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_common_text"
+        android:textSize="@dimen/common_generic_size" />
+
+</RelativeLayout>

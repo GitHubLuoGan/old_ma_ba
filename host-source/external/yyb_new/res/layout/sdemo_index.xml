@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@+drawable/bg"
+    >
+
+    <Button 
+	android:text="充值游戏币接口" 
+	android:id="@+id/gameCoinBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+	
+    <Button 
+    android:visibility="invisible"
+	android:text="开通包月(应用传递购买月数)" 
+	android:id="@+id/MonthwithSaveNumberBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+	
+	<Button 
+	android:text="开通包月" 
+	android:id="@+id/monthBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button><!--  android:visibility="invisible"  -->
+
+	<Button
+	    android:id="@+id/monthCardBtn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="开通月卡" />
+
+	<Button 
+	 
+    android:visibility="invisible"
+	android:text="充值游戏币(应用传默认值  可改)" 
+	android:id="@+id/saveNumberCanChangeBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button>
+
+	<Button
+	
+	android:text="购买道具\n(游戏侧先下订单，无订单无法唤起支付sdk支付)" 
+	android:id="@+id/saveGoodsCanChangeBtn"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</Button> <!-- android:visibility="invisible"  -->
+
+</LinearLayout>

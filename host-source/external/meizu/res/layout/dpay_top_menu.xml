@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dpay_top_menu_bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@id/dpay_btn_user_center_page"
+        style="@style/dpay_btn_menu_styles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dpay_user_center" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dpay_line_height"
+        android:background="@drawable/dpay_divider_line" />
+
+    <Button
+        android:id="@id/dpay_btn_goods_mall_page"
+        style="@style/dpay_btn_menu_styles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dpay_goods_mall" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dpay_line_height"
+        android:background="@drawable/dpay_divider_line"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@id/dpay_btn_recharge_center_page"
+        style="@style/dpay_btn_menu_styles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dpay_recharge_center"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dpay_line_height"
+        android:background="@drawable/dpay_divider_line" />
+
+    <Button
+        android:id="@id/dpay_btn_feedback_page"
+        style="@style/dpay_btn_menu_styles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dpay_feedback" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dpay_line_height"
+        android:background="@drawable/dpay_divider_line" />
+
+    <Button
+        android:id="@id/dpay_btn_about_us"
+        style="@style/dpay_btn_menu_styles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dpay_about_us" />
+
+</LinearLayout>

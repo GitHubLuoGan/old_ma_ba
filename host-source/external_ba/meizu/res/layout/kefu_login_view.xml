@@ -1,0 +1,466 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/loginInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/kefu_user_et_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15.0dip" >
+
+            <TableRow
+                android:layout_marginBottom="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="bottom" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fg_account"
+                    android:textColor="#ffa67d3d"
+                    android:textSize="15.0sp" />
+
+                <EditText
+                    android:id="@+id/loginName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/fg_en_account_hint"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:paddingLeft="8.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff666666"
+                    android:textSize="14.0sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fg_pw"
+                    android:textColor="#ffa67d3d"
+                    android:textSize="15.0sp" />
+
+                <EditText
+                    android:id="@+id/loginPW"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/fg_en_pw_hint"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:paddingLeft="8.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff666666"
+                    android:textSize="14.0sp" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/passwordLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginInfo"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="7dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/modifyPW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/fg_modify_pw_go"
+                android:textColor="@color/tv_text_color_findpass"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/kefu_login_line" />
+
+            <TextView
+                android:id="@+id/findPW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/fg_find_pw_go"
+                android:textColor="@color/tv_text_color_findpass"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordLayout"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/toReg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/fg_reg"
+                android:text="@string/fg_reg_account"
+                android:textColor="@color/tv_text_color_change"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@+id/toLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/fg_login"
+                android:text="@string/fg_login"
+                android:textColor="#ff6a3600"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/modifyPWLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginLayout"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/pwBtnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginLayout"
+            android:background="@drawable/layout_white_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="2.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/fg_modify_pw"
+                android:textColor="#ffa67d3d"
+                android:textSize="17.0sp" />
+
+            <Button
+                android:id="@+id/modifyPWback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/btn_back_bg"
+                android:text="@string/fg_back"
+                android:textColor="#ff666666" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/modifyDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pwBtnLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/bg_kefu_list"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TableRow
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1.0"
+                android:gravity="bottom" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fg_old_pw"
+                    android:textColor="#ff333333"
+                    android:textSize="15.0sp" />
+
+                <EditText
+                    android:id="@+id/oldPW"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/fg_old_pw_hint"
+                    android:inputType="textCapWords"
+                    android:maxLength="20"
+                    android:paddingLeft="5dip"
+                    android:singleLine="true"
+                    android:textColor="#ff666666"
+                    android:textSize="14.0sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/icon_list_diver" />
+
+            <TableRow
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fg_new_pw"
+                    android:textColor="#ff333333"
+                    android:textSize="15.0sp" />
+
+                <EditText
+                    android:id="@+id/newsPW"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/fg_new_pw_hint"
+                    android:inputType="textCapWords"
+                    android:maxLength="20"
+                    android:paddingLeft="5dip"
+                    android:singleLine="true"
+                    android:textColor="#ff666666"
+                    android:textSize="14.0sp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/modifySub"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/modifyDesc"
+            android:layout_marginTop="1dip"
+            android:layout_weight="1"
+            android:background="@drawable/kefu_submit"
+            android:text="@string/fg_submit"
+            android:textColor="#ff6a3600"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/fg_secure"
+        android:layout_below="@id/modifyPWLayout"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/kefu_secure"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/bindAccountLayout"
+        android:layout_below="@id/fg_secure"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/kefu_secure_bind"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/bindMobileLayout"
+        android:layout_below="@id/fg_secure"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/kefu_secure_mobilel"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/bindEmailLayout"
+        android:layout_below="@id/bindMobileLayout"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/kefu_secure_email"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/findAccountLayout"
+        android:layout_below="@id/fg_secure"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/kefu_secure_find"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/fg_find_by_mobile_layout"
+        android:layout_below="@id/fg_secure"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/kefu_secure_find_mobile"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/findByEmailLayout"
+        android:layout_below="@id/fg_secure"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/kefu_secure_find_email"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/regLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fg_secure"
+        android:visibility="gone" >
+
+        <TableLayout
+            android:id="@+id/regInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/kefu_user_et_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15.0dip" >
+
+            <TableRow
+                android:layout_marginBottom="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="bottom" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fg_account"
+                    android:textColor="#ffa67d3d"
+                    android:textSize="15.0sp" />
+
+                <EditText
+                    android:id="@+id/regName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/fg_account_hint"
+                    android:inputType="textCapWords"
+                    android:maxLength="20"
+                    android:paddingLeft="8.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff666666"
+                    android:textSize="14.0sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fg_pw"
+                    android:textColor="#ffa67d3d"
+                    android:textSize="15.0sp" />
+
+                <EditText
+                    android:id="@+id/regPW"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/fg_pw_hint"
+                    android:inputType="textCapWords"
+                    android:maxLength="20"
+                    android:paddingLeft="8.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff666666"
+                    android:textSize="14.0sp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/regBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/regInfo"
+            android:layout_alignRight="@id/regInfo"
+            android:layout_below="@id/regInfo"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/btn_kefu_green"
+            android:text="@string/fg_reg_account_now"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/regBtn"
+            android:layout_alignRight="@id/regBtn"
+            android:layout_below="@id/regBtn"
+            android:layout_marginRight="3.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/fg_reg"
+            android:text="@string/fg_back"
+            android:textColor="@color/tv_text_color_change"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+    <com.fgw.kefu.widget.MarqueeTextView
+        android:id="@+id/notice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btnLayout"
+        android:layout_below="@id/regLayout"
+        android:layout_marginBottom="1dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:drawableLeft="@drawable/landing_bottom_message_img"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingRight="20.0dip"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/fg_welcome"
+        android:textColor="#ff555555"
+        android:textSize="14.0sp" />
+
+    <com.fgw.kefu.widget.MarqueeTextView
+        android:id="@+id/downInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/notice"
+        android:layout_below="@id/notice"
+        android:drawableLeft="@drawable/icon_kefu_down"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingRight="20.0dip"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="#ff555555"
+        android:textSize="14.0sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

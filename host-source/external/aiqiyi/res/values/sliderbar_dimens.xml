@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- slide -->
+    	<dimen name="sliderbar_title_main_height">40dp</dimen>
+	<dimen name="sliderbar_title_main_text_size">20sp</dimen>
+		<dimen name="sliderbar_activity_main_tab_text_size">20sp</dimen>
+	
+    <dimen name="slide_item_text_size">18sp</dimen>
+    <dimen name="slide_item_icon_size">25dp</dimen>
+    <dimen name="slide_item_height">50dp</dimen>
+    <dimen name="slide_item_left">15dp</dimen>
+    <dimen name="slide_text_left">20dp</dimen>
+    <dimen name="slide_bar_lf_rgt">24dp</dimen>
+    <dimen name="slidebar_tab_item_textsize">15sp</dimen>
+    
+    
+    <dimen name="item_gift_list">90dp</dimen>
+    <dimen name="gift_list_margin_left">5dp</dimen>
+    <dimen name="gift_list_margin_right">5dp</dimen>
+    <dimen name="gift_list_item_margin_right">20dp</dimen>
+    <dimen name="gift_list_item_margin_left">20dp</dimen>
+    <dimen name="gift_list_item_margin_top">15dp</dimen>
+    <dimen name="gift_list_item_margin_bottom">15dp</dimen>
+    
+    <dimen name="gift_detail_use_text_size">15dp</dimen>
+    <dimen name="gift_detail_use_icon_width">60dp</dimen>
+    <dimen name="gift_detail_use_icon_height">60dp</dimen>
+    
+    <dimen name="bottom_down_share_bar_height">40dp</dimen>
+    <dimen name="bottom_down_share_bar_margin_top">-40dp</dimen>
+    
+    <dimen name="game_gifts_detail_left">15dp</dimen>
+    <dimen name="game_gifts_detail_right">15dp</dimen>
+
+    <dimen name="item_game_gifts_gift">60dp</dimen>
+    <dimen name="item_game_gifts_gift_btn_width">70dp</dimen>
+    <dimen name="item_game_gifts_gift_btn_height">40dp</dimen>
+    <dimen name="item_game_gifts_gift_item_padding">5dp</dimen>
+
+    <dimen name="game_slider_pop_width">400dp</dimen>
+    <dimen name="game_slider_pop_height">176dp</dimen>
+    <dimen name="game_slider_pop_content_margin">5dp</dimen>
+    <dimen name="game_slider_pop_content_part1_h">48dp</dimen>
+    <dimen name="game_slider_pop_content_part2_h">120dp</dimen>
+    <dimen name="game_slider_pop_content_part2_h_half">50dp</dimen>
+    <dimen name="game_slider_pop_content_part3_h">60dp</dimen>
+    <dimen name="game_slider_pop_title_text_size">16sp</dimen>
+    <dimen name="game_slider_pop_btn_text_size">14sp</dimen>
+    <dimen name="game_slider_pop_btn_margin_hr">16dp</dimen>
+    <dimen name="game_slider_pop_btn_h">45dp</dimen>
+    <dimen name="game_slider_pop_close_btn_margin_left">-48dp</dimen>
+    <dimen name="game_slider_pop_close_btn_padding">10dp</dimen>
+    <dimen name="game_slider_pop_identify_input_h">50dp</dimen>
+    <dimen name="game_slider_pop_identify_code_h">64dp</dimen>
+    <dimen name="game_slider_pop_bind_waite_tx_size">10sp</dimen>
+    
+    <dimen name="slider_bar_share_btn_width">70sp</dimen>
+    <dimen name="slider_bar_share_btn_height">45sp</dimen>
+
+    <dimen name="sliderbar_reset_pwd_margin_left">20dp</dimen>
+    <dimen name="sliderbar_reset_pwd_margin_right">20dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- For buttons -->
+    <dimen name="common_text_size_large">18dp</dimen>
+    <!-- For list texts (top line) -->
+    <dimen name="common_text_size_middle">16dp</dimen>
+    <dimen name="common_text_size_middle_2">14dp</dimen>
+    <!-- For list texts (bottom line), summary texts, icon texts, descriptions, tag texts -->
+    <dimen name="common_text_size_small">13dp</dimen>
+    <dimen name="common_text_size_small_2">10dp</dimen>
+    <dimen name="common_text_size_small_3">12dp</dimen>
+    <dimen name="page_margin_width">12dp</dimen>
+
+    <!-- 礼包详情 -->
+    <dimen name="slidebar_gift_detail_padding">10dp</dimen>
+
+</resources>

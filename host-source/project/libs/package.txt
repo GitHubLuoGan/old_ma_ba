@@ -1,0 +1,23 @@
+arm
+armeabi armeabi-v7a
+android-10
+true
+true
+-DDISABLE_ADCOLONY
+-DDISABLE_BILLING
+-DDISABLE_CHARTBOOST
+-DDISABLE_CRITTERCISM
+-DDISABLE_FACEBOOK
+-DDISABLE_NOTIFICATIONS
+-DDISABLE_TAPJOY
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+false

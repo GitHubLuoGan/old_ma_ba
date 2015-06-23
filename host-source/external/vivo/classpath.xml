@@ -1,0 +1,14 @@
+<!-- vivo start -->
+<classpathentry kind="lib" path="libs/alipay_plugin.jar"/>
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+<classpathentry kind="lib" path="libs/apache-mime4j-0.6.jar"/>
+<classpathentry kind="lib" path="libs/BBKPaymentSDK_2.1.0.jar"/>
+
+<classpathentry kind="lib" path="libs/commons-codec-1.3.jar"/>
+<classpathentry kind="lib" path="libs/httpmime-4.0.jar"/>
+<classpathentry kind="lib" path="libs/TenpayServiceSDK_V5.0.jar"/>
+<classpathentry kind="lib" path="libs/UPPayAssistEx.jar"/>
+
+<classpathentry kind="lib" path="libs/vivoAccountSDK_1.2.0.jar"/>
+
+<!-- vivo end -->

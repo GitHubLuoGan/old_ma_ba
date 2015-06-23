@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dpay_item_color"
+    android:drawableRight="@drawable/dpay_categories_arrow"
+    android:gravity="left|center_vertical"
+    android:padding="@dimen/dpay_default_padding"
+    android:textColor="@color/dpay_black"
+    android:textSize="@dimen/dpay_prompt_font_size" />

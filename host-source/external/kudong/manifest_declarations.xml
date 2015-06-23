@@ -1,0 +1,91 @@
+<activity
+            android:name="com.mogoo.activity.MGInitActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.MGLoginActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.MGLoginingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.MGRegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.MGRegisterExplainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.MobileFindPasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.MGUpdatePassword"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+         <activity
+            android:name="com.mogoo.activity.MGCheckMobileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        
+        <!-- 浮窗的activity -->
+        <activity
+            android:name="com.mogoo.activity.floatwindow.FloatBindMobileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.floatwindow.FloatGiftActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.floatwindow.FloatMyGiftActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.floatwindow.FloatServerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.floatwindow.FloatUpdatePwdActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.floatwindow.FloatUserActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.floatwindow.FloatMoreActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        <activity
+            android:name="com.mogoo.activity.floatwindow.FloatBindMobileSuccessActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/MG.Theme.NoBackGround.NoAnimation" >
+        </activity>
+        
+        
+        <service android:name="com.mogoo.service.FxService" />
+            
+        <meta-data
+            android:name="MOGOO_CHANNEL"
+            android:value="@string/channel_code" >
+        </meta-data>

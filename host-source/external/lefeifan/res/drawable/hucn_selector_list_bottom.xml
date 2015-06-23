@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/hucn_list_item_light_bg" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/hucn_bg_list_bottom_line"></item>
+
+</selector>

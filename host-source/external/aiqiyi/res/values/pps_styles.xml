@@ -1,0 +1,170 @@
+<resources>
+
+   <style name="PPSGameCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+	   <item name="android:button">@drawable/ppsgame_checkbox_selector</item>
+	   <item name="android:paddingLeft">16.0dip</item>
+	   <item name="android:textSize">16.0sp</item>
+	   <item name="android:textColor">@color/ppsgame_black</item>
+   </style>
+   
+	<style name="pps_list_item_top">
+		<item name="android:paddingTop">10dip</item>
+		<item name="android:paddingBottom">10dip</item>
+		<item name="android:paddingLeft">10dip</item>
+    	<item name="android:paddingRight">10dip</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:background">@drawable/pps_listview_round_top</item>
+	</style>
+
+	<style name="pps_list_item_middle">
+		<item name="android:paddingTop">10dip</item>
+		<item name="android:paddingBottom">10dip</item>
+		<item name="android:paddingLeft">10dip</item>
+    	<item name="android:paddingRight">10dip</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:background">@drawable/pps_listview_round_middle</item>
+	</style>
+
+	<style name="pps_list_item_bottom">
+		<item name="android:paddingTop">10dip</item>
+		<item name="android:paddingBottom">10dip</item>
+		<item name="android:paddingLeft">10dip</item>
+    	<item name="android:paddingRight">10dip</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:background">@drawable/pps_listview_round_bottom</item>
+	</style>
+	
+	<style name="pps_list_item_single">
+		<item name="android:paddingTop">10dip</item>
+		<item name="android:paddingBottom">10dip</item>
+		<item name="android:paddingLeft">10dip</item>
+    	<item name="android:paddingRight">10dip</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:background">@drawable/pps_listview_round_single</item>
+	</style>
+    
+	<style name="ppsgame_theme_vertical">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">fill_parent</item>
+	    <item name="android:layout_marginLeft">30.0dp</item>
+	    <item name="android:layout_marginRight">30.0dp</item>
+	    <item name="android:layout_marginTop">60.0dp</item>
+	    <item name="android:layout_marginBottom">60.0dp</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:background">@drawable/ppsgame_bg</item>
+	</style>
+	
+	<style name="ppsgame_theme_horizontal">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">fill_parent</item>
+	    <item name="android:layout_marginLeft">70.0dp</item>
+	    <item name="android:layout_marginRight">70.0dp</item>
+	    <item name="android:layout_marginTop">20.0dp</item>
+	    <item name="android:layout_marginBottom">20.0dp</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:background">@drawable/ppsgame_bg</item>
+	</style>
+    
+	<style name="ppsgame_back">
+	    <item name="android:layout_marginLeft">10.0dp</item>
+	    <item name="android:paddingLeft">10.0dp</item>
+	    <item name="android:paddingRight">10.0dp</item>
+	    <item name="android:paddingTop">6.0dp</item>
+	    <item name="android:paddingBottom">6.0dp</item>
+	    <item name="android:text">@string/pps_back</item>
+	    <item name="android:textColor">@color/button_color</item>
+	    <item name="android:textSize">16.0sp</item>
+	    <item name="android:shadowDy">2</item>
+	    <item name="android:shadowDx">0</item>
+	    <item name="android:shadowRadius">1</item>
+	    <item name="android:drawableLeft">@drawable/ppsgame_back_icon</item>
+	    <item name="android:drawablePadding">10.0dp</item>
+	    <item name="android:background">@drawable/ppsgame_back_btn_selector</item>
+    </style>
+    
+	<style name="ppsgame_edittext">
+	    <item name="android:textColor">@color/edit_color</item>
+	    <item name="android:textColorHint">@color/hint_color</item>
+	    <item name="android:singleLine">true</item>
+	    <item name="android:textSize">14.0sp</item>
+	    <item name="android:drawablePadding">10.0dp</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <item name="android:background">@null</item>
+	</style>
+	
+	<style name="ppsgame_button">
+	    <item name="android:shadowDx">2</item>
+	    <item name="android:shadowDy">2</item>
+	    <item name="android:shadowRadius">1</item>
+	    <item name="android:textColor">@color/button_color</item>
+	    <item name="android:textSize">18.0sp</item>
+	    <item name="android:gravity">center</item>
+	</style>
+	
+	<style name="ppsgame_button_code">
+	    <item name="android:shadowDx">2</item>
+	    <item name="android:shadowDy">2</item>
+	    <item name="android:shadowRadius">1</item>
+	    <item name="android:textColor">@color/button_color</item>
+	    <item name="android:textSize">16.0sp</item>
+	    <item name="android:gravity">center</item>
+	</style>
+	
+	<style name="ppsgame_dialog_text_yellow">
+	    <item name="android:textColor">@color/ppsgame_yellow</item>
+	    <item name="android:textSize">16.0sp</item>
+	</style>
+	
+	<style name="ppsgame_dialog_text_black">
+	    <item name="android:textColor">@color/ppsgame_black</item>
+	    <item name="android:textSize">16.0sp</item>
+	</style>
+	
+	<style name="ppsgame_dialog_text_black_s">
+	    <item name="android:textColor">@color/ppsgame_black</item>
+	    <item name="android:textSize">14.0sp</item>
+	</style>
+	
+	<style name="PPSCustomTheme" parent="@android:style/Theme.Translucent.NoTitleBar">
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+	
+	<style name="PPSPortraitFullscreen" parent="@android:style/Theme.Black.NoTitleBar">
+		<item name="android:windowBackground">@drawable/ppsgame_bg_h</item>
+	</style>
+	
+	<style name="PPSLandscapeFullscreen" parent="@android:style/Theme.Black.NoTitleBar">
+		<item name="android:windowBackground">@drawable/ppsgame_bg_v</item>
+	</style>
+	
+	<style name="PPSProgressDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+    	<item name="android:windowNoTitle">true</item>
+	</style>
+	
+	<style name="PPSExitDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item><!--边框-->
+		<item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+		<item name="android:windowIsTranslucent">false</item><!--半透明-->
+		<item name="android:windowNoTitle">true</item><!--无标题-->
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+		<item name="android:backgroundDimEnabled">false</item><!--模糊-->
+	</style>
+	
+	 <style name="upomp_bypay_MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+		<item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+		<item name="android:windowIsTranslucent">false</item><!--半透明-->
+		<item name="android:windowNoTitle">true</item><!--无标题-->
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+		<item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+    
+	 <style name="Theme.UPPay" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+	
+</resources>

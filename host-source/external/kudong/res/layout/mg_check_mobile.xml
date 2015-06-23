@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body_lay"
+    android:layout_width="@dimen/mg_login_dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/mg_login_bg">
+	
+    <!-- titlebar区域 -->
+    <include 
+        layout="@layout/mg_header"
+        android:id="@+id/mg_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="8dp"
+        />
+    
+    <ImageView 
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/mg_head"
+        android:src="@drawable/float_ic_action_cancel"
+
+    />
+    
+	
+    <!-- 可滑动区域 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@drawable/mg_scrollbar_gray" 
+        android:layout_below="@id/mg_head"
+        >-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/mg_head"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+        	android:paddingRight="8dp">
+        	
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="温馨提示：为了保障您的账号安全，建议及时进入用户中心绑定您的手机号码，这样便于密码找回，谢谢~"
+                    android:textColor="@color/float_light_color"
+                    android:textSize="@dimen/text_normal"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/mg_btn_height"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="找回密码的账号:"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/text_normal_two"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical" >
+                
+                <EditText
+                    android:id="@+id/mg_check_mobile_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="bottom"
+                    android:hint="@string/mg_check_account_hint" 
+                    android:textColorHint="@color/mg_color_999999"
+                    android:singleLine="true"
+                    android:maxLength="30"
+                    android:digits="@string/mg_register_name_digits"
+                    android:textSize="@dimen/text_normal_two"/>
+                
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#d7d7d7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="4dp"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/mg_btn_check_account_comm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/mg_btn_height"
+                    android:background="@drawable/mg_login_btn_selector"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:text="@string/mg_check_account_next"
+                    android:textColor="@color/mg_color_white"
+                    android:textSize="@dimen/text_max" />
+                
+               
+            </LinearLayout>
+          
+        </LinearLayout>
+    <!-- </ScrollView> -->
+    
+</RelativeLayout>

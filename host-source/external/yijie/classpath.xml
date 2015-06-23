@@ -1,0 +1,5 @@
+<!-- yijie lib start -->
+<classpathentry kind="lib" path="libs/ahelper.jar"/>
+<classpathentry kind="lib" path="libs/gangaonlinehelper.jar"/>
+<classpathentry kind="lib" path="libs/gangaonlineyijie.jar"/>
+<!-- yijie lib end -->

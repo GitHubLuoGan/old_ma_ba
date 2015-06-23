@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="120dp"
+    android:paddingRight="120dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sq_login_bg" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="@null" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/sq_logo" />
+
+                        <TextView
+                            android:id="@+id/sq_login_activity_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="22dip" />
+
+                        <ImageView
+                            android:id="@+id/sq_login_iv_close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/sq_login_btn_close" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/sq_login_bg_devider" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="12dp" >
+
+                    <EditText
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/sq_login_et_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sq_login_et_bg"
+                        android:bufferType="editable"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+                        android:drawableLeft="@drawable/sq_login_user"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColor="#a6a6a6"
+                        android:textSize="15dip" />
+
+                    <ImageView
+                        android:id="@+id/sq_login_iv_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/sq_login_more"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/sq_register_notice_for_safe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:textColor="#ffffff"
+                    android:textSize="13dip" />
+
+                <EditText
+                    android:id="@+id/sq_login_et_userPwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/sq_login_et_bg"
+                    android:bufferType="editable"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+                    android:drawableLeft="@drawable/sq_login_secure"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="#a6a6a6"
+                    android:textSize="15dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center" >
+
+                        <CheckBox
+                            android:id="@+id/sq_login_cb_agreeClause"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/sq_login_rg_selector"
+                            android:checked="true" />
+
+                        <TextView
+                            android:id="@+id/sq_login_tv_agreeClause"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:shadowColor="#000000"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="1"
+                            android:singleLine="true"
+                            android:textColor="#ffffff"
+                            android:textSize="12dip" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <Button
+                        android:id="@+id/sq_login_btnBack2LoginActivity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/sq_login_btn_bg_selectior"
+                        android:gravity="center"
+                        android:textColor="#b22201"
+                        android:textSize="15dip" />
+
+                    <Button
+                        android:id="@+id/sq_login_btnLogin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/sq_login_btn_bg_selectior"
+                        android:gravity="center"
+                        android:textColor="#b22201"
+                        android:textSize="15dip" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp" >
+
+                    <TextView
+                        android:id="@+id/sq_login_tv_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:shadowColor="#000000"
+                        android:textColor="#ffffff"
+                        android:textSize="13dip" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

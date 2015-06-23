@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@id/dpay_tv_updated91_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dpay_align_bottom"
+        android:text="@string/dpay_tv_updated"
+        android:textSize="@dimen/dpay_prompt_font_size" />
+
+    <LinearLayout android:layout_width="fill_parent"
+        				   android:layout_height="wrap_content"
+        				   android:layout_marginBottom="6dip"
+        				   android:layout_alignParentBottom="true"
+        				   android:orientation="vertical">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dpay_line_height"
+        android:background="@color/dpay_line_color" />
+
+    <Button
+        android:id="@id/dpay_btn_back_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dpay_default_padding"
+        android:layout_marginRight="@dimen/dpay_default_padding"
+        android:layout_marginTop="@dimen/dpay_login_margin_top"
+        android:background="@drawable/dpay_btn_red_bg"
+        android:paddingBottom="@dimen/dpay_login_btn_padding"
+        android:paddingTop="@dimen/dpay_login_btn_padding"
+        android:text="@string/dpay_btn_back_login"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dpay_subtitle_font_size" />
+</LinearLayout>
+</RelativeLayout>

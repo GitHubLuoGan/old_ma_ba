@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 充值金额选择Itme -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/hucn_btn_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/hucn_recharge_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#d1d1d1" />
+
+        <TextView
+            android:id="@+id/hucn_recharge_item_name"
+            style="@style/HUCNText"
+            android:layout_marginBottom="3dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/hucn_light_gray_"
+            android:textSize="@dimen/hucn_small_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

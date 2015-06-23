@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/slidebar_ppsgame_fragment_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/slidebar_ppsgame_gift_header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="6dip"
+        android:paddingBottom="10dip"
+        android:visibility="gone"
+        android:paddingTop="5dip"
+        android:background="@color/slidebar_white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+        <Button
+            android:id="@+id/slidebar_gift_all_btn"
+            style="@style/GiftAllGetBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/slidebar_gift_allget_press_bg"
+            android:textColor="@color/slidebar_ppsgame_yellow"
+            android:text="@string/slidebar_gift_all"/>
+        <Button
+            android:id="@+id/slidebar_gift_has_get_btn"
+            style="@style/GiftAllGetBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/slidebar_gift_has_get"/>
+        <Button
+            android:id="@+id/slidebar_gift_has_not_get_btn"
+            style="@style/GiftAllGetBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:text="@string/slidebar_gift_has_no_get"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/slidebar_white"
+        android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ppsgame_slider_gift_progress_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/silder_load_more_anim"
+	       	android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	       	android:contentDescription="@string/ppsgame_null_str"
+	       	android:background="@anim/sliderbar_ppsgame_round"/>
+
+        <ImageView
+            android:src="@drawable/sliderbar_load_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ppsgame_null_str"
+            android:visibility="gone"
+            android:id="@+id/sliderbar_gift_load_fail" />
+
+
+        <TextView style="@style/BadNetworkTxt"
+            android:visibility="gone"
+            android:id="@+id/sliderbar_gift_empty_txt"/>
+    </LinearLayout>
+
+    <include layout="@layout/slidebar_line_bottom"/>
+
+    <ListView
+        android:id="@+id/ppsgame_slider_gift_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/slidebar_rounded_container_border"
+        android:dividerHeight="0.1dp"
+        android:scrollbars="none" />
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<!-- Crittercism -->
+<classpathentry kind="lib" path="libs/alipay_msp.jar"/>
+<classpathentry kind="lib" path="libs/hucn_common_2.2.1.jar"/>
+<classpathentry kind="lib" path="libs/hucn_sdk_2.2.1.jar"/>
+<classpathentry kind="lib" path="libs/jackson-all-1.9.11.jar"/>
+<classpathentry kind="lib" path="libs/UPPayAssistEx.jar"/>
+<classpathentry kind="lib" path="libs/UPPayPluginEx.jar"/>

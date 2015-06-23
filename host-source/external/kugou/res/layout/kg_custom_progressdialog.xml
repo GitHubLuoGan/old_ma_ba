@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_loading"
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    android:gravity="center"
+    android:background="@drawable/kg_bg_progressdialog"
+    android:orientation="horizontal" >
+
+    <com.kugou.sdk.internal.widgets.CustomProgressBar
+        android:id="@+id/progress_loading_bar"
+        android:src="@drawable/kg_loading_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tv_loading_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="正在登陆，请稍候……"
+        android:textColor="#666666"
+        android:textSize="15sp" />
+
+</LinearLayout>

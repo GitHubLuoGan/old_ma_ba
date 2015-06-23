@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/findByEmailLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dip"
+    android:layout_marginRight="3dip" >
+
+    <LinearLayout
+        android:id="@+id/findEmailBtnLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginLayout"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/layout_white_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/fg_secure_find_email"
+            android:textColor="#ffa67d3d"
+            android:textSize="17.0sp" />
+
+        <Button
+            android:id="@+id/findEmailBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15.0dip"
+            android:background="@drawable/btn_back_bg"
+            android:text="@string/fg_back"
+            android:textColor="#ff666666" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findEmailBtnLayout"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/bg_kefu_list"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/findEmailBtnLayout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:layout_marginLeft="5dip"
+                android:text="@string/fg_account"
+                android:textColor="@color/kefu_black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/fg_find_ea"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/fg_account_hint"
+                android:singleLine="true"
+                android:textColor="#ff666666"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/icon_list_diver" />
+
+        <LinearLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/findEmailBtnLayout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:layout_marginLeft="5dip"
+                android:text="@string/fg_secure_email"
+                android:textColor="@color/kefu_black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/fg_find_email"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/fg_secure_email_hint"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:textColor="#ff666666"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/fg_find_email_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailLayout"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/kefu_submit"
+        android:text="@string/fg_submit"
+        android:textColor="#ff6a3600"
+        android:textSize="16.0sp" />
+
+    <!--View
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_alignLeft="@id/fg_find_email_submit"
+        android:layout_alignRight="@id/fg_find_email_submit"
+        android:layout_below="@id/fg_find_email_submit"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/icon_list_diver" /-->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fg_find_email_submit"
+        android:layout_marginTop="3dip"
+        android:text="@string/fg_secure_email_tips"
+        android:textColor="#ff555555"
+        android:textSize="14sp" />
+
+</RelativeLayout>

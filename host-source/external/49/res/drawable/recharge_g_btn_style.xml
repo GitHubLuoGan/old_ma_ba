@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="8.0dip" android:topRightRadius="8.0dip" android:bottomLeftRadius="8.0dip" android:bottomRightRadius="8.0dip" />
+            <gradient android:startColor="#72BF0F" android:endColor="#82C528" android:angle="270.0" />
+        </shape>
+    </item>
+    <item android:state_focused="true">  <!-- 焦点 -->
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="8.0dip" android:topRightRadius="8.0dip" android:bottomLeftRadius="8.0dip" android:bottomRightRadius="8.0dip" />
+            <gradient android:startColor="#72BF0F" android:endColor="#82C528" android:angle="270.0" />
+        </shape>
+    </item>
+    <item > <!-- 无焦点 -->
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="8.0dip" android:topRightRadius="8.0dip" android:bottomLeftRadius="8.0dip" android:bottomRightRadius="8.0dip" />
+            <gradient android:startColor="#82C528" android:endColor="#72BF0F" android:angle="270.0" />
+        </shape>
+    </item>
+</selector>

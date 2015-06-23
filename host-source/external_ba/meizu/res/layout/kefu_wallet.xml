@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/walletLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/walletBtnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_white_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="2.0dip" >
+
+            <TextView
+                android:id="@+id/listViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/fg_my_wallet"
+                android:textColor="#ffa67d3d"
+                android:textSize="17.0sp" />
+
+            <Button
+                android:id="@+id/walletBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/btn_back_bg"
+                android:text="@string/fg_back"
+                android:textColor="#ff666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/btn_user_set_center_bg_up"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:text="@string/fg_money"
+                android:textColor="#ff333333"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:textColor="#ffa67d3d"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_user_set_center_bg_down"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:text="@string/fg_my_point"
+                android:textColor="#ff333333"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:textColor="#ffa67d3d"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/walletSub"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="1"
+                android:background="@drawable/kefu_submit"
+                android:text="@string/fg_wallet_sub"
+                android:textColor="#ff6a3600"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@+id/walletGift"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="1"
+                android:background="@drawable/fg_reg"
+                android:text="@string/fg_wallet_gift"
+                android:textColor="#ff666666"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/icon_list_diver" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                
+                android:text="@string/fg_wallet_tips_title"
+                android:textColor="#ff333333"
+                android:textSize="16.0sp" />
+
+            <com.fgw.kefu.widget.MarqueeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:ellipsize="marquee"
+        		android:focusable="true"
+        		android:marqueeRepeatLimit="marquee_forever"
+        		android:singleLine="true"
+                android:text="@string/fg_wallet_tips_content"
+                android:textColor="#ff666666"
+                android:gravity="center|left"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

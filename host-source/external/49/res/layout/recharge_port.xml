@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- header -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue_s" >
+
+        <Button
+            android:id="@+id/recharge_bill_back_btn"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/recharge_bill_btn_style"
+            android:gravity="center"
+            android:text="@string/backgame_recharge_detail"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/recharge_back_btn"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="25dp"
+                android:background="@drawable/recharge_back_btn" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/recharge_name"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/recharge_bill_detail"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/recharge_bill_btn_style"
+            android:gravity="center"
+            android:text="@string/sijiu_recharge_detail"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!-- main -->
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#F5F5F5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/recharge_user"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/recharge_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- 输入金额 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/huabian" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#F5F5F5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:text="@string/recharge_price"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/amount"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/recharge_edit_bg_style"
+                        android:gravity="center"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:padding="2dp"
+                        android:textColor="#ff0000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/yuan"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/ok_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue_s"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/edit_price"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/recharge_bill_btn_style"
+                        android:gravity="center"
+                        android:text="@string/edit_price"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_recharge_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/line_color" />
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/gridviewheader"
+                        android:gravity="center"
+                        android:text="@string/recharge_way"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/back_recharge"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/blue_btn_style"
+                        android:gravity="center"
+                        android:text="@string/back_recharge"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <com.sjsdk.payment.MyGridView
+                    android:id="@+id/recharge_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:cacheColorHint="#00000000"
+                    android:columnWidth="80dp"
+                    android:fadingEdge="none"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/card_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.sjsdk.payment.MyGridView
+                        android:id="@+id/card_grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:cacheColorHint="#00000000"
+                        android:columnWidth="80dp"
+                        android:fadingEdge="none"
+                        android:gravity="center"
+                        android:horizontalSpacing="60dp"
+                        android:listSelector="#00000000"
+                        android:numColumns="2"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="1dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/line_color"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <!-- 面额选择 -->
+
+            <RelativeLayout
+                android:id="@+id/choose_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/choose_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/choose_tips"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/real_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignLeft="@+id/choose_tips"
+                    android:layout_below="@+id/choose_tips"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/real_price"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <com.sjsdk.payment.MyGridView
+                    android:id="@+id/value_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/real_price"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/real_price"
+                    android:cacheColorHint="#00000000"
+                    android:columnWidth="60dp"
+                    android:fadingEdge="none"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linetwo"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linesix"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/myAdd"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/myadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/addMoney_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/orange"
+                    android:textSize="15sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linethree"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <!-- 输入卡号和密码 -->
+
+            <LinearLayout
+                android:id="@+id/linefour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/card_num"
+                        android:layout_width="300dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/card_num_xulie"
+                        android:digits="@string/xianzhi"
+                        android:hint="点击输入卡号"
+                        android:paddingLeft="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line_color"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/card_pwd"
+                        android:layout_width="300dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/card_num_kamima"
+                        android:digits="@string/xianzhi"
+                        android:hint="点击输入密码"
+                        android:paddingLeft="75dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linefive"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/recharge"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/recharge_g_btn_style"
+                android:gravity="center"
+                android:text="@string/recharge_now"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/rechargeInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

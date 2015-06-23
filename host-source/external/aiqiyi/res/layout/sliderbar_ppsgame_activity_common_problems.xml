@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/TitleBar" >
+
+        <ImageButton
+            android:id="@+id/slidebar_common_problems_back"
+            style="@style/BackBtn" />
+
+        <TextView
+            android:id="@+id/slidebar_common_problems_title"
+            style="@style/TitleTextView"
+            android:text="@string/slidebar_common_problems_title" />
+
+        <Button
+            android:id="@+id/slidebar_common_problems_back_to_game"
+            style="@style/BackToGameBtn" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ListCommonProblems"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="6dip"
+        android:divider="#F4F4F4"
+        android:dividerHeight="1dp"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/sliderbar_net_fail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/sliderbar_problems_load_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ppsgame_null_str"
+            android:src="@drawable/sliderbar_load_fail" />
+
+        <TextView
+            android:id="@+id/slidebar_network_not_good_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sliderbar_recharge_inquuiry_str8"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sliderbar_net_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/silder_load_more_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@anim/sliderbar_ppsgame_round"
+            android:contentDescription="@string/ppsgame_null_str" />
+    </LinearLayout>
+
+</LinearLayout>

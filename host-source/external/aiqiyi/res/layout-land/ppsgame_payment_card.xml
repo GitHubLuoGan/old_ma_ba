@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ppsgame_payment_wap"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:id="@+id/ppsgame_payment_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/ppsgame_card_order_commit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:background="@drawable/ppsgame_yellow_btn_selector"
+            android:text="@string/ppsgame_order_commit"
+            android:textColor="@color/ppsgame_white" />
+
+        <Button
+            android:id="@+id/ppsgame_card_order_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:drawablePadding="10.0dp"
+            android:drawableRight="@drawable/ppsgame_payment_logo"
+            android:text="@string/ppsgame_order_error" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ppsgame_payment_bottom"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10.0dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ppsgame_payment_info"
+                android:orientation="vertical"
+                android:padding="10.0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/ppsgame_order_info"
+                    android:textColor="@color/ppsgame_gray"
+                    android:textSize="14.0sp"
+                    android:visibility="gone" />
+                
+                <TextView android:id="@+id/ppsgame_card_payment_scale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dp"
+                    android:textColor="@color/ppsgame_black"
+                    android:textSize="14.0sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical" >
+                    
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppsgame_order_money"
+                    android:textColor="@color/ppsgame_black"
+                    android:textSize="18.0sp" />
+
+                    <EditText
+                        android:id="@+id/ppsgame_card_order_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36.0dp"
+                        android:minWidth="60.0dp"
+                        android:layout_marginLeft="4.0dp"
+                    	android:background="@drawable/ppsgame_edittext_bg"
+                        android:textColor="@color/ppsgame_red"
+                        android:textSize="18.0sp"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:lines="1" />
+                    
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   	android:layout_marginLeft="4.0dp"
+                    android:text="@string/ppsgame_order_money_unit"
+                    android:textColor="@color/ppsgame_black"
+                    android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/ppsgame_card_order_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40.0dp"
+                        android:text="@string/ppsgame_order_name"
+                        android:textColor="@color/ppsgame_gray"
+                        android:textSize="14.0sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ppsgame_card_order_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppsgame_order_account"
+                    android:textColor="@color/ppsgame_gray"
+                    android:textSize="14.0sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ppsgame_payment_card_type"
+                        android:textColor="@color/ppsgame_gray"
+                        android:textSize="14.0sp" />
+
+                    <Spinner
+                        android:id="@+id/ppsgame_payment_card_type"
+                        android:layout_width="fill_parent"
+                        android:layout_height="36.0dp"
+                        android:background="@drawable/ppsgame_spinner_bg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ppsgame_card_order_xuanzejine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ppsgame_payment_card_money"
+                        android:textColor="@color/ppsgame_gray"
+                        android:textSize="14.0sp" />
+
+                    <Spinner
+                        android:id="@+id/ppsgame_payment_card_money"
+                        android:layout_width="fill_parent"
+                        android:layout_height="36.0dp"
+                        android:background="@drawable/ppsgame_spinner_bg" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppsgame_payment_card_number"
+                    android:textColor="@color/ppsgame_gray"
+                    android:textSize="14.0sp" />
+
+                <EditText
+                    android:id="@+id/ppsgame_payment_card_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36.0dp"
+                    android:paddingLeft="10.0dp"
+                    android:background="@drawable/ppsgame_edittext_bg"
+                    android:hint="@string/ppsgame_payment_card_number_hint"
+                    android:inputType="number"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ppsgame_payment_card_pwd"
+                    android:textColor="@color/ppsgame_gray"
+                    android:textSize="14.0sp" />
+
+                <EditText
+                    android:id="@+id/ppsgame_payment_card_pwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36.0dp"
+                    android:paddingLeft="10.0dp"
+                    android:background="@drawable/ppsgame_edittext_bg"
+                    android:hint="@string/ppsgame_payment_card_pwd_hint"
+                    android:inputType="number"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <TextView android:id="@+id/ppsgame_payment_card_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:text="@string/ppsgame_payment_card_info"
+                android:textColor="@color/ppsgame_yellow"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/mzw_pay_alix_dialog_msg1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginRight="15dp"
+       android:layout_marginLeft="15dp"
+       android:layout_marginBottom="15dp"
+       android:textStyle="bold"
+        android:text="@string/mzw_pay_alix_dialog_msg2"
+        android:textColor="#ff0000"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mzw_sdk_pay_dialog_btn"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/mzw_cancel_wwq"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/installBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mzw_sdk_pay_dialog_btn"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/mzw_install_wwq"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

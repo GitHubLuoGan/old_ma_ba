@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="265dp"
+    android:layout_gravity="center"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relative" 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        style="@style/titlebackground"
+        android:gravity="center_vertical">
+        
+         <ImageView
+		     android:id="@+id/close"
+		     android:layout_width="20dp"
+		   	 android:layout_height="20dp"
+		     android:clickable="true"
+		     android:layout_alignParentRight="true"
+		     android:layout_marginRight="6dp"
+		     android:src="@drawable/delete" />
+        
+    </RelativeLayout>
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_one">
+        
+        <WebView 
+	       android:id="@+id/adver_web"
+	       android:layout_width="344dp"
+	       android:layout_gravity="center"
+	       android:layout_height="230dp"/>
+	   <include
+	       android:layout_gravity="center" 
+	       layout="@layout/myprogressbar"
+	       android:layout_width="344dp"
+	       android:layout_height="230dp"/> 
+        
+    </FrameLayout>                       
+</LinearLayout>

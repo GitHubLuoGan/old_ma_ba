@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNScrollView"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/hucn_updatepw_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/hucn_update_pwd_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/hucn_layout_margin"
+            android:layout_marginRight="@dimen/hucn_layout_margin"
+            android:layout_marginTop="@dimen/hucn_layout_margin"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:background="@drawable/hucn_bg_shape_corner"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    style="@style/HUCNText"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/hucn_old_password" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_updatepw_user_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hucn_bg_shape_corner"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    style="@style/HUCNText"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/hucn_new_password" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_updatepw_new_password1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hucn_bg_shape_corner"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    style="@style/HUCNText"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/hucn_sure_password" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_updatepw_new_password2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/hucn_updatepw_submit_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hucn_btn_height"
+            android:layout_marginLeft="@dimen/hucn_layout_margin"
+            android:layout_marginRight="@dimen/hucn_layout_margin"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/hucn_btn_white"
+            android:text="@string/hucn_confirm"
+            android:textColor="@drawable/hucn_btn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+    </LinearLayout>
+
+</ScrollView>

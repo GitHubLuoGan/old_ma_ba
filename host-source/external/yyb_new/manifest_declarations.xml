@@ -1,0 +1,143 @@
+<!-- tencent start -->
+ <!-- TODO SDK接入 微信接入配置 START -->
+        <activity
+            android:name="com.example.wegame.wxapi.WXEntryActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="WXEntryActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.example.wegame.diff" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxcde873f99466f74a" />
+            </intent-filter>
+        </activity>
+        <!-- TODO SDK接入 微信接入配置 END -->
+
+
+        <!-- TODO SDK接入 QQ接入配置 START -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100703379" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- TODO SDK接入 QQ接入配置 END -->
+
+
+        <!-- TODO Notice 公告 配置 START -->
+        <activity
+            android:name="com.tencent.msdk.notice.AlertMsgActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensor"
+            android:theme="@style/NoticeAlertTheme" >
+        </activity>
+
+        <service android:name="com.tencent.msdk.notice.RollFloatService" >
+        </service>
+        <!-- TODO Notice 公告 配置  END -->
+
+
+
+        <!-- TODO 浏览器相关 START -->
+        <activity
+            android:name="com.tencent.msdk.webview.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|fontScale|locale"
+            android:screenOrientation="unspecified"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <service
+            android:name="com.tencent.tmassistantsdk.downloadservice.TMAssistantDownloadSDKService"
+            android:exported="false"
+            android:process=":TMAssistantDownloadSDKService" >
+        </service>
+        <!-- TODO 浏览器相关 END -->
+
+
+        <!-- 手游宝配置 START -->
+        <activity
+            android:name="com.tencent.component.plugin.PluginShellActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service
+            android:name="com.tencent.component.plugin.server.PluginService"
+            android:exported="false" />
+        <service
+            android:name="com.tencent.qqgamemi.QMiService"
+            android:exported="false" />
+        <service
+            android:name="com.tencent.component.plugin.DefendService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":defend" >
+            <intent-filter>
+                <action android:name="com.tencent.component.platform.startgame" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.tencent.qqgamemi.QmiPluginTreeReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.tencent.component.plugin.receiver" />
+                <action android:name="com.tencent.component.plugin.alarm" />
+                <action android:name="com.tencent.component.plugin.notification" />
+            </intent-filter>
+        </receiver>
+        <!-- 手游宝配置 END -->
+
+
+        <!-- 信鸽配置START -->
+        <!-- 【必须】 信鸽通知栏 -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="" />
+            </intent-filter>
+        </activity>
+
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2" >
+            <intent-filter android:priority="0x7fffffff" >
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+            </intent-filter>
+            <intent-filter android:priority="0x7fffffff" >
+
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v2" />
+<!-- tencent end -->

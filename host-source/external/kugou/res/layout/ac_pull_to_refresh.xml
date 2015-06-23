@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pull_to_refresh_head"
+    android:layout_width="fill_parent"
+    android:padding="10dip"
+    android:layout_height="60dip" >
+
+        <FrameLayout
+            android:id="@+id/rl_loading"
+            android:layout_toLeftOf="@+id/ll_refresh_tips"
+            android:layout_marginRight="10dip"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView 
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ac_pay_common_xlistview_arrow"
+                />
+            <ProgressBar 
+                android:id="@+id/progress_bar"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_refresh_tips"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout 
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+				<ImageView
+	                    android:id="@+id/imageView1"
+	                    android:layout_width="30dip"
+	                    android:layout_height="30dip"
+	                    android:paddingRight="10dip"
+	                    android:src="@drawable/ac_xlistview_header_hint_photo" />
+	            <TextView
+	                android:id="@+id/description"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:gravity="center"
+	                android:text="@string/ac_pull_to_refresh" />
+			</LinearLayout>
+            <TextView
+                android:id="@+id/updated_at"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|top"
+                android:paddingBottom="10dip"
+                android:textSize="@dimen/ac_common_small" />
+        </LinearLayout>
+
+</RelativeLayout>

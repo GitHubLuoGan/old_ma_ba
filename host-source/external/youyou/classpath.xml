@@ -1,0 +1,10 @@
+<!-- youyou Start -->
+<classpathentry kind="lib" path="libs/alipay_msp.jar"/>
+
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+<classpathentry kind="lib" path="libs/cloudpointsdk2.1.1.jar"/>
+<classpathentry kind="lib" path="libs/umpay_sdk.jar"/>
+<classpathentry kind="lib" path="libs/universal-image-loader-1.8.6-with-sources.jar"/>
+<classpathentry kind="lib" path="libs/UPPayAssistEx.jar"/>
+<classpathentry kind="lib" path="libs/UPPayPluginEx.jar"/>
+<!-- youyou End -->

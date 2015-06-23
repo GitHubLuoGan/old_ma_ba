@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dpay_main_bg_color" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dpay_default_padding"
+            android:layout_marginRight="@dimen/dpay_default_padding"
+            android:layout_marginTop="@dimen/dpay_align_parent_top"
+            android:background="@drawable/dpay_circle"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <EditText
+                    android:id="@id/dpay_et_user"
+                    style="@style/dpay_edittext_login_form_style"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/dpay_login_account"
+                    android:drawablePadding="@dimen/dpay_login_drawable_padding"
+                    android:hint="@string/dpay_et_dianjin_user_hint"
+                    android:maxLength="30" />
+
+                <ImageView
+                    android:id="@id/dpay_iv_account_clear"
+                    android:layout_width="@dimen/dpay_form_tip"
+                    android:layout_height="@dimen/dpay_form_tip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dpay_login_text_margin"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dpay_form_tip_clear"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dpay_line_height"
+                android:background="@color/dpay_line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <EditText
+                    android:id="@id/dpay_et_password"
+                    style="@style/dpay_edittext_login_form_style"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/dpay_login_key"
+                    android:drawablePadding="@dimen/dpay_login_drawable_padding"
+                    android:hint="@string/dpay_et_password_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="16" />
+
+                <ImageView
+                    android:id="@id/dpay_iv_password_clear"
+                    android:layout_width="@dimen/dpay_form_tip"
+                    android:layout_height="@dimen/dpay_form_tip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dpay_login_text_margin"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dpay_form_tip_clear"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dpay_default_padding"
+            android:layout_marginTop="@dimen/dpay_align_parent_top"
+            android:text="@string/dpay_91update_djaccount_tip" />
+
+        <Button
+            android:id="@id/dpay_btn_next"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dpay_default_padding"
+            android:layout_marginRight="@dimen/dpay_default_padding"
+            android:layout_marginTop="@dimen/dpay_login_margin_top"
+            android:background="@drawable/dpay_btn_red_bg"
+            android:paddingBottom="@dimen/dpay_login_btn_padding"
+            android:paddingTop="@dimen/dpay_login_btn_padding"
+            android:text="@string/dpay_btn_next"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dpay_subtitle_font_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dpay_login_btn_align_top" >
+
+            <TextView
+                android:id="@id/dpay_btn_sina_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dpay_default_padding"
+                android:layout_weight="1.0"
+                android:drawablePadding="@dimen/dpay_default_padding"
+                android:drawableTop="@drawable/dpay_share_icon_sina"
+                android:gravity="center"
+                android:text="@string/dpay_sina"
+                android:textColor="@color/dpay_black" />
+
+            <TextView
+                android:id="@id/dpay_btn_tencent_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dpay_default_padding"
+                android:layout_weight="1.0"
+                android:drawablePadding="@dimen/dpay_default_padding"
+                android:drawableTop="@drawable/dpay_share_icon_tencent"
+                android:gravity="center"
+                android:text="@string/dpay_tencent"
+                android:textColor="@color/dpay_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,20 @@
+<!-- ultralisk start-->
+<activity
+ android:name="com.ultralisk.paymentActivity"
+ android:screenOrientation="landscape"
+ android:configChanges="keyboardHidden|orientation"
+ android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+</activity>
+<activity
+ android:name="com.ultralisk.pays.shenzhoufu.Shenzhoufu"
+ android:screenOrientation="landscape"
+ android:configChanges="keyboardHidden|orientation"
+ android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+</activity>
+<activity
+ android:name="com.ultralisk.pays.shenzhoufu.ShenzhoufuNew"
+ android:screenOrientation="landscape"
+ android:configChanges="keyboardHidden|orientation"
+ android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+</activity>
+<!-- ultralisk end-->

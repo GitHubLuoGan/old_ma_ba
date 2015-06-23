@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/library_selected_charge_by_mobile_background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/library_user_center_head_framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dip"
+        android:background="@drawable/library_user_center_personal_sign_dialog_background" >
+
+        <ImageView
+            android:id="@+id/library_selected_charge_by_mobile_card_button_one"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/library_bg_circle_style"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/library_person_photo" />
+
+    </RelativeLayout>
+
+</LinearLayout>

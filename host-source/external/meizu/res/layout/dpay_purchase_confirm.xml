@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dpay_main_bg_color" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dpay_align_bottom"
+        android:paddingLeft="@dimen/dpay_default_padding"
+        android:paddingRight="@dimen/dpay_default_padding"
+        android:paddingTop="@dimen/dpay_align_parent_top" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dpay_circle_top"
+            android:padding="@dimen/dpay_default_padding"
+            android:text="@string/dpay_user_info"
+            android:textColor="@color/dpay_red" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dpay_line_height"
+            android:background="@drawable/dpay_divider_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dpay_circle_bottom"
+            android:padding="@dimen/dpay_default_padding" >
+
+            <TextView
+                android:id="@id/dpay_tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/dpay_black" />
+
+            <TextView
+                android:id="@id/dpay_tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dpay_login_align_left"
+                android:layout_toLeftOf="@id/dpay_tv_balance"
+                android:textColor="@color/dpay_black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dpay_default_padding"
+            android:background="@drawable/dpay_circle"
+            android:padding="@dimen/dpay_default_padding" >
+
+            <TextView
+                android:id="@id/dpay_goods_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dpay_black" />
+
+            <View
+                android:id="@id/dpay_divider_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dpay_line_height"
+                android:layout_below="@id/dpay_goods_name"
+                android:layout_marginBottom="@dimen/dpay_default_padding"
+                android:layout_marginTop="@dimen/dpay_default_padding"
+                android:background="@drawable/dpay_divider_line" />
+
+            <TextView
+                android:id="@id/dpay_tv_unit_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/dpay_divider_line"
+                android:textColor="@color/dpay_black" />
+
+            <TextView
+                android:id="@id/dpay_tv_goods_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/dpay_divider_line"
+                android:textColor="@color/dpay_black" />
+
+            <TextView
+                android:id="@id/dpay_total_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/dpay_tv_unit_price"
+                android:layout_marginBottom="@dimen/dpay_default_padding"
+                android:layout_marginTop="@dimen/dpay_default_padding"
+                android:textColor="@color/dpay_black" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@id/dpay_btn_payment_now"
+            style="@style/dpay_custom_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/dpay_btn_yellow_bg"
+            android:text="@string/dpay_payment_now" />
+    </LinearLayout>
+
+</ScrollView>

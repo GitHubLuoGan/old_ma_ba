@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@android:color/transparent" >
+    
+    <ImageView android:id="@+id/ppsgame_qudao_logo"
+        android:layout_marginTop="10.0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+       	android:visibility="gone"/>
+
+    <TextView android:id="@+id/ppsgame_qudao_name"
+        android:layout_width="wrap_content"
+        android:layout_height="36.0dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/ppsgame_gray"
+        android:textSize="14.0sp"/>
+</LinearLayout>

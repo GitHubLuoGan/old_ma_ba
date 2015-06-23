@@ -1,0 +1,43 @@
+<!-- huawei start-->
+ <!-- 业务必须集成以下配置 -->
+        <!-- 浮标SDK的配置start -->
+        <activity
+            android:name="com.huawei.gamebox.buoy.sdk.activity.WebPageActivity"
+            android:configChanges="orientation" />
+
+        <receiver android:name="com.huawei.gamebox.buoy.sdk.service.download.DownloadBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+         <!-- 切换帐号的广播，由开发者自行实现逻辑，并修改package路径 -->
+        <receiver
+            android:name="cn.ultralisk.gameapp.ChangeUserReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.huawei.gamebox.changeUserLogin" />
+            </intent-filter>
+        </receiver>
+        <!-- 浮标SDK的配置end -->
+        <!-- 帐号SDK的配置start -->
+        <activity
+            android:name="com.huawei.hwid.openapi.auth.dump.OpenDumpActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.openapi.quicklogin.ui.QuickLoginActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:theme="@style/Theme.quicklogin" >
+            <intent-filter>
+                <action android:name="com.huawei.hwid.opensdk.ACTION_QUICKLOGIN_SMS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 帐号SDK的配置end -->
+
+<!--huawei end-->

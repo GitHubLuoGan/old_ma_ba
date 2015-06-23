@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/library_common_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_common_title_bar" >
+    </include>
+
+    <ScrollView
+        android:id="@+id/library_user_center_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/library_common_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/library_user_center_personal_information"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:gravity="center_vertical"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/library_user_center_personal_information_bg_iv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/library_common_button_background_pressed"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/library_user_center_personal_sign_background" />
+
+                <FrameLayout
+                    android:id="@+id/library_user_center_head_framelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp" >
+
+                    <ImageView
+                        android:id="@+id/library_user_center_head_photo_one"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_gravity="left|top"
+                        android:layout_marginTop="16dip"
+                        android:background="@drawable/library_bg_circle_style"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/library_person_photo" />
+
+                    <ImageView
+                        android:id="@+id/library_user_center_head_photo_two"
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_gravity="left|top"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="20dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/library_person_photo"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/library_user_center_linearlayout_signature"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:layout_toRightOf="@+id/library_user_center_head_framelayout"
+                    android:gravity="center_vertical|bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/library_user_center_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:maxWidth="120dp"
+                        android:textColor="#ffffffff"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/library_user_center_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/library_user_center_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left|center_vertical"
+                        android:minHeight="30dp"
+                        android:textColor="#ffffffff"
+                        android:textSize="15dp" />
+
+                    <FrameLayout
+                        android:id="@+id/library_user_center_email_message_framelayout"
+                        android:layout_width="53dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@null" >
+
+                        <ImageView
+                            android:id="@+id/library_user_center_email_message_photo"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="3dp"
+                            android:src="@drawable/library_hot_mail" />
+
+                        <TextView
+                            android:id="@+id/library_user_center_email_message_numbers"
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/library_hot_mail_number"
+                            android:gravity="center"
+                            android:paddingBottom="2dp"
+                            android:text="0"
+                            android:textColor="#ffffffff" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/library_user_center_linearlayout_signature"
+                    android:layout_gravity="top"
+                    android:layout_toRightOf="@+id/library_user_center_head_framelayout"
+                    android:background="@null"
+                    android:gravity="center_vertical|top"
+                    android:paddingLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/library_user_center_personal_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:ellipsize="end"
+                        android:gravity="left|top"
+                        android:lines="1"
+                        android:text=""
+                        android:textColor="#ffffffff"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/library_user_center_temporary_account"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/library_user_center_background_but_selector"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/library_change_temporary_user_account" />
+
+                <ImageView
+                    android:id="@+id/library_user_center_activation_photo"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="43dp"
+                    android:src="@drawable/library_user_center_arrow_selector" />
+
+                <TextView
+                    android:id="@+id/library_user_center_temporary_account_text"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:text="激活帐号"
+                    android:textColor="@drawable/library_user_center_text_bg_selector_red"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/library_user_center_temporary_visitor_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="55dp"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:minWidth="150dp"
+                    android:text="您当前为游客试玩模式"
+                    android:textColor="@drawable/library_user_center_text_bg_selector"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/library_user_center_button_space_line" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/library_user_center_button_space_line" />
+
+            <RelativeLayout
+                android:id="@+id/library_user_center_changer_account"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/library_user_center_background_but_selector"
+                 >
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/library_change_user_account" />
+
+                <ImageView
+                    android:id="@+id/library_user_center_changer_account_photo"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/library_user_center_arrow_selector" />
+
+                <TextView
+                    android:id="@+id/library_user_center_changer_account_text"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="95dp"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:text="切换帐号"
+                    android:textColor="@drawable/library_user_center_text_bg_selector"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/library_user_center_button_space_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/library_user_center_cost_record"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/library_user_center_background_but_selector" >
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/library_user_cost_record" />
+
+                <ImageView
+                    android:id="@+id/library_user_center_cost_record_photo"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/library_user_center_arrow_selector" />
+
+                <TextView
+                    android:id="@+id/library_user_center_cost_record_text"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="95dp"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:text="消费记录"
+                    android:textColor="@drawable/library_user_center_text_bg_selector"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/library_user_center_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/library_user_center_button_space_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/library_user_center_hot_game"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/library_user_center_background_but_selector" >
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/library_hot_game" />
+
+                <ImageView
+                    android:id="@+id/library_user_center_hot_game_photo"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/library_user_center_arrow_selector" />
+
+                <TextView
+                    android:id="@+id/library_user_center_hot_game_text"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:text="热门游戏"
+                    android:textColor="@drawable/library_user_center_text_bg_selector"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/library_user_center_hot_game_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/library_hot_mail_number"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:paddingBottom="2dp"
+                    android:text="推荐"
+                    android:textColor="#ffffffff"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/library_user_center_button_space_line" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_bottom_bar" >
+    </include>
+
+</LinearLayout>

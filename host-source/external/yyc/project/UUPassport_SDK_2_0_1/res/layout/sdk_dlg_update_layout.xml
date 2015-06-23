@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.uucun.android.passport.layout.DlgUpdateLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sdk_dialog_width"
+    android:layout_height="@dimen/sdk_dialog_height"
+    android:minWidth="@dimen/sdk_dialog_width"
+    android:background="@drawable/sdk_dialog_background" >
+
+    <RelativeLayout
+        android:id="@id/sdk_dlg_title_container"
+        android:layout_width="@dimen/sdk_dialog_width"
+        android:layout_height="@dimen/sdk_dialog_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/sdk_dialog_title_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@id/sdk_dlg_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/sdk_change_code"
+            android:textColor="@color/color_dlg_text"
+            android:textSize="@dimen/sdk_dlg_title_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/sdk_dlg_content_process_container"
+        android:layout_width="@dimen/sdk_dialog_width"
+        android:layout_height="@dimen/sdk_dlg_content_height"
+        android:layout_below="@id/sdk_dlg_title_container"
+        android:gravity="center"
+         >
+
+        <ProgressBar
+            android:id="@id/sdk_empty_loading"
+            style="@style/FinskyProgressInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" 
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@id/sdk_load_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdk_empty_loading"
+            android:layout_marginTop="@dimen/margin_vertical"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_dlg_text"
+            android:text="@string/sdk_load_text_common"
+            android:textSize="@dimen/sdk_dlg_content_text_size" />
+    </RelativeLayout>
+    
+
+    
+    <RelativeLayout
+        android:id="@id/sdk_dlg_error_container"
+        android:layout_width="@dimen/sdk_dialog_width"
+        android:layout_height="@dimen/sdk_dlg_content_height"
+        android:layout_below="@id/sdk_dlg_title_container"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/sdk_tv_error_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/sdk_dlg_btn_confirm"
+            android:text="@string/sdk_change_code_tip"
+            android:textColor="@color/color_dlg_text"
+            android:gravity="center"
+            android:textSize="@dimen/sdk_dlg_content_text_size" />
+        
+        <Button
+            android:id="@id/sdk_dlg_btn_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sdk_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/sdk_dlg_btn_margin"
+            android:layout_marginRight="@dimen/sdk_dlg_btn_margin"
+            android:layout_marginBottom="@dimen/sdk_dlg_btn_margin"
+            android:background="@drawable/sdk_btn_blue_selector"
+            android:text="@string/sdk_confirm"
+            android:textColor="@color/color_button_text"
+            android:textSize="@dimen/button_generic_size" />
+
+        
+    </RelativeLayout>
+
+</com.uucun.android.passport.layout.DlgUpdateLayout>

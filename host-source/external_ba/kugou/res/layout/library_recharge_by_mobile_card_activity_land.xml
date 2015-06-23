@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/library_common_background"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_common_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/library_layout_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/library_common_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include layout="@layout/library_common_tips_bar" />
+
+        <com.kuyou.platform.ui.widgets.LoadingView
+            android:id="@+id/library_loadingView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/library_common_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/library_layout_select_chargeType"
+        android:layout_width="fill_parent"
+        android:layout_height="170dip"
+        android:layout_weight="1"
+        android:background="@drawable/library_common_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/library_btn_use_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_margin="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/library_mobile_card_bg_pressed"
+            android:text="移动充值卡"
+            android:textColor="@color/library_grass_green" />
+
+        <Button
+            android:id="@+id/library_btn_use_unicom"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_margin="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/library_mobile_card_bg"
+            android:text="联通充值卡"
+            android:textColor="@color/library_grass_green" />
+
+        <Button
+            android:id="@+id/library_btn_use_telecom"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_margin="3dip"
+            android:layout_weight="1"
+            android:background="@drawable/library_mobile_card_bg"
+            android:text="电信充值卡"
+            android:textColor="@color/library_grass_green" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/library_user_center_button_space_line" />
+
+    <ScrollView
+        android:id="@+id/library_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/library_common_background" >
+
+        <LinearLayout
+            android:id="@+id/library_layout_grid_card_money"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.kuyou.platform.ui.widgets.InnerGridView
+                    android:id="@+id/library_gridview"
+                    android:layout_width="320dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:listSelector="@drawable/library_transparent"
+                    android:numColumns="4"
+                    android:scrollbars="none" />
+
+                <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:layout_toLeftOf="@id/library_gridview"
+                    android:text="充值卡面值："
+                    android:textColor="#ff666666"
+                    android:textSize="16dip" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/library_tv_currency_num"
+                android:layout_width="305dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/library_yello_bg"
+                android:padding="5dip"
+                android:textColor="#ff000000"
+                android:textSize="16dip" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" >
+
+                <FrameLayout
+                    android:id="@+id/layout_input_card_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="3dip" >
+
+                    <EditText
+                        android:id="@+id/library_et_number"
+                        android:layout_width="305dip"
+                        android:layout_height="35dip"
+                        android:background="@drawable/library_sp_bg"
+                        android:numeric="integer"
+                        android:paddingRight="30dip"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dip" >
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/library_img_number_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/library_text_clear"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/library_tv_card_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/layout_input_card_num"
+                    android:text="序列号："
+                    android:textColor="#ff666666"
+                    android:textSize="16dip" />
+
+                <ImageView
+                    android:id="@+id/library_img_number_check"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/layout_input_card_num" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" >
+
+                <FrameLayout
+                    android:id="@+id/layout_input_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="3dip" >
+
+                    <EditText
+                        android:id="@+id/library_et_password"
+                        android:layout_width="305dip"
+                        android:layout_height="35dip"
+                        android:background="@drawable/library_sp_bg"
+                        android:numeric="integer"
+                        android:paddingRight="30dip"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dip" >
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/library_img_password_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/library_text_clear"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/layout_input_password"
+                    android:layout_centerVertical="true"
+                    android:text="密码："
+                    android:textColor="#ff666666"
+                    android:textSize="16dip" />
+                <ImageView
+                    android:id="@+id/library_img_password_check"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_toRightOf="@id/layout_input_password"
+                    android:layout_marginLeft="5dip"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/library_btn_summit"
+                android:layout_width="305dip"
+                android:layout_height="40dp"
+                android:layout_marginTop="22dip"
+                android:background="@drawable/library_green_button_bg_selector"
+                android:shadowColor="#ff000fff"
+                android:text="确认充值"
+                android:textColor="#ffffffff"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/library_tv_long_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="27dip"
+                android:padding="5dip"
+                android:textColor="#ff666666"
+                android:textSize="13dip" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/library_user_center_button_space_line" />
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_bottom_bar" />
+
+</LinearLayout>

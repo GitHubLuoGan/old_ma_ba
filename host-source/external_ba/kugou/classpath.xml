@@ -1,0 +1,13 @@
+<!-- kugou -->
+<classpathentry kind="lib" path="libs/alipay_msp.jar"/>
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+<classpathentry kind="lib" path="libs/dcore_release.jar"/>
+<classpathentry kind="lib" path="libs/httpmime-4.2.1.jar"/>
+<classpathentry kind="lib" path="libs/kugousdk_core_release.jar"/>
+<classpathentry kind="lib" path="libs/kyappcenter_release.jar"/>
+<classpathentry kind="lib" path="libs/kyframework.jar"/>
+<classpathentry kind="lib" path="libs/kyplatformcore_release.jar"/>
+<classpathentry kind="lib" path="libs/kyplatformlibrary_release.jar"/>
+<classpathentry kind="lib" path="libs/locSDK_3.3.jar"/>
+<classpathentry kind="lib" path="libs/UPPayAssistEx.jar"/>
+<classpathentry kind="lib" path="libs/UPPayPluginEx.jar"/>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/register_navgater"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/sdk_button_height"
+    android:layout_alignParentTop="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@id/nav_fast_reg"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/sdk_nav_divider"
+        android:background="@drawable/sdk_tab_selector"
+        android:text="@string/sdk_fast_register"
+        android:textSize="@dimen/nativation_text_size" 
+        android:textColor="@color/sdk_tab_text_color_selector"/>
+    
+    <TextView android:id="@id/sdk_nav_divider"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/sdk_tab_divider_selector"
+        />
+
+    <TextView
+        android:id="@id/nav_phone_reg"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_toRightOf="@id/sdk_nav_divider"
+        android:background="@drawable/sdk_tab_selector"
+        android:text="@string/sdk_phone_register"
+        android:textSize="@dimen/nativation_text_size"
+        android:textColor="@color/sdk_tab_text_color_selector" />
+
+</RelativeLayout>

@@ -1,0 +1,428 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="3dip"
+    android:layout_marginRight="3dip"
+    android:gravity="center|top" >
+
+    <RelativeLayout
+        android:id="@+id/managerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/personInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3.0dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/backGameLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_white_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="3.0dip" 
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/kefu_account"
+                    android:textColor="#ffa67d3d"
+                    android:textSize="17.0sp" />
+
+                <Button
+                    android:id="@+id/backToGame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/btn_back_bg"
+                    android:text="@string/fg_to_game"
+                    android:textColor="#ff666666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_white_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/user_set_top_layout_One"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:src="@drawable/icon_default_head" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dip"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fg_account"
+                            android:textColor="#ffa67d3d"
+                            android:textSize="17.0sp" />
+
+                        <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="75.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dip"
+                            android:singleLine="true"
+                            android:textColor="#ff333333"
+                            android:textSize="15.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dip"
+                        android:layout_weight="1"
+                        android:gravity="left" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="@string/fg_nick"
+                            android:textColor="#ffa67d3d"
+                            android:textSize="17.0sp" />
+
+                        <TextView
+                            android:id="@+id/userNick"
+                            android:layout_width="75.0dip"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="#67c1ff"
+                            android:textSize="15.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_set_center_layout_One"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/personInfo"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/giftLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_user_set_center_bg_up"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/fg_mygift"
+                    android:textColor="#ff333333"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@drawable/user_set_center_right_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/walletLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_user_set_center_bg_center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/fg_wallet"
+                    android:textColor="#ff333333"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@drawable/user_set_center_right_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/modifyPersonLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_user_set_center_bg_center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/fg_modify_info"
+                    android:textColor="#ff333333"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@drawable/user_set_center_right_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pwLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_user_set_center_bg_down"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_weight="1.0"
+                    android:text="@string/fg_modify_pw"
+                    android:textColor="#ff333333"
+                    android:textSize="14.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20.0dip"
+                    android:src="@drawable/user_set_center_right_bg" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/modifyLayout"
+        android:layout_below="@id/managerLayout"
+        layout="@layout/kefu_modifyperson"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/walletView"
+        android:layout_below="@id/managerLayout"
+        layout="@layout/kefu_wallet"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/listViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/managerLayout"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/listViewBtnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_white_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="2.0dip" >
+
+            <TextView
+                android:id="@+id/listViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/fg_mygift"
+                android:textColor="#ffa67d3d"
+                android:textSize="17.0sp" />
+
+            <Button
+                android:id="@+id/listViewBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/btn_back_bg"
+                android:text="@string/fg_back"
+                android:textColor="#ff666666" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/netload"
+            android:layout_below="@id/listViewBtnLayout"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            layout="@layout/netload" />
+
+        <com.fgw.kefu.widget.ViewpageListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listViewBtnLayout"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/icon_list_diver"
+            android:paddingBottom="10dip"
+            android:scrollbars="none" >
+        </com.fgw.kefu.widget.ViewpageListView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/listView"
+            android:background="@drawable/icon_list_diver" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/modifyPWLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/managerLayout"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/pwBtnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_white_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="2.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/fg_modify_pw"
+                android:textColor="#ffa67d3d"
+                android:textSize="17.0sp" />
+
+            <Button
+                android:id="@+id/modifyPWback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/btn_back_bg"
+                android:text="@string/fg_back"
+                android:textColor="#ff666666" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/modifyDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pwBtnLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/bg_kefu_list"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TableRow
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1.0"
+                android:gravity="bottom" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fg_old_pw"
+                    android:textColor="#ff666666"
+                    android:textSize="15.0sp" />
+
+                <EditText
+                    android:id="@+id/oldPW"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/fg_old_pw_hint"
+                    android:inputType="textCapWords"
+                    android:maxLength="20"
+                    android:paddingLeft="8.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff666666"
+                    android:textSize="14.0sp" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@drawable/icon_list_diver" />
+
+            <TableRow
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_weight="1.0"
+                android:gravity="top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fg_new_pw"
+                    android:textColor="#ff666666"
+                    android:textSize="15.0sp" />
+
+                <EditText
+                    android:id="@+id/newsPW"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/fg_new_pw_hint"
+                    android:inputType="textCapWords"
+                    android:maxLength="20"
+                    android:paddingLeft="8.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff666666"
+                    android:textSize="14.0sp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/modifySub"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/modifyDesc"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/kefu_submit"
+            android:text="@string/fg_submit"
+            android:textColor="#ff6a3600"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

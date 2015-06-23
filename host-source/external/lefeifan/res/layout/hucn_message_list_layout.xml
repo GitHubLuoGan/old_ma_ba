@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.edg.common.view.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hucn_pull_refresh_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hucn_bg"
+    android:orientation="vertical" >
+
+    <cn.edg.common.view.SwipeListView
+        android:id="@+id/hucn_message_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#c2c2c2"
+        android:dividerHeight="0.1dp"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </cn.edg.common.view.SwipeListView>
+
+</cn.edg.common.view.PullToRefreshView>

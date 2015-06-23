@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_common_title_bar" >
+    </include>
+
+    <LinearLayout
+        android:id="@+id/library_layout_result"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/library_common_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/library_img_result_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/library_edittext_fail_flag" />
+
+            <TextView
+                android:id="@+id/library_tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="亲，网络不给力，再刷新试试吧"
+                android:textColor="#ff000022"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/library_btn_again"
+            android:layout_width="250dip"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/library_green_button_bg_selector"
+            android:shadowColor="#ff000fff"
+            android:text="刷新"
+            android:textColor="#ffffffff"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/library_layout_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/library_common_background"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/library_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:listSelector="@color/library_common_transparent"
+            android:divider="@color/library_common_divider"
+            android:dividerHeight="1px" />
+
+
+        <TextView
+            android:id="@+id/library_tv_empty_of_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="暂无数据" />
+    </LinearLayout>
+
+    <com.kuyou.platform.ui.widgets.LoadingView
+        android:id="@+id/library_loadingView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/library_common_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/library_user_center_button_space_line" />
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_bottom_bar" >
+    </include>
+
+</LinearLayout>

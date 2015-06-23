@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:id="@+id/ac_common_title_bar_layout"
+    android:background="@drawable/ac_common_title_bar_background" >
+
+    <Button
+        android:id="@+id/common_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/ac_layer_back_button_selector"
+        android:gravity="right|center_vertical"
+        android:paddingRight="5dp"
+        android:text="返回"
+        android:textColor="@color/ac_common_white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/common_btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        android:background="@drawable/ac_selector_btn_bg_red"
+        android:scaleType="center"
+        android:src="@drawable/ac_search" />
+
+    <TextView
+        android:id="@+id/common_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="@color/ac_common_white"
+        android:textSize="@dimen/ac_common_larger" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/common_btn_search"
+        android:layout_toRightOf="@+id/common_btn_back"
+        android:gravity="center"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <FrameLayout
+            android:id="@+id/layout_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/pay_hot_game_search_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:background="@drawable/ac_input_bg"
+                android:hint="请输入游戏的名称"
+                android:imeOptions="actionSearch"
+                android:maxLength="30"
+                android:paddingLeft="3dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/img_clean_text"
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/ac_transparent"
+                android:contentDescription="@string/ac_img_description"
+                android:padding="3dip"
+                android:src="@drawable/ac_delete_input"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

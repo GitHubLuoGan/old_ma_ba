@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/hucn_download_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hucn_list_selector_bg"
+        android:paddingBottom="8dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="8dip" >
+
+        <ImageView
+            android:id="@+id/hucn_app_down_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:background="#c2c2c2"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/hucn_app_down_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/hucn_app_down_img"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/hucn_download_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingRight="5dp"
+            android:paddingTop="20dp" >
+
+            <Button
+                android:id="@+id/hucn_start_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/hucn_btn_submit"
+                android:minWidth="20dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/hucn_download"
+                android:textColor="#6e6a65" />
+
+            <Button
+                android:id="@+id/hucn_continer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/hucn_btn_login"
+                android:minWidth="20dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="@string/hucn_container"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hucn_download_speed_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hucn_app_down_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/hucn_download_btn_layout"
+            android:layout_toRightOf="@+id/hucn_app_down_img"
+            android:gravity="right"
+            android:minWidth="50dp"
+            android:singleLine="true"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/hucn_download_percent_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hucn_app_down_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/hucn_app_down_img"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/hucn_download_arrow_tv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="45dp"
+            android:layout_toLeftOf="@+id/hucn_download_btn_layout"
+            android:background="@drawable/hucn_unfold" />
+
+        <ProgressBar
+            android:id="@+id/hucn_download_pb"
+            style="@style/HUCNProgressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/hucn_download_speed_tv"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/hucn_download_arrow_tv"
+            android:layout_toRightOf="@+id/hucn_app_down_img"
+            android:progress="100" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#c2c2c2" />
+
+    <LinearLayout
+        android:id="@+id/hucn_download_task_item_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/hucn_download_tast_redown_tv"
+                style="@style/HUCNText"
+                android:layout_weight="1.0"
+                android:background="@drawable/hucn_list_selector_bg"
+                android:drawableTop="@drawable/hucn_download_redownload"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="10dp"
+                android:text="@string/hucn_redownload"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="#c2c2c2" />
+
+            <TextView
+                android:id="@+id/hucn_download_tast_delete_tv"
+                style="@style/HUCNText"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@drawable/hucn_list_selector_bg"
+                android:drawableTop="@drawable/hucn_download_delete"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="10dp"
+                android:text="@string/hucn_deldownload"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#c2c2c2" />
+    </LinearLayout>
+
+</LinearLayout>

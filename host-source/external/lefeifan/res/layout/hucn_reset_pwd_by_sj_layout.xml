@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNScrollView" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/hucn_reset_input_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginLeft="@dimen/hucn_layout_margin"
+                android:layout_marginRight="@dimen/hucn_layout_margin"
+                android:layout_marginTop="@dimen/hucn_layout_margin_top"
+                android:background="@drawable/hucn_bg_shape_corner"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/hucn_layout_padding" >
+
+                <TextView
+                    style="@style/HUCNText"
+                    android:text="@string/hucn_account_blank" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_reset_account_ev"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginLeft="@dimen/hucn_layout_margin"
+                android:layout_marginRight="@dimen/hucn_layout_margin"
+                android:layout_marginTop="@dimen/hucn_layout_margin_top"
+                android:background="@drawable/hucn_bg_shape_corner"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/hucn_layout_padding" >
+
+                <TextView
+                    style="@style/HUCNText"
+                    android:text="@string/hucn_mobile" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_reset_mobile_ev"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/hucn_reset_next_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_btn_height"
+                android:layout_marginLeft="@dimen/hucn_layout_margin"
+                android:layout_marginRight="@dimen/hucn_layout_margin"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/hucn_btn_blue"
+                android:text="@string/hucn_next"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/hucn_default_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hucn_reset_input_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/hucn_reset_tip_tv"
+                style="@style/HUCNText"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="60dp"
+                android:text="" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginLeft="@dimen/hucn_layout_margin"
+                android:layout_marginRight="@dimen/hucn_layout_margin"
+                android:background="@drawable/hucn_bg_shape_corner"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp" >
+
+                <Button
+                    android:id="@+id/hucn_reset_getcode_btn"
+                    android:layout_width="120dp"
+                    android:textColor="@color/hucn_text_color"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_reset_yanzhengma_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/hucn_reset_getcode_btn"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/hucn_reset_sure_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_btn_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/hucn_btn_white"
+                android:text="@string/hucn_confirm"
+                android:textColor="@drawable/hucn_btn_text_color"
+                android:textSize="@dimen/hucn_default_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hucn_reset_input_layout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginLeft="@dimen/hucn_layout_margin"
+                android:layout_marginRight="@dimen/hucn_layout_margin"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/hucn_bg_shape_corner"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/hucn_layout_padding" >
+
+                <TextView
+                    style="@style/HUCNText"
+                    android:text="@string/hucn_new_password" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_reset_password_ev"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hucn_reset_input_password_tip_tv"
+                style="@style/HUCNSmallText"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="@dimen/hucn_layout_margin"
+                android:layout_marginRight="@dimen/hucn_layout_margin"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="@string/hucn_password_tip"
+                android:textColor="@color/hucn_text_gray" />
+
+            <Button
+                android:id="@+id/hucn_reset_submit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_btn_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/hucn_btn_white"
+                android:text="@string/hucn_confirm"
+                android:textColor="@drawable/hucn_btn_text_color"
+                android:textSize="@dimen/hucn_default_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

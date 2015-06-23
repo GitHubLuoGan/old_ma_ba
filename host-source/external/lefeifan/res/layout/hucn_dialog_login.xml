@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/hucn_pop_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hucn_login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/hucn_bg_white_corners"
+        android:minWidth="250dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hucn_btn_height"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/hucn_tenpay_login"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#e8e0da" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hucn_btn_height"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/HUCNText"
+                android:layout_width="50dp"
+                android:text="@string/hucn_account" />
+
+            <EditText
+                android:id="@+id/hucn_login_account_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint=""
+                android:singleLine="true"
+                android:textColor="@color/hucn_text_color"
+                android:textSize="@dimen/hucn_default_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="60dp"
+            android:background="#e8e0da" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hucn_btn_height"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                style="@style/HUCNText"
+                android:layout_width="50dp"
+                android:text="@string/hucn_password" />
+
+            <EditText
+                android:id="@+id/hucn_login_pass_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint=""
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/hucn_text_color"
+                android:textSize="@dimen/hucn_default_text_size" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:id="@+id/hucn_login_btn"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/hucn_default_text_size"
+            android:layout_height="@dimen/hucn_btn_height"
+            android:background="@drawable/hucn_btn_blue_no_border_bottom"
+            android:text="@string/hucn_login" />
+    </LinearLayout>
+
+</RelativeLayout>

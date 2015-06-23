@@ -1,0 +1,159 @@
+<!-- aiqiyi start-->
+			<activity android:name="com.pps.sdk.PPSUserActivity"
+            android:theme="@style/PPSCustomTheme"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan" 
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.pps.sdk.PPSPurchasesActivity"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden" 
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        
+        <!-- 微信支付  -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <!-- 微信支付  -->
+        
+        <!-- 以上界面可以设置横竖屏  其它界面不能修改  -->
+            
+         <activity
+            android:name="com.pps.sdk.slidebar.activity.PPSGameSliderActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:persistent="true"
+            android:process=":sliderbar"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.pps.sdk.slidebar.activity.PPSGameSlidebarCommonActivity"
+            android:screenOrientation="portrait"
+            android:process=":sliderbar"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        
+        <service
+            android:name="com.pps.sdk.slidebar.service.PollingService"
+            android:label="NetworkConnection"
+            android:process=":sliderbar_polling_service" >
+        </service>
+        
+        <activity android:name="com.pps.sdk.PPSUserCenterActivity"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        
+         <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UPPay" />
+        <activity
+            android:name="com.unionpay.uppay.PayActivityEx"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UPPay"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity android:name="com.unionpay.upomp.bypay.activity.SplashActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan">
+        
+        </activity>
+
+        <activity android:name="com.unionpay.upomp.bypay.activity.PayMainActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.PayUserCreditActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.PayUserDebitActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.PayOnUserTelActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.PayResultActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity android:name="com.unionpay.upomp.bypay.activity.PayResultLoseActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity android:name="com.unionpay.upomp.bypay.activity.RegisterActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name="com.unionpay.upomp.bypay.activity.RegisterResultActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.UserProtocalActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.OnUserCardManageActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.OnUserUserManageActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.changePswActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name="com.unionpay.upomp.bypay.activity.changeTelActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.unionpay.upomp.bypay.activity.OnUserBindCardCreditActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name="com.unionpay.upomp.bypay.activity.OnUserBindCardDebitActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name="com.unionpay.upomp.bypay.activity.OnUserBindCardPanActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity
+            android:name="com.unionpay.upomp.bypay.activity.OnUserBindCardResultActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.SupportActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity android:name="com.unionpay.upomp.bypay.activity.GetpassActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity android:name="com.unionpay.upomp.bypay.activity.AuthBindCardActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+
+        <activity android:name="com.unionpay.upomp.bypay.activity.AboutActivity"
+            android:screenOrientation="portrait" android:theme="@style/upomp_bypay_MyDialog"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity> 
+<!-- aiqiyi end-->

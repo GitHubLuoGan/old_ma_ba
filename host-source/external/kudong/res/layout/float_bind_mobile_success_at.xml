@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/float_bg"
+    android:orientation="vertical" >
+
+    <!-- header区域 -->
+    <include 
+        layout="@layout/float_header"
+        android:id="@+id/float_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- body区域 -->
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_welcome"
+            android:textSize="@dimen/float_normal_font"
+            android:textColor="@color/title_color" />
+        
+        <TextView 
+            android:id="@+id/tv_user_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text=""
+            android:textSize="@dimen/text_max"
+            android:textColor="@color/title_color" />
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/float_marin_padding"
+        android:layout_marginRight="@dimen/float_marin_padding"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+            
+            <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/tv_bind_mobile_pre"
+	            android:textColor="@color/title_color"
+	            android:textSize="@dimen/float_min_font" />
+            
+            <TextView
+                android:id="@+id/tv_mobile_code"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="4dp"
+	            android:text="11111111111"
+	            android:textColor="@color/title_color"
+	            android:textSize="@dimen/float_min_font" />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+            
+           <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/tv_bind_mobile_success_descript"
+	            android:textColor="@color/title_color"
+	            android:textSize="@dimen/float_min_font" />
+           
+           <TextView
+                android:id="@+id/tv_url"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            
+	            android:text="@string/tv_net_url"
+	            android:textColor="@color/float_control_color"
+	            android:textSize="@dimen/float_min_font" />
+
+        </LinearLayout>
+        
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/float_marin_padding"
+        android:layout_marginRight="@dimen/float_marin_padding"
+        android:orientation="vertical" >
+
+        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="36dp"
+	            android:maxWidth="100dp"
+	            android:maxHeight="100dp"
+	            android:adjustViewBounds="true"
+	            android:layout_gravity="center"
+	            android:src="@drawable/mg_logo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/float_btn_return_comm"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/float_btn_height"
+                android:background="@drawable/float_btn_blue_bg"
+                android:gravity="center"
+                android:text="@string/float_back_game"
+                android:textColor="@color/mg_color_white"
+                android:textSize="@dimen/float_normal_font" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/float_version_padding_top_bottom"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/mogoo_version"
+            android:textColor="@color/descript_color"
+            android:textSize="@dimen/float_min_font" />
+    </LinearLayout>
+
+
+</LinearLayout>

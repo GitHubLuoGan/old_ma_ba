@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_bg" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/abs_bt" />
+
+        <ImageView
+            android:id="@+id/czbtnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_back_normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/yd_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abs_bq_yd1" />
+
+                <ImageButton
+                    android:id="@+id/lt_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abs_bq_lt1" />
+
+                <ImageButton
+                    android:id="@+id/dx_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abs_bq_dx1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pay_bg"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/cz_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center_horizontal"
+                    android:text="中国移动充值卡充值"
+                    android:textColor="@color/yellowtxtcolor"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/cztip1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="本次支付金额为5元"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="  卡面额选择:"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/cz_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="10元"
+                        android:textColor="@color/yellowtxtcolor"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/jt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:src="@drawable/abs_b_xzme" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  充值序列号:"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/cz_number"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/abs_slk"
+                        android:ems="10"
+                        android:hint="请输入充值序列号"
+                        android:paddingLeft="10dp"
+                        android:inputType="number"
+                        android:maxLength="25"
+                        android:textColor="@color/bluetxtcolor"
+                        android:textColorHint="@color/hittxtcolor"
+                        android:textSize="18sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  充值卡密码:"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/cz_pwd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:paddingLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/abs_slk"
+                        android:ems="10"
+                        android:hint="请输入充值卡密码"
+                        android:inputType="number"
+                        android:maxLength="25"
+                        android:textColor="@color/bluetxtcolor"
+                        android:textColorHint="@color/hittxtcolor"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        
+	<TextView
+        android:id="@+id/warm_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  温馨提示:为防止交易失败,意外销卡,请填写正确卡信息!"
+        android:textColor="@color/yellowtxtcolor"
+        android:textSize="15sp" />
+    
+     <ImageButton
+       android:id="@+id/cz_pay"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:src="@drawable/abs_b_zf"
+       android:background="@null"
+       android:layout_gravity="center"
+       android:layout_marginTop="1dp"
+       />
+     <!-- android:background="@drawable/newcz_style" -->
+    </LinearLayout>
+
+   
+
+</LinearLayout>

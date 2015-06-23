@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- 基本颜色 -->
+    <color name="library_common_white">#ffffffff</color>
+    <color name="library_common_black">#ff000000</color>
+    <color name="library_common_red">#ffff0000</color>
+    <color name="library_common_green">#ff00ff00</color>
+    <color name="library_common_blue">#ff0000ff</color>
+
+    <!-- 通用颜色 -->
+    <!-- 透明颜色 -->
+    <color name="library_common_transparent">#00000000</color>
+    <!-- 半透明颜色 -->
+    <color name="library_common_translucence">#e0000000</color>
+    <!-- 按钮点击后的颜色 -->
+    <color name="library_common_btn_pressed">#ffdddddd</color>
+    <!-- toolbarCustomView按钮点击后的颜色 -->
+    <color name="library_toolbar_customview_btn_pressed">#330000ff</color>
+    <!-- 灰色（深色） -->
+    <color name="library_common_gray_darker">#ff333333</color>
+    <!-- 分割线颜色 -->
+    <color name="library_common_divider">#ffdddddd</color>
+    <!-- 充值模块 -->
+    <color name="library_grass_green">#ff8a4314</color>
+    <!-- 充值模块 -->
+    <color name="library_usercenter_item_pressed">#d4d4d4</color>
+    <color name="library_validate_reget_btn_color_unenable">#dddddd</color>
+
+</resources>

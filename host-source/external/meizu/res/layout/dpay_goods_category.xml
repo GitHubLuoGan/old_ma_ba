@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dpay_align_bottom"
+        android:paddingLeft="@dimen/dpay_default_padding"
+        android:paddingRight="@dimen/dpay_default_padding"
+        android:paddingTop="@dimen/dpay_align_parent_top" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dpay_choose_billing_type"
+            android:textColor="@color/dpay_red"
+            android:textSize="@dimen/dpay_subtitle_font_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dpay_default_padding"
+            android:background="@drawable/dpay_categories_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/dpay_default_padding" >
+
+            <CheckBox
+                android:id="@id/dpay_consumption_category"
+                style="@style/dpay_checkbox_amount"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dpay_consumption_category" />
+
+            <CheckBox
+                android:id="@id/dpay_not_consumption_category"
+                style="@style/dpay_checkbox_amount"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dpay_default_padding"
+                android:layout_weight="1"
+                android:text="@string/dpay_not_consumption_category" />
+
+            <CheckBox
+                android:id="@id/dpay_subscribe_category"
+                style="@style/dpay_checkbox_amount"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dpay_default_padding"
+                android:layout_weight="1"
+                android:text="@string/dpay_subscribe_category" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dpay_default_padding"
+            android:layout_marginTop="@dimen/dpay_default_padding"
+            android:text="@string/dpay_choose_goods_category"
+            android:textColor="@color/dpay_red"
+            android:textSize="@dimen/dpay_subtitle_font_size" />
+
+        <LinearLayout
+            android:id="@id/dpay_ll_goods_category"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dpay_categories_bg"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

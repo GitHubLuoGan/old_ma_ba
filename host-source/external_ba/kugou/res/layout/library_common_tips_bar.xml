@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/library_common_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/library_common_tips_bar_content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:gravity="center_vertical"
+        android:minHeight="30dp"
+        android:text="提示文字"
+        android:textColor="#ff000000"
+        android:textSize="16dip" />
+    <TextView
+        android:id="@+id/library_common_tips_bar_money_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginBottom="5dip"
+        android:gravity="center_vertical"
+        android:minHeight="30dp"
+        android:text="充值金额:"
+        android:textColor="#ff000000"
+        android:textSize="16dip" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/library_user_center_button_space_line" />
+
+</LinearLayout>

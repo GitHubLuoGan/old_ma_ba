@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/unipay_totalSendInfo"
+    android:visibility="gone"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <View
+            style="@style/unipay_horline"
+            android:layout_weight="100" />
+
+        <TextView
+            style="@style/unipay_text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="赠送"
+            android:textColor="@color/unipay_thin2_color" />
+
+        <View
+            style="@style/unipay_horline"
+            android:layout_weight="100" />
+    </LinearLayout>
+
+    <com.pay.ui.common.APGridView
+        android:id="@+id/unipay_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:scrollbars="none"
+        android:focusable="false"
+        android:clickable="false"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="3">
+    </com.pay.ui.common.APGridView>
+
+</LinearLayout>

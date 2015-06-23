@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 网络异常 -->
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="http_status_code_error">网络异常，错误码：%d</string>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+
+    <string name="sj_app_name">SjyxSDK</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- activity_main.xml -->
+    <string name="demo_login">登陆</string>
+    <string name="demo_payment">充值</string>
+    <string name="gift">礼包领取</string>
+    <string name="usercenter">客服中心</string>
+    <string name="more">更多资讯</string>
+    <string name="text_one">下载世加游戏客户端,即领游戏豪华礼包</string>
+    <string name="text_two">下载客户端</string>
+    
+    <!--loginfragment.xml-->
+    <string name="changeps">修改密码</string>
+    <string name="findps">找回密码</string>
+    <string name="selectacc">快速登陆</string>
+    <string name="login">直接登陆</string>
+    <string name="register">注册</string>
+    <string name="edit_text_one">请输入账号</string>
+    <string name="edit_text_two">请输入登录密码</string>
+    
+    <!-- registerfragment.xml -->
+    <string name="input_user">请输入账号</string>
+    <string name="input_ps">请输入登陆密码</string>
+    <string name="register_text">马上注册</string>
+    <string name="back">返回</string>
+    
+    <!-- findpsfragment.xml -->
+    <string name="findps_top">温馨提示:密码丢失可以通过以下方式找回哦!</string>
+    <string name="findps_tips">亲:如果密码不慎丢失，可以拨打客服电话:020-38276822,与我们的客服妹子联系找回,或者联系客服QQ:1651095137找回密码。也可以拨打在线客服帮你找回(在线客服服务时间未工作日的上午9:00-12:00,下午14:00-18:00)</string>
+    <string name="findps_phone">拨打在线客服电话</string>
+    
+    <!-- modifyfragment.xml -->
+    <string name="modify_text">密码君很寂寞，欢迎随时调戏~~</string>
+    <string name="username">用户名：</string>
+    <string name="oldps">旧密码：</string>
+    <string name="newps">新密码：</string>
+    <string name="submit">提交</string>
+    
+    <!-- centerfragment.xml -->
+    <string name="center_text">提示：在线客服电话只在工作日开放哦 ~ ~ ~</string>
+    <string name="mainweb">官方网站：www.49app.com</string>
+    <string name="phone_service">客服电话：020-38276822</string>
+    <string name="qq_service">客服Q Q：1651095137</string>
+    <string name="game_one">王者战仙专服QQ群：</string>
+    <string name="game_one_number">31000666</string>
+    <string name="game_two">比武招亲专服QQ群：</string>
+    <string name="game_two_number">31000666</string>   
+    <!-- giftlist_style.xml -->
+    <string name="take">领取</string>   
+    <!-- morefragment.xml -->
+    <string name="game_info">资讯</string>
+    <string name="fine_game">精品</string>
+    <string name="raiders">攻略</string>   
+    <!-- dialog.xml -->
+    <string name="dialog_text">你确定将拨打世加游戏在线客服电话?</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_phone">拨打电话</string>   
+    <!-- gameinfosub.xml -->
+    <string name="gameinfosub_text">在这里，你同样可以了解最新游戏动态哦~ ~</string>   
+    <!-- gamecenter_style.xml -->
+    <string name="download">下载</string>   
+    <!-- gameinfo.xml -->
+    <string name="download_now">立即下载游戏</string>
+    <!-- gameinfo.xml -->
+    <string name="type">类型:</string>
+    <string name="capacity">大小:</string>
+    <string name="language">语言:</string>
+    <string name="tag">标签:</string>
+    <string name="integration">积分:</string>
+    <string name="recommend">推荐:</string>    
+    <!-- seclogin.xml -->
+    <string name="sectop_text">已检测到您登陆过以下账号，请选择账号登陆哦~ ~</string>
+    <string name="login_button">登陆已选择账号</string>
+    <string name="other_button">其他账号登陆</string>   
+    <!-- mytoast.xml -->
+	<string name="welcome_back">欢迎回来</string>
+	<string name="Ensure">"确定"</string>
+	<string name="Cancel">"取消"</string>
+	<string name="confirm_install_hint">"安装提示"</string>	
+	<string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+	<!-- recharge_records.xml -->
+	<string name="view_one">成功</string>
+	<string name="view_two">等待</string>
+	<string name="view_three">失败</string>
+	<!-- records_item.xml -->
+	<string name="yuanbao_item">60元宝</string>
+	<string name="pay_item">支付宝支付</string>
+	<string name="amount_item">6</string>
+	<string name="yuan">元</string>
+	<string name="state_item">成功</string>
+	<string name="time_item">2013-05-06 16:26:16</string>
+	<string name="order_item">订单号：1254545454545454</string>
+	<string name="pay_item_state">支付情况：</string>
+	<string name="pay_item_state_result">成功支付</string>
+	<!-- select_recharge.xml -->
+	<string name="select_title">请选择充值金额</string>
+	<string name="select_price_one">10元</string>
+	<string name="select_price_two">30元</string>
+	<string name="select_price_three">50元</string>
+	<string name="select_price_four">100元</string>
+	<string name="select_price_five">200元</string>
+	<string name="select_price_six">500元</string>
+	<string name="select_price_seven">1000元</string>
+	<string name="select_total_price">您将充值</string>
+	<string name="select_total_price_number">0</string>
+	<string name="select_total_price_yuan">元</string>
+	<string name="select_tips">请输入你的充值金额</string>
+	<string name="select_next">下一步</string>
+	<string name="select_info_one">温馨提示：</string>
+	<string name="select_info_two">您将去往充值页面，该页面需要选择充值方式，如有疑问请联系世加游戏客服</string>
+	<string name="select_info_phone">客服电话：020-38276822</string>
+	<string name="select_info_qq">客服QQ：1651095137</string>
+	<!-- result.xml -->
+	<string name="pay_success">订单提交成功</string>
+	<string name="pay_result">"       亲爱的用户,订单已经提交成功,但是订单的金额到账可能需要几秒中,请耐心等待,如果稍后元宝没有到账,请及时联系客服."</string>
+	<!-- total_view.xml -->
+	<string name="total_info">亲，现在还没有充值记录哦！</string>	
+	 <!-- mobile_pay.xml -->
+    <string name="amount">支付金额：10元</string>
+    <string name="goods">商品：</string>
+    <string name="goods_number">100</string>
+    <string name="goods_price">元宝</string>
+    <string name="user">用户：德玛西亚</string>
+    <string name="recharge_type">卡 类:</string>
+    <string name="server_user">运营商:</string>
+    <string name="nominal_value">面 值:</string>
+    <string name="card_number">卡 号:</string>
+    <string name="tips_mianzhi">请输入面额</string>
+    <string name="card_password">密 码:</string>
+    <string name="tips_payment">请输入卡号</string>
+    <string name="tips_payment_one">请输入密码</string>
+    <!-- spinner_dialog_item.xml -->
+    <string name="tenyuan">10元</string>
+    <!-- alipay.xml -->
+    <string name="alipay_info">"    如果您选择支付宝进行支付,第一次启动会安装支付宝服务。"</string>   
+    <string name="title">世加充值中心</string>
+    <string name="xianzhi">0123456789abcdefghijklmnopqrstuvwxyz</string>
+    
+       <!-- recharge.xml -->
+    <string name="records">记录</string>
+    <string name="preview">返回</string>
+    <string name="alipay">支付宝</string>
+    <string name="yibao">易宝支付</string>
+    <string name="jiexun">捷迅支付</string>
+    <string name="union">银联支付</string>
+    <string name="message">短信支付</string>
+    <string name="mobile_pay">移动卡</string>
+    <string name="unicom_pay">联通卡</string>    
+    <string name="telecom_pay">电信卡</string>
+    <string name="net_pay">网易卡</string>
+    <string name="wanmei_pay">完美卡</string>
+    <string name="qq_pay">Q币卡</string>
+    <string name="shengda_pay">盛大卡</string>
+    <string name="payment">充值</string>
+     
+    <string name="app_name_vpaysmszf">大额短信支付</string>
+    
+    <string name="server">联系客服</string>
+    <string name="question">充值提示</string>
+    
+    <string name="vpay_id">商户名称：</string>
+    <string name="vpay_amount">支付金额：</string>
+    <string name="vpay_big">&#25163;&#26426;&#22823;&#39069;&#30701;&#20449;&#25903;&#20184;</string>
+    <string name="vpay_bill_info">&#35746;&#21333;&#20449;&#24687;</string>
+    <string name="vpay_phone">&#23458;&#26381;&#30005;&#35805;&#65306;400-684-0755</string>
+    <string name="vpay_go">&#21435; &#25903; &#20184;</string>
+</resources>

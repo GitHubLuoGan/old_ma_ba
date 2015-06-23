@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/ppsgame_bg">
+    
+    <LinearLayout android:id="@+id/ppsgame_dialog_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10.0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ppsgame_logo"
+            android:contentDescription="@string/pps_about"/>
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:layout_marginTop="10.0dp"
+            android:background="@color/ppsgame_sdk_line"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ppsgame_dialog_top"
+        android:orientation="vertical" >
+        
+        <Button
+            android:id="@+id/ppsgame_register_btn"
+            style="@style/ppsgame_button"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="20.0dp"
+            android:background="@drawable/ppsgame_yellow_btn_selector"
+            android:text="@string/pps_register_phone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="20.0dp"
+            android:background="#efefef"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pps_register_phone_hint"
+                android:drawableLeft="@drawable/ppsgame_findpwd"
+                style="@style/ppsgame_dialog_text_black_s"/>
+            
+            <TextView android:id="@+id/ppsgame_register_agress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pps_agreement"
+                android:textColor="@color/ppsgame_yellow"
+                android:textSize="14.0sp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        
+        <Button android:id="@+id/ppsgame_normal_login"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dp"
+            android:layout_marginTop="10.0dp"
+            android:layout_marginBottom="10.0dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/pps_login_normal"
+            android:textColor="#bb8a63"
+            android:textSize="18.0sp"
+            android:background="@android:color/transparent"/>
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:layout_above="@id/ppsgame_normal_login"
+            android:background="@color/ppsgame_sdk_line" />
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

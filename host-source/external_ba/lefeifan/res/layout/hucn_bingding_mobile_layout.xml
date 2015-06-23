@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNBg"
+    android:fadingEdge="none"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:id="@+id/hucn_binding_account_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/hucn_binding_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/hucn_binding_account_layout"
+                style="@style/HUCNEditLayout"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/hucn_white_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp" >
+
+                <LinearLayout
+                    android:id="@+id/hucn_binding_user_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/hucn_binding_code_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/hucn_binding_yanzhenma_iv"
+                    android:layout_width="62dp"
+                    android:layout_height="@dimen/hucn_edittext_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:background="#cdcdcd"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/hucn_binding_yanzhenma_refresh_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_binding_edit_layout"
+                    style="@style/HUCNEditLayout"
+                    android:layout_height="@dimen/hucn_edittext_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_toLeftOf="@+id/hucn_binding_yanzhenma_iv"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="0dp" >
+
+                    <TextView
+                        android:id="@+id/hucn_binding_setting_ver_hint_tv"
+                        style="@style/HUCNEditTag"
+                        android:layout_marginRight="3dp"
+                        android:text="@string/hucn_setting_yanzhenma" />
+
+                    <LinearLayout
+                        android:id="@+id/hucn_binding_setting_code_tv"
+                        style="@style/HUCNEditText"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/hucn_binding_setting_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/hucn_binding_setting_edit_layout"
+                    style="@style/HUCNEditLayout"
+                    android:layout_height="@dimen/hucn_edittext_height"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp" >
+
+                    <LinearLayout
+                        android:id="@+id/hucn_binding_setting_yanzhengma_tv"
+                        style="@style/HUCNEditText"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/hucn_binding_setting_getcode_btn"
+                        android:layout_width="110dp"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/hucn_setting_get_yanzhenma"
+                        android:textColor="@color/hucn_text_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/HUCNEditLayout"
+                    android:layout_height="@dimen/hucn_edittext_height"
+                    android:layout_marginTop="0dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp" >
+
+                    <LinearLayout
+                        android:id="@+id/hucn_binding_new_password2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/hucn_binding_submit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginLeft="@dimen/hucn_layout_margin"
+                android:layout_marginRight="@dimen/hucn_layout_margin"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/hucn_btn_submit"
+                android:padding="13dp"
+                android:text="@string/hucn_confirm"
+                android:textColor="@drawable/hucn_btn_text_color"
+                android:textSize="@dimen/hucn_default_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="20dp"
+                android:text="@string/hucn_not_access_num"
+                android:textColor="@color/hucn_text_color"
+                android:textSize="@dimen/hucn_default_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/hucn_binding_layout1"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <include layout="@layout/hucn_bottom_layout" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

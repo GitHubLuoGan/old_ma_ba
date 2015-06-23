@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/upomp_lthj_scrollview_big" >
+<LinearLayout 
+      style="@style/upomp_lthj_layout_padding"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >    
+    <ImageView
+        android:layout_width="198dip"
+        android:layout_height="86dip"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/upomp_lthj_splash_logo" />
+    <LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal" android:layout_marginTop="10dip">
+		<TextView style="@style/upomp_lthj_about_textview" android:text="@string/upomp_name" />
+	</LinearLayout>
+	<LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal">
+		<TextView style="@style/upomp_lthj_about_textview" android:text="@string/upomp_version"/>
+		<TextView style="@style/upomp_lthj_about_textview" android:text="@string/upomp_lthj_version"/>
+	</LinearLayout>
+	<LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal">
+   		<TextView style="@style/upomp_lthj_about_textview" android:text="@string/upomp_phone"/>
+		<TextView style="@style/upomp_lthj_about_textview" android:text="@string/upomp_num"/>
+	</LinearLayout>
+<LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal">
+		<TextView style="@style/upomp_lthj_about_textview" android:text="@string/upomp_lthj_company"/>
+	</LinearLayout>
+<LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal">
+		<TextView style="@style/upomp_lthj_about_textview" android:text="@string/upomp_lthj_about_copyright"/>
+	</LinearLayout>
+<LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal">
+		<TextView style="@style/upomp_lthj_about_textview" android:text="@string/upomp_com_info"/>
+	</LinearLayout>
+<LinearLayout style="@style/upomp_lthj_about_item" android:orientation="horizontal">
+		<TextView style="@style/upomp_lthj_about_textview" android:text="@string/upomp_bian"/>
+		<TextView style="@style/upomp_lthj_about_textview" android:id="@id/upomp_lthj_build_no" />
+	</LinearLayout>
+</LinearLayout>
+</ScrollView>

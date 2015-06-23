@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ppsgame_theme_vertical" >
+
+    <LinearLayout
+        android:id="@+id/ppsgame_login_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4.0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/ppsgame_sdk_line"
+            android:contentDescription="@string/pps_finish" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dp"
+            android:contentDescription="@string/pps_finish"
+            android:src="@drawable/ppsgame_logo" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ppsgame_login_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ppsgame_login_bottom"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/pps_sdk_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10.0dp"
+                android:gravity="center"
+                android:textColor="@color/ppsgame_black"
+                android:textSize="12.0sp" />
+
+            <LinearLayout
+                android:id="@+id/ppsgame_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginTop="40.0dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ppsgame_edittext_bg" >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/login_username"
+                        style="@style/ppsgame_edittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="36.0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10.0dp"
+                        android:drawableLeft="@drawable/ppsgame_username"
+                        android:hint="@string/pps_username_hint"
+                        android:completionThreshold="1" />
+
+                    <ImageView
+                        android:id="@+id/login_down_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/pps_finish"
+                        android:padding="10.0dp"
+                        android:src="@drawable/pps_down_arrow"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10.0dp"
+                    android:background="@drawable/ppsgame_edittext_bg"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/login_password"
+                        style="@style/ppsgame_edittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="36.0dp"
+                        android:layout_marginLeft="10.0dp"
+                        android:drawableLeft="@drawable/ppsgame_pwd"
+                        android:hint="@string/pps_password_hint"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10.0dp"
+                    android:gravity="center_vertical" >
+
+                    <CheckBox
+                        android:id="@+id/login_autologin"
+                        style="@style/PPSGameCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10.0dp"
+                        android:checked="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/pps_autoLogin" />
+
+                    <Button
+                        android:id="@+id/login_findPwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10.0dp"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/ppsgame_findpwd"
+                        android:drawablePadding="10.0dp"
+                        android:text="@string/pps_findPwd"
+                        android:textColor="@color/ppsgame_black"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_action_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ppsgame_login"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginTop="10.0dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/login_register"
+                    style="@style/ppsgame_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ppsgame_yellow_btn_selector"
+                    android:text="@string/pps_register" />
+
+                <Button
+                    android:id="@+id/login_login"
+                    style="@style/ppsgame_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ppsgame_yellow_btn_selector"
+                    android:text="@string/pps_login" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_action_btn"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginTop="10.0dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/pps_third_login_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/pps_third_login"
+                    android:textColor="@color/ppsgame_black"
+                    android:textSize="14.0sp" />
+
+                <ViewStub android:id="@+id/ppsgame_china"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10.0dp"
+                    android:layout="@layout/pps_third_china"/>
+	                    
+                <ViewStub android:id="@+id/ppsgame_taiwan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10.0dp"
+                    android:layout="@layout/pps_third_tw"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="290.0dp"
+    android:layout_height="210.0dp"
+    android:layout_marginBottom="20.0dp"
+    android:layout_marginTop="20.0dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginTop="10.0dp"
+        android:background="@drawable/ppsgame_exit_bg" >
+
+        <LinearLayout
+            android:id="@+id/ppsgame_exit_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="44.0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10.0dp"
+            android:layout_marginLeft="20.0dp"
+            android:layout_marginRight="20.0dp"
+            android:layout_marginTop="10.0dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ppsgame_exit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ppsgame_exit_gray"
+                android:text="@string/ppsgame_exit"
+                android:textColor="@color/ppsgame_white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:src="@drawable/ppsgame_exit_line" />
+
+            <Button
+                android:id="@+id/ppsgame_exit_action"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ppsgame_exit_yellow"
+                android:text="@string/ppsgame_exit_action"
+                android:textColor="@color/ppsgame_white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ppsgame_exit_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:layout_above="@id/ppsgame_exit_btn"
+            android:background="@color/ppsgame_sdk_line" />
+
+        <ImageView
+            android:id="@+id/ppsgame_exit_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/ppsgame_exit_line"
+            android:src="@drawable/ppsgame_exit_pic"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ppsgame_exit_close"
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ppsgame_exit_btn_close" />
+
+</RelativeLayout>

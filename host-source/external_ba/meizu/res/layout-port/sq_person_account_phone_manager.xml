@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sq_person_account_phone_welcome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="#ff41403e"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/sq_person_account_phone_related"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/sq_person_account_phone_related_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ff41403e"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="center"
+            android:src="@drawable/sq_cartoon_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sq_person_account_phone_unrelated"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/sq_person_account_phone_unrelated_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#ff41403e"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/sq_person_account_phone_unrelated_num"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/sq_person_center_row_bg"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="phone|numberDecimal"
+            android:maxLength="11"
+            android:paddingBottom="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="0dp"
+            android:minHeight="46dp"
+            android:textColor="#ff41403e"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/sq_person_account_phone_unrelated_getcode_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/sq_recharge_comfirm_selectior"
+            android:minWidth="180dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ff41403e"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/sq_person_account_phone_unrelated_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="90dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/sq_person_center_row_bg"
+            android:gravity="center_vertical"
+            android:inputType="phone|numberDecimal"
+            android:paddingBottom="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+             android:minHeight="46dp"
+            android:paddingTop="0dp"
+            android:textColor="#ff41403e"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/sq_person_account_phone_unrelated_submit_btn"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/sq_recharge_comfirm_selectior"
+            android:focusable="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ff41403e"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sq_person_account_phone_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="25dp"
+        android:textColor="#ff41403e"
+        android:textSize="18dp" />
+
+</LinearLayout>

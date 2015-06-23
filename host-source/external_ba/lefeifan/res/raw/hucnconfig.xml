@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <meta-data name="channelName" value="sun" />
+  <meta-data name="channelId" value="1" />
+  <meta-data name="packageType" value="-1" />
+</config>

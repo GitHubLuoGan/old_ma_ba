@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <resources>
+        <color name="mg_transparent">#00000000</color>
+        <color name="mg_color_white">#ffffff</color>
+        <color name="mg_color_title">#474747</color>
+        <color name="mg_color_333333">#333333</color>
+        <color name="mg_color_999999">#999999</color>
+        <color name="mg_color_666666">#666666</color>
+        <color name="mg_color_2764af">#2764af</color>
+        <color name="mg_color_5c5c5c">#5c5c5c</color>
+        <color name="mg_color_cecbce">#CECBCE</color>
+        <color name="mg_color_orange">#FB8F30</color>
+        <color name="mg_color_back">#000000</color>
+        <color name="mg_color_gray">#5e5e5e</color>
+    </resources>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/unipay_fill.wrap_land" >
+
+    <LinearLayout
+        style="@style/unipay_fill"
+        android:baselineAligned="false" >
+
+        <include layout="@layout/unipay_layout_head" />
+        <!-- cont -->
+
+        <LinearLayout
+            android:id="@+id/unipay_id_down"
+            style="@style/unipay_cont_land" >
+
+            <!-- qqcard begin -->
+
+            <com.pay.ui.common.APScrollView
+                android:id="@+id/unipay_id_ScrollView"
+                style="@style/unipay_fill"
+                android:fillViewport="true" >
+
+                <LinearLayout style="@style/unipay_linear.srcollcont_land" >
+
+                    <TextView
+                        android:id="@+id/unipay_id_mpInfo"
+                        style="@style/unipay_text.middle"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/unipay_mobile_pay" />
+                    <!-- 输入框 -->
+
+                    <LinearLayout
+                        style="@style/unipay_linear"
+                        android:layout_marginBottom="10dp" >
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+                        </TableRow>
+
+                        <LinearLayout
+                            android:id="@+id/unipay_id_apMobileNumLayout"
+                            style="@style/unipay_inputbg" >
+
+                            <EditText
+                                android:id="@+id/unipay_id_apMobileNumEdit"
+                                style="@style/unipay_edit"
+                                android:digits="0123456789\n"
+                                android:hint="@string/unipay_mobile_number"
+                                android:imeOptions="actionDone"
+                                android:inputType="number" />
+
+                            <ImageButton
+                                android:id="@+id/unipay_id_MobileNumDel"
+                                style="@style/unipay_icondel"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                <LinearLayout 
+                android:id="@+id/unipay_id_hfPhoneNotSupport"
+                style="@style/unipay_linear_hor" 
+                android:visibility="gone"
+                >
+                <TextView
+                         android:id="@+id/unipay_id_notSupportTips"
+                         style="@style/unipay_text.middle"
+                         android:text="test"
+                         android:textColor="@color/unipay_link_color" />
+                </LinearLayout>
+                
+                <LinearLayout 
+                    android:id="@+id/unipay_id_hfNetWorkError"
+                    style="@style/unipay_linear_hor" 
+                    android:visibility="gone"
+                    >
+                    <TextView
+                             android:id="@+id/unipay_id_NetWorkTips"
+                             style="@style/unipay_text.middle"
+                             android:text="test"
+                             android:textColor="@color/unipay_link_color" />
+                    <TextView
+                             android:id="@+id/unipay_id_hfRetry"
+                             style="@style/unipay_text.middle"
+                             android:text="重试"
+                             android:textColor="@color/unipay_link_color" />
+                </LinearLayout>
+                
+                        <LinearLayout 
+                            android:id="@+id/unipay_id_hfMessage"
+                            style="@style/unipay_linear"
+                            android:visibility="gone"
+							>
+                            <TableRow
+                                android:id="@+id/unipay_tableRow"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+                                <LinearLayout
+                                    style="@style/unipay_wrap"
+                                    android:layout_weight="100">
+                                     <TextView
+	                                    android:id="@+id/unipay_id_localTv"
+	                                    style="@style/unipay_text.middle"
+	                                    android:text=""
+	                                    android:textColor="@color/unipay_em3_color" />
+                                     <TextView
+	                                    android:id="@+id/unipay_id_operatorTv"
+	                                    style="@style/unipay_text.middle"
+	                                    android:text=""
+	                                    android:textColor="@color/unipay_em3_color" />
+                                </LinearLayout>
+                                <TextView
+                                    android:id="@+id/unipay_id_showSendMethod"
+                                    style="@style/unipay_text.middle"
+                                    android:text="@string/unipay_hf_ruletitle"
+                                    android:textColor="@color/unipay_link_color" />
+                            </TableRow>
+                            
+				<View style="@style/unipay_dash"
+				          android:layout_width="fill_parent"
+				          android:layout_marginTop="5dp"
+				          android:layout_marginBottom="10dp"/>
+                            <LinearLayout 
+                        android:id="@+id/unipay_id_sendInfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+                                
+							<LinearLayout
+							    style="@style/unipay_linear"
+							     android:layout_marginBottom="10dp" >
+							      <TableRow
+	                                android:id="@+id/tableRow3"
+	                                android:layout_width="fill_parent"
+	                                android:layout_height="wrap_content">
+								
+                                
+	                                <TextView
+	                                    android:id="@+id/unipay_id_somethingTv"
+	                                    android:layout_width="fill_parent"
+                            			android:layout_height="wrap_content"
+	                                     />
+                           			</TableRow>
+                             
+	                            <TextView
+	                                android:id="@+id/unipay_id_stMtv"
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:singleLine="false"
+	                                android:text="@string/unipay_hf_sometv"
+	                                  android:visibility="gone"
+	                                 />
+	
+	                            <TextView
+	                                android:id="@+id/unipay_id_stMtip"
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:layout_marginTop="10dp"
+	                                android:singleLine="false"
+	                                android:visibility="gone"
+	                                 />
+							</LinearLayout>
+							</LinearLayout>
+                            <TextView
+                                android:id="@+id/unipay_id_monthsTips"
+                                style="@style/unipay_text.smallthin2"
+                                 />
+                            <!-- android:text="您将订购腾讯QQ会员业务，点击发送短信将立即扣费" -->
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- btn -->
+
+                    <LinearLayout style="@style/unipay_bigviewbtn_land" >
+
+                        <Button
+                            android:id="@+id/unipay_id_NextBottomBtn"
+                            style="@style/unipay_btn"
+                            android:text="@string/unipay_pay_senMsg" />
+
+                        <Button
+                            android:id="@+id/unipay_id_ReturnBottomBtn"
+                            style="@style/unipay_btn.thinbtn"
+                            android:text="@string/unipay_pay_back"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.pay.ui.common.APScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+   
+    <LinearLayout
+        android:background="@drawable/sliderbar_pps_bg_coner_cell2"
+		android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="260dp"
+        android:layout_width="@dimen/game_slider_pop_width">
+        
+        <LinearLayout 
+            android:background="@drawable/silder_pop_top_bg"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/game_slider_pop_content_part1_h"
+            android:layout_width="fill_parent">
+            <TextView 
+            	android:enabled="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="@color/slidebar_white"
+                android:textSize="@dimen/game_slider_pop_title_text_size"
+                android:gravity="center"
+                android:text="@string/ppsgame_pop_bind_title"/>
+             <ImageView 
+                android:contentDescription="@string/ppsgame_null_str"
+                android:id="@+id/game_bine_close_btn"
+                android:background="@drawable/sliderbar_back_btn"                  
+                android:src="@drawable/sliderbar_pps_pop_win_close"
+                android:layout_height="fill_parent"       
+                android:layout_width="@dimen/game_slider_pop_content_part1_h"
+                android:layout_marginLeft="@dimen/game_slider_pop_close_btn_margin_left"
+                android:padding="@dimen/game_slider_pop_close_btn_padding"/>            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:weightSum="30"
+            android:layout_height="@dimen/game_slider_pop_content_part2_h_half">
+            
+            <TextView 
+                android:enabled="false"    
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="3"/>
+            
+            <TextView 
+                android:enabled="false"    
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textColor="@color/slidebar_ppsgame_yellow"
+                android:textSize="18sp"
+                android:text="@string/ppsgame_pop_bind_86"/> 
+            
+	        <EditText
+	            android:id="@+id/game_bind_input1_tf"
+	            android:layout_width="0dp"
+	            android:layout_marginLeft="5dp"
+	            android:layout_weight="19"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/sliderbar_edittext_bg"
+	            android:gravity="left|center_vertical"
+	            android:textColor="@color/slidebar_black"
+	            android:textSize="18sp"
+	            android:inputType="number"
+	            android:hint="@string/ppsgame_pop_bind_hint1" 
+	            android:paddingLeft="10dp"/>          
+        </LinearLayout>
+
+        <LinearLayout 
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:weightSum="30"
+            android:layout_height="@dimen/game_slider_pop_content_part2_h_half">
+            
+            <TextView 
+                android:enabled="false"    
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:layout_weight="3"/>
+            
+	        <EditText
+	            android:id="@+id/game_bind_input2_tf"
+	            android:layout_width="0dp"
+	            android:layout_weight="13"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/sliderbar_edittext_bg"
+	            android:gravity="left|center_vertical"
+	            android:textColor="@color/slidebar_black"
+	            android:textSize="18sp"
+	            android:inputType="number"
+	            android:hint="@string/ppsgame_pop_bind_hint2" 
+	            android:paddingLeft="10dp"/>   
+	            
+			<Button			    
+                android:id="@+id/game_bine_get_code_btn"             
+                android:text="@string/ppsgame_pop_get_bind_code"
+                android:textSize="@dimen/game_slider_pop_btn_text_size"
+                android:textColor="@color/slidebar_white"
+                android:layout_width="0dp"
+                android:layout_weight="11"
+                android:layout_marginLeft="5dp" 
+                android:layout_height="@dimen/game_slider_pop_btn_h"
+                android:background="@drawable/sliderbar_back_btn_selector"
+                android:layout_gravity="center_vertical"/>	
+                
+			<TextView 
+			    android:id="@+id/game_bind_waite_60"
+			    android:layout_marginLeft="5dp" 
+			    android:visibility="gone"	    
+			    android:text="@string/ppsgame_pop_bind_waite"
+			    android:textSize="@dimen/game_slider_pop_bind_waite_tx_size"
+			    android:textColor="@color/slidebar_blue1"
+			    android:layout_height="fill_parent"
+			    android:gravity="center"
+			    android:layout_width="0dp"
+			    android:layout_weight="10"/>
+	        
+        </LinearLayout>
+          
+ 
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" 
+            android:layout_width="fill_parent"           
+	        android:layout_height="55dp"
+	        android:weightSum="30">
+                  
+            <TextView 
+                android:enabled="false"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="fill_parent"/>
+            <Button 
+                android:id="@+id/game_bine_ok_btn"
+                android:text="@string/ppsgame_pop_ok"
+                android:textSize="@dimen/game_slider_pop_btn_text_size"
+                android:textColor="@color/slidebar_white"
+                android:layout_width="0dp"
+                android:layout_weight="11"
+                android:layout_height="@dimen/game_slider_pop_btn_h"
+                android:background="@drawable/sliderbar_back_btn_selector"
+                android:layout_gravity="center_vertical"/>
+            <TextView 
+			    android:id="@+id/game_bind_in_request"	   
+			    android:visibility="gone" 
+			    android:text="@string/ppsgame_pop_bind_in_request"
+			    android:textColor="@color/slidebar_black"
+			    android:layout_height="fill_parent"
+			    android:gravity="center"
+			    android:layout_width="0dp"
+			    android:layout_weight="11"/>
+        </LinearLayout>   
+        
+    </LinearLayout>
+    
+</RelativeLayout>

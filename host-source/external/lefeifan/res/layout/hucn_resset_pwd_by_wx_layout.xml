@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNBg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/hucn_setting_binding_wx"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/hucn_setting_binding_wx_step"
+        android:textColor="@color/hucn_text_color"
+        android:textSize="@dimen/hucn_default_text_size" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/hucn_setting_binding_wx_exp"
+        android:textColor="@color/hucn_text_color"
+        android:textSize="@dimen/hucn_default_text_size" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/hucn_setting_binding_wx_exp_tip"
+        android:textColor="@color/hucn_text_color"
+        android:textSize="@dimen/hucn_default_text_size" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:id="@+id/hucn_setting_binding_wx_tv"
+        android:text="@string/hucn_setting_has_not_binding_wx"
+        android:textColor="@color/hucn_blue"
+        android:textSize="@dimen/hucn_default_text_size" />
+
+</LinearLayout>

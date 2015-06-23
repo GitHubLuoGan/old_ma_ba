@@ -1,0 +1,67 @@
+ <!--youmi --> 
+    <activity android:name="net.umipay.android.view.UmipayActivity"
+            android:theme="@style/umipay_main_dialog_theme"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="net.umipay.android.UmipayBrowser"
+            android:theme="@style/UmipayTheme_NoFullscreen"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboardHidden|orientation">
+        </activity>
+
+        <!--银联支付activity-->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.UPPay">
+        </activity>
+        <!--银联支付activity-->
+
+        <!-- qq oauth 第三方登录 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100378813" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="net.umipay.android.poll.Push_Poll_service"
+            android:exported="false" >
+        </service>
+        <!-- 网络状态改变则启动 -->
+        <receiver android:name="net.umipay.android.poll.Push_Boot_Receiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 接听闹钟广播 -->
+        <receiver
+            android:name="net.umipay.android.poll.Push_Alarm_Receiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="net.umipay.android.poll.push_alarm" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="UMIPAY_CHANNEL"
+            android:value="0" />
+        <meta-data
+            android:name="UMIPAY_SUBCHANNEL"
+            android:value="0" />
+
+
+<!--youmi -->

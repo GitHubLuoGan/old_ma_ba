@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" 
+    >
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="300dip"
+        android:layout_height="150dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/mzw_sdk_error_text"
+            android:layout_width="fill_parent"
+            android:layout_height="108dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_marginTop="20dip"
+            android:id="@+id/mzw_sdk_error_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mzw_sdk_alert_btn"
+            android:gravity="center"
+            android:text="@string/mzw_sdk_error_confirm"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sq_person_logout_account_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="#ff41403e"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/sq_person_logout_game_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ff41403e"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/sq_person_center_row_bg_normal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="12dp" >
+
+        <ImageView
+            android:id="@+id/sq_person_logout_game_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/sq_person_logout_game_ic"
+            android:orientation="vertical"
+            android:paddingLeft="8dp" >
+
+            <TextView
+                android:id="@+id/sq_person_logout_game_name_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff41403e"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sq_person_logout_game_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/sq_person_logout_game_name_hint"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textColor="#ff9ea4a6"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sq_person_logout_game_version_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sq_person_logout_game_name_hint"
+                android:textColor="#ff41403e"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sq_person_logout_game_version_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sq_person_logout_game_name_text"
+                android:layout_toRightOf="@id/sq_person_logout_game_version_hint"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textColor="#ff9ea4a6"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sq_person_logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/sq_person_center_btn_bg"
+        android:textColor="#ff40413e"
+        android:textSize="18sp" />
+
+</LinearLayout>

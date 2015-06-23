@@ -1,0 +1,36 @@
+<!-- yijie start -->
+<activity
+        android:name="com.snowfish.a.a.s.PA"
+        android:configChanges="keyboardHidden|orientation"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:windowSoftInputMode="stateHidden">
+</activity>
+<service
+        android:name="com.snowfish.a.a.s.ABGSvc"
+        android:enabled="true">
+<intent-filter>
+        <action android:name="com.snowfish.a.a.s.ABGSvc"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+</intent-filter>
+</service>
+<meta-data
+        android:name="com.snowfish.customer"
+        android:value="SNOWFISH">
+</meta-data>
+<meta-data
+        android:name="com.snowfish.channel"
+        android:value="SNOWFISH">
+</meta-data>
+<meta-data
+        android:name="com.snowfish.sdk.version"
+        android:value="2">
+</meta-data>
+<meta-data
+        android:name="com.snowfish.appid"
+        android:value="{D8D11D2D-EE4D0746}">
+</meta-data>
+<meta-data
+        android:name="com.snowfish.channelid"
+        android:value="{4ff036a1-3254eafe}">
+</meta-data>
+<!-- yijie end -->

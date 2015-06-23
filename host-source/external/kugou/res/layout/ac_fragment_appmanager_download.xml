@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ac_common_background_light"
+    android:orientation="vertical" >
+
+    <com.kuyou.appcenter.widgets.TipsLayout
+        android:id="@+id/tips_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.kuyou.appcenter.widgets.PinnedHeaderExpandableListView
+        android:id="@+id/download_expand_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/ac_common_item_cache"
+        android:choiceMode="singleChoice"
+        android:divider="@color/ac_common_item_divider"
+        android:dividerHeight="1px"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:scrollingCache="true" />
+
+</RelativeLayout>

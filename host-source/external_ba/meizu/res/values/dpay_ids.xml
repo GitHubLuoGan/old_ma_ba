@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item name="dpay_subtitle" type="id"/>
+    <item name="dpay_main_title" type="id"/>
+    <item name="dpay_navigation" type="id"/>
+    <item name="dpay_closed" type="id"/>
+    <item name="dpay_page_title" type="id"/>
+    <item name="dpay_page_content" type="id"/>
+    <item name="dpay_btn_submit" type="id"/>
+    <item name="dpay_btn_ok" type="id"/>
+    <item name="dpay_list_num" type="id"/>
+    <item name="dpay_subtitle_right_content" type="id"/>
+    <item name="dpay_webview" type="id"/>
+    <!-- top menu -->
+    <item name="dpay_btn_user_center_page" type="id"/>
+    <item name="dpay_btn_goods_mall_page" type="id"/>
+    <item name="dpay_btn_recharge_center_page" type="id"/>
+    <item name="dpay_btn_feedback_page" type="id"/>
+    <item name="dpay_btn_about_us" type="id"/>
+    <!-- toast view -->
+    <item name="dpay_tv_toastview" type="id"/>
+    <!-- account info -->
+    <item name="dpay_tv_balance" type="id"/>
+    <item name="dpay_tv_username" type="id"/>
+    <!-- recharge -->
+    <item name="dpay_rl_recharge_pattern" type="id"/>
+    <item name="dpay_recharge_pattern_icon" type="id"/>
+    <item name="dpay_recharge_pattern_title" type="id"/>
+    <item name="dpay_recharge_container" type="id"/>
+    <!-- recharge amount -->
+    <item name="dpay_recharge_amount_title" type="id"/>
+    <item name="dpay_ten" type="id"/>
+    <item name="dpay_thirty" type="id"/>
+    <item name="dpay_fifty" type="id"/>
+    <item name="dpay_one_hundred" type="id"/>
+    <item name="dpay_three_hundred" type="id"/>
+    <item name="dpay_five_hundred" type="id"/>
+    <item name="dpay_one_thousand" type="id"/>
+    <item name="dpay_two_thousand" type="id"/>
+    <item name="dpay_et_other_amount" type="id"/>
+    <item name="dpay_total_amount" type="id"/>
+    <item name="dpay_confirm_charge" type="id"/>
+    <item name="dpay_loading_progress" type="id"/>
+    <item name="dpay_recharge_amount_choose_content" type="id"/>
+    <item name="dpay_recharge_amount_unchoose_content" type="id"/>
+    <item name="dpay_total_amount_tips" type="id"/>
+    <!-- login -->
+    <item name="dpay_et_user" type="id"/>
+    <item name="dpay_et_password" type="id"/>
+    <item name="dpay_btn_login" type="id"/>
+    <item name="dpay_btn_regist" type="id"/>
+    <item name="dpay_btn_retrieve_password" type="id"/>
+    <item name="dpay_checkbox_save_password" type="id"/>
+    <item name="dpay_iv_account_clear" type="id"/>
+    <item name="dpay_iv_password_clear" type="id"/>
+    <item name="dpay_iv_password_repeat_clear" type="id"/>
+    <item name="dpay_btn_preplaying" type="id"/>
+    <item name="dpay_btn_registers" type="id"/>
+    
+    <item name="dpay_btn_next" type="id"/>
+    <!-- user center -->
+    <item name="dpay_rl_modify_password" type="id"/>
+    <item name="dpay_rl_recharge" type="id"/>
+    <item name="dpay_rl_bind_mail" type="id"/>
+    <item name="dpay_tv_mail" type="id"/>
+    <item name="dpay_btn_user_bind_mail" type="id"/>
+    <item name="dpay_btn_logout" type="id"/>
+    <item name="dpay_et_old_password" type="id"/>
+    <item name="dpay_et_new_password" type="id"/>
+    <item name="dpay_rl_upgrade" type="id"/>
+    <item name="dpay_tv_upgrade" type="id"/>
+    <item name="dpay_line" type="id"/>
+    <!-- feedback -->
+    <item name="dpay_feedback_content" type="id"></item>
+    <item name="dpay_feedback_contact" type="id"></item>
+    <!-- goods category -->
+    <item name="dpay_consumption_category" type="id"></item>
+    <item name="dpay_not_consumption_category" type="id"></item>
+    <item name="dpay_subscribe_category" type="id"></item>
+    <item name="dpay_ll_goods_category" type="id"></item>
+    <!-- goods list -->
+    <item name="dpay_hello" type="id"></item>
+    <item name="dpay_gridview" type="id"></item>
+    <item name="dpay_goods_image" type="id"></item>
+    <item name="dpay_goods_name" type="id"></item>
+    <item name="dpay_discount_price" type="id"></item>
+    <!-- shopping cart -->
+    <item name="dpay_btn_payment_now" type="id"></item>
+    <item name="dpay_listview" type="id"></item>
+    <item name="dpay_btn_trash" type="id"></item>
+    <item name="dpay_default_num" type="id"></item>
+    <item name="dpay_narrow" type="id"></item>
+    <item name="dpay_goods_number" type="id"></item>
+    <item name="dpay_enlarge" type="id"></item>
+    <!-- pull to refresh -->
+    <item name="dpay_pull_to_refresh_text" type="id"></item>
+    <item name="dpay_pull_to_refresh_sub_text" type="id"></item>
+    <item name="dpay_pull_to_refresh_image" type="id"></item>
+    <!-- register -->
+    <item name="dpay_btn_registration_agreement" type="id"/>
+    <item name="dpay_ll_purchase" type="id"/>
+    <item name="dpay_total_payment" type="id"/>
+    <item name="dpay_btn_back_shopping_mall" type="id"/>
+    <item name="dpay_tv_purchase_info" type="id"/>
+    <item name="dpay_divider_line" type="id"/>
+    <item name="dpay_btn_agree_and_regist" type="id"/>
+    <item name="dpay_iv_password_visible" type="id"/>
+    <item name="dpay_et_password_repeat" type="id"/>
+    <item name="dpay_iv_password_repeat_visible" type="id"/>
+    <item name="dpay_checkbox_registration_agreement" type="id"/>
+    
+    <!-- balance_lacking -->
+    <item name="dpay_rl_mode" type="id"/>
+    <item name="dpay_need_charge_amount" type="id"/>
+    <!-- goods detail -->
+    <item name="dpay_cost_price" type="id"/>
+    <item name="dpay_buy_now" type="id"/>
+    <item name="dpay_add_to_cart" type="id"/>
+    <item name="dpay_goods_description" type="id"/>
+    <!-- purchase confir -->
+    <item name="dpay_tv_unit_price" type="id"/>
+    <item name="dpay_tv_goods_number" type="id"/>
+    <!-- register succeeded -->
+    <item name="dpay_btn_immediately_bind_mail" type="id"/>
+    <item name="dpay_btn_back_again" type="id"/>
+    <!-- message dialog -->
+    <item name="dpay_msg_title" type="id"/>
+    <item name="dpay_msg_content" type="id"/>
+    <!-- bind mail -->
+    <item name="dpay_bind_new_mail" type="id"/>
+    <!-- about us dialog -->
+    <item name="dpay_sdk_about" type="id"/>
+    <item name="dpay_app_name" type="id"/>
+    <item name="dpay_app_about" type="id"/>
+    
+    <!--share login -->
+	<item name="dpay_btn_sina_login" type="id"/>
+	<item name="dpay_btn_tencent_login" type="id"/>
+	
+	<!--  91 new -->
+	<item name="dpay_btn_91register" type="id"/>
+	<item name="dpay_btn_back_login" type="id"/>
+	<item name="dpay_btn_update_account" type="id"/>
+	<item name="dpay_tv_go_confirm_tip" type="id"/>
+	<item name="dpay_btn_login_update" type="id"/>
+	<item name="dpay_tv_updated91_tip" type="id"/>
+	<item name="dpay_tv_update_sucess_tip" type="id"/>
+	<item name="dpay_tv_djaccount" type="id"/>
+    <item name="dpay_tv_91account" type="id"/>
+</resources>

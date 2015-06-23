@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:minHeight="50dp"
+    android:paddingLeft="5dp"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:background="@drawable/yeepay_style">
+    
+    <TextView 
+        android:id="@+id/yeepayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="华夏银行"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+    
+    <TextView 
+        android:id="@+id/yeepayAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="**6528"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/yeepayName"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/gray"/>
+    <TextView 
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:text="@string/sijiu_yeebing_now"
+        android:background="@drawable/yeedlistnow"
+        >
+        
+    </TextView>
+<!--      <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/yeepay_style_click"/>
+    -->
+
+</RelativeLayout>

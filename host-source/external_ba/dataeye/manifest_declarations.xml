@@ -1,0 +1,5 @@
+<!-- dataEye start-->
+<meta-data android:name="DC_APPID" android:value="@DataEye_DC_APPID@" ></meta-data> 
+<meta-data android:name="DC_CHANNEL" android:value="@DataEye_DC_CHANNEL@" /> 
+
+<!-- dataEye end-->

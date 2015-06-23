@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mzw_login_third_login_select_color">#38bb59</color>
+    <color name="mzw_login_dialog_title_text_color">#06aa2f</color>
+    <color name="mzw_login_dialog_red_alert_text_color">#f7a884</color>
+    <color name="mzw_login_dialog_edit_text_color">#35393a</color>
+    <color name="mzw_diver_top_color">#e1e1e1</color>
+    <color name="mzw_diver_bottem_color">#e1e1e1</color>
+    <color name="mzw_login_dialog_white_color">#ffffff</color>
+    <color name="mzw_login_dialog_hint_color">#999999</color>
+    <color name="mzw_login_third_login_bg_color">#d8d8d8</color>
+    <color name="mzw_pay_money_normal">#f4f8f5</color>
+    <color name="mzw_pay_money_text">#666666</color>
+
+    <!-- 拇指玩安全支付页面颜色 -->
+    <color name="mzw_pay_title_text_color">#111111</color>
+    <color name="mzw_pay_title_bg">#f3f2f2</color>
+    <color name="mzw_pay_list_stroke">#d9d9d9</color>
+    <color name="mzw_pay_list_btn_bg">#f3f2f2</color>
+    <color name="mzw_pay_list_text_pre">#2ea540</color>
+    <color name="mzw_pay_list_text_normal">#111111</color>
+    <color name="mzw_pay_cardinfo_look_text_bg">#fff0b9</color>
+    <color name="mzw_pay_info_bg">#f5f5f5</color>
+    <color name="mzw_pay_info_stroke">#cccccc</color>
+    <color name="mzw_pay_info_creditNum">#ff6000</color>
+    <color name="mzw_pay_info_text">#666666</color>
+    <color name="mzw_pay_cardinfo_text">#909090</color>
+    <color name="mzw_pay_button_text_color">#666666</color>
+    <color name="mzw_pay_button_bg">#49ad58</color>
+    <color name="mzw_pay_money_text_press">#ffffff</color>
+    <color name="mzw_pay_dialog_bg">#ffffff</color>
+    <color name="mzw_pay_checkedcode_btn_bg">#dbdbdb</color>
+    <color name="mzw_pay_bank_card_num_text">#999999</color>
+    <color name="mzw_pay_btn_press">#db4a3a</color>
+    <color name="mzw_pay_btn_normal">#598db2</color>
+    <color name="mzw_pay_cancel_btn_press">#aeaeae</color>
+    <color name="mzw_pay_cancel_btn_normal">#bbbbbb</color>
+    <color name="mzw_pay_unbind_bg">#FFA500</color>
+    <color name="mzw_pay_unbind_bg_press">#eb9d0e</color>
+    <color name="mzw_pay_way_gridview_divider">#dee0df</color>
+    <color name="mzw_pay_gridview_titleline">#cccccc</color>
+    <color name="mzw_pay_way_text">#989898</color>
+
+</resources>

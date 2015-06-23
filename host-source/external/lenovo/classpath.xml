@@ -1,0 +1,9 @@
+<!-- Crittercism -->
+<classpathentry kind="lib" path="libs/alipay_plugin.jar"/>
+<classpathentry kind="lib" path="libs/game_analysis_v4.4.jar"/>
+<classpathentry kind="lib" path="libs/gamesdk_0113.jar"/>
+<classpathentry kind="lib" path="libs/lenovoidsdk_0113.jar"/>
+<classpathentry kind="lib" path="libs/pay_plugin.jar"/>
+<classpathentry kind="lib" path="libs/payecopluginjar.jar"/>
+<classpathentry kind="lib" path="libs/TenpayServiceSDK_V4.0.jar"/>
+<classpathentry kind="lib" path="libs/upomp_bypay_lib.jar"/>

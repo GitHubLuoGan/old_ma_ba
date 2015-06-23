@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="30dip"
+    android:background="@drawable/library_common_background"
+    android:gravity="left"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- android:background="#F2F2F2" -->
+ 
+    <TextView
+        android:id="@+id/library_ring_custom_service"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:text="400-888-4006"
+        android:textColor="#ff669900"
+        android:textSize="14dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" (7x24小时客服热线)"
+        android:textSize="14dip" />
+
+</LinearLayout>

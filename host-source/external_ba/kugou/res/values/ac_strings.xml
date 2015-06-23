@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ac_app_name">KYAppCenter</string>
+    <string name="ac_img_description">image</string>
+	<string name="ac_loading_wrong">很抱歉，数据加载失败!</string>
+	<string name="ac_pull_to_refresh">下拉可以刷新</string>
+	<string name="ac_release_to_refresh">释放立即刷新</string>
+	<string name="ac_refreshing">正在刷新…</string>
+</resources>

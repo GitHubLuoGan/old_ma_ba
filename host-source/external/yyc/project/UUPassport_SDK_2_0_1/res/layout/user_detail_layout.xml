@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@id/sdk_user_detail_container">
+
+    <ImageView
+        android:id="@id/sdk_detail_icon"
+        android:layout_width="@dimen/passport_icon_width"
+        android:layout_height="@dimen/passport_icon_height"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_horizontal"
+        android:contentDescription="@string/content_description" />
+    
+    <TextView
+        android:id="@id/sdk_tv_nametip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_min"
+        android:layout_marginTop="@dimen/margin_horizontal"
+        android:layout_toRightOf="@id/sdk_detail_icon"
+        android:text="@string/sdk_uupassport"
+        android:textColor="@color/color_common_text"
+        android:textSize="@dimen/common_generic_size" />
+    
+    <TextView
+        android:id="@id/sdk_tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_min"
+        android:layout_marginTop="@dimen/margin_horizontal"
+        android:textColor="@color/color_tip_text"
+        android:layout_toRightOf="@id/sdk_tv_nametip"
+        android:textSize="@dimen/common_generic_size" />
+    
+    <TextView
+        android:id="@id/sdk_tv_nicktip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_min"
+        android:layout_toRightOf="@id/sdk_detail_icon"
+        android:layout_below="@id/sdk_tv_nametip"
+        android:text="@string/sdk_nickname"
+        android:textColor="@color/color_common_text"
+        android:textSize="@dimen/common_generic_size" />
+    
+    <TextView
+        android:id="@id/sdk_tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sdk_tv_nametip"
+        android:layout_marginBottom="@dimen/margin_min"
+        android:layout_alignLeft="@id/sdk_tv_appname"
+        android:textColor="@color/color_common_text"
+        android:layout_toRightOf="@id/sdk_tv_nicktip"
+        android:textSize="@dimen/common_generic_size" />
+    
+    <TextView
+        android:id="@id/sdk_tv_apptip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sdk_detail_icon"
+        android:layout_below="@id/sdk_tv_nicktip"
+        android:text="@string/sdk_appname"
+        android:textColor="@color/color_common_text"
+        android:textSize="@dimen/common_generic_size" />
+    
+    <TextView
+        android:id="@id/sdk_tv_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sdk_tv_nicktip"
+        android:textColor="@color/color_common_text"
+        android:layout_toRightOf="@id/sdk_tv_apptip"
+        android:textSize="@dimen/common_generic_size" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageButton
+        android:id="@+id/hucn_edit_del_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/hucn_del_btn"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/hucn_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/hucn_edit_del_iv"
+        android:background="@null"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+        android:hint=""
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:singleLine="true"
+        android:textColor="@color/hucn_text_color"
+        android:textSize="16sp" />
+
+</RelativeLayout>

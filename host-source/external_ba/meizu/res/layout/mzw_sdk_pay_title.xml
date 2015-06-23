@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@color/mzw_pay_title_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/PayTitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mzw_title_wwq" />
+
+        <RelativeLayout
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/mzw_sdk_common_back" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lines"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="right"
+        android:background="@color/mzw_pay_list_stroke" />
+
+</LinearLayout>

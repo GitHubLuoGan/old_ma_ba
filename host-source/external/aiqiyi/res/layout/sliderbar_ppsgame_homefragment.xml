@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <RelativeLayout style="@style/TitleBar" >
+
+        <ImageView
+            android:id="@+id/ppsgame_slider_back_icon"
+            android:layout_width="45dip"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sliderbar_back_icon"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ppsgame_slider_title"
+            style="@style/TitleTextView"
+            android:text="@string/ppsgame_sliderbar_title" />
+
+        <Button
+            android:id="@+id/slidebar_ppsgame_back_to_game"
+            style="@style/BackToGameBtn" />
+    </RelativeLayout>
+    <com.pps.sdk.slidebar.viewpagerindicator.TabPageIndicator
+        android:id="@+id/sildebar_ppsgame_home_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip" />
+
+    <com.pps.sdk.slidebar.widget.ViewPagerCompat
+        android:id="@+id/sildebar_ppsgame_home_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

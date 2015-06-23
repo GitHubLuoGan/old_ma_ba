@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="55dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/library_selector_btn_common"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/library_img_delete"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/library_icon_delete_message" />
+
+    <ImageView
+        android:id="@+id/library_img_notice_type"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/library_icon_system_notice" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/library_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="title"
+                android:singleLine="true"
+                android:text="测试dfffffsss"
+                android:textSize="18sp"
+                android:drawableRight="@drawable/library_icon_unread"
+                 />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/library_tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tag="content"
+            android:singleLine="true"
+            android:text="测试" 
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/library_img_arrow"
+        android:layout_width="35dp"
+        android:layout_height="fill_parent"
+        android:scaleType="center"
+        android:tag="more"
+        android:src="@drawable/library_common_button_photo_pressed" />
+
+</LinearLayout>

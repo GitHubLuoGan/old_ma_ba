@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/sq_recharge_alipay_custom_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sq_recharge_white_bg"
+            android:maxLength="6"
+            android:numeric="decimal"
+            android:textColor="#a3a8ab"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/sq_recharge_alipay_ratio_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dip"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>

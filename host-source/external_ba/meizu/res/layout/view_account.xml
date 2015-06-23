@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/commonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:paddingTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingRight="10dip"
+                    android:text="@string/fg_login_title"
+                    android:textColor="#ff333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/left"
+                    android:layout_width="70dip"
+                    android:layout_height="2dip"
+                    android:layout_marginRight="12dip"
+                    android:scaleType="matrix"
+                    android:src="#5eb9ed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/manager"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="11dip"
+                    android:text="@string/fg_account_manager"
+                    android:textColor="#ff333333"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/right"
+                    android:layout_width="70dip"
+                    android:layout_height="2dip"
+                    android:layout_marginLeft="10dip"
+                    android:scaleType="matrix"
+                    android:src="#5eb9ed"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/header"
+            android:paddingTop="5dip" >
+
+            <com.fgw.kefu.widget.AtwViewPager
+                android:id="@+id/dateViews"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ProgressBar
+                android:id="@+id/waiting"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="30dip"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/kefu_progress" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

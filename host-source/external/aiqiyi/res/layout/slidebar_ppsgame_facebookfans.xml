@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#FF8A00" >
+
+        <ImageButton
+            android:id="@+id/pps_game_back"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sliderbar_facebooktop_btn_selector"
+            android:src="@drawable/slidebar_ppsgame_facebookfans_top_back" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/pps_game_refrush"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pps_game_back"
+            android:background="@drawable/sliderbar_facebooktop_btn_selector"
+            android:src="@drawable/slidebar_ppsgame_facebookfans_top_refrush" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/pps_game_home"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pps_game_refrush"
+            android:background="@drawable/sliderbar_facebooktop_btn_selector"
+            android:src="@drawable/slidebar_ppsgame_facebookfans_top_home" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/pps_game_close"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sliderbar_facebooktop_btn_selector"
+            android:src="@drawable/slidebar_ppsgame_facebookfans_top_close" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/slidebar_ppsgame_fragment_background" >
+
+        <LinearLayout
+            android:id="@+id/ppsgame_slider_facebookfans_progress_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/silder_facebookfans_load_more_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@anim/sliderbar_ppsgame_round"
+                android:contentDescription="@string/ppsgame_null_str" />
+
+            <ImageView
+                android:id="@+id/sliderbar_facebookfans_load_fail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ppsgame_null_str"
+                android:src="@drawable/sliderbar_load_fail"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sliderbar_facebookfans_empty_txt"
+                style="@style/BadNetworkTxt"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <com.pps.sdk.slidebar.widget.BaseWebView
+            android:id="@+id/slidebar_common_facebookfans_web"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/ppsgame_slider_facebookfans_progress_layout"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:layout_height="50dip" >
+
+    <ImageView
+        android:id="@+id/loginType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/mzw_sdk_login_show_pwd_unchecked" />
+
+    <TextView
+        android:layout_toRightOf="@id/loginType"
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/mzw_login_dialog_edit_hint_margin_size" />
+
+    <ImageView
+        android:id="@+id/delBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/mzw_sdk_login_delete_history" />
+
+</RelativeLayout>

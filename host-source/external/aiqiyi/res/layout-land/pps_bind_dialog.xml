@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ppsgame_theme_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+		<TextView android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10.0dp"
+		    android:layout_marginLeft="20.0dp"
+		    android:layout_marginRight="20.0dp"
+		    style="@style/ppsgame_dialog_text_yellow"
+		    android:text="@string/ppsgame_bind_info1"/>
+		
+		<TextView android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10.0dp"
+		    	android:layout_marginLeft="20.0dp"
+		    	android:layout_marginRight="20.0dp"
+		    	android:textColor="@color/ppsgame_black"
+		    	android:textSize="14.0sp"
+		        android:text="@string/ppsgame_bind_info"/>
+		
+		<RelativeLayout
+            android:id="@+id/login_action_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="10.0dp" >
+
+            <Button
+                android:id="@+id/ppsgame_unbind_account"
+                android:layout_width="83.0dp"
+                android:layout_height="90.0dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dp"
+                android:gravity="center"
+                android:background="@drawable/ppsgame_guest_btn_selector"
+                android:text="@string/ppsgame_bind_no"
+                android:textColor="@android:color/white"
+                android:textSize="18.0sp" />
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/ppsgame_unbind_account"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/ppsgame_bind_account"
+                    style="@style/ppsgame_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10.0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ppsgame_yellow_btn_selector"
+                    android:text="@string/ppsgame_bind1" />
+                
+                <Button
+                    android:id="@+id/ppsgame_change_user"
+                    style="@style/ppsgame_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dp"
+                    android:layout_marginRight="10.0dp"
+                    android:layout_marginTop="10.0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ppsgame_yellow_btn_selector"
+                    android:text="@string/ppsgame_change_account" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4.0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/ppsgame_sdk_line" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.0dp"
+            android:src="@drawable/ppsgame_logo" />
+    </LinearLayout>
+
+</RelativeLayout>

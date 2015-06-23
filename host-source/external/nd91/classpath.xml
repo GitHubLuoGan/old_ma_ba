@@ -1,0 +1,4 @@
+<!-- nd91 -->
+<classpathentry kind="lib" path="libs/NdComPlatform.jar"/>
+<classpathentry kind="lib" path="libs/alipay_msp.jar"/>
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>

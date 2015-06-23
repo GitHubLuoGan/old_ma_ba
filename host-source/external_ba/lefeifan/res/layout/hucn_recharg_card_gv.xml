@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hucn_recharh_card_select_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/hucn_card_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/hucn_recharh_card_select_tv"
+        style="@style/HUCNText"
+        android:textColor="@color/hucn_light_gray_" />
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@id/dpay_tv_go_confirm_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="16dip"
+        android:text="@string/dpay_go_confirm_email"
+        android:textSize="@dimen/dpay_prompt_font_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/dpay_verify_bottom_layout"
+        android:layout_below="@+id/dpay_tv_go_confirm_tip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/dpay_btn_immediately_bind_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dpay_default_padding"
+            android:layout_marginRight="@dimen/dpay_default_padding"
+            android:layout_weight="1"
+            android:background="@drawable/dpay_btn_red_bg"
+            android:text="@string/dpay_btn_immediately_bind_mail"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dpay_subtitle_font_size" />
+
+        <Button
+            android:id="@id/dpay_btn_back_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dpay_default_padding"
+            android:layout_marginRight="@dimen/dpay_default_padding"
+            android:layout_weight="1"
+            android:background="@drawable/dpay_btn_gray_bg"
+            android:text="@string/dpay_btn_back_again"
+            android:textColor="@color/dpay_black"
+            android:textSize="@dimen/dpay_subtitle_font_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/dpay_verify_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <TextView
+            android:id="@+id/dpay_tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/dpay_no_receive_mail"
+            android:textColor="@color/dpay_black"
+            android:textSize="@dimen/dpay_prompt_font_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dpay_tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dpay_tip1"
+            android:layout_marginBottom="8dp"
+            android:text="@string/dpay_verify_mail_tip_1"
+            android:textColor="@color/dpay_black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/dpay_send_mail_again_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dpay_tip2" >
+
+            <TextView
+                android:id="@+id/dpay_tip3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dpay_verify_mail_tip_2"
+                android:textColor="@color/dpay_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/dpay_btn_send_verifymail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/dpay_verify_mail_execute"
+                android:textColor="@color/dpay_blue"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

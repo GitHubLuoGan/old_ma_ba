@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg"
+    >
+      <RelativeLayout
+	      android:id = "@+id/recharge_title_ly"
+		  android:layout_width="fill_parent"
+		  android:layout_height="28dip"
+		  android:layout_alignParentTop="true"
+		  android:orientation="horizontal"
+		  android:background="@drawable/bg_title"
+	  >
+	  <!-- android:background="@drawable/top_bar_bg" -->
+	  	<TextView 
+	  	    
+	  	    	android:layout_width="wrap_content"
+	  	    	android:layout_height="fill_parent"
+	  	    	android:layout_centerInParent="true"
+	  	    	android:gravity="center"
+	  	    	android:textColor="#ffffff"
+	  	    	android:text="收银台"
+	  	    	android:textSize="18dip"
+	  	    	android:focusable="true"  
+	  	    	android:focusableInTouchMode="true"
+	  	    />
+	  	<Button 
+	  	    	android:id = "@+id/recharge_back_btn"
+	  	    	android:layout_width="40dip"
+	  	    	android:layout_height="24dip"
+	  	    	android:layout_alignParentRight="true"
+	  	    	android:background="@drawable/back_style"
+	  	    	android:layout_centerVertical="true"
+	  	    	android:text="返回"
+	  	    	android:textColor="#ffffff"
+	  	    	android:textSize="12dip"
+	  	    	android:layout_marginRight="5dip"
+	  	    />
+      </RelativeLayout>
+      
+    <RelativeLayout
+      android:id = "@+id/cashier_center_ly"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:layout_below="@id/recharge_title_ly"
+	  android:background="@drawable/bg_cover"
+	  >
+	  	
+        <LinearLayout 
+	  	    android:id = "@+id/tip_layout"
+	  	    android:orientation="horizontal"
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="wrap_content"
+	  	    android:paddingLeft="10dip"
+	  	    android:layout_marginBottom="5dip"
+	  	    android:layout_alignParentTop="true">
+	  	    <TextView 
+	  	    	android:layout_width="wrap_content"
+	  	    	android:layout_height="wrap_content"
+	  	    	android:textColor="#1d1d1d"
+	  	    	android:text="充值方式："
+	  	    />
+	  	    <TextView 
+	  	        android:id="@+id/recharge_mode_text"
+	  	    	android:layout_width="wrap_content"
+	  	    	android:layout_height="wrap_content"
+	  	    	android:textColor="#88040d"
+	  	    	android:textStyle="bold"
+	  	    	android:text="空"
+	  	    />
+	  	    
+        </LinearLayout>
+        
+        
+	  	<LinearLayout 
+	  	    android:id = "@+id/miane_layout"
+    		android:orientation="horizontal"
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="wrap_content"
+	  	    android:paddingLeft="10dip"
+	  	    android:layout_marginBottom="5dip"
+	  	    android:layout_below="@id/tip_layout"
+	  	    >
+	  	    <TextView 
+	  	    	android:layout_width="wrap_content"
+	  	    	android:layout_height="wrap_content"
+	  	    	android:textColor="#0d0d0d"
+	  	    	android:text="面额："
+	  	    />
+	  	    
+	  	    <TextView 
+	  	        android:id = "@+id/recharge_price_text"
+	  	    	android:layout_width="wrap_content"
+	  	    	android:layout_height="wrap_content"
+	  	    	android:textColor="#0d0d0d"
+	  	    	android:text="空"
+	  	    />
+	  	</LinearLayout>
+	  	
+		<ImageView 
+		  	android:layout_width = "fill_parent"
+		  	android:layout_height = "2dip"
+		  	android:layout_below="@id/miane_layout"
+		  	android:background="@drawable/line"
+		/>
+	  	
+	  	<LinearLayout 
+	  	    android:id = "@+id/kahao_layout"
+	  	    android:orientation="horizontal"
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="wrap_content"
+	  	    android:paddingLeft="10dip"
+	  	    android:layout_marginTop="10dip"
+	  	    android:layout_marginBottom="5dip"
+	  	    android:layout_below="@id/miane_layout"
+	  	    >
+	  	    
+	  	    <TextView 
+	  	    	android:layout_width="wrap_content"
+	  	    	android:layout_height="wrap_content"
+	  	    	android:textColor="#0d0d0d"
+	  	    	android:text="卡号："
+	  	    />
+	  	    
+	  	    <EditText 
+	  	        android:id="@+id/recharge_number_edit"
+	  	    	android:layout_width="fill_parent"
+				android:layout_height="35dip"
+				android:textSize="14dip"
+	  	        />
+	  	    
+	  	</LinearLayout>
+	  	
+	  	<ImageView 
+		  	android:layout_width = "fill_parent"
+		  	android:layout_height = "2dip"
+		  	android:layout_below="@id/kahao_layout"
+		  	android:background="@drawable/line"
+		/>
+	  			
+	  	<LinearLayout 
+	  	    android:id = "@+id/password_layout"
+	  	    android:orientation="horizontal"
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="wrap_content"
+	  	    android:paddingLeft="10dip"
+	  	    android:layout_marginTop="10dip"
+	  	    android:layout_marginBottom="5dip"
+	  	    android:layout_below="@id/kahao_layout"
+	  	    >
+	  	    
+	  	    <TextView 
+	  	    	android:layout_width="wrap_content"
+	  	    	android:layout_height="wrap_content"
+	  	    	android:textColor="#0d0d0d"
+	  	    	android:text="密码："
+	  	    />
+	  	    
+	  	    <EditText 
+	  	        android:id="@+id/recharge_password_edit"
+	  	    	android:layout_width="fill_parent"
+				android:layout_height="35dip"
+				android:textSize="14dip"
+	  	    />
+	  	</LinearLayout>
+	  	
+	  	<ImageView 
+		  	android:layout_width = "fill_parent"
+		  	android:layout_height = "2dip"
+		  	android:layout_below="@id/password_layout"
+		  	android:background="@drawable/line"
+		/>
+	  	
+	  	<LinearLayout 
+	  	    android:id = "@+id/recharge_btn_layout"
+	  	    android:orientation="horizontal"
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="wrap_content"
+	  	    android:paddingLeft="10dip"
+	  	    android:paddingRight="10dip"
+	  	    android:layout_marginTop="10dip"
+	  	    android:layout_marginBottom="5dip"
+	  	    android:layout_below="@id/password_layout"
+	  	    >
+	  	    
+	  	    <Button 
+	  	       	android:id = "@+id/recharge_btn"
+	  	       	android:layout_width="fill_parent"
+	  	    	android:layout_height="wrap_content"
+	  	    	android:text="充值"
+	  	        />
+	  	</LinearLayout>
+	  	
+	  	<LinearLayout 
+	  	    android:id = "@+id/explanation_layout"
+	  	    android:orientation="horizontal"
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="wrap_content"
+	  	    android:paddingLeft="10dip"
+	  	    android:layout_below="@id/recharge_btn_layout"
+	  	    >
+	  	    <TextView 
+	  	    	android:layout_width="wrap_content"
+	  	    	android:layout_height="wrap_content"
+	  	    	android:textColor="#ff1d1d"
+	  	    	android:text="说明："
+	  	    />
+	  	    <TextView 
+	  	    	android:layout_width="wrap_content"
+	  	    	android:layout_height="wrap_content"
+	  	    	android:textColor="#ff0000"
+	  	    	android:textStyle="bold"
+	  	    	android:text="充值卡务必与面额相同，否则会导致换取失败和充值卡作废！"
+	  	    />
+	  	</LinearLayout>
+	  	
+	</RelativeLayout>
+	
+</RelativeLayout>

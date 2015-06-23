@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/dpay_subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dpay_subtitle_bg_color"
+        android:gravity="left"
+        android:padding="@dimen/dpay_default_padding"
+        android:textColor="@color/dpay_black"
+        android:textSize="@dimen/dpay_subtitle_font_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dpay_line_height"
+        android:background="@color/dpay_line_color" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dpay_align_bottom"
+            android:paddingLeft="@dimen/dpay_default_padding"
+            android:paddingRight="@dimen/dpay_default_padding"
+            android:paddingTop="@dimen/dpay_align_parent_top" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dpay_default_padding"
+                android:background="@drawable/dpay_categories_bg"
+                android:padding="@dimen/dpay_default_padding" >
+
+                <LinearLayout
+                    android:id="@+id/dpay_goods_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@id/dpay_goods_image"
+                            android:layout_width="@dimen/dpay_default_image"
+                            android:layout_height="@dimen/dpay_default_image"
+                            android:layout_centerHorizontal="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/dpay_default_image" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dpay_goods_image"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageButton
+                                android:id="@id/dpay_narrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:padding="@dimen/dpay_default_padding"
+                                android:src="@drawable/dpay_narrow"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@id/dpay_goods_number"
+                                android:layout_width="@dimen/dpay_number_width"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dpay_default_padding"
+                                android:layout_marginTop="@dimen/dpay_default_padding"
+                                android:background="@drawable/dpay_input_rect_bg"
+                                android:digits="@string/dpay_number_digits"
+                                android:gravity="center"
+                                android:inputType="phone"
+                                android:maxLength="6"
+                                android:text="@integer/dpay_number_hint"
+                                android:visibility="gone" />
+
+                            <ImageButton
+                                android:id="@id/dpay_enlarge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:padding="@dimen/dpay_default_padding"
+                                android:src="@drawable/dpay_enlarge"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dpay_default_padding"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@id/dpay_cost_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/dpay_prompt_color"
+                            android:textSize="@dimen/dpay_prompt_font_size" />
+
+                        <TextView
+                            android:id="@id/dpay_discount_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dpay_default_padding"
+                            android:textColor="@color/dpay_prompt_color"
+                            android:textSize="@dimen/dpay_prompt_font_size"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dpay_goods_info"
+                    android:layout_marginTop="@dimen/dpay_default_padding"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@id/dpay_buy_now"
+                        style="@style/dpay_yellow_btn_red_text"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/dpay_buy_now" />
+
+                    <Button
+                        android:id="@id/dpay_add_to_cart"
+                        style="@style/dpay_yellow_btn_red_text"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dpay_default_padding"
+                        android:layout_weight="1"
+                        android:text="@string/dpay_add_to_cart" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@id/dpay_goods_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dpay_categories_bg"
+                android:padding="@dimen/dpay_login_align_left"
+                android:textColor="@color/dpay_black"
+                android:textSize="@dimen/dpay_subtitle_font_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

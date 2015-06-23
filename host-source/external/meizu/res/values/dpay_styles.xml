@@ -1,0 +1,78 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="dpay_checkbox_amount">
+        <item name="android:background">@drawable/dpay_cb_amount_bg</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/dpay_default_padding</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:textColor">@color/dpay_black</item>
+        <item name="android:paddingTop">@dimen/dpay_default_padding</item>
+    </style>
+
+    <style name="dpay_btn_menu_styles" parent="android:Widget.TextView">
+        <item name="android:background">@color/dpay_item_color</item>
+        <item name="android:paddingLeft">@dimen/dpay_default_padding</item>
+        <item name="android:paddingRight">@dimen/dpay_btn_padding</item>
+        <item name="android:paddingBottom">@dimen/dpay_default_padding</item>
+        <item name="android:paddingTop">@dimen/dpay_default_padding</item>
+        <item name="android:textColor">@color/dpay_menu_text_color</item>
+        <item name="android:textSize">@dimen/dpay_prompt_font_size</item>
+    </style>
+
+    <style name="dpay_edittext_style" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/dpay_input_circle_bg</item>
+        <item name="android:padding">@dimen/dpay_default_padding</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/dpay_black</item>
+        <item name="android:textColorHint">@color/dpay_hint_text_color</item>
+        <item name="android:textSize">@dimen/dpay_subtitle_font_size</item>
+    </style>
+
+    <style name="dpay_edittext_login_form_style" parent="android:Widget.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">@dimen/dpay_default_padding</item>
+        <item name="android:textColor">@color/dpay_black</item>
+        <item name="android:textColorHint">@color/dpay_hint_text_color</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:textSize">@dimen/dpay_subtitle_font_size</item>
+    </style>
+
+    <style name="dpay_custom_btn_style" parent="android:Widget.Button">
+        <item name="android:layout_marginBottom">@dimen/dpay_default_padding</item>
+        <item name="android:layout_marginTop">@dimen/dpay_default_padding</item>
+        <item name="android:paddingBottom">@dimen/dpay_default_padding</item>
+        <item name="android:paddingLeft">@dimen/dpay_btn_padding</item>
+        <item name="android:paddingRight">@dimen/dpay_btn_padding</item>
+        <item name="android:paddingTop">@dimen/dpay_default_padding</item>
+        <item name="android:textColor">@color/dpay_red</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/dpay_subtitle_font_size</item>
+    </style>
+
+    <style name="dpay_textview_prompt_style" parent="android:Widget.TextView">
+        <item name="android:layout_marginBottom">@dimen/dpay_default_padding</item>
+        <item name="android:layout_marginTop">@dimen/dpay_default_padding</item>
+        <item name="android:textColor">@color/dpay_prompt_color</item>
+        <item name="android:textSize">@dimen/dpay_prompt_font_size</item>
+    </style>
+
+    <style name="dpay_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="dpay_yellow_btn_red_text" parent="android:Widget.Button">
+        <item name="android:background">@drawable/dpay_btn_yellow_bg</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">@dimen/dpay_default_padding</item>
+        <item name="android:paddingTop">@dimen/dpay_default_padding</item>
+        <item name="android:textColor">@color/dpay_red</item>
+        <item name="android:textSize">@dimen/dpay_subtitle_font_size</item>
+    </style>
+
+</resources>

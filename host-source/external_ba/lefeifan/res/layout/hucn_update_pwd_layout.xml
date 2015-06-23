@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNScrollView"
+    android:background="@color/hucn_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/hucn_updatepw_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/hucn_updatepw_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/hucn_update_pwd_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/HUCNEditLayout"
+                    android:layout_height="@dimen/hucn_edittext_height"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp" >
+
+                    <TextView
+                        style="@style/HUCNEditTag"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/hucn_old_password" />
+
+                    <LinearLayout
+                        android:id="@+id/hucn_updatepw_user_password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/HUCNEditLayout"
+                    android:layout_height="@dimen/hucn_edittext_height"
+                    android:layout_marginTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp" >
+
+                    <TextView
+                        style="@style/HUCNEditTag"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/hucn_new_password" />
+
+                    <LinearLayout
+                        android:id="@+id/hucn_updatepw_new_password1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/HUCNEditLayout"
+                    android:layout_height="@dimen/hucn_edittext_height"
+                    android:layout_marginTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp" >
+
+                    <TextView
+                        style="@style/HUCNEditTag"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/hucn_new_password_sure" />
+
+                    <LinearLayout
+                        android:id="@+id/hucn_updatepw_new_password2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hucn_updatepw_reg_tip2"
+                    style="@style/HUCNSmallText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:text="@string/hucn_password_tip"
+                    android:textColor="@color/hucn_text_gray"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hucn_update_pwd_result_layout"
+                style="@style/HUCNLoginLyout"
+                android:layout_marginLeft="@dimen/hucn_layout_margin"
+                android:layout_marginRight="@dimen/hucn_layout_margin"
+                android:layout_marginTop="@dimen/hucn_layout_margin"
+                android:background="@drawable/hucn_white_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/hucn_login_layout_padding"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/HUCNText"
+                        android:text="@string/hucn_account" />
+
+                    <TextView
+                        android:id="@+id/hucn_update_account_tv"
+                        style="@style/HUCNText"
+                        android:textColor="@color/hucn_red"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/HUCNText"
+                        android:text="@string/hucn_update_pwd_success_hint" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/HUCNText"
+                        android:text="@string/hucn_new_pwd_hint" />
+
+                    <TextView
+                        android:id="@+id/hucn_update_password_tv"
+                        style="@style/HUCNText"
+                        android:textColor="@color/hucn_red"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/hucn_updatepw_submit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginLeft="@dimen/hucn_layout_margin"
+                android:layout_marginRight="@dimen/hucn_layout_margin"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/hucn_btn_submit"
+                android:padding="13dp"
+                android:text="@string/hucn_confirm"
+                android:textColor="@drawable/hucn_btn_text_color"
+                android:textSize="@dimen/hucn_default_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/hucn_updatepw_layout"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <include layout="@layout/hucn_bottom_layout" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,38 @@
+    <activity
+            android:name="com.skynet.android.user.ui.SkynetSettingsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation= "landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        
+        <activity
+            android:name="com.skynet.android.charge.frame.ui.SkynetChargeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation= "landscape"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+        </activity>
+            
+        <activity
+            android:name="com.skynet.android.online.service.ui.OnlineServiceActivity"
+            android:screenOrientation= "landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.ONLINE_SERVICE_ACTION"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.s1.lib.plugin.dynload.service.F1Service" >
+        </service>
+        
+        <!-- 银联 start-->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:screenOrientation= "landscape"
+            android:configChanges="orientation|keyboardHidden|keyboard" >
+        </activity>
+        <!-- 银联 end-->

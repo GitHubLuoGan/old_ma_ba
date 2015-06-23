@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="15dp" >
+
+    <ImageView
+        android:id="@+id/hucn_chating_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/hucn_text_view_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hucn_chating_image"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/hucn_chating_image"
+        android:background="@drawable/hucn_right_bg_normall"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <TextView
+            android:id="@+id/hucn_chating_content"
+            style="@style/HUCNText"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/hucn_chating_content_time"
+            style="@style/HUCNText"
+            android:layout_gravity="right"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#d9dedf"
+            android:textSize="@dimen/hucn_small_text_size12" />
+    </LinearLayout>
+
+</RelativeLayout>

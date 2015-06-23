@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:state_checked="false">
+        <shape>
+            <gradient android:endColor="@android:color/transparent" android:startColor="@android:color/transparent" />
+        </shape>
+        
+    </item>
+    <item android:drawable="@drawable/hucn_gray" android:state_checked="true"/>
+    
+</selector>

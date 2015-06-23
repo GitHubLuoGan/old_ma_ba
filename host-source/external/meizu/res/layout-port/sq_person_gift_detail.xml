@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sq_person_gift_xlist_item_bg"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/sq_person_gift_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/sq_person_gift_detail_num"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/sq_person_gift_detail_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical|left"
+        android:textSize="14dp"
+        android:paddingLeft="10dp"
+         />
+
+    <TextView
+        android:id="@+id/sq_person_gift_detail_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sq_person_gift_detail_num"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/sq_person_gift_detail_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sq_person_gift_detail_num"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/sq_person_gift_detail_content"
+        android:gravity="right"
+        android:padding="5dp"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/sq_person_gift_detail_btn_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sq_person_gift_detail_introduce"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/sq_person_gift_get_btn_bg"
+        android:paddingBottom="8dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="8dp"
+        android:textSize="16dp"
+       />
+
+    <View
+        android:id="@+id/sq_person_gift_botton_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/sq_person_gift_detail_btn_get"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>

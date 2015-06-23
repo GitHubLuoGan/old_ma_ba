@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ac_common_background">
+    <include layout="@layout/ac_fragment_online_game"/>
+	<LinearLayout 
+	    android:id="@+id/ll_search_no_result"
+	    android:layout_width="match_parent"
+	    android:gravity="center"
+	    android:background="@drawable/ac_common_background"
+	    android:orientation="vertical"
+	    android:layout_height="match_parent">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/ac_common_larger"
+	        android:textColor="@color/ac_search_no_result_text_tip"
+	        android:text="很抱歉，没有找到与之相关的游戏"/>
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dip"
+	        android:contentDescription="@string/ac_img_description"
+	        android:src="@drawable/ac_search_no_result" />
+	</LinearLayout>
+	<LinearLayout 
+	    android:id="@+id/ll_search_welcome"
+	    android:layout_width="match_parent"
+	    android:gravity="center"
+	    android:background="@drawable/ac_common_background"
+	    android:orientation="vertical"
+	    android:layout_height="match_parent">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/ac_common_larger"
+	        android:textColor="@color/ac_search_no_result_text_tip"
+	        android:text="好玩游戏全都有，尽情搜索吧！"/>
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dip"
+	        android:contentDescription="@string/ac_img_description"
+	        android:src="@drawable/ac_search_welcome" />
+	</LinearLayout>
+</FrameLayout>

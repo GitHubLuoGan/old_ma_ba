@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+     >
+
+    <com.sanqi.android.sdk.widget.XListView
+        android:id="@+id/sq_person_gift_welcome_xlistview"
+        android:layout_width="match_parent"
+          android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"  >
+    </com.sanqi.android.sdk.widget.XListView>
+
+    <RelativeLayout
+        android:id="@+id/sq_person_gift_welcome_empty_tip_include"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/sq_default_loading_drawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sq_gift_default_loading" />
+
+        <TextView
+            android:id="@+id/sq_person_gift_welcome_tip_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/sq_default_loading_drawable"
+            android:layout_marginTop="5dp"
+            android:gravity="center|top"
+            android:textColor="@android:color/black"
+            android:textSize="21dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

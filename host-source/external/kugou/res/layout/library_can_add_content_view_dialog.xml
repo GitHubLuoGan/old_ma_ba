@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/library_common_dialog_title" />
+
+    <ScrollView
+        android:id="@+id/library_scrollView_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical" >
+
+        <LinearLayout
+            android:id="@+id/library_layout_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/library_common_background"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/library_user_center_button_space_line" />
+
+    <LinearLayout
+        android:id="@+id/library_layoutBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/library_btn_sure"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/library_user_center_changer_account_button_selector"
+            android:text="确定"
+            android:textColor="#0055ff"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/library_btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/library_user_center_changer_account_button_selector"
+            android:text="取消"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/sq_recharge_gray_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sq_recharge_explian_dialog_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#41403e"
+        android:textSize="14dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/sq_recharge_white_bg"
+        android:scrollbars="none" >
+
+        <TextView
+            android:id="@+id/sq_recharge_explian_dialog_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#41403e"
+            android:textSize="14dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/sq_recharge_explian_dialog_btn_confirm"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/sq_recharge_comfirm_selectior"
+        android:gravity="center"
+        android:textSize="18dp" />
+
+</LinearLayout>

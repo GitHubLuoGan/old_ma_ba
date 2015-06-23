@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mzw_pay_title_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/mzw_sdk_pay_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mzw_sdk_pay_cardpay_text1"
+            android:textColor="@color/mzw_pay_info_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/sumPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300"
+            android:textColor="@color/mzw_pay_info_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mzw_sdk_pay_cardpay_text2"
+            android:textColor="@color/mzw_pay_info_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp" >
+
+        <LinearLayout
+            style="@style/PayInfoStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/PayDCCardLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/bankImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/bank"
+                    style="@style/PayDCCardTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/mzw_bank_name" />
+
+                <TextView
+                    style="@style/PayDCCardTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mzw_xinyong_canrd" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bankCardNum"
+                style="@style/PayDCBankCardNumStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/mzw_cardnum_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/PayDCCardTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/mzw_binded_pay_oneKey" />
+
+                <Button
+                    android:id="@+id/cancelBind"
+                    style="@style/PayCancelButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="@string/mzw_cancel_bind_card" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/payButton"
+            style="@style/PayButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="立即支付"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

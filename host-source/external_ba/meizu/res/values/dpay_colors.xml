@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dpay_main_bg_color">#ECECEC</color>
+    <color name="dpay_white">#fefefe</color>
+    <color name="dpay_item_selected">#f2f2f2</color>
+    <color name="dpay_black">#333333</color>
+    <color name="dpay_red">#CC0000</color>
+    <color name="dpay_subtitle_bg_color">#DDDDDD</color>
+    <color name="dpay_line_color">#DFDFDF</color>
+    <color name="dpay_line_white_color">#FFFFFF</color>
+    <color name="dpay_hint_text_color">#CCCCCC</color>
+    <color name="dpay_cart_num_bg">#ffe121</color>
+    <color name="dpay_prompt_color">#666666</color>
+    <color name="dpay_blue">#2081BB</color>
+    <color name="dpay_yellow">#FDED42</color>
+    <color name="dpay_dianjin_login_tip">#999999</color>
+
+</resources>

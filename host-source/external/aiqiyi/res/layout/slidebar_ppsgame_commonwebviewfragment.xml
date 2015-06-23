@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Title -->
+
+    <include
+        android:id="@+id/slidebar_ppsgame_title_id"
+        layout="@layout/sliderbar_ppsgame_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/slidebar_ppsgame_fragment_background" >
+
+        <LinearLayout
+            android:id="@+id/ppsgame_slider_commonwebview_progress_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/silder_commonwebview_load_more_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@anim/sliderbar_ppsgame_round"
+                android:contentDescription="@string/ppsgame_null_str" />
+
+            <ImageView
+                android:id="@+id/sliderbar_commonwebview_load_fail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ppsgame_null_str"
+                android:src="@drawable/sliderbar_load_fail"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sliderbar_commonwebview_empty_txt"
+                style="@style/BadNetworkTxt"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <com.pps.sdk.slidebar.widget.BaseWebView
+            android:id="@+id/slidebar_common_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/ppsgame_slider_commonwebview_progress_layout"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+</LinearLayout>

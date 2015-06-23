@@ -1,0 +1,44 @@
+<!-- youlong start -->
+ <activity android:name="com.yx9158.external.YXLoginActivity" 
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+<activity android:name="com.ziplinegames.moai.YXWebActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+ <activity android:name="com.yx9158.external.YXRegisterActivity" 
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+            <!--添加游龙SDK必须的meta-data： PID。该值向游龙申请-->
+        <meta-data
+            android:name="PID"
+            android:value="103966"/>  
+        <!--添加游龙SDK必须的meta-data： PKEY。该值向游龙申请-->
+        <meta-data
+            android:name="PKEY"
+            android:value="536194d11fdf78de005a972357f422bd"/>    
+        <!--添加游龙SDK必须的meta-data： version。该值填写当前最新的版本号-->
+        <meta-data
+            android:name="Version"
+            android:value="0.72"/>     
+        <!--添加游龙SDK必须的meta-data： introduction。该值是推广员id，默认为0，表示没有推广员-->
+        <meta-data
+            android:name="introduction"
+            android:value="0"/>   
+        <!--添加游龙SDK必须的meta-data： 登陆地址toLogin -->
+        <meta-data
+            android:name="toLogin"
+            android:value="http://api.411game.com/login.do"/>   
+        <!--添加游龙SDK必须的meta-data：注册地址toRegister--> 
+        <meta-data
+            android:name="toRegister"
+            android:value="http://api.411game.com/reg.do"/>  
+        <!--添加游龙SDK必须的meta-data：支付地址torecharge--> 
+        <meta-data
+            android:name="torecharge"
+            android:value="http://i.pay.yx9158.com/order.do?"/> 
+
+<!-- youlong end -->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/sq_download_notify_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/sq_download_notify_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <ProgressBar
+            android:id="@+id/sq_download_notify_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sq_download_notify_app_name" />
+
+        <TextView
+            android:id="@+id/sq_download_notify_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/sq_download_notify_pb"
+            android:layout_alignParentRight="true"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+    </RelativeLayout>
+
+</LinearLayout>

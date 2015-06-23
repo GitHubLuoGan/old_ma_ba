@@ -1,0 +1,5 @@
+<!-- Crittercism -->
+<classpathentry kind="lib" path="libs/alipaysdk.jar"/>
+<classpathentry kind="lib" path="libs/MobileSecSdk.jar"/>
+<classpathentry kind="lib" path="libs/UCGameSDK-3.4.15.3.jar"/>
+<classpathentry kind="lib" path="libs/utdid4all-1.0.4.jar"/>

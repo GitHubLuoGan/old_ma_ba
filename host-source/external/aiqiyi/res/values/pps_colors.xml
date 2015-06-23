@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ppsgame_black">#000000</color>
+	<color name="ppsgame_xine">#ff4a4a4a</color>
+	<color name="ppsgame_white">#ffffff</color>
+	<color name="ppsgame_customer_bg">#dddddd</color>
+	<color name="ppsgame_gray">#888888</color>
+	<color name="ppsgame_green">#85c210</color>
+	<color name="ppsgame_sdk_line">#d3d3d3</color>
+	<color name="ppsgame_payment_qudao_bg">#f0e7dc</color>
+	
+	<color name="ppsgame_yellow">#ef8100</color>
+    <color name="background_color">#808080</color>
+    <color name="button_color">#FEFEFE</color>
+    <color name="text_color">#ffffff</color>
+    <color name="hint_color">#888888</color>
+    <color name="edit_color">#222222</color>
+    <color name="selected_color">#23c6ff</color>
+    <color name="unselected_color">#f7f7f7</color>
+    
+    <color name="ppsgame_red">#FF1014</color>
+	
+	<!-- LIST BORDER COLOR -->
+	<color name="rounded_container_border">#ffb7babb</color>
+
+	<!-- ITEM BACKGROUND COLOR - STATE - DEFAULT -->
+	<color name="base_start_color_default">#FFFFFF</color>
+    <color name="base_end_color_default">#FFFFFF</color>
+    	
+	<!-- ITEM BACKGROUND COLOR - STATE - PRESSED -->
+	<color name="base_start_color_pressed">#ff3590c4</color>
+    <color name="base_end_color_pressed">#ff2570ba</color>
+    
+    <!-- ITEM TEXT COLORS - STATES - PRESSED AND DEFAULT -->
+    <color name="text_color_default">#000000</color>
+    <color name="text_color_pressed">#ffffff</color>
+</resources>

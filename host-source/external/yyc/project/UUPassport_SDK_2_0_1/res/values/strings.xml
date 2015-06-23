@@ -1,0 +1,272 @@
+<resources>
+
+    <string name="content_description">content description</string>
+
+    <!-- Exit dialog -->
+    <string name="sdk_exit_text">exit content</string>
+    <string name="sdk_exit_title">exit title</string>
+    <string name="sdk_cancel">取消</string>
+    <string name="sdk_confirm">确认</string>
+    <string name="sdk_continue">下一步</string>
+    <string name="sdk_delete">删除</string>
+
+    <!-- Action bar -->
+    <string name="sdk_default_title">UUPassport</string>
+    <string name="sdk_back">返回</string>
+    <string name="sdk_logout">退出</string>
+    <string name="sdk_login">登录</string>
+    <string name="sdk_register">注册</string>
+    <string name="sdk_register_start_game">开始游戏</string>
+    <string name="sdk_register_now">一键注册</string>
+
+    <!-- Login fragment -->
+    <string name="sdk_login_title">UU通行证登录</string>
+    <string name="sdk_login_tip">您登录过如下帐号，可点击直接登录</string>
+    <string name="sdk_add_new">添加新帐号</string>
+    
+
+    <!-- Add new passport fragment -->
+    <string name="sdk_add_new_title">添加UU通行证</string>
+    <string name="sdk_add_new_tip">请输入您的UU通行证帐号及密码</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_username">帐号</string>
+    <string name="sdk_login_add">添加并登录</string>
+    <string name="sdk_forget_pass_tip">忘记密码？</string>
+    <string name="sdk_password_show">显示</string>
+    <string name="sdk_password_hide">隐藏</string>
+    <string name="sdk_add_user">添加已有帐号</string>
+    <string name="sdk_phone_hint">请输入手机号</string>
+
+    <!-- Register fragment -->
+    <string name="sdk_register_title">UU通行证注册</string>
+    <string name="sdk_fast_register">快速注册</string>
+    <string name="sdk_phone_register">手机注册</string>
+    <string name="sdk_fast_register_tip">帐号、密码已生成，点击开始游戏</string>
+    <string name="sdk_fast_phone_tip">帐号为手机号，点击开始游戏</string>
+    <string name="sdk_register_agree_tip">注册表示已阅读并同意 </string>
+    <string name="sdk_register_agreement">用户协议</string>
+    <string name="sdk_register_fee_tip">发送1条短信注册，运营商收取普通短信资费</string>
+    
+    
+    
+    <string name="sdk_token_login_title">Token登录</string>
+    <string name="sdk_token_login_content">正在使用token登录</string>
+    <string name="sdk_token_login_success">使用token登录成功</string>
+    
+    <string name="sdk_btn_change">换一个</string>
+    <string name="sdk_register_success_content">%1$s, 恭喜您注册成功！\r\n我们为您取了小名：</string>
+
+    <!-- Logout passport -->
+    <string name="sdk_logout_success">登出成功</string>
+    
+    <!-- Setting fragment -->
+    <string name="sdk_uupassport_usernmae">UU通行证帐号</string>
+    <string name="sdk_uupassport">通行证帐号：</string>
+    <string name="sdk_nickname">昵\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020称：</string>
+    <string name="sdk_appname">登录应用：</string>
+    <string name="sdk_passport_safe_situation">帐号安全状况:</string>
+    <string name="sdk_code_level">密码强度</string>
+    <string name="sdk_safe_level">安全等级</string>
+    <string name="sdk_update_code">修改密码</string>
+    <string name="sdk_update_safe">密保设置</string>
+    <string name="sdk_switch_user">切换帐号</string>
+    <string name="sdk_switch_user_bar">换账号</string>
+    <string name="sdk_setting">帐号设置</string>
+    <string name="sdk_weak">帐号无保护</string>
+    <string name="sdk_medium">帐号有风险</string>
+    <string name="sdk_strong">帐号很安全</string>
+    
+    <string name="sdk_code_weak">密码太弱了</string>
+    <string name="sdk_code_medium">密码一般般</string>
+    <string name="sdk_code_strong">密码很安全</string>
+    
+    <string name="sdk_code_weak_hint">弱</string>
+    <string name="sdk_code_medium_hint">中</string>
+    <string name="sdk_code_strong_hint">强</string>
+    
+    <string name="sdk_pass_rule_wrong">长度不符</string>
+    
+    <!-- Update password fragment -->
+    <string name="sdk_hint_old_pass">旧密码</string>
+    <string name="sdk_hint_new_pass">新密码(6&#8211;12位)</string>
+    
+    <string name="sdk_input_password">请输入通行证密码</string>
+    
+    <!-- Set Safety fragment -->
+    <string name="sdk_set_phone">密保手机</string>
+    <string name="sdk_set_question">密保问题</string>
+    <string name="sdk_safety">密保设置</string>
+    <string name="sdk_input_verify_hint">请输入验证码，2分钟后可重发</string>
+    
+    <!-- Set Phone fragment -->
+    <string name="sdk_get_verify">获取验证码</string>
+    <string name="sdk_get_verify_count">获取验证码(%1$sS)</string>
+    <string name="sdk_input_phone">请输入手机号</string>
+    <string name="sdk_input_verify">请输入验证码</string>
+    
+    <!-- Find Code fragment -->
+    <string name="sdk_find_code_tip">请输入您的UU通行证帐号</string>
+    <string name="sdk_add_safety_tip">请输入您的UU通行证密码</string>
+    <string name="sdk_input_passport_hint">请输入通行证帐号</string>
+    <string name="sdk_find_code">密码重置</string>
+    <string name="sdk_connection_format">申请人工找回密码:\r\n%1$s</string>
+    <string name="sdk_update_by_question_title">密保问题重置</string>
+    <string name="sdk_update_by_phone_title">密保手机重置</string>
+    
+    <!-- error add user -->
+    <string name="toast_name_null">帐号不能为空</string>
+    <string name="toast_pass_null">密码不能为空</string>
+    <string name="toast_name_not_exist">没有此帐号，请检查</string>
+    <string name="toast_invalid_pass">帐号或密码不对，请检查</string>
+    <string name="toast_user_locked">帐号被锁定，请等待5分钟</string>
+    <string name="toast_user_frozed">帐号被冻结，暂时不能操作</string>
+    
+    <!-- error find code -->
+    <string name="toast_no_question">密保问题未设置，请尝试其他方法</string>
+    <string name="toast_no_bindphone">密保手机未设置，请尝试其他方法</string>
+    
+    <!-- error update by question -->
+    <string name="toast_answer_null">密保答案不能为空</string>
+    <string name="toast_anser_wrong">密保问题回答错误</string>
+    <string name="toast_new_pass_null">新密码不能为空</string>
+    <string name="toast_pass_rule_wroing">密码为6&#8211;12位数字、字母或符号</string>
+    <string name="toast_name_pass_equal">密码不能和帐号相同</string>
+    <string name="toast_pass_continue_number">密码不能为连续数列</string>
+    <string name="toast_new_equal_old">新密码和旧密码不能相同</string>
+    
+    <!-- error update by phone -->
+    <string name="toast_verify_null">验证码不能为空</string>
+    <string name="toast_verify_wrong">验证码不正确，请检查</string>
+    <string name="toast_verify_sent_success">验证码已发送，请注意查收</string>
+    <string name="toast_update_success">您现在可以添加此帐号啦</string>
+    
+    <!-- error register -->
+    <string name="toast_register_locked">帐号注册过快，请等待5分钟</string>
+    <string name="toast_user_existed">您的手机号码已经注册</string>
+    <string name="toast_cannot_sendmsm">您的手机暂时无法注册</string>
+    
+    <!-- update code -->
+    <string name="toast_old_pass_null">旧密码不能为空哦</string>
+    <string name="toast_old_pass_wrong">旧密码填写错误，请检查一下吧</string>
+    <string name="update_success_content">点击“确认”将回到帐号设置界面</string>
+    <string name="update_success_title">修改密码成功</string>
+    
+    <string name="toast_error_passport">密码不正确，请检查</string>
+    
+    <!-- bind phone -->
+    <string name="toast_check_phone_success">您已经验证密保手机号，可以设置新的手机绑定啦</string>
+    <string name="toast_phone_null">手机号码不能为空</string>
+    <string name="toast_phone_format_wrong">请填写正确的手机号</string> 
+    <string name="toast_get_bindphone_succ">您已经设置过手机绑定，需要先进行验证哦</string>
+    <string name="bind_success_title">手机绑定成功</string>
+    <string name="bind_success_content">点击"确认"将回到帐号设置界面</string>
+    
+    <!-- set question -->
+    <string name="toast_get_settedquestion_succ">您已经设置过密保，需要先进行验证哦</string>
+    <string name="set_question_success_title">密保问题设置成功</string>
+    <string name="set_question_success_content">点击"确认"将回到帐号设置界面</string>
+    <string name="sdk_input_answer_hint">请输入正确的答案</string>
+    <string name="sdk_input_set_answer_hint">请设置密保问题答案</string>
+    <string name="toast_answer_rule_wrong">密保答案需要为2&#8211;20个字符组成</string>
+    
+    <!-- other toast -->
+    <string name="toast_user_expired">用户已过期</string>
+    <string name="toast_unbind_failed">解绑失败</string>
+	<string name="toast_login_type_wrong">登录类型错误</string>
+	<string name="toast_invalid_phonenumber">号码错误</string>
+	<string name="toast_failed_questions">获取所有问题失败，请重试</string>
+	<string name="toast_not_logined">用户未登录</string>
+	<string name="toast_failed_bind_phone">设置密保手机号失败，请重试</string>
+	<string name="toast_failed_logout">登出失败</string>
+	<string name="toast_failed_send_verify">发送验证码失败，请重试</string>
+	<string name="toast_failed_set_question">设置密保问题失败，请重试</string>
+	<string name="toast_failed_update_code">更新密码失败，请重试</string>
+	<string name="toast_failed_get_number">获取手机号码错误，请重试</string>
+	<string name="toast_error_null">请求发生错误，请重试</string>
+	<string name="toast_error_system">服务器正在维护，请稍后再试</string>
+	<string name="toast_error_cannot_sent_msm">您的手机暂时无法接收短信，请确认后再试</string>
+	
+	<!-- Delete user -->
+	<string name="sdk_delete_user_title">删除帐号</string>
+	<string name="sdk_delete_tip">再次登录时，帐号\n%1$s将不会出现。</string>
+	
+	<!-- net error -->
+	<string name="toast_unknow_host_error">联网失败，请查看网络状况！</string>
+	<string name="toast_io_error">您的网络状况异常，请检查网络！</string>
+	<string name="toast_socket_timeout_error">联网失败，请查看网络状况！</string>
+	<string name="toast_client_protocol_error">联网失败，请查看网络状况！</string>
+	<string name="toast_unknow_service_error">联网失败，请查看网络状况！</string>
+	
+	<string name="network_error">网络连接失败，请检查网络设置</string>
+    <string name="timeout_error">连接超时</string>
+    <string name="server_error">服务器错误</string>
+    <string name="parse_error">网络传输出错</string>
+    
+    <!-- Dialg -->
+    <string name="dlg_token_welcom">欢迎回来！</string>
+    <string name="dlg_token_loading_text">精彩世界即将开启&#8230;</string>
+    <string name="dlg_token_tile">UU通行证</string>
+    <string name="sdk_get_username">创建帐号</string>
+    <string name="toast_fail_get_username">获取用户名失败，请稍候重试</string>
+    <string name="dlg_token_title_tip">%1$d秒钟后，将为您自动登录</string>
+    
+    <string name="dlg_registering">正在注册</string>
+    <string name="sdk_register_success_title">注册成功</string>
+    <string name="sdk_start_game">开始玩吧</string>
+    <string name="sdk_register_tip">恭喜您注册成功！</string>
+    <string name="sdk_register_nick_tip">来给自己取个小名吧！</string>
+    <string name="sdk_change_nickname">换一个</string>
+    <string name="sdk_logining">正在登录</string>
+    <string name="sdk_login_success_title">登录成功</string>
+    <string name="sdk_login_success_content">点击"确认"进入应用</string>
+    <string name="sdk_login_failed">登录失败</string>
+    <string name="sdk_login_failed_tip">糟糕，登录失败了\n尝试重新添加此帐号吧！</string>
+    <string name="sdk_add_new_account">添加帐号</string>
+    
+    <string name="sdk_change_code">修改密码</string>
+    <string name="sdk_change_code_success">修改密码成功</string>
+    <string name="sdk_change_code_tip">“确认”将回到\n帐号设置界面</string>
+
+    <string name="sdk_dlg_logout_title">退出应用</string>
+    <string name="sdk_dlg_logout_tip_set">您的帐号存在安全隐患&#8230;\n请尽快修复！</string>
+    <string name="sdk_dlg_logout">退出</string>
+    <string name="sdk_dlg_set">修复</string>
+    <string name="sdk_dlg_cancel">取消</string>
+    <string name="sdk_dlg_logout_tip_common">您确定要离开吗？</string>
+    <string name="sdk_ck_text">不再提示帐号安全问题</string>
+    
+    <!-- Loading text -->
+    <string name="sdk_load_get_question">获取问题</string>
+    <string name="sdk_load_get_bind_phone">获取手机号</string>
+    <string name="sdk_load_get_verify">获取验证码</string>
+    <string name="sdk_load_check_phone">验证手机号</string>
+    <string name="sdk_load_check_answer">验证答案</string>
+    <string name="sdk_load_get_agreement">获取协议</string>
+    <string name="sdk_load_update_code">修改密码</string>
+    <string name="sdk_load_get_username">创建帐号</string>
+    
+    <!-- change -->
+    <string name="sdk_nav_logout">退出</string>
+    <string name="sdk_codelevel_tip">密码强度：</string>
+    <string name="sdk_safelevel_tip">安全等级：</string>
+    <string name="sdk_code_manager">密码管理</string>
+    
+    <string name="sdk_change">更换</string>
+    <string name="sdk_set">设置</string>
+    <string name="sdk_unsetted">未设置</string>
+    <string name="sdk_setted">已设置</string>
+    <string name="sdk_verify_user_title">验证身份信息</string>
+    <string name="sdk_check_phone_title">验证密保信息</string>
+    <string name="sdk_set_phone_title">设置密保手机</string>
+    <string name="sdk_check_question_title">验证密保信息</string>
+    <string name="sdk_set_question_title">设置密保问题</string>
+    <string name="sdk_load_text_common">奋力处理中&#8230;</string>
+    <string name="sdk_load_text_get_safe_info">获取密保信息</string>
+    <string name="sdk_load_text_check_safe_info">验证密保信息</string>
+    <string name="sdk_update_by_phone">密保手机重置</string>
+    <string name="sdk_update_by_question">密保问题重置</string>
+    <string name="sdk_set_safety_phone">设置密保手机</string>
+    <string name="sdk_set_safety_question">设置密保问题</string>
+    <string name="sdk_set_phone_success">设置密保手机成功</string>
+    <string name="sdk_set_question_success">设置密保问题成功</string>
+</resources>

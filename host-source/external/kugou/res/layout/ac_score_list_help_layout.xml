@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/message_layout"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" >
+
+        <Button
+            android:id="@+id/ac_message_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ac_selector_score_download_indicator" />
+
+        <TextView
+            android:id="@+id/ac_message_red_point"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/ac_score_down_num_bg"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/ac_message_btn"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/ac_img_score_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/ac_message_btn"
+            android:background="@drawable/ac_selector_score_help_indicator" />
+    </RelativeLayout>
+
+</RelativeLayout>

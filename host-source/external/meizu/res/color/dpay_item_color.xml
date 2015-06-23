@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bd="http://schemas.android.com/apk/res/com.bodong.mobile">
+
+    <item android:drawable="@color/dpay_item_selected" android:state_selected="true"/>
+    <item android:drawable="@color/dpay_item_selected" android:state_focused="true"/>
+    <item android:drawable="@color/dpay_item_selected" android:state_pressed="true"/>
+    <item android:drawable="@color/dpay_white"/>
+
+</selector>

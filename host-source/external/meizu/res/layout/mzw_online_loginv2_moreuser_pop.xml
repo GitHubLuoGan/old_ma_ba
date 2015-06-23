@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mzw_online_loginv2_white_color"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/moreUser"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#ffffff"
+        android:divider="#111111"
+        android:dividerHeight="1px" >
+    </ListView>
+
+</LinearLayout><!--
+   android:divider="@color/mzw_online_oginv2_list_divider"
+             android:divider="@color/mzw_online_oginv2_list_divider"
+        android:duplicateParentState="true"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+-->

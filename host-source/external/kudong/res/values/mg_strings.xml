@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="channel_code">12|94</string>
+	<string name="mg_debug_mode">1</string>
+	<string name="mg_sdk_version">4.2.5</string>
+	<string name="mg_displayToolTip">true</string>
+    <string name="mg_account_hint">请输入用户名</string>
+    <string name="mg_pwd_login_hint">请输入密码</string>    
+    <string name="mg_register_name_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="mg_register_pwd_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_</string>
+    <string name="mg_remember_login_state">记住密码</string>
+    <string name="mg_forget_pwd_text">忘记密码？</string>
+    <string name="mg_login">进入游戏</string>    
+    <string name="mg_free_register">快速注册</string>
+    <string name="mg_user_thirdparty_login_failure">登录失败，请稍后再试！</string>
+    <string name="mg_thirdparty_login_failure">网络异常，请稍后重试!</string>
+    <string name="mg_register_username_hint">手机号/6-20位字母、数字</string>
+    <string name="mg_register_pwd_hint">6-20位字母、数字、下划线</string>
+    <string name="mg_check_mobile_code_hint">请输入手机验证码</string>
+    <string name="mg_check_account_hint">请输入帐号</string>
+    <string name="mg_register_agreement_hint"></string>
+    <string name="mg_register_licence">同意蘑菇用户协议</string>
+    <string name="mg_show_passord">显示密码</string>
+    <string name="mg_register_now">完成注册</string>
+    <string name="mg_mobile_next">下一步</string>
+    <string name="mg_check_account_next">验证账号</string>
+    <string name="mg_random_account">随机帐号</string>
+    <string name="mg_login_doing">正在登陆......</string>
+    <string name="mg_update_new_password_hint">新密码</string>
+    <string name="mg_update_check_password_hint">确认密码</string>
+    <string name="mg_update_finish_password_hint">完成</string>
+    <string name="mg_update_password_decript_one_tv">1.未绑定手机的用户可选择人工客服QQ找回密码，或者您还可以拨打下方的客服热线</string>
+    <string name="mg_update_password_decript_two_tv">2.为了保障您的账号安全，建议及时进入用户中心绑定您的手机号码，这样便于密码找回，谢谢~</string>
+  	<string name="mg_update_password_qq_tv">QQ:&#160;&#160;1114862442</string>
+  	<string name="mg_update_password_mobile_tv">热线:&#160;&#160;0755-82723718</string>
+  	<string name="mg_switch_account">切换账户</string>
+  	<string name="mg_remain_pwd">忘记密码</string>
+  	<string name="mg_message_laba">亲爱的玩家，您好！欢迎来到蘑菇游戏，祝您游戏愉快！</string>
+  	<string name="mg_message_register_check_false">请仔细阅读蘑菇用户协议并勾选同意。</string>
+  	   
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/icon_gift_list_default">
+    
+    <include 
+        layout="@layout/icon_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <include 
+        layout="@layout/myprogressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/icon_gift_list_default">
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+	    <RelativeLayout
+	        android:id="@+id/icon_game_relative" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+	        <ImageView 
+	            android:id="@+id/icon_game_image"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            android:src="@drawable/icon_default"/>
+	        
+	        <TextView
+	            android:id="@+id/icon_game_tag" 
+	            android:layout_width="60dp"
+	            android:layout_height="20dp"
+	            android:textSize="13sp"
+	            android:layout_below="@+id/icon_game_image"
+	            android:layout_alignLeft="@+id/icon_game_image"
+	            android:layout_marginTop="5dp"
+	            android:gravity="center"
+	            android:textColor="@color/white"
+	            android:background="@drawable/icon_jin_list_sub_bg"/>
+	        
+	        <TextView 
+	            android:id="@+id/icon_game_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="15sp"
+	            android:textColor="@color/black"
+	            android:layout_alignTop="@+id/icon_game_image"
+	            android:layout_toRightOf="@+id/icon_game_image"
+	            android:layout_marginLeft="5dp"/>
+	        
+	        <TextView 
+	            android:id="@+id/icon_game_type"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/icon_game_name"
+	            android:layout_alignLeft="@+id/icon_game_name"
+	            android:layout_marginTop="5dp"
+	            android:textSize="12sp"
+	            android:textColor="@color/black"/>
+	        
+	        <TextView 
+	            android:id="@+id/icon_game_stag"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:textColor="@color/black"
+	            android:textSize="12sp"
+	            android:layout_alignTop="@+id/icon_game_type"
+	            android:layout_toRightOf="@+id/icon_game_type"/>
+	        
+	        <TextView 
+	            android:id="@+id/icon_game_star"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="20dp"
+	            android:textColor="@color/black"
+	            android:textSize="12sp"
+	            android:layout_alignTop="@+id/icon_game_type"
+	            android:layout_toRightOf="@+id/icon_game_stag"/>
+	        
+	        <RatingBar 
+		        android:id="@+id/icon_game_ratingbar"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:numStars="5"
+		        android:rating="4"
+		        android:focusable="false"
+		        style="@style/Icon_MyRatingBar"
+		        android:layout_toRightOf="@+id/icon_game_star"
+		        android:layout_alignTop="@+id/icon_game_type"/>
+	        
+	        
+	        <TextView 
+	            android:id="@+id/icon_game_capacity"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="12sp"
+	            android:layout_below="@+id/icon_game_type"
+	            android:layout_marginTop="6dp"
+	            android:layout_alignLeft="@+id/icon_game_type"/>
+	        
+	        <TextView 
+	            android:id="@+id/icon_game_language"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/icon_game_stag"
+	            android:layout_below="@+id/icon_game_stag"
+	            android:textSize="12sp"
+	            android:layout_alignTop="@+id/icon_game_capacity"/>
+	        
+	        <TextView 
+	            android:id="@+id/icon_game_integration"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/icon_game_star"
+	            android:layout_below="@+id/icon_game_star"
+	            android:textSize="12sp"
+	            android:layout_alignTop="@+id/icon_game_capacity"/>
+	        
+	        <Button 
+	            android:id="@+id/icon_game_button"
+	            android:layout_width="93dp"
+	            android:layout_height="30dp"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="5dp"
+	            android:background="@drawable/icon_jin_list_button_bg"/>
+	    </RelativeLayout>
+	    
+	    <include
+	           android:layout_width="match_parent"
+	           android:layout_height="1dp"
+	           android:layout_marginTop="5dp"
+	           layout="@layout/horizon_line"/>
+	    
+	    <TextView 
+	        android:id="@+id/icon_game_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/black"
+	        android:textSize="12sp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="10dp"/>
+	    
+	    
+	    <Button 
+	        android:id="@+id/icon_game_bottom_button"
+	        android:layout_width="93dp"
+	        android:layout_height="30dp"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/icon_jin_list_button_bg"/>
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

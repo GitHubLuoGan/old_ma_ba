@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/hucn_bg_white_corners"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/hucn_dialog_title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="256dp"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:id="@+id/hucn_dialog_title_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/hucn_text_color"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/hucn_dialog_split_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/hucn_bg" />
+
+        <LinearLayout
+            android:id="@+id/hucn_dialog_msg_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:minWidth="256dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/hucn_dialog_msg_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/hucn_text_color"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hucn_dialog_btn_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="20dip"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dip" >
+
+            <Button
+                android:id="@+id/hucn_dialog_button_cancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/hucn_btn_white"
+                android:textColor="@drawable/hucn_btn_text_color"
+                android:textSize="@dimen/hucn_default_text_size"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/hucn_dialog_button_ok"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/hucn_btn_blue"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/hucn_default_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+</LinearLayout>

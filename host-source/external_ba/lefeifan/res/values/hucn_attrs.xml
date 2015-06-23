@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="HucnEditText">
+        <attr name="hint" format="string" />
+        <attr name="ispassword" format="boolean" />
+        <attr name="isText" format="boolean" />
+        <attr name="showdel" format="boolean" />
+        <attr name="showdrop" format="boolean" />
+        <attr name="maxLength" format="integer" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+
+</resources>

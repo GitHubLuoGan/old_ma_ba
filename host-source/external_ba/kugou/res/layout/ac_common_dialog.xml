@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ac_common_white" >
+
+    <RelativeLayout
+        android:id="@+id/common_diaog_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/ac_common_red"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/common_dialog_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="温馨提示"
+            android:textColor="@color/ac_common_white"
+            android:textSize="@dimen/ac_common_larger"
+            android:textStyle="bold" />
+        <ImageView 
+            android:id="@+id/ac_common_dialog_close_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"
+            android:src="@drawable/ac_selector_close_bg"
+            android:layout_marginRight="10dp"
+            />
+
+        <View
+            android:background="@color/ac_common_item_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/common_dialog_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View style="@style/ac_KYTheme.Divider.Horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/common_dialog_btn_cancel"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:text="取消"
+                android:textColor="@color/ac_common_black"
+                android:layout_margin="5dp"
+                android:background="@drawable/ac_comm_button_bg"
+                android:textSize="@dimen/ac_common_large" />
+
+            <View
+                android:id="@+id/common_dialog_btn_divider"
+                style="@style/ac_KYTheme.Divider.Vertical" />
+
+            <Button
+                android:id="@+id/common_dialog_btn_ok"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:text="确定"
+                android:layout_margin="5dp"
+                android:textColor="@color/ac_common_white"
+                android:background="@drawable/ac_selector_btn_bg_red"
+                android:textSize="@dimen/ac_common_large" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

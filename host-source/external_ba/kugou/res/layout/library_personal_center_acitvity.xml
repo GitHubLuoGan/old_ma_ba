@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/library_common_background"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_common_title_bar" />
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        layout="@layout/library_common_tips_bar" />
+
+    <ScrollView
+        android:id="@+id/library_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/library_layout_header"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:gravity="center_vertical"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/library_img_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/library_common_button_background_pressed"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/library_user_center_personal_sign_background" />
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/library_person_center_bg_sign" />
+
+                <ImageView
+                    android:id="@+id/library_img_head_photo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/library_bg_circle_style"
+                    android:padding="2dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/library_person_photo" />
+
+                <ImageView
+                    android:id="@+id/library_img_modify_head_photo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dip"
+                    android:src="@drawable/library_personal_information_background_modify" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/library_personal_info_main"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/library_layout_account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/library_tv_account_txt"
+                        android:layout_width="85dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:tag="title"
+                        android:text="帐       号 :"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/library_tv_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_toRightOf="@+id/library_tv_account_txt"
+                        android:gravity="center_vertical"
+                        android:tag="content"
+                        android:text="123456"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/library_user_center_button_space_line" />
+
+                <com.kuyou.platform.ui.widgets.TouchToChangeRelativeLayout
+                    android:id="@+id/library_layout_modify_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical|left" >
+
+                    <TextView
+                        android:id="@+id/library_tv_modify_password_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:tag="title"
+                        android:text="修改密码"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/library_common_button_photo_pressed"
+                        android:tag="more" />
+                </com.kuyou.platform.ui.widgets.TouchToChangeRelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/library_user_center_button_space_line" />
+
+                <com.kuyou.platform.ui.widgets.TouchToChangeRelativeLayout
+                    android:id="@+id/library_layout_bind_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical|left" >
+
+                    <TextView
+                        android:id="@+id/library_tv_bind_phone_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:tag="title"
+                        android:text="绑定手机:"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/library_tv_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@id/library_tv_bind_phone_txt"
+                        android:layout_marginRight="45dp"
+                        android:gravity="center_vertical"
+                        android:tag="content"
+                        android:text="18620627853"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp"
+                         />
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/library_common_button_photo_pressed"
+                        android:tag="more" />
+                </com.kuyou.platform.ui.widgets.TouchToChangeRelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/library_user_center_button_space_line" />
+
+                <com.kuyou.platform.ui.widgets.TouchToChangeRelativeLayout
+                    android:id="@+id/library_layout_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical|left" >
+
+                    <TextView
+                        android:id="@+id/library_tv_email_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical|left"
+                        android:tag="title"
+                        android:text="我的邮箱"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/library_tv_email_number"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_toRightOf="@+id/library_tv_email_txt"
+                        android:background="@drawable/library_hot_mail_number"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:text="22"
+                        android:textColor="#ffffffff" />
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/library_common_button_photo_pressed"
+                        android:tag="more" />
+                </com.kuyou.platform.ui.widgets.TouchToChangeRelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/library_user_center_button_space_line" />
+
+                <com.kuyou.platform.ui.widgets.TouchToChangeRelativeLayout
+                    android:id="@+id/library_layout_signature"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="45dp" >
+
+                    <TextView
+                        android:id="@+id/library_tv_signature_txt"
+                        android:layout_width="95dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="45dp"
+                        android:paddingLeft="8dp"
+                        android:tag="title"
+                        android:text="个性签名:"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/library_tv_signature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/library_tv_signature_txt"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:hint="限30字以内"
+                        android:lineSpacingExtra="3sp"
+                        android:maxLength="30"
+                        android:minHeight="45dp"
+                        android:paddingRight="5dip"
+                        android:tag="content"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+                </com.kuyou.platform.ui.widgets.TouchToChangeRelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/library_user_center_button_space_line" />
+
+                <RelativeLayout
+                    android:id="@+id/library_layout_gender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/library_tv_gender_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="性       别 :"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/library_tv_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_toRightOf="@+id/library_tv_gender_txt"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/library_img_gender_modify"
+                        android:layout_width="60dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/library_personal_information_boy" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/library_user_center_button_space_line" />
+
+                <com.kuyou.platform.ui.widgets.TouchToChangeRelativeLayout
+                    android:id="@+id/library_layout_birthday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/library_tv_birthday_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:tag="title"
+                        android:text="出生年月:"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/library_tv_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_toRightOf="@+id/library_tv_birthday_txt"
+                        android:gravity="center_vertical"
+                        android:tag="content"
+                        android:text=""
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/library_common_button_photo_pressed"
+                        android:tag="more" />
+                </com.kuyou.platform.ui.widgets.TouchToChangeRelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/library_user_center_button_space_line" />
+
+                <RelativeLayout
+                    android:id="@+id/library_layout_age"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/library_tv_age_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="年        龄:"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/library_tv_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_toRightOf="@+id/library_tv_age_txt"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/library_user_center_button_space_line" />
+
+                <com.kuyou.platform.ui.widgets.TouchToChangeRelativeLayout
+                    android:id="@+id/library_layout_adress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/library_tv_adress_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:tag="title"
+                        android:text="所  在  地:"
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/library_tv_adress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_toRightOf="@+id/library_tv_adress_txt"
+                        android:gravity="center_vertical"
+                        android:tag="content"
+                        android:text=""
+                        android:textColor="#ff000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/library_common_button_photo_pressed"
+                        android:tag="more" />
+                </com.kuyou.platform.ui.widgets.TouchToChangeRelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.kuyou.platform.ui.widgets.LoadingView
+        android:id="@+id/library_loadingView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/library_common_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/library_layout_result"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/library_common_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/library_img_result_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/library_edittext_fail_flag" />
+
+            <TextView
+                android:id="@+id/library_tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="很抱歉，获取信息失败！"
+                android:textColor="#ff000022"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/library_btn_again"
+            android:layout_width="240dip"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/library_green_button_bg_selector"
+            android:shadowColor="#ff000fff"
+            android:text="再请求一次"
+            android:textColor="#ffffffff"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        layout="@layout/library_bottom_bar" />
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNScrollView" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/hucn_gift_particulars_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingBottom="5dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:id="@+id/hucn_gift_particulars_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/hucn_gift_particulars_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/hucn_gift_particulars_image"
+                android:textColor="@color/hucn_text_color"
+                android:textSize="@dimen/hucn_default_text_size" />
+
+            <TextView
+                android:id="@+id/hucn_gift_particulars_card_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hucn_gift_particulars_text"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/hucn_gift_particulars_get"
+                android:layout_toRightOf="@+id/hucn_gift_particulars_image"
+                android:background="@null"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/hucn_text_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/hucn_gift_particulars_get"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/hucn_btn_blue"
+                android:minWidth="58dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/hucn_bg" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                style="@style/HUCNText"
+                android:padding="5dp"
+                android:text="@string/hucn_gift_content" />
+
+            <TextView
+                android:id="@+id/hucn_gift_particulars_content"
+                style="@style/HUCNText"
+                android:layout_marginBottom="15dp"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/hucn_bg" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                style="@style/HUCNText"
+                android:padding="5dp"
+                android:text="@string/hucn_gift_use_method" />
+
+            <TextView
+                android:id="@+id/hucn_gift_particulars_usage"
+                style="@style/HUCNText"
+                android:layout_marginBottom="15dp"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

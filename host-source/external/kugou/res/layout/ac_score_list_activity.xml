@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ac_layout_common_title_bar" />
+
+    <ListView
+        android:id="@+id/ac_app_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/ac_common_item_cache"
+        android:divider="@color/ac_common_item_divider"
+        android:dividerHeight="1dp"
+        android:background="@color/ac_common_item_divider"
+        android:listSelector="@drawable/ac_transparent"
+        android:visibility="visible" />
+
+    <com.kuyou.appcenter.widgets.TipsLayout
+        android:id="@+id/ac_tips_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

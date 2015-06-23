@@ -1,0 +1,183 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    
+     <style name="FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground"> @android:color/transparent </item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 拇指玩安全支付页面标题样式 -->
+    <style name="PayTitleStyle">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/mzw_pay_title_bg</item>
+    </style>
+
+    <!-- 拇指玩安全支付页面标题文字样式 -->
+    <style name="PayTitleTextStyle">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/mzw_pay_title_text_color</item>
+    </style>
+
+    <!-- 拇指玩安全支付页面左侧列表样式 -->
+    <style name="PayListStyle">
+        <item name="android:background">@drawable/mzw_sdk_pay_list_bg</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!-- 拇指玩安全支付页面金额文字样式 -->
+    <style name="PayMoneyTextStyle">
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/mzw_pay_button_text_color</item>
+  <item name="android:background">@drawable/mzw_sdk_pay_money_text_selector</item> 
+    </style>
+
+    <!-- 拇指玩安全支付页面输入框部分样式 -->
+    <style name="PayMoneyEditStyle">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:background">@drawable/mzw_sdk_pay_money_text_bg</item>
+    </style>
+
+    <!-- 拇指玩安全支付页面信用卡信息文字样式 -->
+    <style name="PayCardInfoTextStyle">
+        <item name="android:textColor">@color/mzw_pay_cardinfo_text</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:numeric">integer</item>
+    </style>
+    <!-- 拇指玩安全支付页面信用卡区域样式 -->
+    <style name="PayCardInfoLayoutStyle">
+        <item name="android:background">@drawable/mzw_sdk_pay_edittext_bg</item>
+    </style>
+    <!-- 拇指玩安全支付页面《查看》文字样式 -->
+    <style name="PayCardInfoLookTextStyle">
+        <item name="android:background">@color/mzw_pay_cardinfo_look_text_bg</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <!-- 拇指玩安全支付页面商品信息版块样式 -->
+    <style name="PayInfoStyle">
+        <item name="android:background">@drawable/mzw_sdk_pay_bg</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+    <!-- 拇指玩安全支付页面充值金额文字样式 -->
+    <style name="PayInfoCreditNumStyle">
+        <item name="android:textColor">@color/mzw_pay_info_creditNum</item>
+        <item name="android:background">@color/mzw_pay_list_btn_bg</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <!-- 拇指玩安全支付页面选择充值金额文字样式 -->
+    <style name="PayMoneySelectStyle">
+        <item name="android:background">@color/mzw_pay_list_btn_bg</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/mzw_pay_button_text_color</item>
+    </style>
+    <!-- 拇指玩安全支付页面info文字样式 -->
+    <style name="PayInfoTextStyle">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/mzw_pay_info_text</item>
+    </style>
+    <!-- 拇指玩安全支付页面金额版块样式 -->
+    <style name="PayMoneyStyle">
+        <item name="android:background">@drawable/mzw_sdk_pay_bg</item>
+    </style>
+    <!-- 拇指玩安全支付页面确认支付按钮样式 -->
+    <style name="PayButtonStyle">
+        <item name="android:background">@drawable/mzw_sdk_pay_dialog_btn_selector</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:textColor">@color/mzw_pay_money_text_press</item>
+    </style>
+    <!-- 拇指玩安全支付页面取消绑定按钮样式 -->
+    <style name="PayCancelButtonStyle">
+        <item name="android:background">@drawable/mzw_pay_unbind_btn_bg</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/mzw_pay_money_text_press</item>
+    </style>
+    <!-- 拇指玩安全支付页面确认支付按钮样式 -->
+    <style name="PayContentStyle">
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+    <!-- 拇指玩安全支付页面对话框样式 -->
+    <style name="PayDialogStyle">
+        <item name="android:windowBackground">@color/mzw_pay_dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 拇指玩安全支付页面信用卡支付页面获取验证码按钮样式 -->
+    <style name="PayDCCheckBtnStyle">
+        <item name="android:background">@drawable/mzw_sdk_pay_checkedcode_btn_bg</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:text">@string/pay_checkedcode</item>
+    </style>
+    <!-- 拇指玩安全支付页面信用卡支付页面已经绑定信用卡区域样式 -->
+    <style name="PayDCCardLayoutStyle">
+        <item name="android:background">@color/mzw_pay_list_btn_bg</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!-- 拇指玩安全支付页面信用卡支付页面已经绑定信用卡区域文字样式 -->
+    <style name="PayDCCardTitleStyle">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/mzw_pay_info_text</item>
+    </style>
+     <style name="mzw_item_loading_progressbar">
+	    <item name="android:layout_width">30dip</item>
+	    <item name="android:layout_height">30dip</item>
+	    <item name="android:layout_marginRight">10dip</item>
+	</style>
+    
+
+    <style name="PayDCBankCardNumStyle">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">@color/mzw_pay_bank_card_num_text</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="PayDCCardTextStyle">
+        <item name="android:textColor">@color/mzw_pay_info_text</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+</resources>

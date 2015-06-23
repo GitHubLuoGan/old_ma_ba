@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sq_person_gift_xlist_item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/sq_person_gift_detail_num"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@+id/sq_person_gift_detail_name"
+        android:layout_marginLeft="87.5dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@+id/sq_person_gift_detail_btn_get"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp" />
+
+    <TextView
+        android:id="@+id/sq_person_gift_detail_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/sq_person_gift_detail_num"
+        android:layout_below="@id/sq_person_gift_detail_num"
+        android:layout_toRightOf="@+id/sq_person_gift_detail_content"
+        android:gravity="right"
+        android:padding="10dp"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/sq_person_gift_botton_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/sq_person_gift_detail_content"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/sq_person_gift_detail_btn_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sq_person_gift_detail_num"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="87.5dp"
+        android:background="@drawable/sq_person_gift_get_btn_bg"
+        android:paddingBottom="8dp"
+        android:text="15dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/sq_person_gift_detail_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sq_person_gift_detail_introduce"
+        android:layout_alignBottom="@+id/sq_person_gift_detail_introduce"
+        android:layout_alignLeft="@+id/sq_person_gift_detail_num"
+        android:padding="10dp"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/sq_person_gift_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sq_person_gift_detail_num"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+         android:textSize="16dp"
+        android:padding="2dp"/>
+
+</RelativeLayout>

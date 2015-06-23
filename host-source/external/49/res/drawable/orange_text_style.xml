@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:color="#dd4d00"/>
+    <item android:state_focused="true" android:color="#dd4d00"/><!-- 焦点 -->
+    <item android:color="@color/orange"/><!-- 无焦点 -->
+
+</selector>

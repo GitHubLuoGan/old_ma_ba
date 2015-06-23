@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/unipay_fill.wrap"
+   >
+  <LinearLayout
+   android:id="@+id/unipay_id_bugListLayout"
+   style="@style/unipay_linear"
+   android:layout_margin="20dp"
+   android:background="@drawable/unipay_drawable_bg">
+       <!-- head cont -->
+     <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="52dp"
+       android:gravity="center_vertical">
+         <ImageButton
+            android:visibility="invisible"
+            android:layout_width="32dp"
+            android:layout_height="52dp"
+            android:background="@null"
+     		android:src="@drawable/unipay_iconback"/>
+         <TextView
+          android:layout_weight="100"
+          android:gravity="center"
+          android:id="@+id/unipay_id_tittleBuyInfo"
+	      style="@style/unipay_text.headtitle"
+	      android:text="购买钻石"/>
+	     <ImageButton
+	        android:id="@+id/unipay_id_CloseBtn"
+     		style="@style/unipay_iconclose"
+     		android:layout_marginTop="5dp"
+     		android:layout_marginRight="10dp"
+     		android:src="@drawable/unipay_iconclose" />
+	   </LinearLayout>
+	  <!-- head cont end-->
+	   <LinearLayout
+	     style="@style/unipay_linear"
+	     android:paddingLeft="10dp"
+	     android:paddingRight="10dp">
+	     <RelativeLayout
+	       android:visibility="gone"
+	       android:id="@+id/unipay_id_mpinfoIdView"
+	       style="@style/unipay_linear"
+	       android:background="@drawable/unipay_drawable_adbg"
+	       android:layout_marginBottom="10dp"
+	       android:layout_width="fill_parent"
+	       android:paddingTop="5dp"
+	       android:paddingBottom="5dp"
+	       android:paddingLeft="10dp"
+	       android:paddingRight="10dp">
+	       <TextView
+	          android:id="@+id/unipay_id_mpinfoIdText"
+		      style="@style/unipay_text"
+		      android:gravity="left"
+		      android:textSize="13sp"
+		      android:maxLines="2"
+		      android:ellipsize="end"
+		      android:textColor="@color/unipay_btn_high1_color"
+		      android:text="首次购买任意数额钻石，额外送5钻石＋88金币"/>
+	     </RelativeLayout>
+	     
+	     <!-- 团购 -->
+	   <LinearLayout
+	       android:id="@+id/unipay_id_mpTuanLayout"
+			style="@style/unipay_tips_listitem"
+			android:minHeight="50dp"
+			android:layout_marginBottom="6dp"
+			android:visibility="gone">
+
+		<ImageView
+		    android:background="@drawable/unipay_pic_tuan"
+			style="@style/unipay_iconprop"/>
+	
+		<LinearLayout
+			android:layout_weight="100"
+	      	android:layout_margin="5dp"
+	      	style="@style/unipay_linear">
+       		<TextView
+		      	style="@style/unipay_text"
+		      	android:textSize="18sp"
+		      	android:textColor="@color/unipay_btn_color"
+		      	android:text="@string/unipay_limit_groupbuy"/>
+			<TextView
+				android:id="@+id/unipay_id_mpTuanTime"
+		      	style="@style/unipay_text"
+		      	android:textSize="12sp"
+		      	android:textColor="@color/unipay_btn_high1_color"
+		      	/>
+			<LinearLayout
+	       		style="@style/unipay_linear"
+	       		android:orientation="horizontal"
+	       		> 
+				<TextView 
+					    style="@style/unipay_text" 
+					    android:id="@+id/unipay_id_mpTuanExt1" 
+					    android:textSize="12sp" 
+					    android:textColor="@color/unipay_thin5_color"/>
+				<TextView 
+					    style="@style/unipay_text" 
+					    android:id="@+id/unipay_id_mpTuanOriPrice" 
+					    android:textSize="12sp" 
+					    android:textColor="@color/unipay_thin5_color"/>
+			</LinearLayout>
+				<TextView 
+					    style="@style/unipay_text" 
+					    android:id="@+id/unipay_id_mpTuanExt2" 
+					    android:textSize="12sp" 
+					    android:textColor="@color/unipay_thin5_color"/>
+			 
+	      	</LinearLayout>
+	    	<LinearLayout
+	     		style="@style/unipay_btnorder"> 
+		     	<TextView 
+		         style="@style/unipay_text"
+		         android:id="@+id/unipay_id_action"
+		         android:textColor="@color/unipay_thin4_color"
+		         android:text="@string/unipay_gobuy"/>
+		   	</LinearLayout>
+		</LinearLayout>
+	     
+	      <ListView
+	          android:layout_weight="100"
+	            android:layout_marginBottom="5dp"
+                android:id="@+id/unipay_id_apSaveValueList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@drawable/unipay_drawable_line"
+                android:dividerHeight="5dip"
+                android:drawSelectorOnTop="false"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent" />
+	     <LinearLayout
+	       style="@style/unipay_linear">
+	        <LinearLayout
+	           android:id="@+id/unipay_id_OtherChannel"
+		       style="@style/unipay_tips_listitem" >
+		       <RelativeLayout
+		         style="@style/unipay_wrap"
+		         android:layout_margin="5dp"
+		         android:layout_width="38dp"
+		         android:layout_height="38dp">
+		         <ImageView
+		           style="@style/unipay_iconprop"
+		           android:src="@drawable/unipay_pic_iconwrite"/>
+		       </RelativeLayout>
+		       <LinearLayout
+			       android:layout_weight="100"
+			       style="@style/unipay_linear">
+			       <TextView
+			           	  android:id="@+id/unipay_id_ap_otherNum"
+					      style="@style/unipay_text"
+					      android:layout_width="fill_parent"
+					      android:textSize="14sp"
+					      android:textColor="@color/unipay_em1_color"
+					      android:text="其它数额"/>
+				</LinearLayout>
+				 <CheckBox
+				     	  android:visibility="gone"
+				          android:id="@+id/unipay_id_ap_apAutoPayCheckBox"
+			      	      style="@style/unipay_agreecheck"
+					      android:paddingRight="5dp"
+			              android:text="@string/unipay_pay_auto"/>
+				 <ImageButton
+				     	  android:id="@+id/unipay_id_ap_otherNumArrow"
+					      android:layout_width="32dp"
+					      android:layout_height="fill_parent"
+					      android:background="@null"
+					      android:scaleType="centerInside"
+					      android:src="@drawable/unipay_pic_arrowr"/>
+		    </LinearLayout>
+		    
+	        <!-- item end -->
+	      </LinearLayout>
+	  </LinearLayout>
+</LinearLayout>    
+</LinearLayout>    	     

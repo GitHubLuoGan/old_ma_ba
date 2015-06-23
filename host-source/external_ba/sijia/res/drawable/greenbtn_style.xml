@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="4.0dip" android:topRightRadius="4.0dip" android:bottomLeftRadius="4.0dip" android:bottomRightRadius="4.0dip" />
+            <gradient android:startColor="#a8d742" android:endColor="#8cbf3f" android:angle="90.0" />
+            <stroke android:width="0.5dip" android:color="#cacaca" />
+        </shape>
+    </item>
+    <item android:state_focused="true">  <!-- 焦点 -->
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="4.0dip" android:topRightRadius="4.0dip" android:bottomLeftRadius="4.0dip" android:bottomRightRadius="4.0dip" />
+             <gradient android:startColor="#a8d742" android:endColor="#8cbf3f" android:angle="90.0" />
+            <stroke android:width="0.5dip" android:color="#cacaca" />
+        </shape>
+    </item>
+    <item > <!-- 无焦点 -->
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="4.0dip" android:topRightRadius="4.0dip" android:bottomLeftRadius="4.0dip" android:bottomRightRadius="4.0dip" />
+            <gradient android:startColor="#8cbf3f" android:endColor="#a8d742" android:angle="90.0" />
+            <stroke android:width="0.5dip" android:color="#cacaca" />
+        </shape>
+    </item>
+</selector>

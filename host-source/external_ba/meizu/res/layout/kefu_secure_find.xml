@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/findAccountLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/modifyPWLayout"
+    android:layout_marginLeft="3dip"
+    android:layout_marginRight="3dip" >
+
+    <LinearLayout
+        android:id="@+id/findBtnLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginLayout"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/layout_white_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/fg_find"
+            android:textColor="#ffa67d3d"
+            android:textSize="17.0sp" />
+
+        <Button
+            android:id="@+id/fg_find_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15.0dip"
+            android:background="@drawable/btn_back_bg"
+            android:text="@string/fg_back"
+            android:textColor="#ff666666" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/findDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/findBtnLayout"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/bg_kefu_list"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fg_findMobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dip"
+            android:layout_marginLeft="5dip"
+            android:text="@string/fg_secure_find_mobile"
+            android:textColor="@color/tv_text_color_findpass"
+            android:drawableRight="@drawable/user_set_center_right_bg"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/icon_list_diver" />
+
+        <TextView
+            android:id="@+id/fg_findEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dip"
+            android:layout_marginLeft="5dip"
+            android:text="@string/fg_secure_find_email"
+            android:textColor="@color/tv_text_color_findpass"
+            android:drawableRight="@drawable/user_set_center_right_bg"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_alignLeft="@id/findDesc"
+        android:layout_alignRight="@id/findDesc"
+        android:layout_below="@id/findDesc"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="3dip"
+        android:background="@drawable/icon_list_diver" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/findContentDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_weight="1.0"
+        android:lineSpacingExtra="3sp"
+        android:text="@string/fg_find_pw_tips"
+        android:textColor="#ff555555"
+        android:textSize="14sp" />
+
+</RelativeLayout>

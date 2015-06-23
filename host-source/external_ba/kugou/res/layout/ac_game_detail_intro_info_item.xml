@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_info"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:gravity="center_vertical"
+    android:minHeight="30dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/ac_tv_key"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="开发商"
+        android:textColor="@color/ac_common_gray_lighter"
+        android:textSize="@dimen/ac_common_large" />
+
+    <TextView
+        android:id="@+id/ac_tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:text="开发商"
+        android:textColor="@color/ac_common_gray_lighter"
+        android:textSize="@dimen/ac_common_large" />
+
+</LinearLayout>

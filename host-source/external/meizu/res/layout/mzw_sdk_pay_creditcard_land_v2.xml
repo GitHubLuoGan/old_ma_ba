@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mzw_pay_info_stroke" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mzw_sdk_pay_cardpay_selecttype_text"
+            android:textColor="@color/mzw_pay_info_text"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/petButton_1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/mzw_sdk_pay_waybutton_seletor"
+                android:textColor="@color/mzw_pay_info_text"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/petButton_2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/mzw_sdk_pay_waybutton_seletor"
+                android:textColor="@color/mzw_pay_info_text"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/petButton_3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/mzw_sdk_pay_waybutton_seletor"
+                android:textColor="@color/mzw_pay_info_text"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/petButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/petButton_4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/mzw_sdk_pay_waybutton_seletor"
+                android:textColor="@color/mzw_pay_info_text"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/petButton_5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/mzw_sdk_pay_waybutton_seletor"
+                android:textColor="@color/mzw_pay_info_text"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/petButton_6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/mzw_sdk_pay_waybutton_seletor"
+                android:textColor="@color/mzw_pay_info_text"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/mzw_sdk_pay_cardpay_selecttype_text2"
+            android:textColor="@color/mzw_pay_info_text"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/moneyPopLayout"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mzw_sdk_login_edittext_selector"
+            android:padding="0dp" >
+
+            <TextView
+                android:id="@+id/selectMoneyET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="5元"
+                android:textColor="@color/mzw_pay_info_text"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/downImageSM"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mzw_sdk_pay_money_down_ck"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <!--
+             <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/mzw_sdk_pay_cardpay_name_text"
+            android:textColor="@color/mzw_pay_info_text"
+            android:textSize="16sp" />
+        -->
+
+        <EditText
+            android:id="@+id/cardNum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mzw_sdk_login_edittext_selector"
+            android:hint="请输入账号"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/mzw_pay_info_text"
+            android:textSize="16sp" >
+        </EditText>
+
+        <!--
+             <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/mzw_sdk_pay_cardpay_pwd_text"
+            android:textColor="@color/mzw_pay_info_text"
+            android:textSize="16sp" />
+        -->
+
+        <EditText
+            android:id="@+id/pwdNum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mzw_sdk_login_edittext_selector"
+            android:hint="请输入密码"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textColor="@color/mzw_pay_info_text"
+            android:textSize="16sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/promptMessage"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt"
+            android:visibility="gone"
+            android:textColor="#ff0000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

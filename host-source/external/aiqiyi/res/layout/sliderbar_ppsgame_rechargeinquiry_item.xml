@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_marginBottom="5.5dip"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/sliderbar_pps_bg_coner_cell5"
+        android:orientation="horizontal"
+        android:paddingLeft="7.5dip"
+        android:weightSum="1008" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="103"
+            android:src="@drawable/sliderbar_watch" />
+
+        <TextView
+            android:id="@+id/sliderbar_recharge_item_tf1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="244"
+            android:gravity="center_vertical|left"
+            android:text="2014-03-01"
+            android:textColor="@color/slidebar_recharge_inquiry_item_num"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="500"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/sliderbar_recharge_item_tf2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom|left"
+                android:singleLine="true"
+                android:textColor="@color/slidebar_recharge_inquiry_tab_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sliderbar_recharge_item_tf3"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top|left"
+                android:textColor="@color/slidebar_recharge_inquiry_item_num"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sliderbar_recharge_item_tf4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="160"
+            android:gravity="center_vertical|left"
+            android:text="￥1999"
+            android:textColor="@color/slidebar_ppsgame_yellow"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/color_fragment_background"
+    android:paddingLeft="@dimen/margin_horizontal"
+    android:paddingRight="@dimen/margin_horizontal">
+    
+    <TextView
+        android:id="@id/sdk_tv_nametip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:layout_marginTop="@dimen/margin_vertical"
+        android:drawableLeft="@drawable/tip_drawable"
+        android:drawablePadding="5.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:text="@string/sdk_uupassport_usernmae"
+        android:textColor="@color/color_common_text"
+        android:textSize="@dimen/common_generic_size" />
+    
+    <TextView
+        android:id="@id/sdk_tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:layout_marginTop="@dimen/margin_vertical"
+        android:layout_marginLeft="5.0dip"
+        android:textColor="@color/color_tip_text"
+        android:layout_toRightOf="@id/sdk_tv_nametip"
+        android:textSize="@dimen/common_generic_size" />
+    <!-- android:background="@drawable/input_layout_background1" -->
+    <Spinner
+        android:id="@id/sdk_sp_all_question"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_layout_height"
+        android:background="@drawable/sdk_spinner_bg_selector"
+        android:paddingLeft="@dimen/margin_horizontal"
+        android:layout_below="@id/sdk_tv_nametip"
+        android:textColor="@color/color_input_text"
+        android:textSize="@dimen/input_generic_size"  />
+    
+    <ImageView
+        android:id="@id/divider_horizon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sdk_sp_all_question"
+        android:contentDescription="@string/content_description"
+        android:scaleType="fitXY"
+        android:src="@drawable/divider_horizon" />
+    
+    <com.uucun.android.passport.layout.InputCommonLayout
+        android:id="@id/common_input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_horizon"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:background="@drawable/input_layout_background3"
+        android:paddingLeft="@dimen/sdk_text_margin"
+        android:paddingRight="@dimen/sdk_text_margin" >
+
+        <EditText
+            android:id="@id/sdk_et_input"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_layout_height"
+            android:layout_toLeftOf="@id/sdk_btn_clear"
+            android:background="@null"
+            android:ems="10"
+            android:textColorHint="@color/color_secondary_text"
+            android:hint="@string/sdk_input_set_answer_hint"
+            android:inputType="text"
+            android:paddingLeft="@dimen/margin_small"
+            android:singleLine="true"
+            android:textColor="@color/color_input_text"
+            android:textSize="@dimen/input_generic_size" >
+        </EditText>
+
+        <ImageView
+            android:id="@id/sdk_btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/sdk_deleter_selector"
+            android:visibility="invisible" />
+    </com.uucun.android.passport.layout.InputCommonLayout>
+    
+    <Button
+        android:id="@id/sdk_btn_set_question"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sdk_button_height"
+        android:layout_below="@id/common_input_layout"
+        android:background="@drawable/sdk_btn_blue_selector"
+        android:text="@string/sdk_confirm"
+        android:textColor="@color/color_button_text"
+        android:textSize="@dimen/button_generic_size" />
+
+</RelativeLayout>

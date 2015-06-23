@@ -1,0 +1,44 @@
+<!-- vivo start -->
+        <!-- vivo login-->
+          <activity android:name="com.vivo.account.base.activity.LoginActivity"
+                  android:label="@string/vivo_app_name"
+                  android:theme="@android:style/Theme.NoTitleBar" >
+
+          </activity>
+          <activity android:name="com.vivo.account.base.activity.RegisterActivity"
+              android:windowSoftInputMode="stateAlwaysHidden"
+              android:theme="@android:style/Theme.NoTitleBar" >
+
+        </activity>
+        <activity android:name="com.vivo.account.base.activity.VerifyPhoneNumActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+
+        </activity>
+        <activity android:name="com.vivo.account.base.activity.FindPasswordActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+
+        </activity>
+        <activity android:name="com.vivo.account.base.activity.SetPassWordActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+
+        </activity>
+        <activity android:name="com.vivo.account.base.activity.RegisterProtocolActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- vivo login-->
+
+
+        <!-- vivo pay-->
+
+        <activity  android:name="com.bbkmobile.iqoo.payment.PaymentActivity"
+            android:configChanges="keyboardHidden|orientation">
+        </activity>
+        <activity android:name="com.bbkmobile.iqoo.payment.CardActivity"
+             android:configChanges="keyboardHidden|orientation">
+        </activity>
+
+
+
+        <!-- vivo pay-->
+
+<!-- vivo end -->

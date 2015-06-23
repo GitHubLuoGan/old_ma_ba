@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <Button 
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="74dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/backbtn_style"/>
+    
+    <LinearLayout
+        android:id="@+id/main" 
+        android:layout_width="350dp"
+        android:layout_height="273dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/login_bg">
+        
+        <LinearLayout
+            android:id="@+id/input" 
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/login_m_edit_bg">
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                
+                <ImageView
+                    android:id="@+id/user_icon" 
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/login_user"/>
+                <EditText
+                    android:id="@+id/register_edit_user"
+                    android:layout_toRightOf="@+id/user_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:singleLine="true"
+                    android:maxLength="16"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/register_user"
+                    android:digits="@string/xianzhi"
+                    android:textColor="@color/black"
+                    android:background="@null"/>                
+            </RelativeLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e2e6e9"/>
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+                
+                <ImageView
+                    android:id="@+id/pwd_icon" 
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/login_pwd"/>
+                <EditText
+                    android:id="@+id/register_edit_pwd"
+                    android:layout_toRightOf="@+id/pwd_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:maxLength="16"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:hint="@string/register_pwd"
+                    android:singleLine="true"
+                    android:digits="@string/xianzhi"
+                    android:textColor="@color/black"
+                    android:background="@null"/>
+                
+            </RelativeLayout>
+            
+        </LinearLayout>        
+        
+        <!-- 按钮 -->
+        <RelativeLayout 
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical">
+            
+            <Button 
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/register"
+                android:textSize="@dimen/eighteen"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/blue_btn_style"/>            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

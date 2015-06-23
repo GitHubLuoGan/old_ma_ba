@@ -1,0 +1,6 @@
+<!-- xianguo start-->
+<activity
+	android:name="com.bbox.api.ThirdPaymentActivity"
+	android:label="支付" >
+</activity>
+<!-- xianguo end-->

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/moneyLayout"
+    style="@style/PayMoneyStyle"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    style="@style/PayMoneySelectStyle"
+	    android:text="@string/mzw_select_money_wwq"
+	    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mzw_pay_money_text_press"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/ten"
+            style="@style/PayMoneyTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"        
+            android:layout_weight="1"
+            android:text="@string/mzw_ten_yuan_wwq" />
+
+        <RadioButton
+            android:id="@+id/twenty"
+            style="@style/PayMoneyTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/mzw_twenty_yuan_wwq" />
+
+        <RadioButton
+            android:id="@+id/thirty"
+            style="@style/PayMoneyTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/mzw_thirty_yuan_wwq" />
+        
+        <RadioButton
+            android:id="@+id/fifty"
+            style="@style/PayMoneyTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/mzw_fifty_yuan_wwq" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@color/mzw_pay_money_text_press"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/oneHundred"
+            style="@style/PayMoneyTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/mzw_one_hundred_yuan_wwq" />
+
+        <RadioButton
+            android:id="@+id/twoHundred"
+            style="@style/PayMoneyTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/mzw_two_hundred_yuan_wwq" />
+
+        <RadioButton
+            android:id="@+id/threeHundred"
+            style="@style/PayMoneyTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/mzw_third_hundred_yuan_wwq" />
+        
+        <RadioButton
+            android:id="@+id/fiveHundred"
+            style="@style/PayMoneyTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/mzw_five_hundred_yuan_wwq" />
+    </LinearLayout>
+
+</LinearLayout>

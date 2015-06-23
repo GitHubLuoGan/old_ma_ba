@@ -1,0 +1,9 @@
+<!-- uc start-->
+<activity
+	android:name="cn.uc.gamesdk.SdkActivity"
+	android:configChanges="keyboardHidden|orientation"
+	android:label="@string/app_name"
+	android:theme="@android:style/Theme.Translucent.NoTitleBar"
+	android:windowSoftInputMode="adjustResize" >
+</activity>
+<!-- uc end-->

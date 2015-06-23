@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/petCardType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="移动充值卡:"
+            android:textColor="@color/mzw_pay_info_text"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/cardInfoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/petCardType"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp" >
+
+            <ImageView
+                android:id="@+id/petCardIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/petCardNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="35 3485 1742  8604 0510"
+                android:textColor="@color/mzw_pay_info_text"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/yueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/petCardType"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/cardInfoLayout"
+            android:text="余额:"
+            android:textColor="@color/mzw_pay_info_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/yueNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/yueText"
+            android:layout_alignBottom="@+id/yueText"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/yueText"
+            android:text="150元"
+            android:textColor="#FFA500"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/yueSelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/mzw_sdk_pay_yue_uncheck" />
+
+        <TextView
+            android:id="@+id/balanceCardPastTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/cardInfoLayout"
+            android:layout_below="@id/cardInfoLayout"
+            android:layout_marginLeft="40dp"
+            android:text="35 3485 1742  8604 0510"
+            android:textColor="@color/mzw_pay_info_stroke"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/fake_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#55f3f2f2"
+        android:keepScreenOn="true"
+        android:visibility="gone" />
+
+</FrameLayout>

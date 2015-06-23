@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:text="@string/nd3_dj_migrate_post_content"
+        android:textColor="@color/nd3_black"
+        android:textSize="16sp"
+        android:background="@drawable/nd3_dj_migrate_bg_white"
+        />
+    
+	<Button 
+	    android:id="@+id/btn_bind"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dip"
+	    android:text="@string/nd3_dj_migrate_post_to_bind"
+		android:textColor="@color/nd3_white"
+        android:textSize="16sp"
+		android:background="@drawable/nd_login_btn_portrait_selector"
+	    />
+</LinearLayout>

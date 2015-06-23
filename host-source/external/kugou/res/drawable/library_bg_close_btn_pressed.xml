@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/library_mail_message_edit_pressed"/>
+    <item android:drawable="@drawable/library_img_close" 
+          android:left="14dip"   
+           android:top="8dip"   
+           android:right="14dip"   
+           android:bottom="8dip"/>
+</layer-list>

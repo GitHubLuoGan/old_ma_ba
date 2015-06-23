@@ -1,0 +1,62 @@
+<resources>
+   
+    <!-- 基本颜色 -->
+    <color name="ac_common_white">#ffffffff</color>
+    <color name="ac_common_black">#ff000000</color>
+    <color name="ac_common_green">#26B134</color>
+    <color name="ac_common_red">#A10000</color>
+    <color name="ac_common_orange">#FC6200</color>
+    <color name="ac_common_little_orange">#E25453</color>
+    <color name="ac_common_yellow">#E7B34E</color>
+    <color name="ac_common_blue">#10B5EB</color>
+    <color name="ac_common_blue_deep">#259EF7</color>
+    
+    <!-- 透明颜色 -->
+    <color name="ac_common_transparent">#00000000</color>
+    <!-- 点击颜色，一般用于listView,GridView的item点击效果 -->
+    <color name="ac_common_item_press">#ffe4e4e4</color>
+    <color name="ac_common_item_cache">@color/ac_common_transparent</color>
+    <!-- 分隔线颜色 -->
+    <color name="ac_common_item_divider">#ffdddddd</color>
+    <!-- 背景色（深色） -->
+    <color name="ac_common_background_dark">#ffaaaaaa</color>
+    <!-- 背景色（浅色） -->
+    <color name="ac_common_background_light">#fff6f6f6</color>
+    <!-- 灰色（深色），一般用于标题 -->
+    <color name="ac_common_gray_darker">#ff333333</color>
+    <!-- 灰色（浅色），一般用于二级标题，介绍性文字 -->
+    <color name="ac_common_gray_lighter">#ff666666</color>
+    <!-- 按钮点击后的颜色 -->
+    <color name="ac_common_btn_pressed">#ffdddddd</color>
+    
+    
+    <!-- 下载界面相关颜色定义 -->
+    <color name="ac_download_group_title">#ff666666</color>
+    <color name="ac_download_menu_background">#ffd5d5d5</color>
+    <color name="ac_download_menu_textcolor">#ff777777</color>
+    <color name="ac_download_textcolor_downloading">#fff76d02</color>
+    <color name="ac_download_textcolor_continue">#ff00acee</color>
+	
+		<!-- 安装按钮相关颜色 -->
+	<color name="ac_magic_btn_bg_default">#ffff6f00</color>
+	<color name="ac_magic_btn_bg_pressed">#ffe96500</color>
+	<color name="ac_magic_btn_open_bg_default">#ff00acee</color>
+	<color name="ac_magic_btn_open_bg_pressed">#ff069dd7</color>
+	<color name="ac_magic_btn_normal_green_pressed">#008000</color>
+	<color name="ac_magic_btn_normal_green_default">#28B822</color>
+	<color name="ac_magic_btn_normal_blue_pressed">#0080ff</color>
+	<color name="ac_magic_btn_normal_blue_default">#10B5EB</color>
+    
+	<color name="ac_online_game_radiobutton_bg_checked">#ADAFB3</color>
+	<color name="ac_online_game_radiobutton_bg_normal">#E6E6E6</color>
+	
+    <color name="ac_game_detail_progressbar_progress">#ffa80606</color>
+    <color name="ac_game_item_progressbar_progress">#ff64ca09</color>
+    <color name="ac_pay_app_list_item_pressed">#d4d4d4</color>
+    <color name="ac_score_list_download_progressbar_color">#01D48F</color>
+    
+    <color name="ac_search_no_result_text_tip">#ff8a8a8a</color>
+    <color name="ac_kugou_game_common_title_bg">#259EF7</color>
+    <color name="ac_kugou_game_news_list_item_normal">#F5F5F5</color>
+    <color name="ac_kugou_game_news_list_item_pressed">#DDDDDD</color>
+</resources>

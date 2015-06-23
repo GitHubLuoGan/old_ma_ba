@@ -1,0 +1,11 @@
+<!-- downjoy -->
+<classpathentry kind="lib" path="libs/alipaysdk.jar"/>
+<classpathentry kind="lib" path="libs/downjoy_sdk_3.0.5.jar"/>
+<classpathentry kind="lib" path="libs/httpmime-4.1.1.jar"/> 
+<classpathentry kind="lib" path="libs/ipp-rome-2.1.0.jar"/> 
+<classpathentry kind="lib" path="libs/MobileSecSdk.jar"/>
+<classpathentry kind="lib" path="libs/picasso-2.2.0.jar"/> 
+<classpathentry kind="lib" path="libs/trobotexternalinterface.jar"/> 
+<classpathentry kind="lib" path="libs/UPPayAssistEx.jar"/> 
+<classpathentry kind="lib" path="libs/UPPayPluginEx.jar"/> 
+<classpathentry kind="lib" path="libs/utdid4all-1.0.2.jar"/> 

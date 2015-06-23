@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/hucn_bottom_logo_layout"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:paddingBottom="15dp" >
+
+    <ImageView
+        android:id="@+id/hucn_account_logo_iv"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/hucn_logo_normal"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:id="@+id/hucn_service_no_layout"
+        android:layout_below="@+id/hucn_account_logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/hucn_service_num_tv"
+            style="@style/HUCNSmallText"
+            android:layout_marginTop="5dp"
+            android:text="@string/hucn_kefu_mobile"
+            />
+
+        <TextView
+            android:id="@+id/hucn_service_num_no_tv"
+            style="@style/HUCNSmallText"
+            android:layout_marginLeft="5dp"
+            android:text="@string/hucn_kefu_detail_mobile_no"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/hucn_blue" />
+    </LinearLayout>
+
+</RelativeLayout>

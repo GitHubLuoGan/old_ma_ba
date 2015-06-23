@@ -1,0 +1,122 @@
+<!-- duoku start-->
+<meta-data android:name="DUOKUSDK_CHANNEL" 
+           android:value="700" />
+		   
+ <activity
+            android:name="com.duoku.platform.ui.DKContainerActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <activity
+            android:name="com.duoku.platform.ui.DKPaycenterActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="landscape"
+            android:theme="@style/DK.Theme.NoBackGround" >
+        </activity>
+        <activity
+            android:name="com.mokredit.payment.MktPayment"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.Run" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.unionpay.uppay.PayActivityEx"
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.Run" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="uppay" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.UCMobile.PayPlugin.PayPluginService" >
+            <intent-filter>
+                <action android:name="android.webkit.PLUGIN" />
+            </intent-filter>
+
+            <meta-data
+                android:name="type"
+                android:value="native" />
+        </service>
+
+        <meta-data
+            android:name="plugin_activityname"
+            android:value="com.unionpay.uppay.PayActivity" />
+
+        <service android:name="com.duoku.platform.service.DKSuspensionService" />
+
+        <!-- push service client -->
+        <!-- myself receiver -->
+        <receiver android:name="com.duoku.platform.push.MyReceiver" >
+            <intent-filter>
+                <action android:name="com.duoku" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.duoku.platform.push.PushMessageReceiver" >
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push service -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1" >
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1" />
+        <!-- push service end -->
+

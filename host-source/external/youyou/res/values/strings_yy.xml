@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="forget_pass"><u>忘记密码？</u></string>
+    <string name="title_activity_have_card_or_not">HaveCardOrNotActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="unit">友币</string>
+    
+    <string name="yeepay">易宝支付</string>
+    <string name="reg_uu">注册友游</string>
+    <string name="input_phone">请输入您的手机号</string>
+    <string name="get">获取</string>
+    <string name="input_pass">输入密码:</string>
+    <string name="re_input_pass">确认密码:</string>
+    <string name="reg">注册</string>
+	<string name="agree">我已阅读并同意</string>
+	<string name="agreement">注册协议</string>
+	<string name="recharge">支付</string>
+	<string name="account_phone">账户:138 1234 1234</string>
+	<string name="left">可用余额:</string>
+	<string name="def_balance">0.00</string>
+	<string name="use_balance">使用平台余额</string>
+	<string name="need_re">您需要支付:</string>
+	<string name="ymb_unit">元</string>
+	<string name="chose">请选择支付方式</string>
+	<string name="subbmit">确定</string>
+	<string name="subbmit2">提交</string>
+	<string name="modify_pass">修改密码</string>
+	<string name="old_pass">旧的密码:</string>
+	<string name="new_pass">新的密码:</string>
+	<string name="check_pass">确认密码:</string>
+	<string name="login_uu">登录友游</string>
+	<string name="phone">手机号:</string>
+	<string name="pass">密码:</string>
+	<string name="yanzhengma">验证码:</string>
+	<string name="login">登录</string>
+	<string name="loss_pass">忘记密码</string>
+	<string name="input_phone_hint">请输入您的手机号</string>
+	<string name="uu_account">友游账号:</string>
+	
+	
+</resources>

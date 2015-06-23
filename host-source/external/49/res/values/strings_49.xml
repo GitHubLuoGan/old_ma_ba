@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--aili-->
+
+
+    <string name="confirm_title">提示</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="content_description_icon">icon</string>
+    <string name="refresh">刷新</string>
+    <string name="processing">加载中</string>
+    <string name="download">下载</string>
+    <string name="download_fail">下载安装包失败</string>
+    <string name="cancel_install_msp">你已取消安装移动快捷支付服务</string>
+    <string name="cancel_install_alipay">你已取消安装支付宝钱包</string>
+    <string name="redo">重试</string>
+    <string name="install_msp">你尚未安装支付宝移动快捷支付服务，请立即安装</string>
+    <string name="install_alipay">你尚未安装支付宝钱包，请立即安装</string>
+
+<!--aili-->
+
+
+    <string name="action_settings">Settings</string>
+    <string name="xianzhi">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_</string>
+    <!--MainActivity.java-->
+    <string name="init">初始化</string>
+    <string name="assitive">浮标</string>
+    <string name="login_demo">登陆</string>
+    <string name="recharge">充值</string>
+    <string name="exit">退出</string>
+    <!-- login_main.xml -->
+    <string name="edit_pwd">修改密码</string>
+    <string name="find_pwd">密码找回</string>
+    <string name="login">直接登陆</string>
+    <string name="register">快速注册</string>
+    <!-- register.xml -->
+    <string name="register_user">请输入6-16位数字或字母账号</string>
+    <string name="register_pwd">请输入6-16位数字或字母密码</string>
+    <!-- modify_pwd.xml -->
+    <string name="modify_user">用户名</string>
+    <string name="modify_old_pwd">请输入旧密码</string>
+    <string name="modify_new_pwd">请输入新密码</string>
+    <string name="modify_button">修改密码</string>
+    <!-- find_pwd.xml -->
+    <string name="find_tips">提示:你可以通过以下方式找回密码</string>
+    <!-- myprogressbar.xml -->
+    <string name="progress_tips">正在加载中</string>
+    <!-- mytoast.xml -->
+	<string name="welcome_back">欢迎回来</string>
+	<!-- recharge_land.xml -->
+	<string name="recharge_name">充值中心</string>
+	<string name="sijiu_recharge_detail">充值记录</string>
+	<string name="backgame_recharge_detail">返回游戏</string>
+	<string name="recharge_user">充值账号：</string>
+	<string name="recharge_way">请点击选择适合您的充值方式</string>
+	<string name="card_type">点卡类型：</string>
+	<string name="netcard">网易充值卡</string>
+	<string name="qqcard">Q币充值卡</string>
+	<string name="sdcard">盛大充值卡</string>
+	<string name="wmcard">完美充值卡</string>
+	<string name="real_price">实际面额：</string>
+	<string name="ten_rmb">10元</string>
+	<string name="two_rmb">20元</string>
+	<string name="three_rmb">30元</string>
+	<string name="five_rmb">50元</string>
+	<string name="hundred_rmb">100元</string>
+	<string name="th_hundred_rmb">300元</string>
+	<string name="five_hundred_rmb">500元</string>
+	<string name="recharge_price">充值金额：</string>
+	<string name="card_num">卡序列号：</string>
+	<string name="card_pwd">卡类密码：</string>
+	<string name="myAdd">我的赠币：</string>
+	<string name="rmb">￥</string>
+	<string name="recharge_now">立即充值</string>
+	<string name="edit_price">修改金额</string>
+	<string name="back_recharge">其他充值方式</string>
+	<string name="recharge_help">充值帮助:</string>
+	<string name="recharge_help_one">1、银联卡充值支持大部分信用卡和部分借记卡。</string>
+	<string name="recharge_help_two">2、充值卡充值于游戏点卡充值请选择正确的面额，并仔细核对卡号和密码。</string>
+	<string name="recharge_telephone">客服电话：</string>
+	<string name="recharge_qq">客服QQ：</string>
+	<string name="choose_tips">充值金额与"卡面金额"一致，否则可能导致支付失败及财产损失。</string>
+	<string name="sijiu_yeebinglist">已使用银行卡列表</string>
+	<string name="sijiu_yeebing_now">立即支付</string>
+	
+	<!-- pulltorefress -->
+    <string name="hello">往下滑动更新，向上加载更多</string>
+    <string name="drop_down">向下拉更新</string>
+    <string name="update_time">最新更新</string>
+    <string name="sijiu_more">更多</string>
+    <string name="loading_more">正在加载...</string>
+    <string name="refreshing">更新中…</string>
+    <string name="release_refresh">松开后更新</string>
+    
+    <string name="close">关闭</string>
+    <string name="yeepaylist_tips">其他方式:</string>
+    <string name="yeepaylist_web">网上支付</string>
+    <string name="records_success">成功</string>
+    <string name="records_wait">等待</string>
+    <string name="records_fail">失败</string>
+    <string name="records_recharge_fail">到账失败</string>
+    
+    <!-- records_item.xml -->
+	<string name="yuanbao_item">60元宝</string>
+	<string name="pay_item">支付宝支付</string>
+	<string name="amount_item">6</string>
+	<string name="yuan">元</string>
+	<string name="state_item">成功</string>
+	<string name="time_item">2013-05-06 16:26:16</string>
+	<string name="order_item">订单号：1254545454545454</string>
+	<string name="pay_item_state">支付情况：</string>
+	<string name="pay_item_state_result">成功支付</string>
+	
+	<!-- phone.xml -->
+	<string name="phone_tips">请在第一填写账号,第二填写该账号绑定的手机号!</string>
+	<string name="ok">确定</string>
+	<string name="sj_cancel">取消</string>
+	
+	<!-- http tips -->
+	<string name="http_error">请求错误!</string>
+	
+	<string name="account">账号</string>
+	<string name="phoneNum">手机号</string>
+	
+	<!-- 短信 -->
+	<string name="app_name_vpaysmszf">大额短信支付</string>
+	<string name="vpay_title">手机大额短信支付</string>
+	<string name="vpay_bill_info">订单信息</string>
+	<string name="vpay_good_name">商户名称: </string>
+	<string name="vpay_recharge">支付金额: </string>
+	<string name="vpay_client_service">客服电话:400-684-0755</string>
+	<string name="vpay_payfor">去支付</string>
+    
+	
+    
+</resources>

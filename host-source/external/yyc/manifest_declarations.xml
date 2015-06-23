@@ -1,0 +1,166 @@
+<!--yyc--> 
+ 
+	<activity
+	  android:name="com.uucun.android.passport.activity.MainActivity"
+	  android:configChanges="keyboard|keyboardHidden|orientation" >
+	</activity>
+
+
+
+	<receiver
+            android:name="com.loft.thirdsdk.thirdreceiver.UUCUNPayecoReceiver"
+            android:label="" >
+            <intent-filter>
+                <action android:name="com.payeco.plugin.payend.broadcast" />
+            </intent-filter>
+    </receiver>
+        
+      <service
+            android:name="com.blocks.thirdsdk.aidl.PayService"
+            android:exported="true" 
+            android:enabled="true"/>
+        
+      <activity
+            android:name="com.loft.thirdsdk.activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/thirdpay_uucun_theme_FullScreen_translucent"/>     
+        
+      <activity
+            android:name="com.loft.thirdsdk.activity.LoftYiLianActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        
+       <activity
+            android:name="com.loft.thirdsdk.activity.LoftAlipayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        
+       <activity
+            android:name="com.loft.thirdsdk.activity.LoftAlipayWebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        
+        <activity
+            android:name="com.loft.thirdsdk.activity.LoftWeiXinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        
+         <activity
+            android:name="com.loft.thirdsdk.activity.LoftShouXinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        
+         <activity
+            android:name="com.loft.thirdsdk.activity.LoftShouXinWebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        
+       <activity
+            android:name="com.loft.thirdsdk.activity.LoftBankActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+
+        <activity
+            android:name="com.loft.thirdsdk.activity.LoftRechargeCardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        
+       <activity
+            android:name="com.loft.thirdsdk.activity.LoftJunWangCardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+       
+       <activity
+            android:name="com.loft.thirdsdk.activity.LoftZhengTuCardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            </activity>
+       
+        <activity
+            android:name="com.loft.thirdsdk.activity.LoftWanMeiCardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            </activity>
+        
+          <activity
+            android:name="com.loft.thirdsdk.activity.LoftShengDaCardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            </activity>
+          
+       <activity
+            android:name="com.loft.thirdsdk.activity.LoftPayResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/thirdpay_uucun_theme_FullScreen_translucent">
+            </activity>
+        
+         <activity
+            android:name="com.payeco.android.plugin.PayecoPluginLoadingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            </activity>
+         
+        <activity
+            android:name="com.payeco.android.plugin.PayecoOrderDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            </activity>
+        
+        <activity
+            android:name="com.payeco.android.plugin.PayecoPayResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            </activity>
+        
+        <activity
+            android:name="com.payeco.android.plugin.PayecoWebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            </activity>
+        
+        <activity
+            android:name="com.payeco.android.plugin.PayecoRiskControlActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        
+         <activity android:name="com.skymobi.pay.wechat.WxPayActivity"
+             android:configChanges="orientation|keyboardHidden"
+              android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        </activity>
+        
+
+<!--yyc-->

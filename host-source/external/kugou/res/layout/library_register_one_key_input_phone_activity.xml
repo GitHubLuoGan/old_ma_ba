@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/library_common_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_common_title_bar" />
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_common_tips_bar" />
+
+    <ScrollView
+        android:id="@+id/library_layout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/library_layout_user_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/library_common_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/library_layout_register_get_phone_num_fail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号："
+                    android:textColor="#ff666666"
+                    android:textSize="16dip" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/library_et_register_input_phone_num"
+                        android:layout_width="215dip"
+                        android:layout_height="35dip"
+                        android:background="@drawable/library_sp_bg"
+                        android:digits="0123456789"
+                        android:inputType="phone"
+                        android:hint="限11位手机号数字"
+                        android:maxLength="15"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dip"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dip" >
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/library_iv_register_phone_num_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/library_text_clear"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/library_iv_register_phone_num_check"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="5dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/library_layout_register_get_phone_num_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:visibility="visible"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您的手机号码："
+                    android:textColor="#ff666666"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/library_tv_register_phone_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dip"
+                    android:gravity="center_vertical"
+                    android:maxLength="20"
+                    android:paddingLeft="2dp"
+                    android:singleLine="true"
+                    android:textColor="#ff669900"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/library_tv_register_use_other_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center_vertical"
+                    android:text="使用其他号码"
+                    android:textColor="#00B7EE" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/library_btn_request_validate_code"
+                android:layout_width="215dip"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/library_green_button_bg_selector"
+                android:shadowColor="#ff000fff"
+                android:text="点击获取短信验证码"
+                android:textColor="#ffffffff"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:layout_width="215dip"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/library_tv_register_by_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="用户名注册"
+                    android:textColor="#00B7EE" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@id/library_tv_register_by_account"
+                    android:gravity="center_vertical"
+                    android:text="您也可以选择" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.kuyou.platform.ui.widgets.LoadingView
+        android:id="@+id/library_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/library_common_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/library_user_center_button_space_line" />
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_bottom_bar" />
+
+</LinearLayout>

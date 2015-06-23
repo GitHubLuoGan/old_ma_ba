@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dpay_main_tilte_font_size">20sp</dimen>
+    <dimen name="dpay_default_padding">8dip</dimen>
+    <dimen name="dpay_btn_padding_left">16dip</dimen>
+    <dimen name="dpay_line_height">1dip</dimen>
+    <dimen name="dpay_btn_padding">66dip</dimen>
+    <dimen name="dpay_align_bottom">18dip</dimen>
+    <dimen name="dpay_align_parent_top">12dip</dimen>
+    <dimen name="dpay_login_align_left">16dip</dimen>
+    <dimen name="dpay_recharge_pattern_padding">8dip</dimen>
+    <dimen name="dpay_subtitle_font_size">18sp</dimen>
+    <dimen name="dpay_login_et_align_top">10dip</dimen>
+    <dimen name="dpay_login_btn_align_top">18dip</dimen>
+    <dimen name="dpay_dialog_y">45dip</dimen>
+    <dimen name="dpay_rect_padding">3dip</dimen>
+    <dimen name="dpay_cart_list_num">10sp</dimen>
+    <dimen name="dpay_default_image">66dip</dimen>
+    <dimen name="dpay_prompt_font_size">16sp</dimen>
+    <dimen name="dpay_number_width">66dip</dimen>
+    <dimen name="dpay_login_text_margin">8dip</dimen>
+    <dimen name="dpay_form_tip">26dip</dimen>
+    <dimen name="dpay_login_btn_padding">12dip</dimen>
+	<dimen name="dpay_login_drawable_padding">16dip</dimen>
+	<dimen name="dpay_login_margin_top">16dip</dimen>
+	<dimen name="dpay_tip_size">14sp</dimen>
+</resources>

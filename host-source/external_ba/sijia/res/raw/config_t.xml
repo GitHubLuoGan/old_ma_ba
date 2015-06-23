@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config version="20130402.0">
+    <frontPubKey version="20110822.0">
+        <oneline><![CDATA[MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZakb0C9OtYQ3hySmXiIMO8qmEKuTwpFSp2kjH/PDA/9TMRQhzOWX5gLbZ4O1/u45N6ggUhayzkQ/WFz24Xs9pmx6Zk5tKaztTzN0rGnUrgrLvFdi3iDjzHd0gUoW4Knpa/i2hdsg7TiqvoOzdyYQzUaHhdYZZknq44Umx3mBUTQIDAQAB]]></oneline>
+        <n>00d96a46f40bd3ad610de1c9299788830ef2a9842ae4f0a454a9da48c7fcf0c0ffd4cc4508733965f980b6d9e0ed7fbb8e4dea081485acb3910fd6173db85ecf699b1e99939b4a6b3b53ccdd2b1a752b82b2ef15d8b78838f31ddd205285b82a7a5afe2da176c83b4e2aafa0ecddc9843351a1e1758659927ab8e149b1de60544d</n>
+        <e>010001</e>
+        </frontPubKey>
+    <upopPubKey version="20110325.0">
+        <oneline><![CDATA[MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQ64P3Tvfied+jxLUpx1dPzYHS5rScBA6dMHeowvcq4OJLKTrCV8OnBiPHEPvT7uI+wvKUkMhkymPooG9OgfoFSSxMPVxbHag4i91DURTEJrpR4kNZ5dFYx14tbj6ZJxS60L33IVad1tISfZqg9JlmxC7vBRHH5P6eOP56Nt3ZIQIDAQAB]]></oneline>
+        <n>d0eb83f74ef7e279dfa3c4b529c7574fcd81d2e6b49c040e9d3077a8c2f72ae0e24b293ac257c3a70623c710fbd3eee23ec2f29490c864ca63e8a06f4e81fa05492c4c3d5c5b1da8388bdd435114c426ba51e24359e5d158c75e2d6e3e992714bad0bdf721569dd6d2127d9aa0f49966c42eef0511c7e4fe9e38fe7a36ddd921</n>
+        <e>010001</e>
+    </upopPubKey>
+    <bindCardCount>10</bindCardCount>
+    <allowUpdate>1</allowUpdate>
+    <allowBalance>1</allowBalance>
+    <paymentMethod>
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+    </paymentMethod>
+    <serverTimeout>120000</serverTimeout>
+    <noTradeTime>2350-0050</noTradeTime>
+    <secureQuestion>
+    		<item>您父亲的姓名</item>
+	    <item>您父亲的生日</item>
+			<item>您母亲的姓名</item>
+			<item>您母亲的生日</item>
+			<item>您配偶的姓名</item>
+			<item>您配偶的生日</item>
+    </secureQuestion>
+   </config>

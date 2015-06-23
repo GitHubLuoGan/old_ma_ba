@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:padding="4dip" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="订单信息"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商户名称：" />
+
+        <TextView
+            android:id="@+id/wopay_shanghu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京云点联动"
+            android:textColor="@color/WHITE"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称：" />
+
+        <TextView
+            android:id="@+id/wopay_shangpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1友币"
+            android:textColor="@color/WHITE"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付金额：" />
+
+        <TextView
+            android:id="@+id/wopay_jiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1元"
+            android:textColor="@color/WHITE"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客服电话：" />
+
+        <TextView
+            android:id="@+id/wopay_kefu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4006456196"
+            android:textColor="@color/WHITE"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dip"
+        android:text="点击确定购买（不含通信费）"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<!-- youmi Start -->
+<classpathentry kind="lib" path="libs/alipaysdk.jar"/>
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+<classpathentry kind="lib" path="libs/android-support-v13.jar"/>
+<classpathentry kind="lib" path="libs/libammsdk.jar"/>
+<classpathentry kind="lib" path="libs/libwebp.jar"/>
+<classpathentry kind="lib" path="libs/ipp-rome-2.1.0.jar"/>
+
+<classpathentry kind="lib" path="libs/mid-local-sdk-2.2.jar"/>
+<classpathentry kind="lib" path="libs/MobileSecSdk.jar"/>
+<classpathentry kind="lib" path="libs/mta-sdk-1.6.2.jar"/>
+<classpathentry kind="lib" path="libs/open_sdk.jar"/>
+<classpathentry kind="lib" path="libs/passportSDK.jar"/>
+<classpathentry kind="lib" path="libs/PaySDK1.3.8b.jar"/>
+
+
+<classpathentry kind="lib" path="libs/PaySDKLogin1.3.8.jar"/>
+<classpathentry kind="lib" path="libs/picasso-2.2.0.jar"/>
+<classpathentry kind="lib" path="libs/sogougamesdk.jar"/>
+<classpathentry kind="lib" path="libs/SogouPushSDK.jar"/>
+<classpathentry kind="lib" path="libs/sogou-volley.jar"/>
+<classpathentry kind="lib" path="libs/TenpayPluginSDK.jar"/>
+<classpathentry kind="lib" path="libs/TenpayServiceSDK_V5.0.jar"/>
+
+
+<classpathentry kind="lib" path="libs/trobotexternalinterface.jar"/>
+<classpathentry kind="lib" path="libs/unipayWechatPay.jar"/>
+<classpathentry kind="lib" path="libs/UPPayAssistEx.jar"/>
+<classpathentry kind="lib" path="libs/UPPayPluginExPro.jar"/>
+<classpathentry kind="lib" path="libs/utdid4all-1.0.2.jar"/>
+<classpathentry kind="lib" path="libs/wlogin_sdk.jar"/>
+
+
+<!-- youmi End -->

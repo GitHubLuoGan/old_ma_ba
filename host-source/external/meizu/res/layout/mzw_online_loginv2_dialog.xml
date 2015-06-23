@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/mzw_sdk_onkeyLogin_dialog_width"
+    android:layout_height="match_parent"
+    android:background="@color/mzw_online_loginv2_white_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mzw_sdk_login_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/mzw_pay_title_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/mzw_login_dialog_height_margin_size_20dip"
+                android:orientation="horizontal" >
+
+              
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dip"
+                    android:text="@string/mzw_sdk_reg_success"
+                    android:textColor="@color/mzw_pay_title_text_color"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.01dp"
+            android:background="#cccccc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#111111"
+            android:text="@string/mzw_online_loginv2_dialog_prompt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/userNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <EditText
+                    android:id="@+id/dialogUserName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/mzw_sdk_login_edittext_selector"
+                    android:hint="@string/mzw_dialog_login_username_hint"
+                    android:paddingLeft="@dimen/mzw_login_dialog_edit_hint_margin_size"
+                    android:paddingRight="47dip"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:textSize="@dimen/mzw_login_dialog_edit_hint_text_size" />
+
+                <TextView
+                    android:layout_width="@dimen/mzw_login_dialog_edit_text_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/mzw_login_dialog_edit_text_margin_width"
+                    android:text="@string/mzw_dialog_login_username"
+                    android:textColor="@color/mzw_login_dialog_edit_text_color"
+                    android:textSize="@dimen/mzw_login_dialog_edit_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/userNamePrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mzw_online_loginv2_dialog_usernameprompt"
+            android:textColor="@color/mzw_online_loginv2_dialog_prompt_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/passWordLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <EditText
+                    android:focusable="false"
+                    android:id="@+id/dialogPassWord"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mzw_sdk_login_edittext_selector"
+                    android:hint="@string/mzw_dialog_login_password_hint"
+                    android:paddingLeft="@dimen/mzw_login_dialog_edit_hint_margin_size"
+                    android:paddingRight="47dip"
+                    android:singleLine="true"
+                    android:textSize="@dimen/mzw_login_dialog_edit_hint_text_size" />
+
+                <TextView
+                    android:layout_width="@dimen/mzw_login_dialog_edit_text_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/mzw_login_dialog_edit_text_margin_width"
+                    android:text="@string/mzw_dialog_login_password"
+                    android:textColor="@color/mzw_login_dialog_edit_text_color"
+                    android:textSize="@dimen/mzw_login_dialog_edit_text_size" />
+                <!--
+                <TextView
+                    android:id="@+id/pwdText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="密    码："
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/dialogPassWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/pwdText"
+                    android:background="@drawable/mzw_sdk_login_edittext_selector"
+                    android:hint="@string/mzw_online_loginv2_pwd_et_hit"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+                -->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pwdPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mzw_online_loginv2_dialog_prompt_color"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <Button
+                android:id="@+id/GoButton"
+                android:layout_width="130dip"
+                android:gravity="center"
+                android:layout_height="40dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/mzw_sdk_pay_dialog_btn_selector"
+                android:text="@string/mzw_online_loginv2_dialog_go_button_text"
+                android:textColor="@color/mzw_online_loginv2_white_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/modity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/GoButton"
+                android:layout_alignBottom="@+id/GoButton"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:text="@string/mzw_online_loginv2_dialog_modify_text" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="button_checked">#FFFFFFFF</color>
+    <color name="button_uncheck">#666666</color>
+    <color name="kefu_blue">#58a8dd</color>
+    <color name="kefu_black">#ff333333</color>
+    <color name="kefu_gray">#c1c1c1</color>
+    <color name="kefu_green">#5ab75c</color>
+    <color name="kefu_yellow">#ef942b</color>
+    
+</resources>

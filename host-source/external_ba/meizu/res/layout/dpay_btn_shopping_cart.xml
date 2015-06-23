@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true" >
+
+    <ImageButton
+        android:id="@id/dpay_btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/dpay_btn_cart_bg" />
+
+    <TextView
+        android:id="@id/dpay_list_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:background="@color/dpay_cart_num_bg"
+        android:paddingLeft="@dimen/dpay_rect_padding"
+        android:paddingRight="@dimen/dpay_rect_padding"
+        android:textColor="@color/dpay_black"
+        android:textSize="@dimen/dpay_cart_list_num"
+        android:visibility="gone" />
+
+</FrameLayout>

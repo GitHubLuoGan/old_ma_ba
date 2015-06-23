@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_fragment_background"
+    android:paddingLeft="@dimen/margin_horizontal"
+    android:paddingRight="@dimen/margin_horizontal" >
+    
+    <TextView
+        android:id="@id/sdk_tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:layout_marginTop="@dimen/margin_vertical"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:drawableLeft="@drawable/tip_drawable"
+        android:drawablePadding="@dimen/margin_small"
+        android:text="@string/sdk_add_safety_tip"
+        android:textColor="@color/color_common_text"
+        android:textSize="@dimen/common_generic_size" />
+    
+    <com.uucun.android.passport.layout.InputPassportLayout
+        android:id="@id/passport_input_layout"
+        android:layout_width="fill_parent"
+        android:background="@drawable/input_layout_background"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sdk_tv_tip" >
+
+        <EditText
+            android:id="@id/sdk_et_pass_input"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_layout_height"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/sdk_btn_pass_clear"
+            android:drawableLeft="@drawable/sdk_code"
+            android:ems="10"
+            android:drawablePadding="@dimen/sdk_input_drawable_margin"
+            android:hint="@string/sdk_input_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/color_secondary_text"
+            android:layout_marginLeft="@dimen/sdk_text_margin"
+            android:textColor="@color/color_input_text"
+            android:textSize="@dimen/input_generic_size"
+            android:maxLength="12"
+            android:background="@null"/>
+
+        <ImageView
+            android:id="@id/sdk_btn_pass_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/sdk_btn_pass_show"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_small"
+            android:contentDescription="@string/content_description"
+            android:visibility="invisible"
+            android:src="@drawable/sdk_deleter_selector" />
+        
+        <ToggleButton android:id="@id/sdk_btn_pass_show"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_inner_btn_height"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/sdk_text_margin"
+            android:background="@drawable/sdk_btn_verify_selector"
+            android:textSize="@dimen/toggle_text_size"
+            android:textOn="@string/sdk_password_show"
+            android:textOff="@string/sdk_password_hide"
+            android:textColor="@color/color_text_show"
+            android:checked="true"/>
+    </com.uucun.android.passport.layout.InputPassportLayout>
+    
+    <Button
+            android:id="@id/sdk_btn_set_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sdk_button_height"
+            android:background="@drawable/sdk_btn_blue_selector"
+            android:text="@string/sdk_confirm"
+            android:textColor="@color/color_button_text"
+            android:textSize="@dimen/button_generic_size" 
+            android:layout_marginTop="@dimen/margin_vertical"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:layout_below="@id/passport_input_layout" />
+
+   
+
+</RelativeLayout>

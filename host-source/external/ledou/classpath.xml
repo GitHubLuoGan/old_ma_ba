@@ -1,0 +1,9 @@
+<!-- ledou Start -->
+<classpathentry kind="lib" path="libs/alipay_msp.jar"/>
+
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+<classpathentry kind="lib" path="libs/online_sdk_2014111115_lib_pro.jar"/>
+<classpathentry kind="lib" path="libs/UPPayAssistEx.jar"/>
+<classpathentry kind="lib" path="libs/UPPayPluginExPro.jar"/>
+
+<!-- ledou End -->

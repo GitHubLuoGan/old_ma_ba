@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 颜色渐变 -->
+    <gradient
+        android:angle="180"
+        android:endColor="@color/WHITE"
+        android:startColor="@color/WHITE" />
+
+    <!-- 按钮边缘 -->
+    <stroke
+        android:width="2dip"
+        android:color="@color/btn_gray" />
+
+    <!-- 按钮四个圆角 -->
+    <corners android:radius="6dp" />
+
+    <padding
+        android:bottom="8dip"
+        android:top="8dip" />
+
+</shape>

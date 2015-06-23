@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="yyh_dialog_width">350dip</dimen>
+    <dimen name="yyh_dialog_width_fu">-350dip</dimen>
+    <dimen name="yyh_dialog_content_height">200dip</dimen>
+    <dimen name="yyh_dialog_inputframe_width">240dip</dimen>
+    <dimen name="yyh_btn_width">100dip</dimen>
+    <dimen name="yyh_btn_height">30dip</dimen>
+    <dimen name="yyh_center_item_width">300dip</dimen>
+    <dimen name="yyh_center_item_height">100dip</dimen>
+    <dimen name="yyh_center_item_content_height">100dip</dimen>
+    <dimen name="yyh_dialog_loginarea_margintop">6dip</dimen>
+    <dimen name="yyh_center_item_small_content_height">60dip</dimen>
+    <dimen name="yyh_weibosdk_dialog_left_margin">30dp</dimen>
+    <dimen name="yyh_weibosdk_dialog_top_margin">30dp</dimen>
+    <dimen name="yyh_weibosdk_dialog_right_margin">30dp</dimen>
+	<dimen name="yyh_weibosdk_dialog_bottom_margin">15dp</dimen>
+	<dimen name="yyh_notifydialog_personal_width">300dp</dimen>
+	<dimen name="yyh_notifydialog_personal_height">100dp</dimen>
+</resources>

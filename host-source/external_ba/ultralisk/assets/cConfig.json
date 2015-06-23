@@ -1,0 +1,17 @@
+{
+"sdkJavaName":"",  
+"sdkDataJavaName":"",
+"payCodes":[
+{"payIndex":3,"payName":"骏网一卡通","payPrices":"5,6,10,15,20,30,50,100,120,200,300,500"},
+{"payIndex":7,"payName":"盛大一卡通","payPrices":"1,2,3,5,9,10,15,25,30,35,45,50,100,300,350,1000"},
+{"payIndex":8,"payName":"网易一卡通","payPrices":"5,10,15,20,30,50"},
+{"payIndex":9,"payName":"征途一卡通","payPrices":"10,15,20,25,30,50,60,100,300,500,1000"},
+{"payIndex":10,"payName":"完美一卡通","payPrices":"15,30,50,100"},
+{"payIndex":12,"payName":"搜狐一卡通","payPrices":"5,10,15,30,40,100"},
+{"payIndex":13,"payName":"久游一卡通","payPrices":"5,10,20,25,30,50,100"},
+{"payIndex":19,"payName":"Q币充值卡","payPrices":"5,10,15,30,60,100,200"},
+{"payIndex":20,"payName":"天宏一卡通","payPrices":"5,10,15,30,50,100"},
+{"payIndex":23,"payName":"光宇一卡通","payPrices":"10,20,30,50,100"},
+{"payIndex":26,"payName":"盛付通一卡通","payPrices":"10,30,50,100"} 
+]
+} 

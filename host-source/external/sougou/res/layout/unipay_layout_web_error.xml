@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+      style="@style/unipay_fill.wrap">
+     <LinearLayout
+	      android:id="@+id/unipay_id_ContentLayout"
+	      style="@style/unipay_cont"
+	      >
+    <!-- tips begin -->
+    <ScrollView
+        android:id="@+id/pay_scroll"
+        style="@style/unipay_fill"
+        android:fillViewport="true" >
+       <LinearLayout
+            android:id="@+id/unipay_id_successTiplayout"
+            style="@style/unipay_linear.srcollcont"
+            android:paddingTop="50dp">
+            <ImageView
+                android:id="@+id/unipay_id_TipsImage"
+                style="@style/unipay_wrap.iconwait"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"/>
+              
+            <!-- 结果显示成功 -->
+             <LinearLayout
+                 android:id="@+id/unipay_id_SuccessLayout"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:layout_marginBottom="8dp"
+                 android:orientation="vertical"
+                 >
+                 <TextView
+   	        		 android:id="@+id/unipay_id_SuccessText"
+                     style="@style/unipay_text.wait"
+                     android:layout_width="fill_parent"
+                     android:layout_marginBottom="20dp"
+                     android:text="网络信号微弱"
+                     />
+              </LinearLayout>
+	      
+              <LinearLayout
+                   android:id="@+id/unipay_id_ProcessType"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:layout_marginBottom="2dp"> 
+                   <TextView
+                	android:id="@+id/unipay_id_webTips"
+                    style="@style/unipay_text.middle"
+                    android:textColor="@color/unipay_thin2_color"
+                    android:text="你的网络在打瞌睡，我们去叫醒 TA吧!"
+                    />
+                 </LinearLayout>
+                    
+              <!-- btn -->
+              <LinearLayout
+                style="@style/unipay_bigviewbtn">
+                <Button
+                    android:id="@+id/unipay_id_errorRefreshBtn"
+                    style="@style/unipay_btn"
+                    android:text="马上叫醒网络"
+                    android:layout_marginBottom="10dp"
+                    />    
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- tips over -->
+    </LinearLayout>
+</LinearLayout>

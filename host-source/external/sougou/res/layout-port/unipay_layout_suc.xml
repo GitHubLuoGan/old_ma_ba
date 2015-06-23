@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/unipay_wrap" >
+
+    <View style="@style/unipay_fill.bg" />
+
+    <LinearLayout
+        style="@style/unipay_dialog"
+        android:orientation="vertical"
+        android:paddingBottom="30dp" >
+
+        <ImageView style="@style/unipay_wrap.iconsuc" />
+
+        <LinearLayout
+            style="@style/unipay_linear"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="100" >
+
+            <TextView
+                style="@style/unipay_text.suc"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="@string/unipay_pay_succbd" />
+
+            <LinearLayout
+                style="@style/unipay_wrap"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/unipay_id_succTxt1"
+                    style="@style/unipay_text.smallthin2"
+                    />
+
+                <TextView
+                    android:id="@+id/unipay_id_succTxt2"
+                    style="@style/unipay_text.smallthin2" />
+
+                <TextView
+                    android:id="@+id/unipay_id_succNum"
+                    style="@style/unipay_text.smallthin2"
+                    android:textColor="@color/unipay_em3_color" />
+            </LinearLayout>
+
+   		 <include layout="@layout/unipay_layout_suc_grid" />
+        
+        </LinearLayout>
+    </LinearLayout>
+    <!-- cont over -->
+
+</RelativeLayout>

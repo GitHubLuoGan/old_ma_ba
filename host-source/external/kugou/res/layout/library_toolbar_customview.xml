@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/library_common_transparent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/library_user_center_layout"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/library_common_transparent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <ImageView
+            android:id="@+id/library_img_user_center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/library_toolbar_user_center_seletor" />
+
+        <TextView
+            android:id="@+id/library_tv_user_center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/library_bg_toolbar_item_name"
+            android:gravity="center"
+            android:text="用户中心"
+            android:textColor="@color/library_common_white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/library_game_center_layout"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/library_common_transparent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <ImageView
+            android:id="@+id/library_img_game_center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/library_toolbar_game_center_seletor" />
+
+        <TextView
+            android:id="@+id/library_tv_game_center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/library_bg_toolbar_item_name"
+            android:gravity="center"
+            android:text="游戏中心"
+            android:textColor="@color/library_common_white"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/library_layout_score_center"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/library_common_transparent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/library_iv_score_center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/library_seletor_toolbar_score_center" />
+
+        <TextView
+            android:id="@+id/library_tv_score_center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/library_bg_toolbar_item_name"
+            android:gravity="center"
+            android:text="积分成就"
+            android:textColor="@color/library_common_white"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/library_layout_game_forum"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/library_common_transparent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <ImageView
+            android:id="@+id/library_iv_game_forum"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/library_seletor_toolbar_game_forum" />
+
+        <TextView
+            android:id="@+id/library_tv_game_forum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/library_bg_toolbar_item_name"
+            android:gravity="center"
+            android:text="游戏论坛"
+            android:textColor="@color/library_common_white"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

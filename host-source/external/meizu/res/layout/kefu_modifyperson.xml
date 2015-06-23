@@ -1,0 +1,225 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modifyLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!--
+        LinearLayout
+            android:id="@+id/modifyBtnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_white_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="2.0dip" >
+
+            <TextView
+                android:id="@+id/listViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_weight="1.0"
+                android:text="个人资料"
+                android:textColor="#ffa67d3d"
+                android:textSize="17.0sp" />
+
+            <Button
+                android:id="@+id/modifyBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15.0dip"
+                android:background="@drawable/btn_back_bg"
+                android:text="&lt;&lt; 返回"
+                android:textColor="#ff666666" />
+        </LinearLayout
+        -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/btn_user_set_center_bg_up"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:text="@string/fg_nick"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/newNick"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/fg_nick_hint"
+                android:maxLength="20"
+                android:paddingLeft="8.0dip"
+                android:singleLine="true"
+                android:textColor="#ff666666"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_user_set_center_bg_center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:text="@string/fg_sex"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+
+            <CheckedTextView
+                android:id="@+id/isMan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:drawableLeft="@drawable/icon_kefu_check"
+                android:paddingLeft="10dip"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:text="@string/fg_sex_boy" />
+
+            <CheckedTextView
+                android:id="@+id/isWoman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:drawableLeft="@drawable/icon_kefu_check"
+                android:paddingLeft="20dip"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                 android:gravity="center_vertical"
+                android:text="@string/fg_sex_girl" />
+
+            <CheckedTextView
+                android:id="@+id/isSecret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableLeft="@drawable/icon_kefu_check"
+                android:paddingLeft="20dip"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                 android:gravity="center_vertical"
+                android:text="@string/fg_sex_secret" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/birdayLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_user_set_center_bg_center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:text="@string/fg_birthday"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/newBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:enabled="false"
+                android:hint="@string/fg_birthday_hint"
+                android:inputType="date"
+                android:maxLength="20"
+                android:paddingLeft="4.0dip"
+                android:singleLine="true"
+                android:textColor="#ff666666"
+                android:textSize="12.0sp" />
+            
+             <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/user_set_down_bg_up"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_user_set_center_bg_down"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:text="@string/fg_mobile_no"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:id="@+id/newMobile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/fg_mobile_no_hint"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="4.0dip"
+                android:singleLine="true"
+                android:textColor="#ff666666"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/modifyPersonSub"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/kefu_submit"
+                android:text="@string/fg_submit"
+                android:textColor="#ff6a3600"
+                android:textSize="16.0sp" />
+
+            <Button
+                android:id="@+id/modifyBack"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/fg_reg"
+                android:text="@string/fg_back"
+                android:textColor="#ff666666"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

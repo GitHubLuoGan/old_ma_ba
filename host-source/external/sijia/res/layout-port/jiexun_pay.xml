@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_recharge">
+    
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        layout="@layout/myprogressbar"/>
+     <LinearLayout
+         android:id="@+id/jx"
+		 android:visibility="invisible"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_gravity="center">
+         
+         <LinearLayout
+		        android:layout_width="220dp"
+		        android:layout_height="110dp"
+		        android:layout_marginTop="8dp"
+		        android:orientation="vertical"
+		        android:layout_gravity="center"
+		        android:background="@drawable/graybtn_style">
+		        
+		        <TextView 
+		            android:id="@+id/payment_amount"
+		            android:layout_width="wrap_content"
+		            android:layout_height="30dp"
+		            android:text="@string/amount"
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="5dp"
+		            android:textColor="@color/blue_one"
+		            android:textSize="@dimen/textsize"/>
+		        <LinearLayout 
+		            android:layout_width="wrap_content"
+		            android:layout_height="30dp"
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="5dp"
+		            android:orientation="horizontal">
+		            
+		            <TextView 
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/goods"
+			            android:textColor="@color/gray"
+			            android:textSize="@dimen/tf_sp"/>
+		            <TextView 
+		                android:id="@+id/goods"
+		                android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/goods_number"
+			            android:textColor="@color/red"
+			            android:textSize="@dimen/tf_sp"/>
+		            <TextView 
+		                android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/goods_price"
+			            android:textColor="@color/gray"
+			            android:textSize="@dimen/tf_sp"/>
+		            
+		        </LinearLayout>
+		        
+		        <TextView 
+		            android:id="@+id/user"
+		            android:layout_width="wrap_content"
+		            android:layout_height="30dp"
+		            android:text="@string/user"
+		            android:gravity="center_vertical"
+		            android:layout_marginLeft="5dp"
+		            android:textColor="@color/gray"
+		            android:textSize="@dimen/tf_sp"/>
+		    </LinearLayout>
+		    
+         <TextView 
+             android:id="@+id/jx_mianzhi"
+             android:layout_height="wrap_content"
+             android:layout_width="220dp"
+             android:textColor="@color/red"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginTop="5dp"/>
+         
+         <LinearLayout 
+		        android:id="@+id/jiexun_one"
+		        android:layout_width="220dp"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dp"
+		        android:orientation="horizontal"
+		        android:layout_gravity="center_horizontal">
+	            
+	        <TextView
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:layout_gravity="center_vertical"
+		       android:text="@string/recharge_type"
+		       android:textSize="@dimen/textsize"/>
+		        
+		   <Spinner
+		       android:id="@+id/jiexun_type"
+		       android:paddingLeft="8dp" 
+		       android:layout_width="160dp"
+		       android:layout_height="29dp"
+		       android:layout_marginLeft="5dp"
+		       android:background="@drawable/spinner_style"/>	
+	     </LinearLayout>
+	     
+         <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_marginTop="5dp"
+		        android:orientation="vertical">
+			      
+		        
+		        <LinearLayout 
+			        android:layout_width="220dp"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_horizontal"
+			        android:orientation="horizontal">
+			        
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center_vertical"
+			            android:text="@string/card_number"
+			            android:textSize="@dimen/textsize"/>
+			        
+			        <EditText 
+			            android:id="@+id/payment_edit_one"
+			            android:paddingLeft="8dp"
+			            android:layout_width="160dp"
+			            android:layout_height="29dp"
+			            android:layout_marginLeft="5dp"
+			            android:textColor="@color/black"
+			            android:singleLine="true"
+			            android:background="@drawable/edtext"
+			            android:hint="@string/tips_payment"/>
+			        
+			    </LinearLayout> 
+			    
+		        <LinearLayout 
+			        android:layout_width="220dp"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:layout_gravity="center_horizontal"
+			        android:orientation="horizontal">
+			        
+			        <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center_vertical"
+			            android:text="@string/card_password"
+			            android:textSize="@dimen/textsize"/>
+			        
+			        <EditText 
+			            android:id="@+id/payment_edit_two"
+			            android:paddingLeft="8dp"
+			            android:layout_width="160dp"
+			            android:layout_height="29dp"
+			            android:layout_marginLeft="5dp"
+			            android:singleLine="true"
+			            android:textColor="@color/black"
+			            android:background="@drawable/edtext"
+			            android:hint="@string/tips_payment_one"/>        
+		    	</LinearLayout>
+		        
+		    </LinearLayout>	 
+         
+     </LinearLayout>                  
+</FrameLayout>

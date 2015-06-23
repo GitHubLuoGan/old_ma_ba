@@ -1,0 +1,6 @@
+<!-- downjoy -->
+<classpathentry kind="lib" path="libs/alipay_msp.jar"/>
+<classpathentry kind="lib" path="libs/downjoy_sdk_3.0.jar"/>
+<classpathentry kind="lib" path="libs/httpmime-4.1.1.jar"/> 
+<classpathentry kind="lib" path="libs/UPPayAssistEx.jar"/> 
+<classpathentry kind="lib" path="libs/UPPayPluginEx.jar"/> 

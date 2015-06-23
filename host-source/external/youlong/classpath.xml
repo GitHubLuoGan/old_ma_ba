@@ -1,0 +1,4 @@
+<!-- youlongh start -->
+<classpathentry kind="lib" path="libs/youlongsdk.jar"/>
+<classpathentry kind="lib" path="libs/gson-1.6.jar"/>
+<!-- youlong end -->

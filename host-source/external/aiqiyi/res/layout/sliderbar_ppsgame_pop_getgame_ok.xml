@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+      android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+     >
+    
+    <LinearLayout
+        android:background="@drawable/slidebar_rabbit_bg"
+		android:orientation="vertical"
+        android:layout_height="@dimen/game_slider_pop_height"
+        android:layout_width="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_width="fill_parent">
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="@color/slidebar_black"
+                android:textSize="@dimen/game_slider_pop_title_text_size"
+                android:gravity="center"
+                android:text="@string/ppsgame_pop_getgameok_title"/>
+             <ImageView
+                android:id="@+id/game_getgameok_close_btn"
+                android:contentDescription="@string/ppsgame_null_str"
+                android:background="@drawable/sliderbar_back_btn"
+                android:src="@drawable/sliderbar_pps_pop_win_close"
+                android:layout_height="fill_parent"
+                android:layout_width="@dimen/game_slider_pop_content_part1_h"
+                 android:visibility="gone"
+                android:layout_marginLeft="@dimen/game_slider_pop_close_btn_margin_left"
+                android:padding="@dimen/game_slider_pop_close_btn_padding"/>
+        </LinearLayout>
+
+        <include layout="@layout/slidebar_line_bottom"/>
+
+        <RelativeLayout
+            android:id="@+id/slidebar_gift_detail_code_layout"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="25dip"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                style="@style/slidebar_MatchParent"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/sliderbar_edittext_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/slidebar_WrapContent"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/slidebar_ppsgame_gray"
+                    android:textSize="11sp"
+                    android:text="@string/slidebar_gift_code_txt"/>
+                <TextView
+                    android:id="@+id/game_getgameok_code_text"
+                    style="@style/slidebar_MatchWrap"
+                    android:textColor="@color/slidebar_ppsgame_yellow"
+                    android:ellipsize="end"
+                    android:layout_marginRight="64dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/game_getgameok_copy_btn"
+                style="@style/BackToGameBtn"
+                android:layout_width="48dp"
+                android:layout_height="30dp"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:textColor="@color/slidebar_ppsgame_gray"
+                android:background="@drawable/slidebar_gift_item_get_btn_bg"
+                android:text="@string/slidebar_gift_item_copy"/>
+        </RelativeLayout>
+<!--
+        <RelativeLayout
+            android:id="@+id/slidebar_gift_detail_code_layout"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="25dip"
+            android:layout_marginBottom="27dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                style="@style/slidebar_MatchWrap"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/sliderbar_edittext_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/slidebar_WrapContent"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/slidebar_ppsgame_gray"
+                    android:text="@string/slidebar_gift_code_txt"/>
+                <TextView
+                    android:id="@+id/game_getgameok_code_text"
+                    style="@style/slidebar_MatchWrap"
+                    android:textColor="@color/slidebar_ppsgame_yellow"
+                    android:ellipsize="end"
+                    android:layout_marginRight="50dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/game_getgameok_copy_btn"
+                style="@style/OneKeyCopyBtn"
+                android:layout_width="60dp"
+                android:layout_height="39dip"
+                android:textColor="@color/slidebar_ppsgame_gray"
+                android:background="@drawable/slidebar_gift_item_get_btn_bg"
+                android:text="@string/slidebar_gift_item_copy"/>
+        </RelativeLayout>
+-->
+
+        <RelativeLayout
+            style="@style/slidebar_MatchWrap">
+                  
+            <Button
+                android:id="@+id/game_getgameok_copy_how_use"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_height="30dp"
+                android:background="@drawable/slidebar_gift_item_one_key_copy_bt_bg_selector"
+                android:layout_centerInParent="true"
+                android:text="@string/slidebar_gift_how_to_use"
+                android:textSize="@dimen/game_slider_pop_btn_text_size"
+                android:textColor="@color/slidebar_white"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

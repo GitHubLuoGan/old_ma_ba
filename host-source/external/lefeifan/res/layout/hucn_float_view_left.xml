@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/hucn_float_view_size"
+    android:background="@drawable/hucn_bg_float_menu_left"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp" >
+
+    <TextView
+        android:id="@+id/hucn_left_menu_btn5"
+        style="@style/HUCNFloatBtn"
+        android:layout_marginLeft="8dp"
+        android:drawableTop="@drawable/hucn_btn_bbs"
+        android:text="@string/hucn_float_bbs" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/hucn_left_menu_btn3"
+        style="@style/HUCNFloatBtn"
+        android:layout_marginLeft="8dp"
+        android:drawableTop="@drawable/hucn_btn_service"
+        android:text="@string/hucn_float_service" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/hucn_left_menu_btn1"
+        style="@style/HUCNFloatBtn"
+        android:layout_marginRight="8dp"
+        android:drawableTop="@drawable/hucn_btn_gift"
+        android:text="@string/hucn_float_gift" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/hucn_float_menu_height"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp" >
+
+        <TextView
+            android:id="@+id/hucn_left_menu_btn4"
+            style="@style/HUCNFloatBtn"
+            android:drawableTop="@drawable/hucn_btn_msg"
+            android:text="@string/hucn_float_msg" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/hucn_left_menu_flag"
+            android:layout_width="9dp"
+            android:layout_height="10dp"
+            android:layout_alignRight="@+id/hucn_left_menu_btn4"
+            android:layout_marginRight="-2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/hucn_bg_red_dot"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hucn_left_menu_btn2"
+        style="@style/HUCNFloatBtn"
+        android:layout_marginLeft="8dp"
+        android:drawableTop="@drawable/hucn_btn_account"
+        android:text="@string/hucn_float_account" >
+    </TextView>
+
+</LinearLayout>

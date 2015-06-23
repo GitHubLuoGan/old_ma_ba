@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNScrollView" >
+
+    <RelativeLayout
+        android:id="@+id/hucn_binding_account_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/hucn_binding_setting_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hucn_edittext_height"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/hucn_layout_margin"
+            android:layout_marginRight="@dimen/hucn_layout_margin"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/hucn_bg_shape_corner"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <LinearLayout
+                android:id="@+id/hucn_binding_user_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hucn_binding_setting_layout2"
+            android:layout_below="@id/hucn_binding_setting_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginLeft="@dimen/hucn_layout_margin"
+                android:layout_marginRight="@dimen/hucn_layout_margin"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/hucn_bg_shape_corner"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp" >
+
+                <Button
+                    android:id="@+id/hucn_reset_getcode_btn"
+                    android:layout_width="120dp"
+                    android:textColor="@color/hucn_text_color"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_binding_mobile_ly"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/hucn_reset_getcode_btn"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginLeft="@dimen/hucn_layout_margin"
+                android:layout_marginRight="@dimen/hucn_layout_margin"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/hucn_bg_shape_corner"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/hucn_binding_yanzhengma_ly"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/hucn_binding_submit_btn"
+            android:layout_width="fill_parent"
+            android:layout_below="@id/hucn_binding_setting_layout2"
+            android:layout_height="@dimen/hucn_edittext_height"
+            android:layout_marginLeft="@dimen/hucn_layout_margin"
+            android:layout_marginRight="@dimen/hucn_layout_margin"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/hucn_btn_white"
+            android:padding="13dp"
+            android:text="@string/hucn_confirm"
+            android:textColor="@drawable/hucn_btn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hucn_binding_submit_btn"
+            android:layout_marginLeft="@dimen/hucn_layout_margin"
+            android:layout_marginRight="@dimen/hucn_layout_margin"
+            android:layout_marginTop="15dp"
+            android:text="@string/hucn_binding_not_access_num"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+    </RelativeLayout>
+
+</ScrollView>

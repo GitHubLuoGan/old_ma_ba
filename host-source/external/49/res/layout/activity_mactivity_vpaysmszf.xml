@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff5f5f5"
+    android:orientation="vertical"
+    tools:context=".MActivity_vpaysmszf" >
+
+    <!-- 手机大额短信支付 -->
+
+    <TextView
+        android:id="@+id/textView4_vpaysmszf"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="center_vertical"
+        android:background="#ffff6600"
+        android:gravity="center"
+        android:text="@string/vpay_title"
+        android:textColor="#ffffffff"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- 订单信息 -->
+
+    <TextView
+        android:id="@+id/widget34_vpaysmszf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/vpay_bill_info"
+        android:textColor="#ff000f0e"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <!-- 表格布局：第一行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_top_corner_no_bottom_line_vpaysmszf"
+            android:padding="10dip" >
+
+            <!-- 表示行1 -->
+
+            <TextView
+                android:id="@+id/widget35_vpaysmszf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#ffffffff"
+                android:gravity="left"
+                android:text="@string/vpay_good_name"
+                android:textColor="#ff000100"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <!-- 表格布局：第二行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_no_corner_without_bottom_vpaysmszf"
+            android:padding="10dip" >
+
+            <!-- 表示行2 -->
+
+            <TextView
+                android:id="@+id/widget37_vpaysmszf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#ffffffff"
+                android:gravity="left"
+                android:text="@string/vpay_recharge"
+                android:textColor="#ff02040d"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <!-- 表格布局：第三行 -->
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bottom_corner_no_top_line_vpaysmszf"
+            android:padding="10dip" >
+
+            <!-- 表示行3 -->
+
+            <TextView
+                android:id="@+id/widget38_vpaysmszf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="#ffffffff"
+                android:text="@string/vpay_client_service"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button2_vpaysmszf"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_vpaysmszf"
+        android:text="@string/vpay_payfor"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

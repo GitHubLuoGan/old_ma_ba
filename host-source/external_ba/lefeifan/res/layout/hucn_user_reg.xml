@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNBg"
+    android:cacheColorHint="@android:color/transparent"
+    android:fadingEdge="none"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="50dp" >
+
+        <LinearLayout
+            style="@style/HUCNEditLayout"
+            android:layout_height="@dimen/hucn_edittext_height"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp" >
+
+            <TextView
+                style="@style/HUCNEditTag"
+                android:layout_marginRight="5dp"
+                android:text="@string/hucn_account" />
+
+            <LinearLayout
+                android:id="@+id/hucn_reg_l1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hucn_reg_tip1"
+            style="@style/HUCNSmallText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:text="@string/hucn_account_tip"
+            android:textColor="@color/hucn_text_gray" />
+
+        <LinearLayout
+            style="@style/HUCNEditLayout"
+            android:layout_height="@dimen/hucn_edittext_height"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp" >
+
+            <TextView
+                style="@style/HUCNEditTag"
+                android:layout_marginRight="5dp"
+                android:text="@string/hucn_password" />
+
+            <LinearLayout
+                android:id="@+id/hucn_reg_l2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hucn_reg_tip2"
+            style="@style/HUCNSmallText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:text="@string/hucn_password_tip"
+            android:textColor="@color/hucn_text_gray" />
+
+        <Button
+            android:id="@+id/hucn_user_register_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hucn_edittext_height"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/hucn_btn_login"
+            android:padding="13dp"
+            android:text="@string/hucn_register_now"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/hucn_default_text_size" />
+    </LinearLayout>
+
+</ScrollView>

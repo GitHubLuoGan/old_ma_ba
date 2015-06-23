@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dpay_app_name">点金游戏平台</string>
+    <string name="dpay_tv_welcome">欢迎</string>
+    <string name="dpay_user_center">个人中心</string>
+    <string name="dpay_goods_mall">虚拟商城</string>
+    <string name="dpay_recharge_center">充值中心</string>
+    <string name="dpay_shopping_mall">商城</string>
+    <string name="dpay_feedback">用户反馈</string>
+    <string name="dpay_about_us">关于我们</string>
+    <string name="dpay_user_info">账户信息</string>
+    <string name="dpay_choose_recharge_pattern">请选择充值方式</string>
+    <string name="dpay_recharge_center_login_tips">充值需要登录点金游戏平台帐号，确定登录吗？</string>
+    <string name="dpay_confirm">确定</string>
+    <string name="dpay_cancel">取消</string>
+    <string name="dpay_welcome">欢迎</string>
+    <string name="dpay_login">登录></string>
+    <string name="dpay_balance_colon"><![CDATA[<body><center>余额：<font color="#CC0000">%1$.2f&nbsp;</font>%2$s</center></body>]]></string>
+    <string name="dpay_btn_confirm_charge">确认充值</string>
+    <string name="dpay_charge_confirm_prompt">确认后将进入官方页面进行充值</string>
+    <string name="dpay_choose_amount_or_write">请选择或者填写需要充值的金额!</string>
+    <string name="dpay_other_amount">其他数量</string>
+    <string name="dpay_no_startwith_dot">充值金额不能以小数点开头!</string>
+    <string name="dpay_choose_amount">请选择需要充值的%1$s数(%2$s)</string>
+    <string name="dpay_total_amount"><![CDATA[<body><center>需支付人民币:<font color="#CC0000">%1$.2f&nbsp;</font>元(<font color="#CC0000">1&nbsp;</font>人民币:<font color="#CC0000">%2$.2f&nbsp;</font>%3$s)</center></body>]]></string>
+    <string name="dpay_submit">提交</string>
+    <string name="dpay_close">关闭</string>
+    <string name="dpay_recharge_center_login">充值需要登录点金游戏平台帐号，确定登录吗？</string>
+    <string name="dpay_buy_now">立即购买</string>
+    <string name="dpay_add_to_cart">加入到购物车</string>
+    <string name="dpay_add_shopping_cart_success">成功添加到购物车</string>
+    <string name="dpay_tv_hello">您好，%1$s</string>
+    <string name="dpay_tv_user_balance"><![CDATA[<body><center>余额：<font color="#CC0000">%1$.2f&nbsp;</font>%2$s</center></body>]]></string>
+    <string name="dpay_please_login_text">请先登录</string>
+    <string name="dpay_total_amount_tips"><![CDATA[<body><center>将为您充值<font color="#CC0000">%1$s&nbsp;</font>%2$s，需支付人民币<font color="#CC0000">%3$s&nbsp;</font>元。</center></body>]]></string>
+    <string name="dpay_recharge_exit">确认退出充值吗？</string>
+    <string name="dpay_send_sms_msg">短信发送费用0.1元/条，由运营商收取。是否确认发送短信？</string>
+    <string name="dpay_send_sms_success">短信发送成功。</string>
+    <string name="dpay_send_sms_fail">短信发送失败。</string>
+    <string name="dpay_send_sms_sending">短信正在发送&#8230;请稍候，不要重复发送短信。</string>
+    <string name="dpay_reply">回复</string>
+    <string name="dpay_recharge_center_preplay_tips">为了保护您的权益，平台游客需要完善下资料，方可充值，给您造成不便还望谅解！</string>
+    <!-- errors -->
+    <string name="dpay_data_init_failed">数据初始化失败。</string>
+    <string name="dpay_net_error">网络异常，请连接网络。</string>
+    <string name="dpay_transport_data_error">传入数据错误！</string>
+    <string name="dpay_recharge_unsupport">暂不支持此种支付方式，请升级到最新版本。</string>
+    <!-- 表单校验相关提示语句 -->
+    <string name="dpay_validate_form">提交内容有误,请检查。</string>
+    <string name="dpay_is_null_error">内容不能为空!</string>
+    <string name="dpay_user_is_null_error">请输入账号和密码</string>
+    <string name="dpay_user_or_password_error">账号或密码输入错误</string>
+    <string name="dpay_password_not_meet_requirements">密码6&#8211;16字符，请重新输入！</string>
+    <string name="dpay_has_exist_good">购物车中已经有此商品，不能再添加了</string>
+    <string name="dpay_user_format_error">账号名格式不符，请重新输入！</string>
+    <string name="dpay_user_input_repeat_error">两次输入的密码不一致，请重新输入！</string>
+    <string name="dpay_user_agree_agreement">请阅读并同意点金游戏平台用户协议！</string>
+    <!-- 登录 -->
+    <string name="dpay_login_text_account">账号</string>
+    <string name="dpay_login_text_password">密码</string>
+    <string name="dpay_sina">新浪微博</string>
+    <string name="dpay_login_sina">新浪微博登录</string>
+    <string name="dpay_tencent">腾讯微博</string>
+    <string name="dpay_login_tencent">腾讯微博登录</string>
+    <string name="dpay_invalidate_login">登录已失效，请重新登录。</string>
+    <string name="dpay_user_forbidden">帐号已被禁用，请联系客服解禁</string>
+    <string name="dpay_checkbox_record_password">记住密码</string>
+    <string name="dpay_btn_retrieve_password"><u>忘记密码?</u></string>
+    <string name="dpay_et_dianjin_user_hint">请输入点金账号</string>
+    <string name="dpay_btn_next">下一步</string>
+    <string name="dpay_btn_registers"><u>免费注册</u></string>
+    <string name="dpay_login_text_update">原点金用户请点击此处登录，</string>
+    <string name="dpay_login_btn">点金账号登录</string>
+    <!-- 商城 -->
+    <string name="dpay_purchase_successed">购买成功</string>
+    <string name="dpay_buy_successed">成功购得</string>
+    <string name="dpay_back_shopping_mall">返回商城</string>
+    <string name="dpay_goods_number">数量：%1$s</string>
+    <string name="dpay_total_cost"><![CDATA[<body><center>共花费:<font color="#CC0000">%1$.2f&nbsp;</font>%2$s%3$s</center></body>]]></string>
+    <string name="dpay_tv_login_subtitle">登录点金游戏平台</string>
+    <string name="dpay_et_email_hint">请输入邮箱地址</string>
+    <string name="dpay_et_password_hint">请输入密码</string>
+    <string name="dpay_btn_login">登录</string>
+    <string name="dpay_btn_preplay">快速试玩</string>
+    <string name="dpay_tv_regist">免费注册</string>
+    <string name="dpay_tv_upgrade_title">升级为正式账号</string>
+    <string name="dpay_tv_welcome_back"><![CDATA[<body><center>欢迎回来，<font color="#CC0000">%1$s&nbsp;</font></center></body>]]></string>
+    <!-- 用户中心 -->
+    <string name="dpay_username">用户名</string>
+    <string name="dpay_modify_password">重置密码</string>
+    <string name="dpay_balance">余额</string>
+    <string name="dpay_recharge">充值</string>
+    <string name="dpay_tv_bind_mail">绑定邮箱</string>
+    <string name="dpay_tv_mail_hint">通过邮箱可以找回密码</string>
+    <string name="dpay_tv_upgrade">升级账号</string>
+    <string name="dpay_tv_upgrade_tips">升级为正式账号享受更多服务</string>
+    <string name="dpay_tv_upgrade_tips_top">您当前为试玩账号，升级账号享受更多服务！</string>
+    <string name="dpay_tv_not_bind_mail">未绑定</string>
+    <string name="dpay_tv_has_bind_mail">已绑定</string>
+    <string name="dpay_tv_has_not_verification">未验证</string>
+    <string name="dpay_logout">切换账号</string>
+    <string name="dpay_user_91balance"><![CDATA[<body><center><font color="#CC0000">%1$.2f&nbsp;</font>%2$s</center>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<font color="#CC0000">%3$s&nbsp;</font>%4$s</body>]]></string>
+    <string name="dpay_user_balance"><![CDATA[<body><center><font color="#CC0000">%1$.2f&nbsp;</font>%2$s</center></body>]]></string>
+    <string name="dpay_modify_password_successed">修改成功，请牢记新密码！</string>
+    <string name="dpay_input_old_password">请输入现在的密码</string>
+    <string name="dpay_input_new_password">请输入新的密码</string>
+    <string name="dpay_logout_success">注销成功。</string>
+    <!-- 找回密码 -->
+    <string name="dpay_tv_retrieve_password">找回密码</string>
+    <string name="dpay_retrieve_password_hint">请输入平台账号或者邮箱地址</string>
+    <string name="dpay_prompt_retrieve_password">请提交已绑定邮箱的账号或者邮箱地址，我们将发送修改密码链接到您的邮箱中。</string>
+    <string name="dpay_retrieve_password_successed">邮件已发送，请及时查收邮件并修改密码！</string>
+    <!-- 用户注册 -->
+    <string name="dpay_tv_prompt_password">密码只能由6&#8211;16个字符组成</string>
+    <string name="dpay_agree">" 我同意 "</string>
+    <string name="dpay_registration_agreement"><u>点金游戏平台用户协议</u></string>
+    <string name="dpay_agree_regist">注册</string>
+    <string name="dpay_agree_upgrade">升级账号</string>
+    <string name="dpay_input_username_hint">请输入用户名</string>
+    <string name="dpay_input_email_hint">请输入常用邮箱</string>
+    <string name="dpay_input_register_password_hint">6&#8211;12字符</string>
+    <string name="dpay_input_register_password_repeat_hint">请再次输入密码</string>
+    <string name="dpay_register_sucess_tip">恭喜您注册成功!</string>
+    <string name="dpay_go_confirm_email_change"><![CDATA[确认邮件已经发送至您的邮箱 : <font color="#CC0000">%1$s</font>,该验证24小时内有效，为了方便您找回密码。请及时登录邮箱确认。]]></string>
+    <string name="dpay_go_confirm_email"><![CDATA[激活邮件已经发送至您的邮箱 : <font color="#CC0000">%1$s</font>,该验证24小时内有效，为了方便您找回密码。请及时登录邮箱完成激活。]]></string>
+    <string name="dpay_land_go_confirm_email"><![CDATA[激活邮件已经发送至您的邮箱 : <font color="#CC0000">%1$s</font>,该验证24小时内有效，为了方便您找回密码。请及时登录邮箱完成激活]]></string>
+    <!-- 用户反馈 -->
+    <string name="dpay_user_feedback">用户反馈</string>
+    <string name="dpay_feedback_content_hint">请输入您的意见和建议，谢谢支持！</string>
+    <string name="dpay_feedback_contact">请留下您的联系方式, 以便我们与您联系。</string>
+    <string name="dpay_feed_back_success">提交成功！非常感谢您的支持！</string>
+    <!-- 商品类别 -->
+    <string name="dpay_choose_billing_type">请选择计费类型</string>
+    <string name="dpay_choose_goods_category">请选择商品类别</string>
+    <string name="dpay_all_goods">全部商品</string>
+    <string name="dpay_subscribe_category">订阅型</string>
+    <string name="dpay_not_consumption_category">非消耗型</string>
+    <string name="dpay_consumption_category">消耗型</string>
+    <string name="dpay_get_category_error">获取商品分类失败。</string>
+    <string name="dpay_known">知道了</string>
+    <!-- 商品列表 -->
+    <string name="dpay_goods_list_not_more">就这么多商品了哦。</string>
+    <string name="dpay_goods_list_error">获取商品列表失败。</string>
+    <!-- 购物车 -->
+    <string name="dpay_shopping_cart">购物车</string>
+    <string name="dpay_payment_now">立即支付</string>
+    <string name="dpay_tv_number">数量：</string>
+    <string name="dpay_max_number"> 已达到最大的购买数量</string>
+    <string name="dpay_confirm_delete">确定从购物车中删除此商品？</string>
+    <string name="dpay_total_payment"><![CDATA[<body><center>共需支付：<font color="#CC0000">%1$.2f&nbsp;</font>%2$s</center></body>]]></string>
+    <string name="dpay_has_no_purchases">还没有商品哦，快去选购吧。</string>
+    <string name="dpay_purchased_goods_removed_tip">购物车中有购买过的限购道具，是否删除这类道具？</string>
+    <!-- pull to refresh -->
+    <string name="dpay_pull_to_refresh_from_bottom_pull_label"><![CDATA[ <font color="#000000">上拉加载更多…</font> ]]></string>
+    <string name="dpay_pull_to_refresh_from_bottom_release_label"><![CDATA[ <font color="#000000">松开加载数据</font> ]]></string>
+    <string name="dpay_pull_to_refresh_from_bottom_refreshing_label"><![CDATA[ <font color="#000000">载入中…</font> ]]></string>
+    <!-- 商品详情 -->
+    <string name="dpay_goods_detail_description"><![CDATA[<body><center><font color="#CC0000">商品描述<br /><br /></font>%1$s</font></center></body>]]></string>
+    <string name="dpay_discount_price"><![CDATA[<body><center>优惠价：<font color="#CC0000">%1$.2f&nbsp;</font>%2$s</center></body>]]></string>
+    <string name="dpay_cost_price">原价：%1$.2f %2$s</string>
+    <string name="dpay_goods_detail_login">购买此道具需要登录点金游戏平台帐号，确定登录吗？</string>
+    <!-- 支付确认 -->
+    <string name="dpay_purchase_not_enough">余额不足，请先充值。</string>
+    <string name="dpay_purchase_confirm">购买确认</string>
+    <string name="dpay_goods_unit_price">单价：%1$.2f %2$s</string>
+    <string name="dpay_goods_has_purchased">你已经买过此道具无需再次购买。</string>
+    <string name="dpay_tv_login">登录></string>
+    <!-- 注册成功 -->
+    <string name="dpay_tv_prompt_regist_succeeded">为了保障您账号的安全，建议您先绑定邮箱。一旦忘记密码或账号被盗时可以通过邮箱找回密码。</string>
+    <string name="dpay_btn_immediately_bind_mail">去邮箱激活</string>
+    <string name="dpay_btn_immediately_bind_change_mail">去邮箱确认</string>
+    <string name="dpay_btn_back_again">以后再说</string>
+    <string name="dpay_regist_successed">注册完成</string>
+    <string name="dpay_upgrade_successed">升级账号成功</string>
+    <!-- 绑定邮箱 -->
+    <string name="dpay_bind_mail_successed">验证邮件已发送，请及时打开邮件确认以完成绑定！</string>
+    <string name="dpay_bind_new_mail">绑定新邮箱</string>
+    <string name="dpay_mail_format_error">请输入有效的邮箱地址！</string>
+    <string name="dpay_tv_prompt_regist_successed">为了保障您账号的安全，建议您先绑定邮箱。一旦忘记密码或账号被盗时可以通过邮箱找回密码。</string>
+    <string name="dpay_et_bind_mail_hint">请输入常用邮箱</string>
+    <string name="dpay_input_user_password_hint">请输入平台登录密码</string>
+    <string name="dpay_input_new_mail">请输入新的邮箱地址</string>
+    <!-- 购买商品 -->
+    <string name="dpay_purchase_goods_confirm">您将花费 %1$s %2$s，购买%3$s等商品，是否继续操作？</string>
+    <string name="dpay_purchase_goods_confirm_no_detail">您将购买商品，是否继续操作？</string>
+    <string name="dpay_tips">提示</string>
+    <!-- format -->
+    <string name="dpay_password_digits">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="dpay_number_digits">0123456789</string>
+
+    <!-- updated -->
+    <string name="dpay_btn_update">立即升级</string>
+    <string name="dpay_tv_updated_instruction">将点金账号升级为91账号，您将享受更多更好的服务！并且账户余额和信息都不会丢失，请放心升级。</string>
+    <string name="dpay_btn_back_login">返回登录91账号</string>
+    <string name="dpay_tv_updated"><![CDATA[您的账号已经升级为 :<br/><font color="#CC0000">%1$s</font><br/> 请使用新账号登录游戏。您的账户余额和信息不会丢失，请放心游戏，感谢支持！]]></string>
+    <string name="dpay_land_tv_updated"><![CDATA[点金账号 : <font color="#CC0000">%1$s</font>已经升级为91账号 :<font color="#CC0000">%2$s</font> ,请使用该91账号登录游戏。账户余额，信息不会丢失，请放心游戏，感谢支持！]]></string>
+    <string name="dpay_91user_hint">91账号: 用户名/邮箱/手机</string>
+    <string name="dpay_91password_hint">登录密码</string>
+    <string name="dpay_btn_91register">没有合适的91账号?注册一个吧</string>
+    <string name="dpay_title_login_update">登录点金账号</string>
+    <string name="dpay_title_updated_91">已升级</string>
+    <string name="dpay_update_sucess">账号升级成功！</string>
+      <string name="dpay_tip">温馨提示：</string>
+    <string name="dpay_update_sucess_tip">请使用新账号登录游戏。您的账户余额和信息不会丢失，请放心游戏，感谢支持!</string>
+    <string name="dpay_btn_back_go_game">继续游戏</string>
+    <string name="dpay_page_title_update91">升级账号</string>
+    <string name="dpay_btn_register_and_update">注册并升级</string>
+    
+    <!-- verify mail -->
+    <string name="dpay_title_verify_mail">验证邮箱</string>
+    <string name="dpay_title_change_bind_mail">确认更换邮箱</string>
+    <string name="dpay_no_receive_mail">没有收到邮件？</string>
+    <string name="dpay_verify_mail_tip_1">1. 尝试到广告邮件、垃圾邮件目录下找找看</string>
+    <string name="dpay_verify_mail_tip_2">2. 同时也可以尝试</string>
+    <string name="dpay_verify_mail_execute">再次发送激活邮件</string>
+    <string name="dpay_bind_mail_title">绑定邮箱</string>
+    <string name="dpay_update_bind_mail_title">更换绑定邮箱</string>
+    <string name="dpay_send_bind_mail">发送激活邮件</string>
+    <string name="dpay_send_bind_mail_loading">请求激活中，请稍候</string>
+    
+    <!-- 91 -->
+    <string name="dpay_tip_password_repeat_null">请再次输入密码</string>
+    <string  name="dpay_91update_sucess_djaccount">原账号 ：</string>
+    <string  name="dpay_91update_sucess_91account">新账号：</string>
+    <string  name="dpay_91update_djaccount_tip">如遇问题请客服QQ：2457843561</string>
+
+</resources>

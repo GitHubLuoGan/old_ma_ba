@@ -1,0 +1,5 @@
+<!-- abs start -->
+<classpathentry kind="lib" path="libs/alipay_msp.jar"/>
+<classpathentry kind="lib" path="libs/TenpayServiceSDK_V5.0.jar"/>
+<classpathentry kind="lib" path="libs/zccpma.jar"/>
+<!-- abs end -->

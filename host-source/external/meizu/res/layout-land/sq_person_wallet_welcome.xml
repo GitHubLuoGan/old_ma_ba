@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <com.sanqi.android.sdk.widget.ScrollForeverTextView
+            android:id="@+id/sq_person_wallet_welcome_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true" />
+
+        <com.sanqi.android.sdk.widget.ScrollForeverTextView
+            android:id="@+id/sq_person_wallet_welcome_tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sq_person_wallet_welcome_btn_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="14dp"
+        android:textColor="#b22201"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sq_person_wallet_btn_flash_selector"
+        android:gravity="center" />
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<resources>
+
+    <string name="hucn_account">帐号</string>
+    <string name="hucn_account_blank">帐\u0020\u0020\u0020\u0020号</string>
+    <string name="hucn_account1">帐号:</string>
+    <string name="hucn_account_id">\u0020\u0020\u0020ID\u0020:</string>
+    <string name="hucn_password">密码</string>
+    <string name="hucn_old_password">原密码</string>
+    <string name="hucn_new_password">新密码</string>
+    <string name="hucn_new_password_sure">确认新密码</string>
+    <string name="hucn_remember_password">记住密码</string>
+    <string name="hucn_login">登录</string>
+    <string name="hucn_game_login">游戏登录</string>
+    <string name="hucn_user_login">乐非凡用户登录</string>
+    <string name="hucn_user_account">乐非凡帐号：</string>
+    <string name="hucn_current_account">当前帐号：</string>
+    <string name="hucn_current_price">充值金额：</string>
+    <string name="hucn_current_price_ution">元</string>
+    <string name="hucn_current_good">商品单位：</string>
+    <string name="hucn_current_good_union">元宝</string>
+    <string name="hucn_user_logining">自动登陆中...</string>
+    <string name="hucn_back_login">返回登录</string>
+    <string name="hucn_register">注册</string>
+    <string name="hucn_quick_register">快速注册</string>
+    <string name="hucn_register_now">立即注册</string>
+    <string name="hucn_forget_pwd">忘记密码</string>
+    <string name="hucn_setting_pwd_questions">设置密保</string>
+    <string name="hucn_account_hint">请输入游戏帐号</string>
+    <string name="hucn_password_hint">请输入登录密码</string>
+    <string name="hucn_password_hint1">登录密码错误</string>
+    <string name="hucn_account_hasexists">该用户帐号已存在</string>
+    <string name="hucn_account_tip">限5-15位字母或数字组合</string>
+    <string name="hucn_password_tip">限6-15位字母或数字组合</string>
+    <string name="hucn_account_error_tip">您输入的帐号不存在</string>
+    <string name="hucn_reset_pwd_title">重置密码</string>
+    <string name="hucn_update_pwd_title">修改密码</string>
+    <string name="hucn_update_pwd_hint">请输入新密码</string>
+    <string name="hucn_update_pwd_hint2">请输入确认密码</string>
+    <string name="hucn_update_pwd_hint3">新密码与确认新密码不一致</string>
+    <string name="hucn_update_pwd_hint4">新密码与原密码一致，请重新输入</string>
+    <string name="hucn_update_pwd_success_hint">成功重置密码</string>
+    <string name="hucn_new_pwd_hint">新密码：</string>
+    <string name="hucn_click_here">点击这里</string>
+    <string name="hucn_add_account_secret">提高帐号安全</string>
+    <string name="hucn_add_setting_questions">设置密码保护</string>
+    <string name="hucn_binding_mobile">绑定手机</string>
+    <string name="hucn_account_safe">帐号更安全</string>
+    <string name="hucn_account_binding_safe">绑定后帐号更安全</string>
+    <string name="hucn_account_grade">提升帐号安全等级</string>
+    <string name="hucn_setting_question">设置密码保护</string>
+    <string name="hucn_setting_question1">设置密保</string>
+    <string name="hucn_setting_confir">确认密保资料</string>
+    <string name="hucn_setting_has_setsecert">已设置密码保护</string>
+    <string name="hucn_question">问题</string>
+    <string name="hucn_question_answer">答案</string>
+    <string name="hucn_setting_question_tip">提示：密保设定后无法修改，请用易记或熟悉答案。</string>
+    <string name="hucn_setting_question_tip1">请选择或输入问题</string>
+    <string name="hucn_setting_question_tip2">请输入答案</string>
+    <string name="hucn_setting_question_tip3">请选择或输入问题及答案</string>
+    <string name="hucn_setting_question_tip4">请选择输入不同的问题</string>
+    <string name="hucn_setting_question_tip5">提示：密保资料设定后不可修改，请妥善保管。</string>
+    <string name="hucn_setting_question_tip6">密保设置成功。</string>
+    <string name="hucn_next">下一步</string>
+    <string name="hucn_setting_menu11">密保找回密码</string>
+    <string name="hucn_setting_menu22">手机号找回密码</string>
+    <string name="hucn_setting_menu33">微信号找回密码</string>
+    <string name="hucn_setting_menu44">无密保重置密码</string>
+    <string name="hucn_setting_menu5">无密保找回密码</string>
+    <string name="hucn_setting_reset_pwd_tip">提示：账号在没有设置密码问题保护、绑定手机、绑定微信的前提下可使用此方式找回；如已设置以上任一方式，请使用相应方式找回。</string>
+    <string name="hucn_setting_hint">请输入问题答案</string>
+    <string name="hucn_setting_success">密码修改成功</string>
+    <string name="hucn_setting_yanzhenma">验证码</string>
+    <string name="hucn_setting_yanzhenma_error">验证码错误</string>
+    <string name="hucn_setting_yanzhenma_hint">请输入右侧验证码</string>
+    <string name="hucn_setting_yanzhenma_hint1">请输入短信验证码</string>
+    <string name="hucn_setting_input_mobile">手机号</string>
+    <string name="hucn_setting_input_mobile_hint">请输入手机号</string>
+    <string name="hucn_setting_input_mobile_hint1">请输入正确的手机号</string>
+    <string name="hucn_setting_get_yanzhenma">获取验证码</string>
+    <string name="hucn_setting_yanzhenma_has_send">验证码已下发至您手机</string>
+    <string name="hucn_setting_binding_success">手机绑定成功</string>
+    <string name="hucn_setting_binding_wx">已绑定微信的用户根据以下方式找回密码</string>
+    <string name="hucn_setting_binding_wx_title">绑定微信帐号</string>
+    <string name="hucn_setting_binding_wx_tip">根据以下方式绑定微信帐号</string>
+    <string name="hucn_setting_binding_wx_step">登录微信，向乐非凡公共帐号发送\u0020重置：帐号=新密码，即可实现密码找回。</string>
+    <string name="hucn_setting_binding_wx_exp">示例如下：</string>
+    <string name="hucn_setting_binding_wx_exp_tip">重置：dr25123=332277</string>
+    <string name="hucn_setting_has_not_binding_wx">还没绑定微信帐号？</string>
+    <string name="hucn_setting_binding_wx_step1">第一步：关注乐非凡微信公共账号</string>
+    <string name="hucn_setting_binding_wx_step2">第二步：回复游戏账号和密码进行绑定</string>
+    <string name="hucn_setting_binding_wx_step1_todo">登录微信，输入 edg8cn 查找乐非凡公众账号，点击关注</string>
+    <string name="hucn_setting_binding_wx_step2_todo">微信回复游戏账号和密码进行绑定</string>
+    <string name="hucn_setting_binding_wx_step2_geshi">格式：绑定:[账号]=[密码]</string>
+    <string name="hucn_account_manager">帐号管理</string>
+    <string name="hucn_account_delete">确定删除帐号</string>
+    <string name="hucn_account_switch">切换帐号</string>
+    <string name="hucn_service_mobile">客服QQ：</string>
+    <string name="hucn_service_mobile_no">800008200</string>
+
+    <!-- 浮动图标 -->
+    <string name="hucn_float_msg">消息</string>
+    <string name="hucn_float_gift">礼包</string>
+    <string name="hucn_float_account">帐号</string>
+    <string name="hucn_float_download">下载</string>
+    <string name="hucn_float_service">客服</string>
+    <string name="hucn_float_bbs">论坛</string>
+    <string name="hucn_network_is_not_available">无法连接到网络，请检查网络配置</string>
+    <string name="hucn_commondialog_defaulttoptitle">提示</string>
+    <string name="hucn_exit_title">确认退出？</string>
+    <string name="hucn_not_hintshow">不再提示</string>
+    <string name="hucn_confirm">确定</string>
+    <string name="hucn_cancle">取消</string>
+    <string name="hucn_download_error">如解析包错误，请重新下载！</string>
+
+    <!-- 充值页面 -->
+    <string name="hucn_recharg_center">乐非凡充值中心</string>
+    <string name="hucn_recharg_select_label">请选择充值方式</string>
+    <string name="hucn_recharg_telephone_tv">话费卡充值</string>
+    <string name="hucn_recharg_telephone">充值卡</string>
+    <string name="hucn_recharg_telephone_hint">支持移动/联通/电信全国充值卡，电信卡仅支持50元及100元面额，一般几分钟内可到账</string>
+    <string name="hucn_recharg_alipay_tv">支付宝</string>
+    <string name="hucn_recharg_tenpay_tv">财付通</string>
+    <string name="hucn_recharg_payple_hint">支持海外用户充值金币，美元结算即时到账。美元与人民币汇率比为1：6</string>
+    <string name="hucn_recharg_payple_tv">PayPal</string>
+    <string name="hucn_recharg_pay_undone">支付尚未完成,您确定放弃本次支付？</string>
+    <string name="hucn_recharg_pay_failure">支付未成功，请返回重试</string>
+    <string name="hucn_recharg_union_card_hint">支持绝大多数银行卡支付，单笔限额2000元</string>
+    <string name="hucn_recharg_union_card_tv">银行卡</string>
+    <string name="hucn_recharg_unionpay_tv">信用卡</string>
+    <string name="hucn_recharg_alipay_client">客户端支付</string>
+    <string name="hucn_recharg_by_web">网页支付</string>
+    <string name="hucn_pay_way_label">充值方式：</string>
+    <string name="hucn_pay_way_union">手机银联</string>
+    <string name="hucn_pay_change_way">其他支付方式</string>
+    <string name="hucn_recharg_center_hint">温馨提示：</string>
+    <string name="hucn_recharg_center_submit">提交</string>
+    <string name="hucn_recharg_center_phone_card_num">充值卡号</string>
+    <string name="hucn_recharg_center_phone_card_pwd">充值密码</string>
+    <string name="hucn_recharg_center_pay">确认</string>
+    <string name="hucn_back_to_game">返回游戏</string>
+    <string name="hucn_back_to_pay_continu">继续充值</string>
+    <string name="hucn_card_classes">卡种：</string>
+    <string name="hucn_card_denomination_label">面额：</string>
+    <string name="hucn_card_recharge_denomination_label">充值：</string>
+    <string name="hucn_recharge_exchang">兑换：</string>
+    <string name="hucn_recharge_amount_isnull">请输入充值金额</string>
+    <string name="hucn_card_classes_name">订单已提交！</string>
+    <string name="hucn_card_recharge_denomination_hint">系统正在处理您的订单，到账时间约为1-3分钟</string>
+    <string name="hucn_card_recharge_hint">请正确输入卡号或密码</string>
+    <string name="hucn_card_order_no">订单号：</string>
+    <string name="hucn_message_raply">回复</string>
+    
+    <!-- 下载中心 -->
+    <string name="hucn_download_center">下载中心</string>
+    <string name="hucn_download_details">下载详情</string>
+    <string name="hucn_container">继续</string>
+    <string name="hucn_download">下载</string>
+    <string name="hucn_update">更新</string>
+    <string name="hucn_download_details_filesize">大小:</string>
+    <string name="hucn_download_details_version">版本:</string>
+    <string name="hucn_download_details_update">时间:</string>
+    <string name="hucn_download_details_type">类型:</string>
+    <string name="hucn_download_guangfan">\u0020官方</string>
+    <string name="hucn_download_noad">\u0020无广告</string>
+    <string name="hucn_download_novir">\u0020免费</string>
+    <string name="hucn_game_shot">游戏截图</string>
+    <string name="hucn_game_commary">游戏简介</string>
+    <string name="hucn_redownload">重新下载</string>
+    <string name="hucn_install">安装</string>
+    <string name="hucn_deldownload">删除</string>
+    <string name="hucn_clean_downloads">清空记录</string>
+    <string name="hucn_deldownload_file">\u0020\u0020同时删除本地文件</string>
+    
+    <!-- 私信 -->
+    <string name="hucn_message_center">消息</string>
+    <string name="hucn_copy">复制</string>
+    <string name="hucn_delete">删除</string>
+    
+    <string name="hucn_games">游\u0020\u0020戏</string>
+    <string name="hucn_servers">服务区</string>
+    
+    <!-- 礼包 -->
+    <string name="hucn_gift_bag_center">我的礼包</string>
+    <string name="hucn_gift_bag_search">礼包搜索</string>
+    <string name="hucn_gift_bag">礼包</string>
+    
+    <!-- 0704 -->
+    <string name="hucn_not_access_num">*暂不支持绑定海外手机号码</string>
+
+</resources>

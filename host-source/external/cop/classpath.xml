@@ -1,0 +1,16 @@
+<!-- mmsms -->
+<classpathentry kind="lib" path="libs/mmbilling.3.1.2.jar"/>
+
+<!-- ctcc -->
+<classpathentry kind="lib" path="libs/egame.terminal.sdk.pay.jar"/>
+<!-- ctcc -->
+
+
+<!-- unipay -->
+<classpathentry kind="lib" path="libs/Multimode_UniPay_base.jar"/>
+
+
+<!-- pma lib start -->
+<classpathentry kind="lib" path="libs/bbox844.jar"/>
+
+

@@ -1,0 +1,36 @@
+<!--37wan--> 
+    <activity
+        android:name="com.sy37sdk.core.PayCallBackActivity"
+        android:configChanges="orientation|keyboardHidden|screenLayout"
+        android:theme="@style/Theme.Transparent"/>
+    <activity
+        android:name="com.sy37sdk.views.SY37web"
+        android:theme="@android:style/Theme.Black.NoTitleBar"
+        android:configChanges="keyboardHidden|orientation"
+        android:windowSoftInputMode="stateVisible|adjustResize"/>
+    <service android:name="com.sy37sdk.service.SyncService" />
+    <service android:name="com.sy37sdk.service.FloatWindowService" />
+    <receiver android:name="com.sy37sdk.receiver.NotifyReceiver" >
+    <intent-filter android:priority="1000" >
+    <action android:name="android.intent.action.USER_PRESENT" />
+    <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+    <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+    </intent-filter>
+    </receiver>
+<!--unionpay start -->
+    <activity
+    android:name="com.unionpay.uppay.PayActivityEx"
+    android:configChanges="orientation|keyboardHidden"
+    android:excludeFromRecents="true"
+    android:label="@string/sdk_name"
+    android:windowSoftInputMode="adjustResize" >
+    </activity>
+    <activity
+    android:name="com.unionpay.uppay.PayActivity"
+    android:configChanges="orientation|keyboardHidden|screenLayout"
+    android:excludeFromRecents="true"
+    android:label="@string/sdk_name"
+    android:theme="@style/Theme.UPPay" >
+</activity>
+
+<!--37wan-->

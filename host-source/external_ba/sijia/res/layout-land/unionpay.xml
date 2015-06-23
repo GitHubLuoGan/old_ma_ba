@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/graybtn_style">
+        
+        <TextView 
+            android:id="@+id/payment_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/amount"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/blue_one"
+            android:textSize="@dimen/textsize"/>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/goods"
+	            android:textColor="@color/gray"
+	            android:textSize="@dimen/tf_sp"/>
+            <TextView 
+                android:id="@+id/goods"
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/goods_number"
+	            android:textColor="@color/red"
+	            android:textSize="@dimen/tf_sp"/>
+            <TextView 
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/goods_price"
+	            android:textColor="@color/gray"
+	            android:textSize="@dimen/tf_sp"/>
+            
+        </LinearLayout>
+        
+        <TextView 
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/user"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/tf_sp"/>
+    </LinearLayout>
+    
+
+</LinearLayout>

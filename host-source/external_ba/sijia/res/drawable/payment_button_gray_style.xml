@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">   
+  <!-- 没有焦点时的背景图片 -->    
+  <item android:state_window_focused="false">
+      <shape android:shape="rectangle">
+          <corners android:topLeftRadius="2.0dp" android:topRightRadius="2.0dp"
+              android:bottomLeftRadius="2.0dp" android:bottomRightRadius="2.0dp"/>
+          <gradient android:startColor="#ffffff" android:endColor="#e1e1e1" android:angle="270"/>
+          <stroke android:width="0.5dp" android:color="#cfcfcf"/>
+      </shape>
+  </item>     
+   
+  <!-- 非触摸模式下获得焦点并单击时的背景图片 -->    
+  <item android:state_focused="true" android:state_pressed="false">
+      <shape android:shape="rectangle">
+          <corners android:topLeftRadius="2.0dp" android:topRightRadius="2.0dp"
+              android:bottomLeftRadius="2.0dp" android:bottomRightRadius="2.0dp"/>
+          <gradient android:startColor="#ffffff" android:endColor="#e1e1e1" android:angle="270"/>
+          <stroke android:width="0.5dp" android:color="#cfcfcf"/>
+      </shape>
+  </item>    
+   
+  <!-- 触摸模式下单击时的背景图片 -->    
+  <item android:state_focused="false" android:state_pressed="true">
+      <shape android:shape="rectangle">
+          <corners android:topLeftRadius="2.0dp" android:topRightRadius="2.0dp"
+              android:bottomLeftRadius="2.0dp" android:bottomRightRadius="2.0dp"/>
+          <gradient android:startColor="#ffffff" android:endColor="#e1e1e1" android:angle="270"/>
+          <stroke android:width="0.5dp" android:color="#cfcfcf"/>
+      </shape>
+  </item>     
+   
+  <!--选中时的图片背景  -->    
+  <item android:state_selected="true">
+      <shape android:shape="rectangle">
+          <corners android:topLeftRadius="2.0dp" android:topRightRadius="2.0dp"
+              android:bottomLeftRadius="2.0dp" android:bottomRightRadius="2.0dp"/>
+           <gradient android:startColor="#ffffff" android:endColor="#e1e1e1" android:angle="270"/>
+          <stroke android:width="0.5dp" android:color="#cfcfcf"/>
+      </shape>
+  </item>     
+   
+  <!--获得焦点时的图片背景  -->    
+  <item android:state_focused="true">
+      <shape android:shape="rectangle">
+          <corners android:topLeftRadius="2.0dp" android:topRightRadius="2.0dp"
+              android:bottomLeftRadius="2.0dp" android:bottomRightRadius="2.0dp"/>
+           <gradient android:startColor="#ffffff" android:endColor="#e1e1e1" android:angle="270"/>
+          <stroke android:width="0.5dp" android:color="#cfcfcf"/>
+      </shape>
+  </item>
+        		
+</selector>

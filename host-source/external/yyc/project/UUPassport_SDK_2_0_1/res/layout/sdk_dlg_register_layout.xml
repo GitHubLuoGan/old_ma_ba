@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.uucun.android.passport.layout.DlgRegisterLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sdk_dialog_width"
+    android:layout_height="@dimen/sdk_dialog_height"
+    android:minWidth="@dimen/sdk_dialog_width"
+    android:background="@drawable/sdk_dialog_background" >
+
+    <RelativeLayout
+        android:id="@id/sdk_dlg_title_container"
+        android:layout_width="@dimen/sdk_dialog_width"
+        android:layout_height="@dimen/sdk_dialog_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/sdk_dialog_title_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@id/sdk_dlg_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/dlg_registering"
+            android:textColor="@color/color_dlg_text"
+            android:textSize="@dimen/sdk_dlg_title_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/sdk_dlg_content_process_container"
+        android:layout_width="@dimen/sdk_dialog_width"
+        android:layout_height="@dimen/sdk_dlg_content_height"
+        android:layout_below="@id/sdk_dlg_title_container"
+        android:gravity="center"
+        
+         >
+
+        <ProgressBar
+            android:id="@id/sdk_empty_loading"
+            style="@style/FinskyProgressInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" 
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@id/sdk_load_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdk_empty_loading"
+            android:layout_marginTop="@dimen/margin_vertical"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_dlg_text"
+            android:text="@string/sdk_load_text_common"
+            android:textSize="@dimen/sdk_dlg_content_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/sdk_dlg_content_container"
+        android:layout_width="@dimen/sdk_dialog_width"
+        android:layout_height="@dimen/sdk_dlg_content_height"
+        android:layout_below="@id/sdk_dlg_title_container" 
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:id="@id/sdk_tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/sdk_dlg_btn_margin"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textColor="@color/color_tip_text"
+            android:textSize="@dimen/sdk_dlg_content_text_size" />
+        
+        <TextView
+            android:id="@id/sdk_dlg_register_nick_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/sdk_dlg_btn_margin"
+            android:layout_below="@id/sdk_tv_username"
+            android:text="@string/sdk_register_nick_tip"
+            android:textColor="@color/color_dlg_text"
+            android:textSize="@dimen/sdk_dlg_content_text_size" />
+        
+        <TextView android:id="@id/sdk_dlg_register_et_nickname"
+            android:layout_width="@dimen/user_width"
+            android:layout_height="@dimen/edit_inner_btn_height"
+            android:background="@drawable/nick_et_bg"
+            android:focusable="false"
+            android:gravity="center"
+            android:textColor="@color/color_dlg_text"
+            android:textSize="@dimen/sdk_dlg_content_text_size"
+            android:layout_marginLeft="@dimen/sdk_dlg_btn_margin"
+            android:layout_below="@id/sdk_dlg_register_nick_tip"
+            android:layout_marginRight="@dimen/margin_horizontal"
+            android:layout_marginTop="@dimen/margin_small"/>
+        
+        <Button android:id="@id/sdk_dlg_register_btn_change"
+            android:layout_height="@dimen/edit_inner_btn_height"
+            android:layout_width="@dimen/passport_width"
+            android:layout_alignBottom="@id/sdk_dlg_register_et_nickname"
+            android:layout_toRightOf="@id/sdk_dlg_register_et_nickname"
+            android:background="@drawable/sdk_btn_gray_selector"
+            android:text="@string/sdk_change_nickname"
+            android:textColor="@color/sdk_btn_text_black_selector"/>
+
+        <Button
+            android:id="@id/sdk_dlg_btn_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sdk_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/sdk_dlg_btn_margin"
+            android:layout_marginRight="@dimen/sdk_dlg_btn_margin"
+            android:layout_marginBottom="@dimen/sdk_dlg_btn_margin"
+            android:background="@drawable/sdk_btn_blue_selector"
+            android:text="@string/sdk_start_game"
+            android:textColor="@color/color_button_text"
+            android:textSize="@dimen/button_generic_size" />
+    </RelativeLayout>
+
+</com.uucun.android.passport.layout.DlgRegisterLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/library_common_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_common_title_bar" />
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_common_tips_bar" />
+
+    <ScrollView
+        android:id="@+id/library_layout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/library_layout_user_register"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/library_common_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="帐号："
+                    android:textColor="#ff666666"
+                    android:textSize="16dip" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/library_login_username"
+                        android:layout_width="215dip"
+                        android:layout_height="35dip"
+                        android:background="@drawable/library_sp_bg"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="限4-20位字母/数字"
+                        android:maxLength="20"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="30dip"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dip" >
+                    </EditText>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/library_login_account_photo" />
+
+                    <ImageView
+                        android:id="@+id/library_login_username_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/library_text_clear"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/library_login_username_check"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="5dip" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/library_hidden_view"
+                android:layout_width="fill_parent"
+                android:layout_height="1px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="密码："
+                    android:textColor="#ff666666"
+                    android:textSize="16dip" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/library_login_password"
+                        android:layout_width="215dip"
+                        android:layout_height="35dip"
+                        android:background="@drawable/library_sp_bg"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:hint="限6-16位字母/数字"
+                        android:maxLength="16"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="30dip"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="16dip" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="6dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/library_login_password_photo" />
+
+                    <ImageView
+                        android:id="@+id/library_login_password_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/library_text_clear"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/library_login_password_check"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="5dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码："
+                    android:textColor="#ff666666"
+                    android:textSize="16dip" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/library_register_phone_number"
+                        android:layout_width="180dip"
+                        android:layout_height="35dip"
+                        android:background="@drawable/library_sp_bg"
+                        android:maxLength="11"
+                        android:paddingRight="30dip"
+                        android:phoneNumber="true"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/library_register_phone_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/library_text_clear"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/library_register_phone_check"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="5dip" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/library_register_tips"
+                android:layout_width="215dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/library_yello_bg"
+                android:gravity="center"
+                android:minHeight="20dp"
+                android:padding="3dip"
+                android:textColor="#ff000000"
+                android:textSize="16dip"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/library_summit_register_button"
+                android:layout_width="215dip"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/library_green_button_bg_selector"
+                android:shadowColor="#ff000fff"
+                android:text="提交注册"
+                android:textColor="#ffffffff"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/library_cancel_register_button"
+                android:layout_width="215dip"
+                android:layout_height="40dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/library_white_button_bg_selector"
+                android:shadowColor="#ffffffff"
+                android:text="取消注册"
+                android:textColor="#ff000000"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal" >
+
+                <CheckBox
+                    android:id="@+id/library_agree_kugou_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/library_checkbox_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:textColor="#ff000000"
+                    android:textSize="16dip" />
+
+                <TextView
+                    android:id="@+id/library_agree_kugou_license_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="《酷狗游戏通行证用户协议》"
+                    android:textColor="#ff3333ff"
+                    android:textSize="16dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.kuyou.platform.ui.widgets.LoadingView
+        android:id="@+id/library_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/library_common_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/library_user_center_button_space_line" />
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_bottom_bar" />
+
+</LinearLayout>

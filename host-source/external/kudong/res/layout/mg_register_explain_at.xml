@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/float_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/tv_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mg_title_ic_back"
+            android:gravity="center_vertical"
+            android:text="@string/tv_register_explain"
+            android:typeface="serif"
+            android:textSize="@dimen/float_max_font"
+            android:textColor="@color/title_color" />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            
+            <ImageView
+	            android:id="@+id/close_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="#00000000"
+	            android:src="@drawable/float_ic_action_cancel" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/driver_color" />
+        
+    
+    
+    
+
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:fadeScrollbars="true"
+        android:fastScrollEnabled="false"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+       
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/float_marin_padding"
+	        android:layout_marginRight="@dimen/float_marin_padding"
+	        android:layout_marginTop="8dp"
+	        android:orientation="vertical" >
+	        
+        
+	        <TextView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal"
+	            android:text="用户协议"
+	            android:textSize="@dimen/float_normal_font"
+	            android:textColor="@color/title_color" />
+        
+
+	        
+	        <TextView
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/float_register_explain_descript"
+		            android:textColor="@color/title_color"
+		            android:textSize="@dimen/float_normal_font" />
+	        
+	        <Button
+                android:id="@+id/float_btn_agree_comm"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/float_btn_height"
+                android:background="@drawable/float_btn_blue_bg"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="@string/float_agree"
+                android:textColor="@color/mg_color_white"
+                android:textSize="@dimen/float_normal_two_font" />
+	       
+	    </LinearLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+	    
+        
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/float_version_padding_top_bottom"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/mogoo_version"
+            android:textColor="@color/descript_color"
+            android:textSize="@dimen/float_min_font" />
+    </LinearLayout>
+
+
+</LinearLayout>

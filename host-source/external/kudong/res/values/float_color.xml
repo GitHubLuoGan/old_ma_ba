@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_bg">#88ff0000</color>
+    
+    <color name="title_color">#474747</color>
+    <color name="driver_color">#d7d7d7</color>
+    <color name="descript_color">#9d9d9d</color>
+    <color name="gift_item_title">#16525e</color>
+    <color name="gift_item_count">#9d9d9d</color>
+    <color name="gift_item_time">#9d9d9d</color>
+    <color name="gift_item_descript">#9d9d9d</color>
+    <color name="gift_item_get">#6aafbd</color>
+    <color name="float_control_color">#789ce6</color>
+    <color name="float_green_color">#16525e</color>
+    <color name="float_yellow_color">#fffd37</color>
+    <color name="float_red_color">#ff4242</color>
+    <color name="float_light_color">#9d9d9d</color>
+    <color name="float_transparent">#00000000</color>
+</resources>

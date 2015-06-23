@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="dpay_number_hint">1</integer>
+    <integer name="dpay_ten">10</integer>
+    <integer name="dpay_thirty">30</integer>
+    <integer name="dpay_fifty">50</integer>
+    <integer name="dpay_one_hundred">100</integer>
+    <integer name="dpay_three_hundred">300</integer>
+    <integer name="dpay_five_hundred">500</integer>
+    <integer name="dpay_one_thousand">1000</integer>
+    <integer name="dpay_two_thousand">2000</integer>
+
+</resources>

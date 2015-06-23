@@ -1,0 +1,36 @@
+<!--SDK Activity Info-->
+     <activity
+            android:name="cn.edg.applib.ui.HucnActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/HUCNActivityStyle"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+     <activity
+            android:name="cn.edg.applib.ui.HucnWebActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:theme="@style/HUCNTransActivity" >
+       </activity>
+
+     <receiver android:name="cn.edg.applib.biz.ser.HUCNReceiver" >
+            <intent-filter>
+                <action android:name="cn.edg.library.AlarmReceiver" />
+		     <action android:name="cn.edg.library.DownloadReceiver" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+     </receiver>
+
+     <service
+            android:name="cn.edg.applib.biz.ser.HUCNService" />
+	 <service
+            android:name="cn.edg.applib.download.DownloadService"
+            android:process=":remote" />
+     <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden" />
+       
+<!--SDK Activity Info-->
+
+<!-- lefeifan start-->
+<meta-data android:name="appid" android:value="4fa790323825456c2891e6677efa1801" />
+<!-- lefeifan end-->

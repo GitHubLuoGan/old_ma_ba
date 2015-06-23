@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/mzw_pay_money_num_wwq"
+         android:textColor="@color/mzw_pay_info_text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/payMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mzw_pay_ten_text_wwq"
+         android:textColor="@color/mzw_pay_info_text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mzw_yuan_wwq"
+        android:textColor="@color/mzw_pay_info_text"
+        android:textSize="16sp" />
+
+</LinearLayout>

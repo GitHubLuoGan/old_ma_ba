@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sq_recharge_card_ratio_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/sq_recharge_card_number_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dip"
+            android:background="@drawable/sq_recharge_white_bg"
+            android:textColor="#a3a8ab"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/sq_recharge_card_pwd_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dip"
+            android:background="@drawable/sq_recharge_white_bg"
+            android:textColor="#a3a8ab"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/sq_recharge_card_explian_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="18dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/sq_recharge_card_explian_selectior"
+            android:src="@drawable/sq_recharge_card_explian_selectior" />
+    </LinearLayout>
+
+</RelativeLayout>

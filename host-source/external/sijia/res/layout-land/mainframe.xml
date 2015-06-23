@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout 
+        android:layout_width="@dimen/tfz_dp"
+        android:layout_height="280dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">       
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            
+            <RadioButton 
+                android:id="@+id/logo"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                style="@style/radiobutton_logo"
+                android:drawableTop="@drawable/company_logo"
+                />
+            <RadioButton 
+                android:id="@+id/gift"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/radiobutton_center"
+                android:drawableTop="@drawable/gift_style"
+                android:drawablePadding="-4sp"
+                android:text="@string/gift"/>                
+            
+            <RadioButton 
+                android:id="@+id/center"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/radiobutton_center"
+                android:drawableTop="@drawable/usercenter_style"
+                android:drawablePadding="-4sp"
+                android:text="@string/usercenter"/>
+            <RadioButton 
+                android:id="@+id/more"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                style="@style/radiobutton_more"
+                android:drawableTop="@drawable/more_point_style"
+                android:drawablePadding="-4sp"
+                android:text="@string/more"/>
+            
+        </LinearLayout>
+        <FrameLayout 
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@color/white">            
+        </FrameLayout>
+        <FrameLayout 
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/main_bottom">                        
+            <RelativeLayout
+                android:id="@+id/main_relative"
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"          
+	            android:background="@drawable/bottom_style">
+	             
+	            <LinearLayout 
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:orientation="horizontal"
+	                android:gravity="center"
+	                android:layout_marginTop="4dp">
+	                
+	                <ImageView
+		                android:layout_width="26dp"
+		                android:layout_height="28dp"
+		                android:src="@drawable/bottom_icon"/>
+		            <TextView 
+		                android:id="@+id/bottom_text"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="5dp"
+		                android:textColor="@color/black"
+		                android:text="@string/text_one"/>
+		            <!--
+		            <Button 
+		                android:id="@+id/bottom_download"
+		                android:layout_width="70dp"
+		                android:layout_height="25dp"
+		                android:background="@drawable/bottom_download"
+		                android:textColor="@color/orage"
+		                android:layout_marginLeft="2dp"
+		                android:textSize="@dimen/t_sp"
+		                android:text="@string/text_two"/>
+		            --> 	                	                                                
+	            </LinearLayout>
+	                      	            
+	        </RelativeLayout>
+	        <ImageView 
+                android:id="@+id/main_click"
+                android:layout_width="match_parent"
+                android:clickable="false"
+                android:layout_height="45dp"
+                android:scaleType="fitXY"/>
+	        <ProgressBar
+	            android:layout_gravity="center" 
+	            android:id="@+id/main_progress"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            style="?android:attr/progressBarStyleSmall"/>
+            
+        </FrameLayout>        
+    </LinearLayout>
+            
+</RelativeLayout>

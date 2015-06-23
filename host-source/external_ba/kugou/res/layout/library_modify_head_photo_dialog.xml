@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/library_user_center_dialog_corners"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_common_dialog_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/library_get_activity_txt_one"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/library_common_background"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/library_get_activity_txt_two"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/library_common_background"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/library_get_activity_txt_three"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/library_common_background"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="10dp"
+                android:text="亲，真的要走吗？"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/library_user_center_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/library_common_background"
+                android:orientation="vertical"
+                android:visibility="gone" >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/library_user_center_button_space_line" />
+
+            <LinearLayout
+                android:id="@+id/library_user_center_button_all"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <include layout="@layout/library_common_dialog_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

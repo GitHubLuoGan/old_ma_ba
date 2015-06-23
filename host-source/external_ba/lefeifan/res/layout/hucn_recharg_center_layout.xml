@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNBg"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/v"
+        style="@style/HUCNBg"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            style="@style/HUCNBg"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="15dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="15dp" >
+
+                <LinearLayout
+                    android:id="@+id/hucn_account_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/hucn_accont_tip_tv"
+                        style="@style/HUCNText"
+                        android:paddingLeft="5dp"
+                        android:text="@string/hucn_current_account"
+                        android:textColor="@color/hucn_light_gray_"
+                        android:textSize="@dimen/hucn_small_text_size" />
+
+                    <TextView
+                        android:id="@+id/hucn_account_tv"
+                        style="@style/HUCNText"
+                        android:minWidth="60dp"
+                        android:textColor="@color/hucn_light_gray_" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hucn_game_info_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/hucn_account_lay"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/hucn_account_lay"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/hucn_light_gray_"
+                    android:textSize="@dimen/hucn_small_text_size" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_money_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hucn_account_lay"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" 
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/hucn_price_tip_tv"
+                        style="@style/HUCNText"
+                        android:paddingLeft="5dp"
+                        android:text="@string/hucn_current_price"
+                        android:textColor="@color/hucn_light_gray_"
+                        android:textSize="@dimen/hucn_small_text_size" />
+
+                    <TextView
+                        android:id="@+id/hucn_price_tv"
+                        style="@style/HUCNText"
+                        android:text="100"
+                        android:textColor="@color/hucn_red"
+                        android:textSize="@dimen/hucn_default_text_size18" />
+
+                    <TextView
+                        android:id="@+id/hucn_price_untion_tv"
+                        style="@style/HUCNText"
+                        android:text="@string/hucn_current_price_ution"
+                        android:textColor="@color/hucn_red"
+                        android:textSize="@dimen/hucn_default_text_size18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hucn_good_lay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/hucn_money_lay"
+                    android:layout_alignLeft="@+id/hucn_game_info_tv"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@+id/hucn_money_lay"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/hucn_good_tv"
+                        style="@style/HUCNText"
+                        android:text="@string/hucn_current_good"
+                        android:textColor="@color/hucn_light_gray_"
+                        android:textSize="@dimen/hucn_small_text_size" />
+
+                    <TextView
+                        android:id="@+id/hucn_good_union_num_tv"
+                        style="@style/HUCNText"
+                        android:textColor="@color/hucn_red"
+                        android:textSize="@dimen/hucn_default_text_size18"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/hucn_good_union_tv"
+                        style="@style/HUCNText"
+                        android:text="@string/hucn_current_good_union"
+                        android:textColor="@color/hucn_light_gray_"
+                        android:textSize="@dimen/hucn_default_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                style="@style/HUCNText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/hucn_recharg_select_label"
+                android:textColor="@color/hucn_light_gray_"
+                android:textSize="@dimen/hucn_small_text_size" />
+
+            <GridView
+                android:id="@+id/hucn_recharg_select_gv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@color/hucn_bg"
+                android:verticalSpacing="10dp" >
+            </GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <include layout="@layout/hucn_bottom_layout" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

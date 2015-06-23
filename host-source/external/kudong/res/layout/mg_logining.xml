@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body_lay"
+    android:layout_width="266dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mg_logining_bg"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/mg_changeuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:text="@string/mg_switch_account"
+        android:textSize="16dp"
+        android:textColor="#789ce6"
+        android:background="#00000000" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:gravity="center" >
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:gravity="center">
+        	
+         <ImageView 
+             android:layout_width="122dp"
+             android:layout_height="52dp"
+             android:src="@drawable/mg_logining"/>
+			
+		</LinearLayout>
+		
+        <TextView
+            android:id="@+id/mg_logining_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="@dimen/mg_logo_max_height"
+            android:adjustViewBounds="true"
+            android:textColor="@color/mg_color_orange"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/mg_loading_process_dialog_progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@anim/mg_loading" />
+
+            <TextView
+                android:id="@+id/mg_loading_process_dialog_textView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/mg_color_gray"
+                android:text="@string/mg_login_doing" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

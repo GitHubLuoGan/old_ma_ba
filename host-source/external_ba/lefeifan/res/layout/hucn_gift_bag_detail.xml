@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hucn_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gift_particulars_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/gift_particulars_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hucn_list_selector_bg"
+            android:paddingBottom="8dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="8dip" >
+
+            <ImageView
+                android:id="@+id/gift_particulars_image"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/gift_particulars_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/gift_particulars_image"
+                android:textColor="@color/hucn_text_color"
+                android:textSize="@dimen/hucn_default_text_size" />
+
+            <TextView
+                android:id="@+id/gift_particulars_card_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gift_particulars_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/hucn_download_btn_layout"
+                android:layout_toRightOf="@+id/gift_particulars_image"
+                android:background="@null"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/hucn_text_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/hucn_download_btn_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp" >
+
+                <Button
+                    android:id="@+id/gift_particulars_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/hucn_blue_btn"
+                    android:clickable="false"
+                    android:minWidth="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:text="领取"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/gift_particulars_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/hucn_blue_btn"
+                    android:clickable="false"
+                    android:minWidth="20dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="复制卡号"
+                    android:textColor="#ffffff"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/hucn_bg" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/HUCNTextviewStyle"
+                android:text="礼包内容" />
+
+            <TextView
+                android:id="@+id/gift_particulars_content"
+                style="@style/HUCNTextviewStyle"
+                android:layout_marginBottom="15dp"
+                android:text="使用方法" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/hucn_bg" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/HUCNTextviewStyle"
+                android:text="使用方法" />
+
+            <TextView
+                android:id="@+id/gift_particulars_usage"
+                style="@style/HUCNTextviewStyle"
+                android:layout_marginBottom="15dp"
+                android:text="使用方法" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/hucn_bg" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<!-- talkingdata start-->
+<meta-data android:name="TDGA_APP_ID" android:value="@TALKINGDATA_APPID@"/> 
+<meta-data android:name="TDGA_CHANNEL_ID" android:value="@TALKINGDATA_CHANNELID@"/> 
+<!-- talkingdata end-->

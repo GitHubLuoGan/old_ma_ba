@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="transparent">#1000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="orange">#ff956f</color>
+    <color name="gray">#737373</color>
+    <color name="blue_s">#0098fe</color>
+    <color name="blue_d">#0076ee</color>
+    <color name="other">#00000001</color>
+    <color name="line_color">#eaeaea</color>
+    <color name="green">#3b9813</color>
+    <color name="list_head_prompt">#4EABD4</color>
+    
+    <!-- asstivitTouch -->
+    <color name="icon_gift_list_se_text">#fd653c</color>
+    <color name="icon_gift_list_th_text">#898989</color>
+    <color name="icon_orage">#ff7802</color>
+    <color name="icon_gift_list_default">#fefefe</color>
+    <color name="icon_gift_list_cl">#f9f9f9</color>
+    <color name="icon_blue">#228ee6</color>
+    
+    <color name="gray_white_title">#f9f8f8</color>
+    <color name="gray_white">#f0f0f0</color>
+    <color name="red">#ec1d1d</color>
+    <color name="blue_one">#3277de</color>
+    
+</resources>

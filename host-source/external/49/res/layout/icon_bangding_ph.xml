@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include 
+        layout="@layout/icon_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/icon_gift_se_cl"
+            android:gravity="center">
+            
+            <ImageView 
+                android:layout_width="89dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_meun_bangding"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:background="@drawable/icon_gift_se"
+            android:gravity="center">
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/icon_bangding_bg">
+        
+        <LinearLayout 
+            android:id="@+id/icon_bangding_linear_one"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="账号"
+                android:textColor="@color/black"
+                android:gravity="right"
+                android:textSize="15sp"/>
+            
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/icon_bg_line"/>
+            
+            <EditText 
+                android:id="@+id/icon_bangding_name"
+                android:layout_width="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                style="@style/Sj_MyEdittext"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_height="20dp"/>
+            
+        </LinearLayout>
+        <include
+            android:id="@+id/icon_bangding_line_one" 
+            layout="@layout/icon_line"
+            android:layout_width="300dp"
+            android:layout_height="0.5dp"/>
+        
+        <LinearLayout 
+            android:id="@+id/icon_bangding_linear_two"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="手机号码"
+                android:gravity="right"
+                android:textSize="15sp"/>
+            
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/icon_bg_line"/>
+            
+            <EditText 
+                android:id="@+id/icon_bangding_ph_vc"
+                android:layout_width="130dp"
+                android:layout_marginLeft="5dp"
+                style="@style/Sj_MyEdittext"
+                android:hint="请输入手机号码"
+                android:textColorHint="#237200"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColor="@color/black"
+                android:layout_height="20dp"/>
+            
+            <Button 
+                android:id="@+id/icon_bangding_vc_image"
+                android:layout_width="57dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/vc_default"/>
+            
+        </LinearLayout>
+        
+        <include 
+            layout="@layout/icon_line"
+            android:id="@+id/icon_bangding_line_two" 
+            android:layout_width="300dp"
+            android:layout_height="0.5dp"/>
+        
+        <LinearLayout 
+            android:id="@+id/icon_bangding_linear_th"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:id="@+id/icon_bangding_yanzhen"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="验证码"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+            
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/icon_bg_line"/>
+            
+            <EditText 
+                android:id="@+id/icon_bangding_input_vc"
+                android:layout_width="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                style="@style/Sj_MyEdittext"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_height="20dp"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/con_bangding_button" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/icon_bangding_cancel"
+            android:layout_width="137dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_bangding_cancel_style"/>
+        
+        <Button 
+            android:id="@+id/icon_bangding_ok"
+            android:layout_marginLeft="26dp"
+            android:layout_width="137dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_bangding_ok_style"/>
+        
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

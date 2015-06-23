@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="400dp"
+        android:layout_height="wrap_content">        
+        
+        <LinearLayout 
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:background="@color/white">
+            <ImageView 
+                android:layout_width="100dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/yeepaylistlogo"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:layout_marginTop="5dp"
+                android:text="@string/sijiu_yeebinglist"
+                />
+            <ListView
+                android:id="@+id/yeepaylist" 
+                android:layout_width="380dp"
+                android:layout_height="120dp"
+                android:dividerHeight="0.5dp"
+                android:layout_marginTop="2dp"
+                android:divider="#f0f0f0"
+                android:fadingEdge="none"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="@string/yeepaylist_tips"/>
+            
+            <Button 
+                android:id="@+id/turnToWeb"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:text="@string/yeepaylist_web"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/yeepaybtn_style"/>
+            
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/yeepaylistbutton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/yeepaylist_style"/>
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

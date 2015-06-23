@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <TextView
+        android:id="@id/sdk_set_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_vertical"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:text="@string/sdk_codelevel_tip"
+        android:textColor="@color/color_common_text"
+        android:textSize="@dimen/common_generic_size" />
+    
+    <TextView
+        android:id="@id/sdk_tv_code_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sdk_set_tip"
+        android:layout_toRightOf="@id/sdk_set_tip"
+        android:layout_marginLeft="@dimen/margin_horizontal"
+        android:textColor="@color/color_tip_text"
+        android:textSize="@dimen/common_generic_size" />
+
+    <RelativeLayout
+        android:id="@id/sdk_code_level_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_layout_height"
+        android:background="@drawable/sdk_btn_change_selector"
+        android:layout_below="@id/sdk_set_tip"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="@dimen/sdk_text_margin"
+        android:paddingRight="@dimen/sdk_text_margin">
+
+        <TextView
+            android:id="@id/sdk_code_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sdk_code_manager"
+            android:duplicateParentState="true"
+            android:layout_marginRight="@dimen/margin_horizontal"
+            android:textColor="@color/sdk_btn_text_black_selector"
+        	android:textSize="@dimen/input_generic_size" />
+
+        <TextView
+            android:id="@id/sdk_btn_update_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:duplicateParentState="true"
+            android:drawableRight="@drawable/set_indicator"
+        	android:drawablePadding="@dimen/margin_horizontal"
+            android:text="@string/sdk_update_code"
+            android:textColor="@color/sdk_btn_text_green_selector"
+        	android:textSize="@dimen/input_generic_size" />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@id/sdk_safelevel_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_vertical"
+        android:layout_below="@id/sdk_code_level_container"
+        android:text="@string/sdk_safelevel_tip"
+        android:textColor="@color/color_common_text"
+        android:textSize="@dimen/common_generic_size" />
+    
+    <TextView
+        android:id="@id/sdk_tv_code_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sdk_safelevel_tip"
+        android:layout_toRightOf="@id/sdk_safelevel_tip"
+        android:layout_marginLeft="@dimen/margin_horizontal"
+        android:textColor="@color/color_tip_text"
+        android:textSize="@dimen/common_generic_size" />
+
+    <RelativeLayout
+        android:id="@id/sdk_bind_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_layout_height"
+        android:background="@drawable/sdk_input1_selector"
+        android:gravity="center_vertical"
+        android:layout_below="@id/sdk_safelevel_tip"
+        android:paddingLeft="@dimen/sdk_text_margin"
+        android:paddingRight="@dimen/sdk_text_margin"
+        android:clickable="true"
+        android:focusable="true">
+        
+        <TextView
+            android:id="@id/sdk_bind_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sdk_set_phone"
+            android:duplicateParentState="true"
+            android:layout_marginRight="@dimen/margin_horizontal"
+            android:textColor="@color/sdk_btn_text_black_selector"
+        	android:textSize="@dimen/input_generic_size" />
+
+        <TextView
+            android:id="@id/sdk_bind_phone"
+            android:layout_toRightOf="@id/sdk_bind_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:textColor="@color/sdk_btn_text_gray_selector"
+        	android:textSize="@dimen/input_generic_size"/>
+
+        <TextView
+            android:id="@id/sdk_btn_set_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:duplicateParentState="true"
+            android:drawableRight="@drawable/set_indicator"
+        	android:drawablePadding="@dimen/margin_horizontal"
+            android:text="@string/sdk_set"
+            android:textColor="@color/sdk_btn_text_green_selector"
+        	android:textSize="@dimen/input_generic_size" />
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@id/divider_horizon" 
+        android:layout_below="@id/sdk_bind_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/divider_horizon"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/content_description"/>
+    
+    <RelativeLayout
+        android:id="@id/sdk_question_container"
+        android:layout_below="@id/divider_horizon"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_layout_height"
+        android:background="@drawable/sdk_input3_selector"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/sdk_text_margin"
+        android:paddingRight="@dimen/sdk_text_margin"
+        android:clickable="true"
+        android:focusable="true" >
+        
+        <TextView
+            android:id="@id/sdk_question_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sdk_set_question"
+            android:duplicateParentState="true"
+            android:layout_marginRight="@dimen/margin_horizontal"
+            android:textColor="@color/sdk_btn_text_black_selector"
+        	android:textSize="@dimen/input_generic_size" />
+
+        <TextView
+            android:id="@id/sdk_question_level"
+            android:layout_toRightOf="@id/sdk_question_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:textColor="@color/sdk_btn_text_gray_selector"
+        	android:textSize="@dimen/input_generic_size"/>
+
+        <TextView
+            android:id="@id/sdk_btn_set_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:duplicateParentState="true"
+            android:drawableRight="@drawable/set_indicator"
+        	android:drawablePadding="@dimen/margin_horizontal"
+            android:text="@string/sdk_set"
+            android:textColor="@color/sdk_btn_text_green_selector"
+        	android:textSize="@dimen/input_generic_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

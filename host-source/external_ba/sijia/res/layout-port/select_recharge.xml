@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_recharge_records">
+    <LinearLayout
+        android:id="@+id/select_one" 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/records_title_line">
+        
+        <TextView
+            android:layout_marginLeft="5dp" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_title"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"/>                      
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/select_two"
+        android:layout_below="@+id/select_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+        
+        <Button 
+            android:id="@+id/select_price_one"
+            android:layout_width="90dp"
+            android:layout_height="24dp"
+            android:background="@drawable/select_button"
+            android:text="@string/select_price_one"
+            android:textColor="@color/black"/>
+        
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/select_price_two"
+            android:layout_width="90dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@+id/select_price_one"
+            android:background="@drawable/select_button"
+            android:text="@string/select_price_two"
+            android:textColor="@color/black"/>
+        <Button 
+            android:id="@+id/select_price_three"
+            android:layout_marginLeft="5dp"
+            android:layout_width="90dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@+id/select_price_two"
+            android:background="@drawable/select_button"
+            android:text="@string/select_price_three"
+            android:textColor="@color/black"/>
+        
+        <Button 
+            android:id="@+id/select_price_four"
+            android:layout_width="90dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/select_price_one"
+            android:background="@drawable/select_button"
+            android:text="@string/select_price_four"
+            android:textColor="@color/black"/>      
+        <Button
+            android:id="@+id/select_price_five"
+            android:layout_marginLeft="5dp"
+            android:layout_width="90dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/select_price_two"
+            android:layout_toRightOf="@+id/select_price_four"
+            android:background="@drawable/select_button"
+            android:text="@string/select_price_five"
+            android:textColor="@color/black"/> 
+            
+        
+        <Button
+            android:id="@+id/select_price_six"
+            android:layout_width="90dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/select_price_three"
+            android:layout_toRightOf="@+id/select_price_five"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/select_button"
+            android:text="@string/select_price_six"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/select_price_seven"
+            android:layout_below="@+id/select_price_four"
+            android:layout_width="90dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/select_button"
+            android:text="@string/select_price_seven"
+            android:textColor="@color/black" />
+        
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+	    android:id="@+id/select_four"
+	    android:layout_below="@+id/select_two" 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="20dp">
+
+		<EditText
+		    android:id="@+id/select_edittext"
+		    android:paddingLeft="8dp"
+		    android:layout_width="200dp"
+		    android:layout_height="27dp"
+		    android:textColor="@color/black"
+		    android:background="@drawable/edtext"
+		    android:hint="@string/select_tips"
+		    android:inputType="number">
+		</EditText>
+
+	    <TextView
+	        android:layout_marginLeft="5dp" 
+	        android:id="@+id/select_total_price"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/select_total_price"/>
+	    <TextView 
+	        android:id="@+id/select_total_price_number"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/select_total_price_number"
+	        android:textColor="@color/blue_one"/>
+	    <TextView 
+	        android:id="@+id/select_total_price_yuan"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/select_total_price_yuan"/>	    
+	</LinearLayout>
+	
+    <LinearLayout 
+	    android:id="@+id/select_five"
+	    android:layout_below="@+id/select_four" 
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:gravity="center"
+	    android:orientation="vertical">
+	    
+	    <Button
+	        android:id="@+id/select_next"
+	        android:layout_width="250dp"
+	        android:layout_height="40dp"
+	        android:text="@string/select_next"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/text_title_size"
+	        android:background="@drawable/payment_button_blue_style"/>
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/select_six"
+        android:layout_below="@+id/select_five"
+        android:layout_alignLeft="@+id/select_two"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+	    
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_info_one"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_marginTop="2dp" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_info_two"
+            android:textColor="@color/gray"/>
+        
+        <LinearLayout
+            android:layout_marginTop="2dp" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+	        <TextView
+	              
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/select_info_phone"
+	            android:textColor="@color/blue_one"/>
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/select_info_qq"
+	            android:textColor="@color/blue_one"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

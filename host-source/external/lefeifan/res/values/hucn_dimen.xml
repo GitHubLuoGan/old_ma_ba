@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="hucn_small_text_size_10">10sp</dimen>
+    <dimen name="hucn_small_text_size">14sp</dimen>
+    <dimen name="hucn_default_text_size">16sp</dimen>
+    <dimen name="hucn_edittext_height">48dp</dimen>
+    <dimen name="hucn_btn_height">43dp</dimen>
+    <dimen name="hucn_float_menu_size">58dp</dimen>
+    <dimen name="hucn_float_menu_width">30dp</dimen>
+    <dimen name="hucn_float_menu_height">60dp</dimen>
+    
+    <dimen name="hucn_layout_margin">10dp</dimen>
+    <dimen name="hucn_layout_margin_top">15dp</dimen>
+    <dimen name="hucn_layout_padding">8dp</dimen>
+    
+    <dimen name="hucn_default_text_size18">18sp</dimen>
+    <dimen name="hucn_small_text_size12">12sp</dimen>
+    
+    <dimen name="hucn_small_text_size1">10sp</dimen>
+    <dimen name="hucn_setting_item_height">55dp</dimen>
+    
+    
+    <dimen name="hucn_float_view_size">58dp</dimen>
+    
+</resources>

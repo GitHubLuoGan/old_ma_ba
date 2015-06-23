@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/hucn_float_view_size"
+    android:layout_height="@dimen/hucn_float_view_size" >
+
+    <ImageView
+        android:id="@+id/hucn_float_icon"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/hucn_ican_default"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/hucn_float_left_flag_ic"
+        android:layout_width="10dp"
+        android:layout_height="11dp"
+        android:layout_alignLeft="@+id/hucn_float_icon"
+        android:layout_alignTop="@+id/hucn_float_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/hucn_count_tip"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/hucn_float_right_flag_ic"
+        android:layout_width="10dp"
+        android:layout_height="11dp"
+        android:layout_alignRight="@+id/hucn_float_icon"
+        android:layout_alignTop="@+id/hucn_float_icon"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/hucn_count_tip"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+</RelativeLayout>

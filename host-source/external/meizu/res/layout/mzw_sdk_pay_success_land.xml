@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/mzw_sdk_pay_success_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/mzw_sdk_pay_title" />
+
+    <Button
+        android:id="@+id/mzw_sdk_pay_back"
+        android:layout_width="150dip"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/mzw_sdk_pay_dialog_btn_selector"
+        android:gravity="center"
+        android:text="@string/mzw_sdk_pay_backgame"
+        android:textColor="@color/mzw_login_dialog_white_color"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/mzw_sdk_pay_back"
+        android:layout_below="@id/mzw_sdk_pay_success_titlebar"
+        android:layout_marginTop="20dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/mzw_sdk_pay_success_icon"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="center"
+                        android:text="@string/mzw_sdk_pay_success_title_prefix"
+                        android:textColor="#111111"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/mzw_sdk_pay_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dip"
+                        android:textColor="#ff0000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/mzw_sdk_pay_success_title_suffix"
+                        android:textColor="#111111"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dip"
+               android:layout_marginLeft="40dip"
+                android:layout_marginRight="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    
+                    android:id="@+id/mzw_sdk_pay_product_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="#111111"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mzw_sdk_pay_product_price"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                     android:singleLine="true"
+                    android:textColor="#111111"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dip"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/mzw_sdk_pay_product_count"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                    android:textColor="#111111"
+                    android:textSize="14sp" />
+
+                <TextView
+                     android:layout_weight="1"
+                    android:id="@+id/mzw_sdk_pay_product_desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#111111"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

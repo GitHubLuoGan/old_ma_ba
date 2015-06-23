@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_window_focused="false" android:state_enabled="true"
+    	 android:state_checked="true" android:drawable="@drawable/hucn_checkbox_icon_focus" />
+   
+    <!-- 没有焦点，可用选择，没被勾选时状态 --> 	 
+    <item android:state_window_focused="false" android:state_enabled="true"
+    	 android:state_checked="false" android:drawable="@drawable/hucn_checkbox_icon" />
+    
+    <!-- 可以选择，没勾选状态 -->
+    <item android:state_enabled="true" android:state_checked="false" 
+    	android:drawable="@drawable/hucn_checkbox_icon" />
+    
+    <!-- 可以选择，已经勾选状态 -->
+    <item android:state_enabled="true" android:state_checked="true" 
+    	android:drawable="@drawable/hucn_checkbox_icon_focus" />
+
+</selector>

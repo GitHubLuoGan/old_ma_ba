@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNBg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/hucn_question_tip"
+        style="@style/HUCNText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/hucn_find_pwd_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hucn_edittext_height"
+        android:layout_below="@+id/hucn_question_tip"
+        android:layout_marginLeft="@dimen/hucn_layout_margin"
+        android:layout_marginRight="@dimen/hucn_layout_margin"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hucn_bg_shape_corner"
+        android:gravity="center_vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp" >
+
+        <TextView
+            android:id="@+id/hucn_setting_tip_tv"
+            style="@style/HUCNText"
+            android:layout_marginRight="5dp"
+            android:text="@string/hucn_account" />
+
+        <LinearLayout
+            android:id="@+id/hucn_setting_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hucn_setting_answer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/hucn_setting_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/hucn_submit_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hucn_edittext_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/hucn_btn_white"
+        android:padding="13dp"
+        android:text="@string/hucn_next"
+        android:textColor="@color/hucn_text_color"
+        android:textSize="@dimen/hucn_default_text_size" />
+
+    <TextView
+        android:id="@+id/hucn_setting_by_none_tv"
+        style="@style/HUCNText"
+        android:layout_below="@id/hucn_submit_btn"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:paddingTop="22dp"
+        android:singleLine="true"
+        android:text="@string/hucn_reset_pwd_by_none"
+        android:textColor="#0082ee" />
+
+</RelativeLayout>

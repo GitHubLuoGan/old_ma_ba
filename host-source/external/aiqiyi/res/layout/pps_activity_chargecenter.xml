@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ppsgame_payment_bg" >
+    
+    <RelativeLayout android:id="@+id/chargecenter_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ppsgame_top_bg"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dp"
+            android:src="@drawable/ppsgame_top_logo"/>
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pps_rechargecenter"
+            android:textColor="@color/button_color"
+            android:textSize="20.0sp"
+            android:layout_centerInParent="true"
+            />
+        
+        <Button android:id="@+id/chargecenter_close"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/pps_close"
+        	android:textColor="@color/button_color"
+        	android:shadowDy="2"
+            android:shadowDx="0"
+            android:shadowRadius="1"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="10.0dp"
+        	android:padding="6.0dp"
+        	android:textSize="16.0sp"
+        	android:background="@drawable/ppsgame_back_btn_selector"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/chargecenter_title">
+        <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        <ListView android:id="@+id/ppsgame_qudao"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:background="@color/ppsgame_payment_qudao_bg"/>
+        
+        <ViewFlipper android:id="@+id/ppgame_qudao_info_flipper" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3">
+            <com.pps.sdk.widget.PPSGamePaymentView 
+                android:id="@+id/ppsgame_payment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+            
+            <com.pps.sdk.widget.PPSGameCardPaymentView 
+                android:id="@+id/ppsgame_payment_card"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+        </ViewFlipper>
+    </LinearLayout> 
+    
+        <TextView android:id="@+id/ppsgame_payment_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18.0sp"
+            android:textColor="@color/ppsgame_black"
+            android:text="@string/ppsgame_payment_error"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<!-- huawei Start -->
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+<classpathentry kind="runtime" path="runtime/CMBilling.jar"/>
+
+<!-- huawei End -->

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sq_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/sq_recharge_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/sq_recharge_content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:id="@+id/sq_recharge_select_type_content_relativelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/sq_recharge_select_type_content_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/sq_recharge_alipay_tips_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"
+                        android:textColor="#41403e"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="4dp"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:id="@+id/sq_recharge_money_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#41403e"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical" >
+
+                            <com.sanqi.android.sdk.widget.MoneyGridView
+                                android:id="@+id/sq_recharge_grid_seletor_gv"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:listSelector="@android:color/transparent"
+                                android:numColumns="4"
+                                android:scrollbars="none" >
+                            </com.sanqi.android.sdk.widget.MoneyGridView>
+
+                            <include
+                                android:id="@+id/sq_recharge_alipay_show_inculde"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                layout="@layout/sq_recharge_alipay_layout" />
+
+                            <include
+                                android:id="@+id/sq_recharge_card_show_inculde"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                layout="@layout/sq_recharge_card_layout"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/sq_recharge_comfirm_btn"
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/sq_recharge_comfirm_selectior"
+                    android:textColor="#41403e"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/sq_recharge_byperson_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/sq_recharge_byperson_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#41403e"
+                android:textSize="18dp" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

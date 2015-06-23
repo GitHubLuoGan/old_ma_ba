@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/slidebar_ppsgame_fragment_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <RelativeLayout
+            android:id="@+id/slidebar_message"
+            android:layout_width="0dip"
+            android:layout_height="80dip"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/sliderbar_reportlistview_press_color" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/slidebar_message_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="1dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:src="@drawable/slidebar_ppsgame_msg" />
+
+                <TextView
+                    android:id="@+id/slidebar_message_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/slidebar_account_recharge_function_news"
+                    android:textColor="@color/slidebar_menu_item_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/slidebar_custom"
+            android:layout_width="0dip"
+            android:layout_height="80dip"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/sliderbar_reportlistview_press_color" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="1dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:src="@drawable/slidebar_ppsgame_custom" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/custom"
+                    android:textColor="@color/slidebar_menu_item_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="5dip"
+        android:background="@color/slidebar_ppsgame_white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:text="@string/slidebar_application"
+            android:textColor="@color/slidebar_menu_item_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/slidebar_function_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="#00000000"
+        android:numColumns="4"
+        android:padding="10dip" >
+    </GridView>
+
+</LinearLayout>

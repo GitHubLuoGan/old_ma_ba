@@ -1,0 +1,5 @@
+<!-- yyc  send-->
+<classpathentry kind="lib" path="libs/uupay_third_plugin_3.7.jar"/>
+<classpathentry kind="lib" path="libs/wxpay_sdk.jar"/>
+
+<!-- yyc  end-->

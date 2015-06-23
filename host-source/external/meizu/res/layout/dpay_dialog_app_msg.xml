@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/dpay_btn_red_bg"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:paddingBottom="8dip">
+
+        <TextView
+            android:id="@id/dpay_msg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/dpay_yellow"
+            android:textSize="@dimen/dpay_main_tilte_font_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dpay_line_height"
+            android:layout_marginBottom="@dimen/dpay_default_padding"
+            android:layout_marginTop="@dimen/dpay_default_padding"
+            android:background="@color/dpay_line_color" />
+
+        <TextView
+            android:id="@id/dpay_msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/dpay_default_padding"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dpay_subtitle_font_size" />
+
+        <Button
+            android:id="@id/dpay_btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/dpay_cb_amount_bg"
+            android:text="@string/dpay_known"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dpay_subtitle_font_size" />
+    </LinearLayout>
+
+</ScrollView>

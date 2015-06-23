@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TitleBar" >
+
+    <ImageButton
+        android:id="@+id/ppsgame_slider_back_pre"
+        style="@style/BackBtn" />
+
+    <TextView
+        android:id="@+id/ppsgame_slider_title"
+        style="@style/TitleTextView" />
+
+    <Button
+        android:id="@+id/ppsgame_slider_back_game"
+        style="@style/BackToGameBtn" />
+
+</RelativeLayout>

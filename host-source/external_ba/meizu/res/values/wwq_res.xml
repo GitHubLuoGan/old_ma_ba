@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mzw_online_loginv2_titlebar_text">拇指玩账号登录</string>
+    <string name="mzw_online_loginv2_username_text">用户名：</string>
+    <string name="mzw_online_loginv2_pwd_text">密                码：</string>
+    <string name="mzw_online_loginv2_username_et_hint">请输入用户名</string>
+    <string name="mzw_online_loginv2_pwd_et_hit">请输入密码</string>
+    <string name="mzw_online_loginv2_dialog_title">注册成功</string>
+    <string name="mzw_online_loginv2_dialog_prompt">您已成功注册拇指玩账号，请牢记用户名与密码！</string>
+    <string name="mzw_online_loginv2_dialog_usernameprompt">*用户名已存在</string>
+    <string name="mzw_online_loginv2_dialog_prompt_one">*密码不能少于7个字符</string>
+    <string name="mzw_online_loginv2_dialog_prompt_two">*密码不能超过12个字符</string>
+    <string name="mzw_online_loginv2_dialog_go_button_text">进入游戏</string>
+    <string name="mzw_online_loginv2_dialog_modify_text">修改账号</string>
+    <string name="mzw_cancel_wwq">取消</string>
+    <string name="mzw_tishi_wwq">提    示</string>
+    <string name="mzw_nline_loginv2_dialog_loading_login">正在注册...</string>
+
+    <color name="mzw_online_loginv2_titlebar_text_color">#666666</color>
+    <color name="mzw_online_loginv2_btn_press">#339b31</color>
+    <color name="mzw_online_loginv2_btn_native">#49ad58</color>
+    <color name="mzw_online_loginv2_white_color">#ffffff</color>
+    <color name="mzw_online_loginv2_btn_normal">#598db2</color>
+    <color name="mzw_online_loginv2_dialog_prompt_color">#ff0000</color>
+    <color name="mzw_online_oginv2_list_divider">#e8e8e8</color>
+    <color name="mzw_pay_dialog_cancel_press">#b1b1b1</color>
+    <color name="mzw_pay_dialog_cancel_native">#c0c0c0</color>
+    <color name="mzw_pay_dialog_btn_press">#339b31</color>
+    <color name="mzw_pay_dialog_btn_native">#49ad58</color>
+    <color name="mzw_pay_reg_btn_press">#4e7fa2</color>
+    <color name="mzw_pay_reg_btn_normal">#598db2</color>
+
+</resources>

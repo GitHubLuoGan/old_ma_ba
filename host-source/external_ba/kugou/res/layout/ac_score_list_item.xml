@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_outermost"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/ac_kugou_game_list_item_bg_default"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/ac_app_list_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ac_common_white" >
+
+        <ImageView
+            android:id="@+id/ac_app_icon"
+            android:layout_width="@dimen/ac_common_icon_width_and_height"
+            android:layout_height="@dimen/ac_common_icon_width_and_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ac_app_icon_default" />
+
+        <RelativeLayout
+            android:id="@+id/ac_download_btn_layout"
+            android:layout_width="@dimen/ac_app_button_width"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/ac_app_icon"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/ac_common_btn_pressed" >
+
+            <ProgressBar
+                android:id="@+id/ac_app_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:max="100"
+                android:progress="30"
+                android:progressDrawable="@drawable/ac_download_progressbar_style" />
+
+            <com.kuyou.appcenter.widgets.MagicButton
+                android:id="@+id/ac_app_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/ac_common_transparent"
+                android:gravity="center"
+                android:minHeight="@dimen/ac_app_button_height"
+                android:minWidth="@dimen/ac_app_button_width"
+                android:text="打开"
+                android:textColor="@color/ac_common_white"
+                android:textSize="@dimen/ac_common_medium"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ac_score_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ac_app_icon"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/ac_download_btn_layout"
+            android:layout_toRightOf="@id/ac_app_icon"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <TextView
+                android:id="@+id/ac_app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/ac_common_gray_darker"
+                android:textSize="@dimen/ac_common_large" />
+
+            <TextView
+                android:id="@+id/ac_app_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ac_app_title"
+                android:singleLine="true"
+                android:text="首次下载并试玩5分钟"
+                android:textColor="@color/ac_common_gray_lighter"
+                android:textSize="@dimen/ac_common_small" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ac_score_text_layout"
+            android:layout_toRightOf="@id/ac_app_icon"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ac_app_filesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:maxWidth="280dp"
+                android:singleLine="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#C67B55"
+                android:textSize="@dimen/ac_common_small" />
+
+            <ImageView
+                android:id="@+id/ac_app_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ac_group_arrow_down" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ac_app_list_item_expand_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ac_app_list_item_layout"
+        android:background="@color/ac_common_white"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/ac_common_item_divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="请确保从未安装过该游戏"
+            android:textColor="#BE8E76" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hucn_bg" >
+
+    <LinearLayout
+        style="@style/HUCNBg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp" >
+
+            <TextView
+                android:id="@+id/hucn_pay_way_label"
+                style="@style/HUCNText"
+                android:layout_marginTop="3dp"
+                android:text="@string/hucn_pay_way_label"
+                android:textColor="@color/hucn_light_gray_"
+                android:textSize="@dimen/hucn_small_text_size" />
+
+            <TextView
+                android:id="@+id/hucn_pay_way"
+                style="@style/HUCNText"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/hucn_pay_way_label"
+                android:text="@string/hucn_pay_way_union"
+                android:textColor="@color/hucn_red"
+                android:textSize="@dimen/hucn_small_text_size" />
+
+            <Button
+                android:id="@+id/hucn_pay_change_way"
+                style="@style/HUCNSmallText"
+                android:layout_below="@+id/hucn_pay_way_label"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hucn_app_down_status_open"
+                android:text="@string/hucn_pay_change_way"
+                android:textColor="@color/hucn_blue" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <include layout="@layout/hucn_bottom_layout" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/HUCNBg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/hucn_recharg_telephone_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <TextView
+                    android:id="@+id/hucn_pay_much_label"
+                    style="@style/HUCNText"
+                    android:text="@string/hucn_current_price"
+                    android:textColor="@color/hucn_light_gray_" />
+
+                <EditText
+                    android:id="@+id/hucn_pay_much_ed"
+                    style="@style/HUCNText"
+                    android:layout_width="120dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/hucn_white_btn"
+                    android:maxLength="9"
+                    android:numeric="integer"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="100"
+                    android:textColor="@color/hucn_light_gray_" />
+
+                <TextView
+                    android:id="@+id/hucn_pay_yuan"
+                    style="@style/HUCNText"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/hucn_current_price_ution"
+                    android:textColor="@color/hucn_light_gray_" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/hucn_recharg_center_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/hucn_btn_login"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:text="@string/hucn_recharg_center_submit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/hucn_default_text_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/hucn_recharg_center_hint"
+                    style="@style/HUCNSmallText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/hucn_recharg_center_hint"
+                    android:textColor="@color/hucn_red"
+                    android:textSize="@dimen/hucn_small_text_size" />
+
+                <TextView
+                    style="@style/HUCNSmallText"
+                    android:layout_marginRight="15dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/hucn_recharg_union_card_hint"
+                    android:textColor="@color/hucn_light_gray_"
+                    android:textSize="@dimen/hucn_small_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

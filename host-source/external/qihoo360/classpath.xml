@@ -1,0 +1,4 @@
+<!-- qihoo360 lib start -->
+<classpathentry kind="lib" path="libs/360SDK_1.1.0(270).jar"/>
+<classpathentry kind="lib" path="android-support-v4.jar"/>
+<!-- qihoo360 lib end -->

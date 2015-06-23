@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="16dip"
+        android:text="@string/dpay_tv_prompt_regist_successed"
+        android:textSize="@dimen/dpay_prompt_font_size" />
+
+    <EditText
+        android:id="@+id/dpay_bind_new_mail"
+        style="@style/dpay_edittext_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dpay_default_padding"
+        android:hint="@string/dpay_et_bind_mail_hint"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/dpay_btn_send_verifymail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dpay_default_padding"
+        android:layout_marginRight="@dimen/dpay_default_padding"
+        android:layout_marginTop="@dimen/dpay_login_margin_top"
+        android:background="@drawable/dpay_btn_red_bg"
+        android:paddingBottom="@dimen/dpay_login_btn_padding"
+        android:paddingTop="@dimen/dpay_login_btn_padding"
+        android:text="@string/dpay_send_bind_mail"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dpay_subtitle_font_size" />
+
+</LinearLayout>

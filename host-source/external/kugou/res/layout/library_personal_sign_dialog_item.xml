@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/library_personal_sign_dialog_txt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/library_kugou_sign_dialog_corners"
+        android:gravity="top"
+        android:maxLength="30"
+        android:maxHeight="400dip"
+        android:minHeight="150dip"
+        android:hint="在此处输入个性签名(30字以内)"
+        android:textSize="18dp"
+        android:padding="5dip" >
+    </EditText>
+
+</LinearLayout>

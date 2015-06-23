@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/library_common_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_common_title_bar" />
+
+    <ScrollView
+        android:id="@+id/library_layout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/library_layout_user_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/library_common_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/library_tv_send_code_hints"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:text="我们已向手机号：13800000000发送了验证短信，请将短信里的验证码填写到输入框内" />
+
+            <RelativeLayout
+                android:id="@+id/library_layout_input_validate_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/library_tv_send_code_hints"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="6dip"
+                android:layout_marginTop="10dip"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/tv_validate_code_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="验证码："
+                    android:paddingLeft="8dp"
+                    android:textColor="#ff666666"
+                    android:textSize="16dip" />
+
+                <EditText
+                    android:id="@+id/library_et_input_validate_code"
+                    android:layout_width="200dip"
+                    android:layout_height="35dip"
+                    android:layout_toRightOf="@id/tv_validate_code_word"
+                    android:background="@drawable/library_sp_bg"
+                    android:hint="请输入验证码"
+                    android:maxLength="20"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dip" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/library_iv_validate_code_clear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignRight="@id/library_et_input_validate_code"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/library_text_clear"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/library_iv_validate_code_check"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/library_et_input_validate_code" />
+
+                <Button
+                    android:id="@+id/library_btn_request_validate_code"
+                    android:layout_width="200dip"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@id/library_et_input_validate_code"
+                    android:layout_below="@id/library_et_input_validate_code"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/library_selector_vadidate_reget_btn"
+                    android:shadowColor="#ff000fff"
+                    android:text="180秒后重新获取"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/library_layout_set_psd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/library_layout_input_validate_code"
+                android:layout_below="@id/library_layout_input_validate_code"
+                android:layout_marginTop="10dip"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/library_tv_set_psd_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="设置密码："
+                    android:textColor="#ff666666"
+                    android:textSize="16dip" />
+
+                <EditText
+                    android:id="@+id/library_et_input_psd"
+                    android:layout_width="200dip"
+                    android:layout_height="35dip"
+                    android:layout_toRightOf="@id/library_tv_set_psd_word"
+                    android:background="@drawable/library_sp_bg"
+                    android:hint="限6-16位字母或数字"
+                    android:maxLength="20"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dip" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/library_iv_psd_clear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignRight="@id/library_et_input_psd"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/library_text_clear"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/library_iv_psd_check"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/library_et_input_psd" />
+
+                <Button
+                    android:id="@+id/library_btn_register"
+                    android:layout_width="200dip"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@id/library_et_input_psd"
+                    android:layout_below="@id/library_et_input_psd"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/library_green_button_bg_selector"
+                    android:shadowColor="#ff000fff"
+                    android:text="提交注册"
+                    android:textColor="#ffffffff"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/library_btn_register"
+                    android:layout_alignRight="@id/library_btn_register"
+                    android:gravity="center" >
+
+                    <CheckBox
+                        android:id="@+id/library_agree_kugou_license"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/library_checkbox_selector"
+                        android:button="@null"
+                        android:checked="true"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#ff000000"
+                        android:textSize="16dip" />
+
+                    <TextView
+                        android:id="@+id/library_agree_kugou_license_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:text="《酷狗游戏通行证用户协议》"
+                        android:textColor="#ff3333ff"
+                        android:gravity="center_vertical"
+                        android:textSize="16dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.kuyou.platform.ui.widgets.LoadingView
+        android:id="@+id/library_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/library_common_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/library_user_center_button_space_line" />
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/library_bottom_bar" />
+
+</LinearLayout>

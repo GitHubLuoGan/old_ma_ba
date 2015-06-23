@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/dk_suspension_window_bg_right">
+    
+    <LinearLayout
+        android:id="@+id/dk_layout_suspension_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingRight="4dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginLeft="24dp">
+    	
+    	<LinearLayout 
+    	    android:id="@+id/layout_suspension_customer"
+    	    android:layout_width="42dp"
+    	    android:layout_height="fill_parent"
+    	    android:orientation="vertical"
+    	    android:gravity="center"
+    	    android:visibility="visible"
+    	    android:layout_marginRight="0dp">
+    	    
+    	    <ImageView
+    	        android:id="@+id/dk_iv_sus_customer"
+		        android:layout_width="30dp"
+		        android:layout_height="16dp"
+		        android:src="@drawable/dk_suspension_customer_selector" />
+    
+    		<TextView
+    		    android:id="@+id/dk_tv_sus_customer"
+        		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="2dp"
+		        android:textColorHint="@color/dk_color_0066cc"
+		        android:textSize="@dimen/text_size_12_sp"
+		        android:text="@string/dk_customer_title"
+		        android:textColor="@color/dk_suspension_text_color_selector" />
+    	</LinearLayout>
+    	
+    	<LinearLayout 
+    	    android:id="@+id/layout_suspension_recommend"
+    	    android:layout_width="42dp"
+    	    android:layout_height="fill_parent"
+    	    android:orientation="vertical"
+    	    android:gravity="center"
+    	    android:visibility="gone"
+    	    android:layout_marginRight="0dp">
+    	    
+    	    <ImageView
+    	        android:id="@+id/dk_iv_sus_recommend"
+		        android:layout_width="30dp"
+		        android:layout_height="16dp"
+		        android:src="@drawable/dk_suspension_customer_selector" />
+    
+    		<TextView
+    		    android:id="@+id/dk_tv_sus_recommend"
+        		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="2dp"
+		        android:textSize="@dimen/text_size_12_sp"
+		        android:text="@string/dk_recommend_title"
+		        android:textColor="@color/dk_suspension_text_color_selector" />
+    	</LinearLayout>
+    	
+    	<LinearLayout 
+    	    android:id="@+id/layout_suspension_forum"
+    	    android:layout_width="42dp"
+    	    android:layout_height="fill_parent"
+    	    android:orientation="vertical"
+    	    android:gravity="center"
+    	    android:visibility="gone"
+    	    android:layout_marginRight="0dp">
+    	    
+    	    <ImageView
+    	        android:id="@+id/dk_iv_sus_forum"
+		        android:layout_width="30dp"
+		        android:layout_height="16dp"
+		        android:src="@drawable/dk_suspension_forum_selector" />
+    
+    		<TextView
+    		    android:id="@+id/dk_tv_sus_forum"
+        		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="2dp"
+		        android:textSize="@dimen/text_size_12_sp"
+		        android:text="@string/dk_forum_title"
+		        android:textColor="@color/dk_suspension_text_color_selector" />
+    	</LinearLayout>
+    	
+    	<LinearLayout 
+    	    android:id="@+id/layout_suspension_prefecture"
+    	    android:layout_width="42dp"
+    	    android:layout_height="fill_parent"
+    	    android:orientation="vertical"
+    	    android:gravity="center"
+    	    android:visibility="visible"
+    	    android:layout_marginRight="0dp">
+    	    
+    	    <ImageView
+    	        android:id="@+id/dk_iv_sus_prefecture"
+		        android:layout_width="30dp"
+		        android:layout_height="16dp"
+		        android:src="@drawable/dk_suspension_prefecture_selector" />
+    
+    		<TextView
+    		    android:id="@+id/dk_tv_sus_prefecture"
+        		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="2dp"
+		        android:textSize="@dimen/text_size_12_sp"
+		        android:text="@string/dk_prefecture_title"
+		        android:textColor="@color/dk_suspension_text_color_selector" />
+    	</LinearLayout>
+    	
+    	<LinearLayout 
+    	    android:id="@+id/layout_suspension_account"
+    	    android:layout_width="42dp"
+    	    android:layout_height="fill_parent"
+    	    android:orientation="vertical"
+    	    android:gravity="center"
+    	    android:visibility="visible"
+    	    android:layout_marginRight="0dp">
+    	    
+    	    <ImageView
+    	        android:id="@+id/dk_iv_sus_account"
+		        android:layout_width="30dp"
+		        android:layout_height="16dp"
+		        android:src="@drawable/dk_suspension_user_account_selector" />
+    
+    		<TextView
+    		    android:id="@+id/dk_tv_sus_account"
+        		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="2dp"
+		        android:textSize="@dimen/text_size_12_sp"
+		        android:text="@string/dk_account_text"
+		        android:textColor="@color/dk_suspension_text_color_selector" />
+    	</LinearLayout>
+    	
+    	<LinearLayout 
+    	    android:id="@+id/layout_suspension_message"
+    	    android:layout_width="42dp"
+    	    android:layout_height="fill_parent"
+    	    android:orientation="vertical"
+    	    android:gravity="center"
+    	    android:visibility="gone"
+    	    android:layout_marginRight="0dp">
+    	    
+    	    <ImageView
+    	        android:id="@+id/dk_iv_sus_message"
+		        android:layout_width="30dp"
+		        android:layout_height="16dp"
+		        android:src="@drawable/dk_suspension_message_selector" />
+    
+    		<TextView
+    		    android:id="@+id/dk_tv_sus_message"
+        		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="2dp"
+		        android:textSize="@dimen/text_size_12_sp"
+		        android:text="@string/dk_message_title"
+		        android:textColor="@color/dk_suspension_text_color_selector" />
+    	</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

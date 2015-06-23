@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/sdk_loading_indicator"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88000000"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30.0dip" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/sdk_dialog_width"
+        android:layout_height="@dimen/sdk_dialog_height"
+        android:background="@drawable/sdk_dialog_background"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@id/sdk_dlg_title_container"
+            android:layout_width="@dimen/sdk_dialog_width"
+            android:layout_height="@dimen/sdk_dialog_title_height"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/sdk_dialog_title_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@id/sdk_dlg_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/sdk_logining"
+                android:textColor="@color/color_dlg_text"
+                android:textSize="@dimen/sdk_dlg_title_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/sdk_dlg_content_process_container"
+            android:layout_width="@dimen/sdk_dialog_width"
+            android:layout_height="@dimen/sdk_dlg_content_height"
+            android:layout_below="@id/sdk_dlg_title_container"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:id="@id/sdk_empty_loading"
+                style="@style/FinskyProgressInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:indeterminate="true" />
+            
+            <TextView
+            android:id="@id/sdk_load_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sdk_empty_loading"
+            android:layout_marginTop="@dimen/margin_vertical"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_dlg_text"
+            android:text="@string/sdk_load_text_common"
+            android:textSize="@dimen/sdk_dlg_content_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

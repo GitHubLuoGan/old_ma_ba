@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+
+    <LinearLayout
+        android:background="@drawable/sliderbar_pps_bg_coner_cell2"
+		android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_height="@dimen/game_slider_pop_height"
+        android:layout_width="@dimen/game_slider_pop_width">
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:background="@drawable/silder_pop_top_bg"
+            android:layout_height="@dimen/game_slider_pop_content_part1_h"
+            android:layout_width="fill_parent">
+            <TextView 
+            	android:enabled="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="@color/slidebar_white"
+                android:textSize="@dimen/game_slider_pop_title_text_size"
+                android:gravity="center"
+                android:text="@string/ppsgame_pop_left_title"/>
+             <ImageView 
+                android:contentDescription="@string/ppsgame_null_str"
+                android:id="@+id/game_left_close_btn"
+                android:background="@drawable/sliderbar_back_btn"                  
+                android:src="@drawable/sliderbar_pps_pop_win_close"
+                android:layout_height="fill_parent"
+                android:layout_width="@dimen/game_slider_pop_content_part1_h"
+                android:layout_marginLeft="@dimen/game_slider_pop_close_btn_margin_left"
+                android:padding="@dimen/game_slider_pop_close_btn_padding"/>            
+        </LinearLayout>
+        
+        
+        
+        <ImageView
+            android:id="@+id/game_left_img_view"
+	    	android:layout_width="fill_parent"
+	        android:layout_height="120dp"
+	        android:layout_marginLeft="@dimen/game_slider_pop_content_margin"
+	        android:layout_marginRight="@dimen/game_slider_pop_content_margin"
+	        android:paddingTop="2dp"
+	        android:scaleType="fitXY"
+	        android:contentDescription="@string/ppsgame_null_str"
+	        android:src="@color/slidebar_ppsgame_gray"/>
+ 
+        <LinearLayout
+            android:orientation="horizontal" 
+            android:layout_width="fill_parent"           
+	        android:layout_height="@dimen/game_slider_pop_content_part3_h"
+	        android:layout_marginLeft="@dimen/game_slider_pop_content_margin"
+	        android:layout_marginRight="@dimen/game_slider_pop_content_margin"
+	        android:weightSum="4">
+            
+            <Button 
+                android:id="@+id/game_left_btn1"
+                android:text="@string/ppsgame_pop_left_left"
+                android:textSize="@dimen/game_slider_pop_btn_text_size"
+                android:textColor="@color/slidebar_white"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="@dimen/game_slider_pop_btn_h"
+                android:background="@drawable/sliderbar_back_btn_selector"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="@dimen/game_slider_pop_btn_margin_hr"
+                android:layout_marginRight="@dimen/game_slider_pop_btn_margin_hr"/>
+ 
+            <Button 
+                android:id="@+id/game_left_btn2"
+                android:text="@string/ppsgame_pop_go_forum"
+                android:textSize="@dimen/game_slider_pop_btn_text_size"
+                android:textColor="@color/slidebar_white"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="@dimen/game_slider_pop_btn_h"
+                android:background="@drawable/sliderbar_back_btn_selector"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="@dimen/game_slider_pop_btn_margin_hr"
+                android:layout_marginRight="@dimen/game_slider_pop_btn_margin_hr"/>            
+
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</RelativeLayout>

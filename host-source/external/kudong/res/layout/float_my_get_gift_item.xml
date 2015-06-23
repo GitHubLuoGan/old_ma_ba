@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/float_list_line_height"
+    android:descendantFocusability= "blocksDescendants"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+    	android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/float_marin_padding"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/float_gift_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="礼包名称"
+            android:textColor="@color/gift_item_title"
+            android:textSize="@dimen/float_normal_font" />
+
+        <TextView
+            android:id="@+id/float_gift_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234567890"
+            android:textColor="@color/gift_item_title"
+            android:textSize="@dimen/float_min_font" />
+
+        <TextView
+            android:id="@+id/float_gift_use_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有效期剩余20天"
+            android:textColor="@color/float_red_color"
+            android:textSize="@dimen/float_min_font" />
+
+        <TextView
+            android:id="@+id/float_gift_descript_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="礼包描述"
+            android:textColor="@color/gift_item_descript"
+            android:textSize="@dimen/float_min_font"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/float_gift_copy_tv"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="installedSoftTab"
+        android:layout_centerVertical="true"
+        android:text="@string/float_copy_tv"
+        android:textColor="@color/float_control_color"
+        android:textSize="@dimen/float_max_font" />
+
+</RelativeLayout>

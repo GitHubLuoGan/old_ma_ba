@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <drawable name="uucun_thirdpay_darkgray">#dadada</drawable>
+    <drawable name="uucun_thirdpay_white">#FFFFFFFF</drawable>
+     <color name = "thirdpay_uucun_transparent" >#9000</color>
+     <color name="uucun_thirdpay_ok_btn_color">#315675</color>
+     <color name="uucun_thirdpay_yellow">#ffff00</color>
+     <color name="uucun_thirdpay_trans">#00000000</color>
+     <color name="uucun_thirdpay_white">#FFFFFF</color>
+     <color name="uucun_thirdpay_dialog_border_color">#1B66AB</color>    
+     <color name="uucun_thirdpay_color_bg_common">#A5C1C1</color>  
+     
+    <style name="NoTitleDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+         <item name="android:windowBackground">@color/thirdpay_uucun_transparent</item>
+    </style>
+    
+    <style name="NoTitleUpdateDialog" parent="android:style/Theme.Dialog">	
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">#00000000</item>
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:windowIsTranslucent">true</item>
+    </style>
+  
+    <color name="AppBackgroundColor">#FFC0E7FA</color>
+	<color name="TextColorBlack">#FF000000</color>
+	<color name="TextColorWhite">#FFFFFFFF</color>
+	<color name="TextColorBlue">#0066CC</color>
+	<color name="TextColorGray">#FF505050</color>
+	<color name="TextColorRed">#FFE26926</color>
+	<color name="BgColor">#ffd1dce9</color>
+	<color name="loftThirdSDKPaytypeBgColor">#00000000</color>
+	<color name="loftThirdSDKPaytypeTextColor">#536979</color>
+     <color name="loftThirdSDKWhiteColor">#ffffff</color>
+	<color name="loftThirdSDKMoneyHintColor">#7a8a94</color>
+	<color name="loftThirdSDKButtonColor">#ff6a06</color>
+	<color name="loftThirdSDKOrderButtonColor">#ff866a</color>
+	<color name="loftThirdSDKBackButtonColor">#cd5636</color>
+	<color name="loftThirdSDKPromptColor">#c7d2d6</color>
+	<color name="loftThirdSDKMoneyColor">#89a3af</color>
+	<color name="loftThirdSDKSelectMoneyBGColor">#e0e7ea</color>
+    <color name="loftThirdSDKSelectMoneyTextColor">#5d5d5e</color>
+	<color name="loftThirdSDKTransparentColor">#00000000</color>
+	
+	<!-- 易联 -->
+	<color name="payeco_textColorGrayTwo">#A2A2A2</color>
+	<color name="payeco_textColorWhite">#FFFFFF</color>
+	<color name="payeco_textColorBlack">#2B2B2B</color>
+	<color name="payeco_textColorYellow">#FF8C00</color>
+	<color name="payeco_textColorBlue">#6CA6CD</color>
+    <color name="payeco_titleTextColor">#1780C7</color>
+    <color name="payeco_tipsTextColor">#4A5761</color>
+    <color name="payeco_hintTextColor">#C4C4C4</color>
+	<!-- 易联 -->
+</resources>

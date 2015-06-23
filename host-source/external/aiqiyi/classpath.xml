@@ -1,0 +1,14 @@
+<!-- aiqiyi Start -->
+<classpathentry kind="lib" path="libs/afinal_0.5.1_bin.jar/>
+<classpathentry kind="lib" path="libs/alipay_msp.jar"/>
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+<classpathentry kind="lib" path="libs/dl_common.jar"/>
+<classpathentry kind="lib" path="libs/dl-lib.jar"/>
+<classpathentry kind="lib" path="libs/gson-2.2.2.jar"/>
+<classpathentry kind="lib" path="libs/libammsdk.jar"/>
+<classpathentry kind="lib" path="libs/ppssdklibrary.jar"/>
+<classpathentry kind="lib" path="libs/upomp_bypay_1_1_lib.jar"/>
+<classpathentry kind="lib" path="libs/UPPayAssistEx.jar"/>
+<classpathentry kind="lib" path="libs/UPPayPluginEx.jar"/>
+
+<!-- aiqiyi End -->

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNBg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/hucn_question_tip"
+        style="@style/HUCNText"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/hucn_setting_menu5"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/hucn_find_pwd_layout"
+        style="@style/HUCNEditLayout"
+        android:layout_height="@dimen/hucn_edittext_height"
+        android:gravity="center_vertical"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp" >
+
+        <TextView
+            android:id="@+id/hucn_setting_tip_tv"
+            style="@style/HUCNEditTag"
+            android:layout_marginRight="5dp"
+            android:text="@string/hucn_account" />
+
+        <LinearLayout
+            android:id="@+id/hucn_user_accounts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hucn_setting_answer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.0"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/hucn_find_pwd_result_layout"
+        layout="@layout/hucn_reset_pwd_result_layout"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/hucn_reg_tip1"
+        style="@style/HUCNSmallText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:text="@string/hucn_account_error_tip"
+        android:textColor="@color/hucn_red"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/hucn_submit_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hucn_edittext_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/hucn_btn_submit"
+        android:padding="13dp"
+        android:text="@string/hucn_next"
+        android:textColor="@color/hucn_text_color"
+        android:textSize="@dimen/hucn_default_text_size" />
+
+    <TextView
+        android:id="@+id/hucn_reg_tip2"
+        style="@style/HUCNText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:singleLine="true"
+        android:text="@string/hucn_setting_menu5"
+        android:textColor="#0082ee" />
+
+</LinearLayout>

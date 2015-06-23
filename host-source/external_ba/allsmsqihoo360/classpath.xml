@@ -1,0 +1,17 @@
+<!-- mmsms -->
+<classpathentry kind="lib" path="libs/mmbilling.3.0.1.jar"/>
+
+<!-- ctcc -->
+<classpathentry kind="lib" path="libs/egame.terminal.sdk.pay.jar"/>
+<!-- ctcc -->
+
+
+<!-- unipay -->
+<classpathentry kind="lib" path="libs/Multimode_UniPay_base.jar"/>
+
+<!--360 start -->
+<classpathentry kind="lib" path="libs/360SDK.jar"/>
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+<classpathentry kind="lib" path="libs/UpdateLib_2.0.5.jar"/>
+<!--360 end-->
+

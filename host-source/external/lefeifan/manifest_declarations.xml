@@ -1,0 +1,35 @@
+<!--SDK Activity Info-->
+<!-- HUCN INFO START -->
+        <activity
+            android:name="cn.edg.ui.HucnActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/HUCNActivityStyle"
+            android:windowSoftInputMode="adjustResize|stateHidden" android:screenOrientation= "@SCREEN_ORIENTATION@" >
+        </activity>
+        <activity
+            android:name="cn.edg.ui.HucnDialogActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/HUCNTransActivity" android:screenOrientation= "@SCREEN_ORIENTATION@">
+        </activity>
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden" android:screenOrientation= "@SCREEN_ORIENTATION@"/>
+        <receiver
+            android:name="cn.edg.sdk.HUCNReceiver"
+            android:exported="false"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="cn.edg.sdk.AlarmReceiver" />
+                <action android:name="cn.edg.sdk.DownloadReceiver" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service android:name="cn.edg.sdk.HUCNService" />
+       	   <!-- HUCN INFO END -->
+       
+<!--SDK Activity Info-->
+
+<!-- lefeifan start-->
+<meta-data android:name="appid" android:value="289d4cb9f5fb497188414916d6ba364a" />
+<!-- lefeifan end-->

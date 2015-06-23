@@ -1,0 +1,306 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+   
+	<style name="slidebar_PPSGameCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+	   <item name="android:button">@drawable/slidebar_ppsgame_checkbox_selector</item>
+	   <item name="android:paddingLeft">16.0dip</item>
+	   <item name="android:textSize">16.0sp</item>
+	   <item name="android:textColor">@color/slidebar_ppsgame_black</item>
+   </style>
+   
+	<style name="slidebar_pps_list_item_top">
+		<item name="android:paddingTop">10dip</item>
+		<item name="android:paddingBottom">10dip</item>
+		<item name="android:paddingLeft">10dip</item>
+    	<item name="android:paddingRight">10dip</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:background">@drawable/slidebar_pps_listview_round_top</item>
+	</style>
+
+	<style name="slidebar_pps_list_item_middle">
+		<item name="android:paddingTop">10dip</item>
+		<item name="android:paddingBottom">10dip</item>
+		<item name="android:paddingLeft">10dip</item>
+    	<item name="android:paddingRight">10dip</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:background">@drawable/slidebar_pps_listview_round_middle</item>
+	</style>
+
+	<style name="slidebar_pps_list_item_bottom">
+		<item name="android:paddingTop">10dip</item>
+		<item name="android:paddingBottom">10dip</item>
+		<item name="android:paddingLeft">10dip</item>
+    	<item name="android:paddingRight">10dip</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:background">@drawable/slidebar_pps_listview_round_bottom</item>
+	</style>
+	
+	<style name="slidebar_pps_list_item_single">
+		<item name="android:paddingTop">10dip</item>
+		<item name="android:paddingBottom">10dip</item>
+		<item name="android:paddingLeft">10dip</item>
+    	<item name="android:paddingRight">10dip</item>
+    	<item name="android:gravity">center_vertical</item>
+    	<item name="android:background">@drawable/sliderbar_listview_round_single</item>
+	</style>
+    
+	<style name="slidebar_ppsgame_theme_vertical">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">fill_parent</item>
+	    <item name="android:layout_marginLeft">30.0dp</item>
+	    <item name="android:layout_marginRight">30.0dp</item>
+	    <item name="android:layout_marginTop">60.0dp</item>
+	    <item name="android:layout_marginBottom">60.0dp</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:background">@drawable/sliderbar_bg</item>
+	</style>
+	
+	<style name="slidebar_ppsgame_theme_horizontal">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">fill_parent</item>
+	    <item name="android:layout_marginLeft">70.0dp</item>
+	    <item name="android:layout_marginRight">70.0dp</item>
+	    <item name="android:layout_marginTop">20.0dp</item>
+	    <item name="android:layout_marginBottom">20.0dp</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:background">@drawable/sliderbar_bg</item>
+	</style>
+    
+	<style name="slidebar_ppsgame_back">
+	    <item name="android:layout_marginLeft">10.0dp</item>
+	    <item name="android:paddingLeft">10.0dp</item>
+	    <item name="android:paddingRight">10.0dp</item>
+	    <item name="android:paddingTop">6.0dp</item>
+	    <item name="android:paddingBottom">6.0dp</item>
+	    <item name="android:text">@string/sliderbar_back</item>
+	    <item name="android:textColor">@color/slidebar_button_color</item>
+	    <item name="android:textSize">16.0sp</item>
+	    <item name="android:shadowDy">2</item>
+	    <item name="android:shadowDx">0</item>
+	    <item name="android:shadowRadius">1</item>
+	    <item name="android:drawableLeft">@drawable/slidebar_ppsgame_back_icon</item>
+	    <item name="android:drawablePadding">10.0dp</item>
+	    <item name="android:background">@drawable/sliderbar_back_btn_selector</item>
+    </style>
+    
+	<style name="slidebar_ppsgame_edittext">
+	    <item name="android:textColor">@color/slidebar_edit_color</item>
+	    <item name="android:textColorHint">@color/slidebar_hint_color</item>
+	    <item name="android:singleLine">true</item>
+	    <item name="android:textSize">14.0sp</item>
+	    <item name="android:drawablePadding">10.0dp</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <item name="android:background">@null</item>
+	</style>
+	
+	<style name="slidebar_ppsgame_button">
+	    <item name="android:shadowDx">2</item>
+	    <item name="android:shadowDy">2</item>
+	    <item name="android:shadowRadius">1</item>
+	    <item name="android:textColor">@color/slidebar_button_color</item>
+	    <item name="android:textSize">18.0sp</item>
+	    <item name="android:gravity">center</item>
+	</style>
+	
+	<style name="slidebar_ppsgame_dialog_text_yellow">
+	    <item name="android:textColor">@color/slidebar_ppsgame_yellow</item>
+	    <item name="android:textSize">16.0sp</item>
+	</style>
+	
+	<style name="slidebar_ppsgame_dialog_text_white">
+	    <item name="android:textColor">@color/slidebar_ppsgame_black</item>
+	    <item name="android:textSize">16.0sp</item>
+	</style>
+	
+	<style name="slidebar_PPSCustomTheme" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+	
+	<style name="slidebar_PPSPortraitFullscreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+	</style>
+	
+	<style name="slidebar_PPSLandscapeFullscreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+	</style>
+	
+	<style name="slidebar_PPSProgressDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+    	<item name="android:windowNoTitle">true</item>
+	</style>
+	
+	 <style name="slidebar_upomp_bypay_MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+		<item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+		<item name="android:windowIsTranslucent">false</item><!--半透明-->
+		<item name="android:windowNoTitle">true</item><!--无标题-->
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+		<item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+    <style name="slidebar_Activity_MyDialog" parent="@android:Theme.Dialog">
+		<item name="android:windowFrame">@null</item><!--边框-->
+		<item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+		<item name="android:windowIsTranslucent">false</item><!--半透明-->
+		<item name="android:windowNoTitle">true</item><!--无标题-->
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+		<item name="android:backgroundDimEnabled">true</item><!--模糊-->
+		
+	</style>
+
+
+    <style name="slidebar_MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="slidebar_WrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="slidebar_MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="slidebar_WrapMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MyWidget" parent="@android:style/Theme" />
+
+    <style name="MyWidget.TabText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@drawable/slidebar_tab_indicator_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <!-- Common list view styles -->
+    <style name="MyWidget.ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:cacheColorHint">#00ffffff</item>
+        <item name="android:dividerHeight">2px</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:fadeScrollbars">true</item>
+    </style>
+
+    <!-- 按钮字体样式  As Parent Style -->
+    <style name="ButtonTextStyle" parent="CopyBtnWidthHeight">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#55000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <!-- Title居中标题 -->
+    <style name="TitleTextView" parent="slidebar_WrapContent">
+        <item name="android:textColor">@color/slidebar_white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+<!--    <item name="android:shadowColor">#55000000</item>
+ <item name="android:textStyle">bold</item>
+    <item name="android:shadowDx">0</item>
+    <item name="android:shadowDy">2</item>
+    <item name="android:shadowRadius">1</item>-->
+
+    <!-- 全局Title状态栏 -->
+    <style name="TitleBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">54dip</item>
+        <item name="android:background">#FF8A00</item>
+    </style>
+
+    <!-- 返回按钮 -->
+    <style name="BackBtn" parent="ButtonTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/sliderbar_back_icon</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">30dip</item>
+    </style>
+
+    <!-- 返回游戏按钮 -->
+    <style name="BackToGameBtn" parent="ButtonTextStyle">
+        <item name="android:layout_marginRight">8dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/sliderbar_back_btn_selector</item>
+        <item name="android:text">@string/slidebar_back_to_game</item>
+    </style>
+    <!-- 更新侧边栏按钮 -->
+    <style name="slidebar_update_btn" parent="ButtonTextStyle">
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/sliderbar_back_btn_selector</item>
+        <item name="android:text">@string/slidebar_back_to_game</item>
+    </style>
+    
+    <!-- 全部已领取按钮 -->
+    <style name="GiftAllGetBtn" >
+        <item name="android:layout_width">81dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:textColor">@color/slidebar_ppsgame_gray</item>
+        <item name="android:layout_marginRight">5dip</item>
+        <item name="android:background">@drawable/slidebar_gift_allget_normal_bg</item>
+    </style>
+
+    <!-- one key copy -->
+    <style name="OneKeyCopyBtn" parent="CopyBtnWidthHeight">
+        <item name="android:textColor">@color/slidebar_ppsgame_gray</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@drawable/slidebar_gift_item_get_btn_bg</item>
+    </style>
+
+    <!-- 网络情况不佳 -->
+    <style name="BadNetworkTxt" parent="slidebar_WrapContent">
+        <item name="android:text">@string/sliderbar_recharge_inquuiry_str8</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 一键复制、复制、领取、返回游戏按钮宽度 高度 -->
+    <style name="CopyBtnWidthHeight">
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <!-- 账户界面 边框 -->
+    <style name="AccountLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">66dp</item>
+        <item name="android:background">@drawable/sliderbar_reportlistview_press_color</item>
+    </style>
+
+    <!-- 账户界面 右箭头 -->
+    <style name="ArrowRight" parent="slidebar_WrapContent">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingRight">31dp</item>
+        <item name="android:src">@drawable/slidebar_common_problems_arrows_right</item>
+    </style>
+
+    <!-- 账户界面 中间字体 -->
+    <style name="AccountTxt" parent="slidebar_WrapContent">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/slidebar_menu_item_color</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <!-- 账户界面 图标 -->
+    <style name="AccountIcon" parent="slidebar_WrapContent">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">22.5dp</item>
+    </style>
+
+</resources>

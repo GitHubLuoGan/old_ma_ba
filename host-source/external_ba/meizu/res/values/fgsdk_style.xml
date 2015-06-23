@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+       <style name="Widget" parent="android:Widget">
+    </style>
+   
+        <style name="RelativeLayout_Text">
+       <item name="android:layout_width">100dip</item>
+       <item name="android:layout_height">wrap_content</item>
+   </style>
+      <style name="RelativeLayout_Text2">
+       <item name="android:layout_width">110dip</item>
+       <item name="android:layout_height">wrap_content</item>
+   </style>
+   <!-- 定义一个样式，继承Android系统的对话框样式 android:style/Theme.Dialog-->
+   <style name="Theme.FloatActivity" parent="android:style/Theme.Dialog">
+   </style>
+
+   <style name="Theme.UPPay" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

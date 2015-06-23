@@ -1,0 +1,580 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>登录 - 酷狗音乐</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no;email=no" />
+    <style type="text/css">
+    /*reset*/
+    @charset "UTF-8";
+    body{font-family:Tahoma,Arial,"\5b8b\4f53",sans-serif;}
+    html{-webkit-text-size-adjust:100%;}
+    div{transform:translateZ(0);}
+    body, div, ul, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p{padding:0;margin:0;}
+    html, body, form, p, div, h1, h2, h3, h4, h5, h6 {-webkit-text-size-adjust:none;}/*for ios*/
+    html,body{-webkit-touch-callout:none;width:100%;height:100%;box-sizing:border-box;-webkit-box-sizing:border-box;}
+    ul,li{list-style:none;}
+    em,i{font-style:normal;}
+    input{font-size:1em;line-height:normal;}
+    input,span,div {-webkit-tap-highlight-color:rgba(0,0,0,0);outline:none;}
+    input:focus {-webkit-tap-highlight-color:rgba(0,0,0,0);outline:none;}
+    a{text-decoration:none;}
+    html{font-size:8px;padding-bottom:5%;box-sizing:border-box;-webkit-box-sizing:border-box;}
+    body{font-size:8px;color:#333333;background:#F6F6F6;position:relative;}
+
+    /*mod_nav*/
+    .mod_nav{width:100%;height:3.6875em;text-align:center;border-bottom:1px solid #E6E6E6;background:#F9F9F9;position:relative;display:table;}
+    .mod_nav em{width:100%;font-size:1.625em;color:#000000;text-shadow:0px 1px rgba(255,255,255,0.8);font-family:"\5FAE\8F6F\96C5\9ED1","\9ED1\4F53";display:table-cell;vertical-align:middle;}
+    .mod_nav .btn_cancel{height:3.6875em;width:2em;padding-left:0.375em;left:0.625em;top:0;position:absolute;}
+    .mod_nav .btn_cancel:before {content:"";height:100%;width:100%;display:block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAoCAMAAAAxD9EeAAABEVBMVEX6+voAAAD7+vr6+/r6+vv7+vv7+/r6+/v7+/s5OTnv8PDKysnn5efq6urZ2dnx8fDo6ej7+fnh4uKcnJw/Pz+xsrHs7Ou8vbyysbLHx8fJysmmp6YRERHc29weHh7w7/Dd3d3FxcUQEBDx8fG9vL03NzeoqKja2trm5ucfHx+3t7aioqIiIiIjIyPi4uMFBQU+Pj7o6em3t7egoKCbnJzBwcHz8/PNzc3g4OCsrKwBAQEvLy8qKionJydLS0tFRUWFhYUICAgPDw8yMjIKCgoMDAzi4uITExNBQUFAQEDt7e07Oztyc3MGBgb5+/sDAwP7+/n7+fr5+vv6+/n7+fv6+vn6+fv7+vn5+vr5+/r6+fpORYECAAAC60lEQVRo3iWUB5fUVgyFZdWXRgohHQLpJKQXUkggBEjdZWan+///kHzy+pzx8Vh60tW9V5bIqBB3V8kRbiouRx9Vom5pEmXcfDs0VEkKGUK6jcpZKmXYRlX6STykk4gLB4tcdTEjUluqSj/ECMsIlT1ZRhcjyQl6/00zJy6+5+BO5AAycFH/gnCSs3NNu/vqFyp0dTqmhHWjsjHMrau+9ef0lw7XcCkBMBfzxFptpM7+5jvTjStH2aSbEdSOU2zdiFXq+4fTnevipQwOG0dKgNB2yXAr8dcfT7/+qBa5QHbxQVWrASxjmE8fTfeeLCjkSDUD43BmBktf136ffvmkaXE9qAwlE5ipsGRHj5/Opj++Ztw8KK11jAWebaXgyPKjs+nDF5BFsvwElx2Fr9o6LHh99nT69x9HsIIMxIpGoXoytbWqXn06/f0sIzEQbJWUaQzJMCND5cHP0/33YRKWdRFTlwnFzat8/980/faDVrinr9SAjAcMmcBPseMSJ3n4Ii1K0TaDOOrC+uj6L6rGCUzzClmNkRgFxZOm7t+B710wlwd3uOnq6Mvg2hrItz0fDpP0nZysbZPtR1g8X8C+/eX0zGvSFtaDRI7koNaAsN3LvNZsfl8qTkIvc66yhQJKbQ7ZJtA30Of5FuvUIFQ2YhdQu6dmnCNSfdP6KsNDccm8buco6hhrodhZPlj8AatYuydgZ5zYBrl7nWzgr89v+qwNoeltDVqqdkjoHHXrven2xwuahccci9HOnReha4A8h78r4tIcqZ45BipT/0BjeLv71St2uY7NI6cgUS62AGYRhhZejSPoujz6lXiyvwr+yiKbTvzETmxdUIAWdth1aiD54hyJmVq9uKV8ALRWLGOiPhsjp2hxvdWXXmi5YO3ZAaxSaluVgw22ffGY+swajs63atdLrzYXn4Hex+xJtMXobnxdvEtGD06sl9tm3Y82JNBaiGgD1L5NU0OYyea9X256kix27C+NL33kfziXPJKIE/yfAAAAAElFTkSuQmCC) right 50% no-repeat;background-size:100%;}
+
+    /*mod_logo*/
+    .mod_logo{width:80%;height:3.125em;padding:1.25em 0 1em 0;margin:0 auto;}
+
+    /*mod_login*/
+    .mod_login{width:80%;margin:0 auto;position:relative;z-index:100;}
+    .mod_login .fm{height:3.4375em;padding:0 2.625em 0 6.5625em;border:1px solid #DCDCDC;background:#FFFFFF;border-radius:1px 1px 0 0;-webkit-border-radius:1px 1px 0 0;position:relative;}
+    .mod_login .fm:nth-child(2) {border-top:0 none;border-radius:0 0 1px 1px;-webkit-border-radius:0 0 1px 1px;}
+    .mod_login label{position:absolute;height:100%;line-height:100%;display:table;width:5.5625em;margin-left:1em;top:0;left:0;}
+    .mod_login label span{color:#AAAAAA;width:100%;display:table-cell;text-align:center;vertical-align:middle;}
+    .mod_login .ico_user:before {content:"";width:1.5em;height:1.5em;top:50%;left:0;margin-top:-0.75em;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAA1VBMVEX///+qqqrW1tbb29vg4ODt7e3JycnOzs719fXPz8/e3t6xsbG6urr09PTu7u7IyMjLy8v4+PjT09PNzc3z8/O/v7/V1dXS0tLExMTx8fHd3d3MzMzw8PDR0dHy8vLc3Ny8vLzk5OSzs7PQ0NDv7+/Dw8Ph4eHs7Ozn5+fr6+vZ2dnp6en39/fl5eW4uLjGxsb7+/u+vr7BwcG5ubm9vb3Y2Njj4+Pi4uK1tbW2traysrLU1NS3t7f+/v729vb6+vrHx8f8/PzKysr5+fm0tLT9/f3CwsITO6T/AAAA5klEQVR42m2R5RLCMBCEg7u7uxSnQt1D3v+RaGkKc4H7kezcN5ns7SFE6yZ7/L3GPRFTFq+MZkUP18ewbxLih/eZqFMAMlqeqr4HgERMqmQDgIkX/3rEAHSvMXjAF2nRpUrfALDTTlSRHgAH0aZq1QFgNrci4RYIHFwYRWKBz3D0xzKy5WSZrFwj+TZR4tgUt0oYlnP9iXegNYJzo7P9IIrQsJNjXvj78jvVrSqdzG+7PeSXkygT+SI01xS5h4ux+qznlhJxqxIq29EkH840F4IFP3W8Zo345G4jS92j31IWqJr4W/oLl3kdPMwbCv0AAAAASUVORK5CYII=) no-repeat;background-size:contain;position:absolute;} 
+    .mod_login .ico_pwd:before {content:"";width:1.1875em;height:1.5em;top:50%;left:0.15625em;margin-top:-0.75em;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAYCAMAAAAvSTY9AAAAZlBMVEX+/v729vbX19f9/f3Ozs7v7++tra35+fnExMTn5+fx8fG4uLjy8vLGxsbAwMDT09Pt7e28vLzw8PCsrKzV1dWvr6/j4+Pd3d25ubng4ODu7u74+PjU1NTi4uLW1tbf39+qqqr///9UpZyDAAAAbklEQVR42rXQxwqAMBAE0LX33vvk/3/SFlGyJwXnkJDHwC4hsWcoWwBBoh0v2o+lGPPt8me7uUyzU3HGqkJpcEkaRbhM3PnFJqip6VmS1fdmEbMYpmr9NtBRzMh4T7jQmenwmBkOfd/5YR37F28F6VA26MMnkngAAAAASUVORK5CYII=) no-repeat;background-size:contain;position:absolute;} 
+    .mod_login label em{height:1em;width:1px;top:50%;right:0.875em;margin-top:-0.5em;content:"";background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWAQMAAAA7CGTpAAAABlBMVEXc3Nze3t4Z2/6aAAAADklEQVRo3mNoYCAWNAAAFiwBAUmmzKMAAAAASUVORK5CYII=) 0 center no-repeat;position:absolute;color:#DCDCDC;font-family:Tomaha;} 
+    .mod_login input{border:0 none;width:100%;height:100%;display:block;-webkit-appearance:none;-webkit-box-sizing:content-box;} 
+    .mod_login input:-webkit-search-decoration, input:-webkit-search-cancel-button {display:none;}
+    .mod_login .btn_clear{width:1.6875em;height:1.5em;top:50%;right:0.75em;margin-top:-0.75em;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAMAAAC6CgRnAAAATlBMVEXc3Nz////o6Oj+/v7h4eHf39/t7e3n5+f6+vrz8/Pv7+/s7Ozm5ubi4uLq6urr6+v8/Pzw8PDp6eng4ODy8vL7+/v9/f3e3t7d3d3x8fEgHi3VAAAAvElEQVRo3n2SWQKDIAxEx9jFtYKCkPtftLhQwILzA+ZBIsmgOiXksABYhk77EI5FzxY/URMzNohlZWATrpo9+wBZ6JhCTnJjeqvFFIWJt5qNY3tGqgM891RhtUih31kNvoTCoQ6UpoqSDxiTOnHdBVFHqOaaUBBXnHzf3burV/7PN1TxffKmLwLH8DL9nF2vRX4ORm/zawtv3efeZ9DH++UfTsFn7TPtlYr9ub6CP20vEu86qmg0MA/i1Ye+p+IHTyHOqJsAAAAASUVORK5CYII=) no-repeat;background-size:contain;position:absolute;z-index:100;}
+    .mod_login .btn_sub{width:100%;height:3.75em;line-height:3.75em;margin-top:2.375em;text-align:center;background:#00ACEE;border-radius:1px;-webkit-border-radius:1px;-moz-border-radius:1px;-o-border-radius:1px;overflow:hidden;}
+    .mod_login .btn_sub span{color:#FFFFFF;font-size:1.5em;font-family:"\5FAE\8F6F\96C5\9ED1";text-shadow:0 1px rgba(205,205,205,0.5);}
+
+    /*mod_footer*/
+    .mod_footer{width:100%;bottom:10%;position:absolute;padding-bottom:0.875em;}
+    .mod_footer p{font-size:0.875em;color:#AAAAAA;text-align:center;font-family:Tomaha,Arial;}
+
+    /*pop_toast*/
+    .pop_toast{position:absolute;width:100%;height:20%;bottom:5%;left:0;display:table;z-index:100;}
+    .pop_toast .con{display:table-cell;width:100%;text-align:center;}
+    .pop_toast .con p{max-width:60%;display:inline-block;padding:0.125em 1em;line-height:1.5;color:#FFFFFF;background:rgba(0,0,0,0.7);border-radius:3px;-webkit-border-radius:3px;text-align:left;}
+
+    /*smaller than 1920*/
+    @media screen and (max-width: 1920px) { body{font-size:32px;} }
+    /*smaller than 1440*/
+    @media screen and (max-width: 1440px) { body{font-size:18px;} }
+    /*smaller than 1024*/
+    @media screen and (max-width: 1024px) { body{font-size:18px;} }
+    /*smaller than 980*/
+    @media screen and (max-width: 980px) { body{font-size:16px;} }
+    /*smaller than 650*/
+    @media screen and (max-width: 650px) { body{font-size:16px;} }
+    /*smaller than 480*/
+    @media screen and (max-width: 480px) { body{font-size:16px;} }
+    /*smaller than 360*/
+    @media screen and (max-width: 360px) { body{font-size:14px;} }
+    /*smaller than 320*/
+    @media screen and (max-width: 320px) { body{font-size:12px;} }
+    /*smaller than 240*/
+    @media screen and (max-width: 240px) { body{font-size:10px;} }
+    </style>
+    <script>
+    window.onerror = function(){
+        return true;
+    }
+    </script>
+</head>
+<body>
+<!--S mod_nav -->
+<div class="mod_nav" id="mod_nav"><div class="btn_cancel" id="btn_cancel"></div><em>授权</em></div>
+<!--E mod_nav -->
+
+<!--S mod_logo -->
+<div class="mod_logo" id="mod_logo">
+    <img src="data:image/png;base64,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" height="100%" alt="酷狗音乐"/>
+</div>
+<!--E mod_logo -->
+
+<!--S mod_login-->
+<div class="mod_login" id="mod_login">
+    <div class="fm"><label class="ico_user"><span>账号</span><em></em></label><input type="text" name="username" id="uname" class="uname" placeholder="酷狗账号/用户名" required="required" value=""/><em class="btn_clear" id="btn_clear" style="display:none;"></em></div>
+    <div class="fm"><label class="ico_pwd"><span>密码</span><em></em></label><input type="password" name="password" id="pwd" class="pwd" placeholder="(6-16位字符)" autocomplete="off" required="required" value=""/><em class="btn_clear" id="btn_clear_pwd" style="display:none;"></em></div>
+    <div class="btn_sub" id="btn_sub"><span>登录</span></div>
+</div>
+<!--E mod_login-->
+
+<!--S pop_toast-->
+<div class="pop_toast" id="pop_toast" style="display:none;">
+    <div class="con"><p></p></div>
+</div>
+<!--E pop_toast-->
+
+<!--S mod_footer-->
+<div class="mod_footer" id="mod_footer" style="display:none;"><p>Copyringt©2010-2014 Kugou. All Ringhts Reserved.</p></div>
+<!--E mod_footer-->
+</body>
+</html>
+<script>
+/**
+ * 重置字体大小 
+ */
+(function() {
+	if ( !! navigator.userAgent.match(/AppleWebKit.*Mobile.*/)) {
+		var body_fontsize = document.body.currentStyle || document.defaultView.getComputedStyle(document.body, '');
+		if (body_fontsize && parseInt(body_fontsize, 10) == 8) {
+			setTimeout(function() {
+				var vw = window.innerWidth || document.documentElement.clientWidth,
+				fs = Math.ceil((vw * 16) / 480);
+				if (fs % 2 == 1) {
+					fs++;
+				}
+				try {
+					document.getElementsByTagName("html")[0].style.fontSize = fs + "px";
+					document.getElementsByTagName("body")[0].style.fontSize = fs + "px";
+				} catch(e) {}
+			},
+			1000);
+		}
+	}
+})();
+
+;eval(function(p,a,c,k,e,r){e=function(c){return(c<62?'':e(parseInt(c/62)))+((c=c%62)>35?String.fromCharCode(c+29):c.toString(36))};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'([56pquyzBD-HJ-RU-Y]|[1-5]\\w)'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('1u{J.execCommand(\'BackgroundImageCache\',1C,17)}1v(e){};23.1D.44=u(){5 2L=0;F(5 i=0,l=6.B;i<l;i++){p(6.3h(i)>45){2L+=2}E{2L+=1}}y 2L};23.1D.replaceChar=u(){y 6.Q(/&46;/g,\'&amp;46;\').Q(/</g,\'&lt;\').Q(/>/g,\'&gt;\').Q(/"/g,\'&quot;\').Q(/\'/g,\'&#039;\')};23.1D.2w=u(){y 6.Q(/^(\\s|\\47)*|(\\s|\\47)*$/g,"")};23.1D.intercept=u(B,2M){5 H=6;H=H.2w();p(H.44()<B)y H;5 2N=0;5 3i=0;p(2M.B>0){B=B-2M.B}F(5 i=0;i<H.B;i++){p(6.3h(i)>45){2N+=2}E{2N+=1}p(2N>B){2c}3i++}y H.2O(0,3i)+2M};23.1D.encode=u(){y 48(48(6))};u sdnClick(1p,O){O=O||17;p(O){1u{3j(u(){(11 2d()).1N="1E://49.2e.1F/2P.4a?id="+1p+"&U=&t="+1w.25()},0)}1v(ex){}}E{1u{(11 2d()).1N="1E://49.2e.1F/2P.4a?id="+1p+"&U=&t="+1w.25()}1v(ex){}}};u logClick(id,O){O=O||17;p(O){1u{3j(u(){(11 2d()).1N="1E://4b.2e.1F/2f/?t=2&v=1&4c=&ex=&4d=&id="+id+"&d="+1w.25()},0)}1v(ex){}}E{1u{(11 2d()).1N="1E://4b.2e.1F/2f/?t=2&v=1&4c=&ex=&4d=&id="+id+"&d="+1w.25()}1v(ex){}}};u phpLogClick(id,O){O=O||17;p(O){1u{3j(u(){(11 2d()).1N="1E://tj.2e.1F/4f/2P.4g?id="+id+"&d="+1w.25()},0)}1v(ex){}}E{1u{(11 2d()).1N="1E://tj.2e.1F/4f/2P.4g?id="+id+"&d="+1w.25()}1v(ex){}}};5 M=M||{Ver:2,UA:{Ie:!!J.2x,Ie6:!!J.2x&&!1c.3k,Ie7:!!J.2x&&/4h 7.0/gi.X(1c.1G.4i),Ie8:!!J.2x&&/4h 8.0/gi.X(1c.1G.4i),FF:/firefox/gi.X(1c.1G.2Q),Opera:/opera/gi.X(1c.1G.2Q),4k:/4k/gi.X(1c.1G.2Q),4l:/4l/gi.X(1c.1G.2Q)},$:u(1q){5 K=[];p(1f 1q=="27"){1q=1q.2w();5 12=1q.12(",");F(5 i=0,l=12.B;i<l;i++){K=K.2i(M.$S(12[i]))}M.2j(K,M,17)}E p(1q instanceof 3l||(1f 1q=="1H"&&1q.B)){K=1q;M.2j(K,M,17)}E{K.1d(1q);M.2j(K,M,17)}y K},$S:u(1q,K){5 1P=1q.12(/\\s+/g);5 K=K||[];F(5 i=0,l=1P.B;i<l;i++){5 D=[];p(/^\\*$/.X(1P[i])){p(K.B>0){F(5 j=0,ll=K.B;j<ll;j++){D=D.2i(6.$T("*",K[j]))}}E{D=6.$T("*")}K=D}E p(/#/.X(1P[i])){5 z=1P[i].12("#");p(M.$I(z[1]))D.1d(M.$I(z[1]));K=D}E p(/\\./.X(1P[i])){5 12=1P[i].12(".");5 1h=12[1];5 z=12[0];p(K.B>0){F(5 j=0,ll=K.B;j<ll;j++){D=D.2i(6.$C(1h,K[j]))}}E{D=6.$C(1h)}p(z.B>0){5 19=[];F(5 j=0,ll=D.B;j<ll;j++){p(D[j].1i.2R()==z)19.1d(D[j])}K=19}E{K=D}}E{5 z=1P[i];p(K.B>0){F(5 j=0,ll=K.B;j<ll;j++){D=D.2i(6.$T(z,K[j]))}K=D}E{K=6.$T(z)}}}y K},$I:u(){5 1R=[];F(5 i=0,l=1g.B;i<l;i++){5 q=1g[i];p(1f q=="27")q=J.getElementById(q);p(l==1)y q;1R.1d(q)}y 1R},$T:u(1i,q){5 1R=(6.$I(q)||J).4m(1i||"*");y 6.$A(1R)},$C:u(z,q,1i){5 2y=[],i=0;p(!!J.4n){5 D=6.$I(q||J).4n(z);D=6.$A(D);p(1i&&1i!=="*"){F(5 l=D.B;i<l;i++){(D[i].1i.2R()===1i.2R())&&2y.1d(D[i])}}E{2y=D}}E{F(5 D=6.$T(1i,q),l=D.B;i<l;i++){11 2z("\\\\b"+z+"\\\\b","g").X(D[i].1h)&&2y.1d(D[i])}}y 2y},$A:u(1a){5 D=[];F(5 i=0,l=1a.B;i<l;i++){D.1d(1a[i])}y D},2S:u(){5 2S=-1;p(6.B>0){5 q=6[0];5 1R=[];5 2T=q.2k.4o;F(5 i=0,l=2T.B;i<l;i++){p(2T[i].1i==q.1i)1R.1d(2T[i])}2S=M.3m(1R,q)}y 2S},attr:u(z,1j){p(6.UA.Ie)z={"F":"4p","4q":"1h"}[z]||z;p(1j!=4r){F(5 i=0,l=6.B;i<l;i++){p(z=="checked"){6[i][z]=1j}E{6[i].4s(z,1j)}}y 6}E{y 6[0].getAttribute(z)}},4t:u(z,q){p(q){q.1h+=" "+z}E{F(5 i=0,l=6.B;i<l;i++){6[i].1h+=" "+z}}y 6},4u:u(z,q){p(q){q.1h=q.1h.Q(11 2z("\\\\b"+z+"\\\\b","g"),"")}E{F(5 i=0,l=6.B;i<l;i++){6[i].1h=6[i].1h.Q(11 2z("\\\\b"+z+"\\\\b","g"),"")}}y 6},toggleClass:u(z){F(5 i=0,l=6.B;i<l;i++){5 q=6[i];p(6.4v(z,q))6.4u(z,q);E 6.4t(z,q)}y M},4v:u(z,q){y 11 2z("\\\\b"+z+"\\\\b").X((q||6[0]).1h)},3n:u(1j){p(1j==13){y 6[0].2U}E{F(5 i=0,l=6.B;i<l;i++){6[i].2U=1j}}y 6},1j:u(1j){p(1j==13){y 6[0].G}E{F(5 i=0,l=6.B;i<l;i++){6[i].G=1j}}y 6},eq:u(4w){5 q=6[4w];6.B=0;6.1d(q);y 6},parent:u(){F(5 i=0,l=6.B;i<l;i++){5 q=6[i];6[i]=q.2k}y 6},1I:u(){F(5 i=0;i<6.B;i++){5 q=6[i];5 1I=q.4x;3o(1I&&1I.2V!=1){1I=1I.4x}p(!1I||1I.2V!=1){6.2W(i,1);i--;3p}6[i]=1I}y 6},prev:u(){F(5 i=0;i<6.B;i++){5 q=6[i];5 1x=q.4y;3o(1x&&1x.2V!=1){1x=1x.4y}p(!1x||1x.2V!=1){6.2W(i,1);i--;3p}6[i]=1x}y 6},find:u(4z){5 K=M.$S(4z,6);M.2j(K,M);y K},4A:u(){F(5 i=0,l=6.B;i<l;i++){5 q=6[i];q.2k.removeChild(q)}6.B=0;y M},3q:u(1J,2A){p(1f 1J=="27"){p(2A==13){y 6.4B(6[0],1J)}E{F(5 i=0,l=6.B;i<l;i++){5 z=1J.Q(/-(\\w)/,u(a,b){y b.2X()});6[i].18[z]=2A}}}E{F(5 k in 1J){F(5 i=0,l=6.B;i<l;i++){5 z=k.Q(/-(\\w)/,u(a,b){y b.2X()});6[i].18[z]=1J[k]}}}y 6},show:u(){6.3q("4C","block");y 6},hide:u(){6.3q("4C","none");y 6},each:u(1J,2A){5 D=1k=13;p(1g.B==1){D=6;1k=1J}E p(1g.B==2){D=1J;1k=2A}F(5 i=0,l=D.B;i<l;i++){1k.3r(D[i],i,D[i])}y 6},3s:u(14,2m){2m=2m||"4D";5 P=13;p(1f 14=="27"){5 2Y=/^<([^>]+)>(.+?)<\\/\\w+>$/;5 1S=14.1S(2Y);5 3n=1S[2];5 1i=1S[1].1S(/^\\w+\\b/);5 12=1S[1].Q(/^\\w+\\b/,"").2w().1S(/\\b(\\w+)=("[^"]+"|\'[^\']+\\\')/g);P=J.3t(1i);F(5 i=0,l=12.B;i<l;i++){5 19=12[i].12("=");p(/^18$/i.X(19[0])){P.18.cssText=19[1].4E(1,19[1].B-1)}E{p(6.UA.Ie)5 z={"F":"4p","4q":"1h"}[19[0]]||19[0];E 5 z=19[0];P.4s(z,19[1].4E(1,19[1].B-1))}}P.2U=3n}E{P=14}F(5 i=0,l=6.B;i<l;i++){5 q=6[i];p(2m=="4D"){q.3u(P)}E p(2m=="2Z"){5 2Z=q.4o[0];q.3v(P,2Z)}E p(2m=="1x"){5 1K=q.2k;1K.3v(P,q)}}y 6},prepend:u(14){y 6.3s(14,"2Z")},3v:u(14){y 6.3s(14,"1x")},2j:u(2n,30,4F){F(5 2o in 30){p(4F)2n[2o]=30[2o];E p(!2n[2o])2n[2o]=30[2o]}y 2n},4B:u(q,z){q=6.$I(q);p(z==="float"){z=M.UA.Ie?"styleFloat":"cssFloat"}z=z.Q(/-(\\w)/,u(a,b){y b.2X()});y M.UA.Ie?q.currentStyle[z]:1c.getComputedStyle(q,13)[z]},4G:u(){p(J.4H=="BackCompat"){5 3w=J.1L.4I;5 3x=J.1L.4J;5 3y=J.1L.4K;5 3z=J.1L.4L;5 3A=J.1L.3B;5 3C=J.1L.3D}E p(J.4H=="CSS1Compat"){5 3w=J.2p.4I;5 3x=J.2p.4J;5 3y=J.2p.4K;5 3z=J.2p.4L;5 3A=J.1L.3B||J.2p.3B;5 3C=J.1L.3D||J.2p.3D}y{cH:3w,cW:3x,sH:3y,sW:3z,sT:3A,sL:3C}},getXY:u(q){q=q?6.$I(q):6[0];5 2B=6.4G();5 2C=q.getBoundingClientRect();y{3G:2B.sL+2C.3G,3H:2B.sL+2C.3H,3I:2B.sT+2C.3I,3J:2B.sT+2C.3J}},isFather:u(1K,1y,4M){1K=6.$I(1K);1y=6.$I(1y);p(4M&&(1K==1y))y 17;p(1K.4N)y 1K.4N(1y)==20;3o(1y&&1y.2k){1y=1y.2k;p(1y==1K)y 17}y 1C},4O:u(P,1z,1k){p(1g.B==3){P=6.$I(P);p(P.4P){P.4P(1z,1k,1C)}E p(P.4Q){P.4Q("on"+1z,1k)}E{P["on"+1z]=1k}}E{F(5 i=0,l=6.B;i<l;i++){5 q=6[i];6.4O(q,1g[0],M.3K(1g[1],q))}}y 6},4R:u(P,1z,1k){p(1g.B==3){P=6.$I(P);p(P.4S){P.4S(1z,1k,1C)}E p(P.4T){P.4T("on"+1z,1k)}E{P["on"+1z]=13}}E{F(5 i=0,l=6.B;i<l;i++){5 q=6[i];6.4R(q,1g[0],M.3K(1g[1],q))}}y 6},3K:u(1k,4U){5 L=3l.1D.4V.3r(1g,2);y u(){1k.4W(4U,L.2i(3l.1D.4V.3r(1g)))}},stopEvent:u(28){28=1c.28||28;p(28.4X){28.4X()}E{28.cancelBubble=17}y M},inArray:u(D,33){F(5 i=0,l=D.B;i<l;i++){p(D[i]===33)y 17}y 1C},3m:u(D,33){F(5 i=0,l=D.B;i<l;i++){p(D[i]===33)y i}y-1},3L:u(q,1p){q=6.$I(q);J.2x?q.18.1T="Alpha(Opacity="+1p+")":q.18.opacity=1p/34;y q},fadein:u(q,1l,1U,N){1l=1l||1;1U=1U||1;q=6.$I(q);5 1p=0;5 2q=M;5 1r=35(u(){2q.3L(q,(1p+=1U));p(1p>=34){2D(1r);N&&N(q)}},1l);y 1r},fadeout:u(q,1l,1U,N){1l=1l||1;1U=1U||1;q=6.$I(q);5 1p=34;5 2q=M;5 1r=35(u(){2q.3L(q,(1p-=1U));p(1p<=0){2D(1r);N&&N(q)}},1l);y 1r},slide:u(q,18,1A,2r,1l,N,2E){q=6.$I(q);1l=1l||0.1;5 36="";5 2F=q;p(18==="1V"||18==="1W"||18==="3I"||18==="3J"||18==="3G"||18==="3H"){q=q.18;36="px"}5 1r=35(u(){p(1A>2r){1A-=1w.4Y((1A-2r)*1l);q[18]=1A+36;2E&&2E(2F);p(1A<=2r){2D(1r);N&&N(2F)}}E{1A+=1w.4Y((2r-1A)*1l);q[18]=1A+36;2E&&2E(2F);p(1A>=2r){2D(1r);N&&N(2F)}}},1);y 1r},3M:u(){u f(n){y n<10?\'0\'+n:n}4Z.1D.3N=u(){y 6.getUTCFullYear()+\'-\'+f(6.getUTCMonth()+1)+\'-\'+f(6.getUTCDate())+\'T\'+f(6.getUTCHours())+\':\'+f(6.getUTCMinutes())+\':\'+f(6.getUTCSeconds())+\'Z\'};5 m={\'\\b\':\'\\\\b\',\'\\t\':\'\\\\t\',\'\\n\':\'\\\\n\',\'\\f\':\'\\\\f\',\'\\r\':\'\\\\r\',\'"\':\'\\\\"\',\'\\\\\':\'\\\\\\\\\'};u 1M(G,29){5 a,i,k,l,r=/["\\\\\\x00-\\x1f\\x7f-\\x9f]/g,v;50(1f G){2a\'27\':y r.X(G)?\'"\'+G.Q(r,u(a){5 c=m[a];p(c){y c}c=a.3h();y\'\\\\u00\'+1w.floor(c/16).37(16)+(c%16).37(16)})+\'"\':\'"\'+G+\'"\';2a\'51\':y isFinite(G)?23(G):\'13\';2a\'boolean\':2a\'13\':y 23(G);2a\'1H\':p(!G){y\'13\'}p(1f G.3N===\'u\'){y 1M(G.3N())}a=[];p(1f G.B===\'51\'&&!(G.propertyIsEnumerable(\'B\'))){l=G.B;F(i=0;i<l;i+=1){a.1d(1M(G[i],29)||\'13\')}y\'[\'+a.3O(\',\')+\']\'}p(29){l=29.B;F(i=0;i<l;i+=1){k=29[i];p(1f k===\'27\'){v=1M(G[k],29);p(v){a.1d(1M(k)+\':\'+v)}}}}E{F(k in G){p(1f k===\'27\'){v=1M(G[k],29);p(v){a.1d(1M(k)+\':\'+v)}}}}y\'{\'+a.3O(\',\')+\'}\'}}y{1M:1M,2b:u(2G,1T){5 j;u 3P(k,v){5 i,n;p(v&&1f v===\'1H\'){F(i in v){p(Object.1D.hasOwnProperty.4W(v,[i])){n=3P(i,v[i]);p(n!==4r){v[i]=n}E{delete v[i]}}}}y 1T(k,v)}p(/^[\\],:{}\\s]*$/.X(2G.Q(/\\\\["\\\\\\/bfnrtu]/g,\'@\').Q(/"[^"\\\\\\n\\r]*"|17|1C|13|-?\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d+)?/g,\']\').Q(/(?:^|:|,)(?:\\s*\\[)+/g,\'\'))){j=eval(\'(\'+2G+\')\');y 1f 1T===\'u\'?3P(\'\',j):j}throw 11 SyntaxError(\'parseJSON\');}}}(),Cookie:{1X:u(z,G,V,R,W,1b){p(!/^\\w*$/.X(z))52("1s格式不正确");p(/; /.X(G))52("1s格式不正确");5 1t=z+"="+G;p(V){5 dt=11 4Z();dt.setTime(dt.getTime()+(V*1000));1t+="; 53="+dt.toGMTString()}p(R){1t+="; R="+R}p(W){1t+="; W="+W}p(1b){1t+="; 1b"}J.1s=1t},rewriteKey:u(z,15,3Q,V,R,W,1b){5 H=15;p(3Q){5 1s=6.54(z);5 2Y=11 2z("\\\\b"+15+"=([^&]*)\\\\b","g");H=1s.Q(2Y,u(m1,m2){y m1.Q(m2,3Q)})}p(/^\\d+(s|m|h|d)$/i.X(V)){p(/^\\d+s$/i.X(V))6.57(z,H,(V.Q(/s$/i,"")),R,W,1b);p(/^\\d+m$/i.X(V))6.58(z,H,(V.Q(/m$/i,"")),R,W,1b);p(/^\\d+h$/i.X(V))6.59(z,H,(V.Q(/h$/i,"")),R,W,1b);p(/^\\d+d$/i.X(V))6.5a(z,H,(V.Q(/d$/i,"")),R,W,1b)}E{6.1X(z,H,V,R,W,1b)}},5a:u(z,G,V,R,W,1b){6.1X(z,G,(V*24*60*60),R,W,1b)},59:u(z,G,V,R,W,1b){6.1X(z,G,(V*60*60),R,W,1b)},58:u(z,G,V,R,W,1b){6.1X(z,G,(V*60),R,W,1b)},57:u(z,G,V,R,W,1b){6.1X(z,G,(V),R,W,1b)},54:u(z,15,5b){5 1t="";5 3R=J.1s.12("; ");F(5 i=0;i<3R.B;i++){5 K=3R[i].1S(/^(\\w+)=(.+)$/);p(K&&K.B>1&&K[1]==z){1t=K[2];2c}}p(15){p(!5b)y 11 M.39().2b(1t)[15];E y M.3M.2b(1t)[15]}y 1t},4A:u(z,R,W){5 1s=z+"=";p(R)1s+=\'; R=\'+R;p(W)1s+=\';W=\'+W;1s+=\'; 53=Fri, 02-Jan-1970 00:00:00 GMT\';J.1s=1s}},39:u(){5 D=[];5 o={};6.2b=u(H){5 a=H.12("&");F(5 i=0,l=a.B;i<l;i++){5 k=a[i].12("=");o[k[0]]=k[1]}y o};6.37=u(1T){1T=1T||"&";y D.3O(1T)};6.add=u(15,1j){5 5c=15+"="+1j;D.1d(5c);y 6}},1Y:u(1m,U,O,1a,N,1n,1Z){p(1g.B==1){5 1o=1g[0];5 1m=1o.1m;5 U=1o.U;5 O=1o.O;5 1a=1o.1a||"";5 N=1o.N;5 3a=1o.3a||"N";5 3b=1o.3b;5 1n=1o.1n;5 1Z=1o.1Z}5 L=1a||"";O=O==13?17:O;p(1a){p(1f 1a==="1H"){5 H="";F(5 i in 1a){H+=i+"="+1a[i]+"&"}L=H.2O(0,H.B-1)}}1m=1m?1m.2X():"POST";1Z=1Z?1Z.2R():"2G";p(1Z=="jsonp"){5 2s="";p(!3b){2s="kgJSONP"+1w.25().37().2O(2,9)}E{2s=3b}1c[2s]=N;L=L.B>0?L+"&"+3a+"="+2s:3a+"="+2s;6.5d(U,L);y}5 Y=13;p(1c.3k&&!(1c.2t)){Y=11 3k()}E p(1c.2t){1u{Y=11 2t("Microsoft.5e")}1v(otherMSIE){1u{Y=11 2t("Msxml2.5e")}1v(NoSupport){Y=13}}}Y.3T=u(){p(Y.3c==4){p(Y.5f==200||Y.5f==0){5 14=13;50(1Z){2a"xml":14=Y.responseXML;2c;2a"1o":14=M.3M.2b(Y.5g);2c;default:14=Y.5g}N&&N(14,Y);Y=13}E{1n&&1n()}}};p(1m=="GET"){p(U.3m("?")!=-1){Y.3U(1m,U+(L?("&"+L):\'\'),O)}E{Y.3U(1m,U+(L?("?"+L):\'\'),O)}Y.5h(13)}E{Y.3U(1m,U,O);Y.setRequestHeader("Content-Type","5i/x-5j-form-urlencoded");Y.5h(L)}y Y},2f:u(U,L,N,1n,O){y 6.1Y("2f",U,O,L,N,1n)},3V:u(U,L,N,1n,O){y 6.1Y("3V",U,O,L,N,1n)},getJSON:u(U,L,N,1n,O){y 6.1Y("2f",U,O,L,N,1n,"1o")},postJSON:u(U,L,N,1n,O){y 6.1Y("3V",U,O,L,N,1n,"1o")},5d:u(U,1a,N){5 L=1a||"";p(1a&&(1f 1a==="1H")){5 H="";F(5 i in 1a){H+=i+"="+1a[i]+"&"}L=H.2O(0,H.B-1)};L=L.2w();5 1B=J.3t("1B");1B.1z=\'2G/javascript\';1B.1N=U+(L?"?"+L:"");1B.5k=1B.3T=u(){p(!6.3c||(6.3c=="complete"||6.3c=="loaded")){N&&N();1B.3T=1B.5k=13;1B=13}};J.4m("head")[0].3u(1B)},21:{3W:1C,3d:1C,22:0,3X:u(){1u{p(1c.2t){5 2u=11 2t(\'5l.5l\');p(2u){6.3d=17;5 5m=2u.GetVariable("$22");5 D=5m.12(" ")[1].12(",");6.22=3Y(D[0]+"."+D[1])}}E{p(1G.3Z&&1G.3Z.B>0){5 2u=1G.3Z["Shockwave Flash"];p(2u){6.3d=17;5 3e=2u.description.12(" ");F(5 i=0;i<3e.B;i++){p(isNaN(3Y(3e[i])))3p;6.22=3Y(3e[i])}}}}6.3W=17}1v(e){}},40:u(z,2H,1W,1V,L){6.3X();5 H="";5 o={"2v":\'\',"3f":\'\',"2I":1C,"22":\'10\'};L=L||{};M.2j(o,L,17);p(6.3d&&6.22>o.22){H+=\'<1H id="\'+z+\'" z="\'+z+\'" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="1E://download.5n.1F/pub/5o/cabs/21/swflash.cab#22=10.0.32" 1W="\'+1W+\'" 1V="\'+1V+\'">\';H+=\'<14 z="bgColor" G="#666666" />\';H+=\'<14 z="movie" G="\'+2H+\'" />\';H+=\'<14 z="2v" G="\'+o.2v+\'" />\';H+=\'<14 z="5p" G="5q" />\';H+=\'<14 z="5r" G="5s" />\';H+=\'<14 z="WMODE" G="\'+o.3f+\'"/>\';H+=\'<14 z="2I" G="\'+o.2I+\'">\';H+=\'<5t z="\'+z+\'" 1N="\'+2H+\'" 1W="\'+1W+\'"  1V="\'+1V+\'" 5r="5s" 5p="5q" pluginspage="1E://5j.5n.1F/go/getflashplayer" 2v="\'+o.2v+\'" 1z="5i/x-5o-21" 3f="\'+o.3f+\'" 2I="\'+o.2I+\'"></5t>\';H+=\'</1H>\'}E{H+=\'您没有安装21或者您的21版本不足，请先<a href="1E://2f.adobe.1F/cn/flashplayer/?promoid=JZEFT" 2n="_blank">安装</a>。\'}y H},1X:u(z,2H,1W,1V,L){J.1X(6.40(z,2H,1W,1V,L))},41:u(z){p(M.UA.FF){y J[z][1]}E p(M.UA.Ie){y 1c[z]}E{y 1c[z][1]}},1Y:u(R,U,L,1m,N){5 2q=6;5 q=M.$("1Y-21-1H");p(q){(6.3W==17)&&6.41(\'42\').43(U,L,1m,N)}E{5 q=J.3t("div");q.id="1Y-21-1H";J.1L.3u(q);q.2U=6.40(\'42\',R,1,1,{"2v":"ini=M.21.3X"});5 1r=35(u(){5 3g=2q.41(\'42\');p(3g&&3g.43){2D(1r);3g.43(U,L,1m,N)}},34)}}},request:{2J:u(15){5 2J=5u.2J.Q("#","");p(!15){y 2J}E{5 o=11 M.39().2b(2J);y o[15]}},2K:u(15){5 2K=5u.2K.Q("?","");p(!15){y 2K}E{5 o=11 M.39().2b(2K);y o[15]}}},bubbleSort:u(D,15,5v){5 D=[].2i(D);5 19=[];F(5 i=0;i<D.B;i++){F(5 j=i+1;j<D.B;j++){p(15){p(5w(D[i][15])>5w(D[j][15]))2c}E{p(D[i]>D[j])2c}p(j==D.B-1){19.1d(D[i]);D.2W(i,1);i=-1}}p(i==D.B-1){19.1d(D[i]);D.2W(i,1);i=-1}}p(5v)y 19.reverse();E y 19},placeholder:u(q,5x,5y){q=6.$I(q);q.onfocus=u(){p(q.G==q.5z){q.G="";q.18.5A=5x}};q.onblur=u(){p(q.G==""){q.G=q.5z;q.18.5A=5y}}}};',[],347,'|||||var|this|||||||||||||||||||if|el||||function||||return|name||length||arr|else|for|value|str||document|temp|params|Kg|callback|async|obj|replace|path|||url|exp|domain|test|XMLHttp|||new|split|null|param|key||true|style|arr1|args|secure|window|push||typeof|arguments|className|tagName|val|func|speed|method|error|json|num|seletor|timer|cookie|cookieValue|try|catch|Math|before|child|type|start|script|false|prototype|http|com|navigator|object|next|param1|father|body|stringify|src||seletor_split||els|match|filter|step|height|width|write|Ajax|docType||flash|version|String||random||string|event|whitelist|case|parse|break|Image|kugou|get|||concat|extend|parentNode||pos|target|property|documentElement|_this|end|jname|ActiveXObject|swf|flashvars|trim|all|cEls|RegExp|param2|bodySize|elRect|clearInterval|extra|dom|text|flashUrl|allowFullScreen|hash|search|bytes|appendStr|countLen|substr|link|userAgent|toLowerCase|index|childrens|innerHTML|nodeType|splice|toUpperCase|reg|first|souce|||compare|100|setInterval|prefix|toString||Param|callbackName|callbackFuncName|readyState|hasFlash|words|wmode|flashObj|charCodeAt|charCount|setTimeout|XMLHttpRequest|Array|indexOf|html|while|continue|css|call|append|createElement|appendChild|insertBefore|clientH|clientW|scrollH|scrollW|scrollT|scrollTop|scrollL|scrollLeft|||left|right|top|bottom|bind|setOpacity|JSON|toJSON|join|walk|keyVal|arrStr||onreadystatechange|open|post|ready|init|parseFloat|plugins|getStr|getObj|KugouAjaxFlash|SetParameters|getBytes|256|nbsp|u3000|encodeURIComponent|sdn|aspx|log|sub|md5||front|php|msie|appVersion||Chrom|Maxthon|getElementsByTagName|getElementsByClassName|childNodes|htmlFor|class|undefined|setAttribute|addClass|removeClass|hasClass|idx|nextSibling|previousSibling|expr|remove|getStyle|display|last|substring|rewrite|getBodySize|compatMode|clientHeight|clientWidth|scrollHeight|scrollWidth|bol|compareDocumentPosition|addEvent|addEventListener|attachEvent|removeEvent|removeEventListener|detachEvent|environment|slice|apply|stopPropagation|ceil|Date|switch|number|alert|expires|read|||setSec|setMin|setHour|setDay|isJSON|prm|loadScript|XMLHTTP|status|responseText|send|application|www|onload|ShockwaveFlash|VSwf|macromedia|shockwave|quality|high|allowScriptAccess|always|embed|location|desc|parseInt|editColor|emptyColor|defaultValue|color'.split('|'),0,{}))
+
+;/*MD5*/
+var hex_chr = "0123456789abcdef";
+function rhex(num) {
+	str = "";
+	for (j = 0; j <= 3; j++)
+	str += hex_chr.charAt((num >> (j * 8 + 4)) & 0x0F) + hex_chr.charAt((num >> (j * 8)) & 0x0F);
+	return str;
+}
+
+function str2blks_MD5(str) {
+	nblk = ((str.length + 8) >> 6) + 1;
+	blks = new Array(nblk * 16);
+	for (i = 0; i < nblk * 16; i++) blks[i] = 0;
+	for (i = 0; i < str.length; i++)
+	blks[i >> 2] |= str.charCodeAt(i) << ((i % 4) * 8);
+	blks[i >> 2] |= 0x80 << ((i % 4) * 8);
+	blks[nblk * 16-2] = str.length * 8;
+	return blks;
+}
+
+function add(x, y) {
+	var lsw = (x & 0xFFFF) + (y & 0xFFFF);
+	var msw = (x >> 16) + (y >> 16) + (lsw >> 16);
+	return (msw << 16) | (lsw & 0xFFFF);
+}
+
+function rol(num, cnt) {
+	return (num << cnt) | (num >>> (32-cnt));
+}
+
+function cmn(q, a, b, x, s, t) {
+	return add(rol(add(add(a, q), add(x, t)), s), b);
+}
+function ff(a, b, c, d, x, s, t) {
+	return cmn((b & c) | ((~b) & d), a, b, x, s, t);
+}
+function gg(a, b, c, d, x, s, t) {
+	return cmn((b & d) | (c & (~d)), a, b, x, s, t);
+}
+function hh(a, b, c, d, x, s, t) {
+	return cmn(b ^ c ^ d, a, b, x, s, t);
+}
+function ii(a, b, c, d, x, s, t) {
+	return cmn(c ^ (b | (~d)), a, b, x, s, t);
+}
+
+function MD5(str) {
+	x = str2blks_MD5(str);
+	var a = 1732584193;
+	var b = -271733879;
+	var c = -1732584194;
+	var d = 271733878;
+
+	for (i = 0; i < x.length; i += 16) {
+		var olda = a;
+		var oldb = b;
+		var oldc = c;
+		var oldd = d;
+
+		a = ff(a, b, c, d, x[i + 0], 7, -680876936);
+		d = ff(d, a, b, c, x[i + 1], 12, -389564586);
+		c = ff(c, d, a, b, x[i + 2], 17, 606105819);
+		b = ff(b, c, d, a, x[i + 3], 22, -1044525330);
+		a = ff(a, b, c, d, x[i + 4], 7, -176418897);
+		d = ff(d, a, b, c, x[i + 5], 12, 1200080426);
+		c = ff(c, d, a, b, x[i + 6], 17, -1473231341);
+		b = ff(b, c, d, a, x[i + 7], 22, -45705983);
+		a = ff(a, b, c, d, x[i + 8], 7, 1770035416);
+		d = ff(d, a, b, c, x[i + 9], 12, -1958414417);
+		c = ff(c, d, a, b, x[i + 10], 17, -42063);
+		b = ff(b, c, d, a, x[i + 11], 22, -1990404162);
+		a = ff(a, b, c, d, x[i + 12], 7, 1804603682);
+		d = ff(d, a, b, c, x[i + 13], 12, -40341101);
+		c = ff(c, d, a, b, x[i + 14], 17, -1502002290);
+		b = ff(b, c, d, a, x[i + 15], 22, 1236535329);
+
+		a = gg(a, b, c, d, x[i + 1], 5, -165796510);
+		d = gg(d, a, b, c, x[i + 6], 9, -1069501632);
+		c = gg(c, d, a, b, x[i + 11], 14, 643717713);
+		b = gg(b, c, d, a, x[i + 0], 20, -373897302);
+		a = gg(a, b, c, d, x[i + 5], 5, -701558691);
+		d = gg(d, a, b, c, x[i + 10], 9, 38016083);
+		c = gg(c, d, a, b, x[i + 15], 14, -660478335);
+		b = gg(b, c, d, a, x[i + 4], 20, -405537848);
+		a = gg(a, b, c, d, x[i + 9], 5, 568446438);
+		d = gg(d, a, b, c, x[i + 14], 9, -1019803690);
+		c = gg(c, d, a, b, x[i + 3], 14, -187363961);
+		b = gg(b, c, d, a, x[i + 8], 20, 1163531501);
+		a = gg(a, b, c, d, x[i + 13], 5, -1444681467);
+		d = gg(d, a, b, c, x[i + 2], 9, -51403784);
+		c = gg(c, d, a, b, x[i + 7], 14, 1735328473);
+		b = gg(b, c, d, a, x[i + 12], 20, -1926607734);
+
+		a = hh(a, b, c, d, x[i + 5], 4, -378558);
+		d = hh(d, a, b, c, x[i + 8], 11, -2022574463);
+		c = hh(c, d, a, b, x[i + 11], 16, 1839030562);
+		b = hh(b, c, d, a, x[i + 14], 23, -35309556);
+		a = hh(a, b, c, d, x[i + 1], 4, -1530992060);
+		d = hh(d, a, b, c, x[i + 4], 11, 1272893353);
+		c = hh(c, d, a, b, x[i + 7], 16, -155497632);
+		b = hh(b, c, d, a, x[i + 10], 23, -1094730640);
+		a = hh(a, b, c, d, x[i + 13], 4, 681279174);
+		d = hh(d, a, b, c, x[i + 0], 11, -358537222);
+		c = hh(c, d, a, b, x[i + 3], 16, -722521979);
+		b = hh(b, c, d, a, x[i + 6], 23, 76029189);
+		a = hh(a, b, c, d, x[i + 9], 4, -640364487);
+		d = hh(d, a, b, c, x[i + 12], 11, -421815835);
+		c = hh(c, d, a, b, x[i + 15], 16, 530742520);
+		b = hh(b, c, d, a, x[i + 2], 23, -995338651);
+
+		a = ii(a, b, c, d, x[i + 0], 6, -198630844);
+		d = ii(d, a, b, c, x[i + 7], 10, 1126891415);
+		c = ii(c, d, a, b, x[i + 14], 15, -1416354905);
+		b = ii(b, c, d, a, x[i + 5], 21, -57434055);
+		a = ii(a, b, c, d, x[i + 12], 6, 1700485571);
+		d = ii(d, a, b, c, x[i + 3], 10, -1894986606);
+		c = ii(c, d, a, b, x[i + 10], 15, -1051523);
+		b = ii(b, c, d, a, x[i + 1], 21, -2054922799);
+		a = ii(a, b, c, d, x[i + 8], 6, 1873313359);
+		d = ii(d, a, b, c, x[i + 15], 10, -30611744);
+		c = ii(c, d, a, b, x[i + 6], 15, -1560198380);
+		b = ii(b, c, d, a, x[i + 13], 21, 1309151649);
+		a = ii(a, b, c, d, x[i + 4], 6, -145523070);
+		d = ii(d, a, b, c, x[i + 11], 10, -1120210379);
+		c = ii(c, d, a, b, x[i + 2], 15, 718787259);
+		b = ii(b, c, d, a, x[i + 9], 21, -343485551);
+
+		a = add(a, olda);
+		b = add(b, oldb);
+		c = add(c, oldc);
+		d = add(d, oldd);
+	}
+	return rhex(a) + rhex(b) + rhex(c) + rhex(d);
+}
+
+var AdrConn = window.AdrConn || {};
+
+/**
+ * 依懒base.js v2.0
+ * @class AdrConn
+ */
+
+AdrConn = {
+    toast : function(o){
+        var _this = this;
+        var _el = Kg.$("#pop_toast");
+        if(o){
+            clearTimeout(_this.toastKey);
+            var time = o.time || 3000;
+            _el.find("p").html(o.str); 
+            _el[0].style.display = "table";
+            _this.toastKey = setTimeout(function(){
+                _el.hide();
+            },time);
+        }
+    },
+    /**
+     * 客户端通信api 
+     */
+    clientApi : {
+        /**
+         * 回调客户端通知
+         *
+         * @method toastMsg
+         * @function
+         * @param {} {"error_code":5000,"error_content":"密码错误"}
+         * @return
+         */
+        toastMsg : function(o){
+            var _this = AdrConn;
+            if(o){
+                _this.toast({
+                    "str" : o.error_content 
+                });
+            }
+        },
+        /**
+         * 显示登录加载 showLoading
+         *
+         * @method showLoading
+         * @function
+         * @return
+         */
+        showLoading : function(){
+            try{
+                KgSuperCall.startLogin();
+            }catch(e){}
+        },
+        /**
+         * 获取终端应用基本信息 getAppInfo
+         * @name getAppInfo
+         * @function
+         */
+        getAppInfo : function(){
+            var _obj = {};
+            try{
+                _obj = KgSuperCall.getAppInfo();
+                _obj = Kg.JSON.parse(_obj);
+            }catch(e){
+                AdrConn.pageApi.isPost = false;
+            }
+
+            return _obj;
+        },
+        /**
+         * 加密 encrypt
+         * @name encrypt
+         * @function
+         */
+        encrypt : function(o){
+            var token = "";
+            if(o){
+                try{
+                    token = KgSuperCall.encrypt(Kg.JSON.stringify(o));
+                }catch(e){
+                    AdrConn.pageApi.isPost = false;
+                }
+            }
+
+            return token;
+        },
+        loginErr : function(o){
+            if(o){
+                try{
+                    KgSuperCall.handleLoginFailure(Kg.JSON.stringify(o));
+                }catch(e){}
+            }
+        },
+        /**
+         * 登录成功 handleLoginSuccess
+         * @name handleLoginSuccess
+         * @function
+         * @param o
+         */
+        loginSucc : function(o){
+            if(o){
+                try{
+                    KgSuperCall.handleLoginSuccess(Kg.JSON.stringify(o));
+                }catch(e){}
+            }
+        }
+    },
+    /*
+     *页面api
+     */
+    pageApi : {
+        isPost : false, //是否正在提交
+        checkPost : function(){
+            var _that = AdrConn,
+            _this = this,
+            uname = Kg.$("#uname").val(),
+            pwd = Kg.$("#pwd").val(),
+            info = {},
+            token = "";
+
+            if(uname.trim() === ""){
+                _this.isPost = false;
+                _that.toast({ "str" : "账号不能为空" });
+                return false;
+            }
+
+            if(pwd.trim() === ""){
+                _this.isPost = false;
+                _that.toast({ "str" : "密码不能为空" });
+                return false;
+            }
+
+            /*获取信息*/
+            info = _that.clientApi.getAppInfo();
+
+            if(info.clienttime) {
+                token = _that.clientApi.encrypt({
+                    "clienttime" : info.clienttime,
+                    "pwd" : MD5(pwd.trim()) 
+                });
+
+                //提交
+                _this.postData({
+                    "appid" : info.appid,
+                    "mid" : info.mid,
+                    "key" : info.key,
+                    "clientver" : info.clientver,
+                    "clienttime" : info.clienttime,
+                    "username" : uname,
+                    "p" : token
+                });
+            }else{
+                AdrConn.pageApi.isPost = false;
+            }
+           
+            return false;
+        },
+        postData : function(o){
+            if(o){
+                var _that = AdrConn,
+                metadata = {
+                    "appid" : o.appid,
+                    "clientver" : o.clientver,
+                    "clienttime" : o.clienttime,
+                    "username" : encodeURIComponent(o.username),
+                    "key" : o.key,
+                    "p" : o.p 
+                };
+
+                //显示登陆框
+                _that.clientApi.showLoading();
+
+                clearTimeout(_that.pageApi.postKey);
+                _that.pageApi.postKey = setTimeout(function(){
+                    _that.isErr = true;
+                    _that.clientApi.loginErr({
+                        "error_code" : "20011",
+                        "error_content" : "网络超时"
+                    });
+                    _that.pageApi.isPost = false;
+                },5000);
+
+                Kg.Ajax({
+                    docType : "jsonp",
+                    method : "get", 
+                    url : "http://login.user.kugou.com/v1/site_submit_jsonp",
+                    args : metadata,
+                    callback : function(res){
+                        clearTimeout(_that.pageApi.postKey);
+
+                        if(_that.isErr){
+                            _that.isErr = false;
+                            _that.clientApi.loginErr({
+                                "error_code" : "20011",
+                                "error_content" : "网络超时"
+                            });
+                            _that.pageApi.isPost = false;
+                        }else{
+                            if(res && res.status == 1 && res.data !== ""){
+                                _that.clientApi.loginSucc(res.data);
+                            }else{
+                                _that.clientApi.loginErr({
+                                    "error_code" : o.error_code || 20011,
+                                    "error_content" : ""
+                                });
+                            }
+                        }
+                        _that.pageApi.isPost = false;
+                    }
+                });
+            }
+        }
+    },
+    /**
+     * 绑定事件 bind
+     * @name bind
+     * @function
+     */
+    bind : function(){
+        var _this = this;
+        /*绑定提交*/
+        Kg.$("#btn_sub").addEvent("click",function(){
+            if(!_this.pageApi.isPost){
+                _this.pageApi.isPost = true;
+                _this.pageApi.checkPost();
+            }
+        });
+        Kg.$("body").addEvent("keydown",function(event){
+            var asciicode = event.keyCode;
+            if(asciicode == 13 && !_this.pageApi.isPost){
+                _this.pageApi.isPost = true;
+                _this.pageApi.checkPost();
+            }
+        });
+        Kg.$("#btn_cancel").addEvent("click",function(){
+            try{
+                KgSuperCall.cancel();
+            }catch(e){}
+        });
+
+        Kg.$("#uname").addEvent("keyup",function(){
+            var _this = this;
+            if(_this.value.trim() !== ""){
+                Kg.$("#btn_clear").show();
+            }else{
+                Kg.$("#btn_clear").hide();
+            }
+        });
+
+        Kg.$("#btn_clear").addEvent("click",function(){
+            Kg.$("#uname")[0].value = "";
+            Kg.$("#uname")[0].focus();
+            this.style.display = "none";
+        });
+
+
+        Kg.$("#pwd").addEvent("keyup",function(){
+            var _this = this;
+            if(_this.value.trim() !== ""){
+                Kg.$("#btn_clear_pwd").show();
+            }else{
+                Kg.$("#btn_clear_pwd").hide();
+            }
+        });
+        Kg.$("#btn_clear_pwd").addEvent("click",function(){
+            Kg.$("#pwd")[0].value = "";
+            Kg.$("#pwd")[0].focus();
+            this.style.display = "none";
+        });
+
+        Kg.$(window).addEvent("resize",_this.setFooter);
+
+    },
+    setFooter : function(){
+        var _mod_footer = Kg.$("#mod_footer"),
+        _wsh = document.body.offsetHeight,
+        _minH = Kg.$("#mod_nav")[0].offsetHeight + Kg.$("#mod_logo")[0].offsetHeight + Kg.$("#mod_login")[0].offsetHeight;
+
+        if(_minH > _wsh){
+            _mod_footer.hide();
+        }else{
+            _mod_footer.css("top",(_wsh - 20) + "px");
+            _mod_footer.show();
+        }
+
+    },
+    /**
+     * 初始化 init
+     * @name init
+     * @function
+     */
+    init : function(){
+        var _this = this;
+        if(Kg.$("#uname").val().trim() !== ""){
+            Kg.$("#btn_clear").show();
+        }
+        _this.bind();
+        _this.setFooter();
+    }
+};
+function pageInit(){
+    AdrConn.init();
+}
+pageInit();
+</script>

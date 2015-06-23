@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_fragment_background"
+    android:paddingLeft="@dimen/margin_horizontal"
+    android:paddingRight="@dimen/margin_horizontal" >
+
+    <com.uucun.android.passport.layout.GridviewViewer
+        android:id="@id/passport_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sdk_tip_container"
+        android:background="@drawable/passports_background"
+        android:paddingBottom="@dimen/margin_large" >
+
+        <com.uucun.android.passport.layout.ViewPagerAdv
+            android:id="@id/grid_viewer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_large" />
+
+        <com.uucun.android.passport.layout.DotIndicatorLayout
+            android:id="@id/dot_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grid_viewer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+        </com.uucun.android.passport.layout.DotIndicatorLayout>
+    </com.uucun.android.passport.layout.GridviewViewer>
+    
+    <Button android:id="@id/sdk_btn_register_new"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sdk_button_height"
+        android:background="@drawable/sdk_btn_blue_selector"
+        android:text="@string/sdk_register_now"
+        android:textColor="@color/color_button_text"
+        android:textSize="@dimen/button_generic_size" 
+        android:layout_below="@id/passport_container"
+        android:layout_marginTop="@dimen/margin_vertical"/> 
+
+    <RelativeLayout
+        android:id="@id/sdk_tip_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        android:layout_marginTop="@dimen/margin_horizontal" >
+
+        <ImageView
+            android:id="@id/sdk_left_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_login_tip"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/content_description"
+            android:background="@drawable/sdk_divider_left" />
+
+        <ImageView
+            android:id="@id/sdk_right_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_login_tip"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/content_description"
+            android:background="@drawable/sdk_divider_right" />
+
+        <TextView
+            android:id="@id/tv_login_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_small"
+            android:text="@string/sdk_login_tip"
+            android:textColor="@color/color_common_text"
+            android:textSize="@dimen/common_generic_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:minHeight="70dp"
+    android:background="@drawable/icon_gift_list_bg_style">
+    
+    <TextView 
+        android:id="@+id/icon_s_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:id="@+id/icon_s_linear"
+        android:layout_alignTop="@+id/icon_s_list_name"
+	    android:layout_toRightOf="@+id/icon_s_list_name"
+	    android:background="@drawable/icon_s_list_sub_bg"
+	    android:gravity="center"
+	    android:layout_marginTop="2dp"
+	    android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+        
+        <TextView 
+	        android:id="@+id/icon_s_list_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:singleLine="true"
+	        android:textColor="@color/white"	       
+	        android:textSize="13sp"/>
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/icon_s_list_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/icon_s_list_name"
+        android:layout_below="@+id/icon_s_list_name"
+        android:layout_marginRight="110dp"
+        android:ellipsize="end"
+        android:textColor="#a0a0a0"
+        android:textSize="13sp"
+        android:layout_marginTop="10dp"/> 
+
+</RelativeLayout>

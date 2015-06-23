@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="65dp"
+    android:layout_gravity="center"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/white">
+    <LinearLayout
+        android:gravity="center" 
+        android:id="@+id/image_one"
+        android:layout_width="55dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="5dp">
+        <ImageView
+	        android:id="@+id/image"
+	        android:layout_width="55dp"
+	        android:layout_height="55dp"
+	        android:src="@drawable/icon"/>
+    </LinearLayout>
+    
+
+    <TextView
+        android:id="@+id/gamename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_one"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/gamedn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gamename"
+        android:layout_alignBottom="@+id/gamename"
+        android:layout_toRightOf="@+id/gamename"
+        android:textColor="@color/other_blue"
+        android:textSize="13sp" />
+
+    <RatingBar
+        android:id="@+id/star"
+        style="@style/MyRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gamename"
+        android:layout_below="@+id/gamename"
+        android:layout_marginTop="5dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="4" />
+
+    <com.sjyxsdk.adapter.Press
+        android:id="@+id/gamedownload"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/graybtn_style"
+        android:text="@string/download"
+        android:textSize="13sp"
+        android:textColor="@color/gray_black"/>
+
+</RelativeLayout>

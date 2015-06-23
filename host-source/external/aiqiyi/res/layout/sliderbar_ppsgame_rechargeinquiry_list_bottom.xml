@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/sliderbar_bottom_more_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/slidebar_gift_item_get_btn_bg"
+        android:text="@string/sliderbar_recharge_inquuiry_str3"
+        android:textColor="@color/slidebar_black"
+        android:textSize="16sp"/>
+    
+    <LinearLayout 
+        android:id="@+id/sliderbar_bottom_loading"
+        android:orientation="horizontal"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/silder_load_more_anim"
+	       	android:layout_width="wrap_content"
+	       	android:layout_height="wrap_content"
+	       	android:contentDescription="@string/ppsgame_null_str"
+	       	android:background="@anim/sliderbar_ppsgame_round"/>
+        <TextView 
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:textColor="@color/slidebar_black"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="@string/sliderbar_recharge_inquuiry_str4"/>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/sliderbar_bottom_no_history"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+		android:text="@string/sliderbar_recharge_inquuiry_str7"
+        android:textColor="#666666"
+        android:textSize="22sp" />
+    
+    <TextView 
+        android:enabled="false"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

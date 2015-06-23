@@ -1,0 +1,4 @@
+<!-- anzhi lib start -->
+<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+<classpathentry kind="lib" path="libs/AnzhiUserCenter.jar"/>
+<!-- anzhi lib end -->

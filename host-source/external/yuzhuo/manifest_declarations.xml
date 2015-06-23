@@ -1,0 +1,37 @@
+<!-- abs start -->
+		<activity
+            android:name="com.ddworlds.yzabs.RequestActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@style/PayDialog"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ddworlds.yzabs.SelectActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name="com.ddworlds.yzabs.NewChongZhiActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.ddworlds.yzabs.CFTActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name="com.ddworlds.yzabs.SMSActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@style/PayDialog"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name" >
+     </activity>
+<!-- abs end -->

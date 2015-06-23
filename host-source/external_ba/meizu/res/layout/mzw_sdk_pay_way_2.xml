@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/mzw_sdk_pay_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/mzw_pay_way_wwq"
+        android:textColor="@color/mzw_pay_info_text"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mzw_pay_gridview_titleline" />
+
+    <com.muzhiwan.sdk.pay.activity.MzwPayGridView
+        android:id="@+id/payWayGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mzw_pay_way_gridview_divider"
+        android:horizontalSpacing="1dp"
+        android:scrollbars="none"
+        android:gravity="center"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" >
+    </com.muzhiwan.sdk.pay.activity.MzwPayGridView>
+
+</LinearLayout>

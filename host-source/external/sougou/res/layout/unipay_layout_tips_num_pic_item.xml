@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/unipay_wrap"
+   android:orientation="horizontal"
+   android:descendantFocusability="blocksDescendants"
+   android:gravity="bottom">
+    <ImageView
+        style="@style/unipay_prop"
+        android:id="@+id/unipay_id_goodsPic"
+        android:scaleType="fitXY" />
+    <TextView
+        android:layout_marginLeft="2dp"
+        android:id="@+id/unipay_id_goodsNum"
+        style="@style/unipay_text"
+        android:textColor="@color/unipay_thin5_color"
+        android:textSize="12sp" />
+</LinearLayout>

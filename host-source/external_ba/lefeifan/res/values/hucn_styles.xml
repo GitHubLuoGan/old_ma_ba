@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HUCNWindowTitleBackground">
+        <item name="android:background">@drawable/hucn_title_bg</item>
+    </style>
+
+    <style name="HUCNActivityStyle" parent="android:Theme">
+        <item name="android:windowTitleSize">52dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/HUCNWindowTitleBackground</item>
+    </style>
+
+    <style name="HUCNBg">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/hucn_bg</item>
+    </style>
+    
+    <style name="HUCNLogoDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="HUCNCustomDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="HUCNCommonDialog" parent="HUCNCustomDialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="HUCNAnimationFade">
+        <item name="android:windowEnterAnimation">@anim/hucn_slide_in_top</item>
+        <item name="android:windowExitAnimation">@anim/hucn_slide_out_top</item>
+    </style>
+
+    <style name="HucnDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="HUCNText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/hucn_text_color</item>
+        <item name="android:textSize">@dimen/hucn_default_text_size</item>
+    </style>
+
+    <style name="HUCNSmallText" parent="HUCNText">
+        <item name="android:textSize">@dimen/hucn_small_text_size</item>
+    </style>
+
+    <style name="HUCNEditLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:background">@drawable/hucn_white_bg</item>
+    </style>
+
+    <style name="HUCNEditTag" parent="HUCNText">
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="HUCNEditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textColor">@color/hucn_text_color</item>
+        <item name="android:textSize">@dimen/hucn_default_text_size</item>
+    </style>
+
+    <style name="HUCNLoginLyout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/hucn_login_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/hucn_login_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/hucn_login_margin_top</item>
+    </style>
+
+    <style name="HUCNSettingLyout" parent="HUCNLoginLyout">
+        <item name="android:layout_marginLeft">@dimen/hucn_layout_margin</item>
+        <item name="android:layout_marginRight">@dimen/hucn_layout_margin</item>
+        <item name="android:layout_marginTop">@dimen/hucn_layout_margin</item>
+    </style>
+
+    <style name="HUCNMenuBtn">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:background">@drawable/hucn_btn_submit</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@drawable/hucn_btn_text_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="HUCNFloatBtn">
+        <item name="android:layout_width">@dimen/hucn_float_menu_width</item>
+        <item name="android:layout_height">@dimen/hucn_float_menu_height</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/hucn_small_text_size1</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="HUCNScrollView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+
+    <style name="HUCNToastAnimationFade">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="HUCNTransActivity">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/hucn_trans</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="HUCNLoadingDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="HUCNProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/hucn_progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/hucn_progressbar_mini</item>
+    </style>
+    
+<!-- 礼包详情页里的礼包文字textview 统一style -->
+    <style name="HUCNTextviewStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/hucn_text_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

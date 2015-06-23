@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="edittext_border">#FF8C00</color>
+    <color name="transparent">#00000000</color>
+    <color name="button_get_token">#8EE5EE</color>
+    <color name="gray">#cccccc</color>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="background_recharge">#ff8601</color>
+    <color name="blue_text">#00aeef</color>
+    <color name="switch_line">#FFA500</color>
+
+    <color name="title_text">#3a3a3a</color>
+    <color name="hint_white">#ffffff</color>
+    <color name="blue_line">#13a9ff</color>
+    <color name="hint_black">#646464</color>
+    <color name="text_bg">#d2d2d2</color>
+    <color name="text_bg_line">#afafaf</color>
+    <color name = "btn_gray">#b6b6b6</color>
+    <color name = "text_yellow">#f7b016</color>
+
+    <color name= "little_text_color">#85000000</color>
+    <color name="button_bule">#13A9FF</color>
+</resources>

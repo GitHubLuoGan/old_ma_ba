@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNScrollView"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/hucn_account_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/hucn_account_info_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/hucn_layout_margin"
+            android:layout_marginRight="@dimen/hucn_layout_margin"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/hucn_user_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:contentDescription="@null"
+                android:orientation="horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/hucn_default_avator" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/hucn_account_tip"
+                    style="@style/HUCNText"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/hucn_account_sign" />
+
+                <TextView
+                    android:id="@+id/hucn_account_tv"
+                    style="@style/HUCNText"
+                    android:layout_alignBottom="@+id/hucn_account_tip"
+                    android:layout_toRightOf="@+id/hucn_account_tip"
+                    android:textColor="@color/hucn_orange" />
+
+                <TextView
+                    android:id="@+id/hucn_account_id_tip"
+                    style="@style/HUCNText"
+                    android:layout_below="@+id/hucn_account_tip"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/hucn_account_id" />
+
+                <TextView
+                    android:id="@+id/hucn_account_id_tv"
+                    style="@style/HUCNText"
+                    android:layout_alignBottom="@+id/hucn_account_id_tip"
+                    android:layout_toRightOf="@+id/hucn_account_id_tip" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/hucn_account_menu_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hucn_account_info_layout"
+            android:layout_marginLeft="@dimen/hucn_layout_margin"
+            android:layout_marginRight="@dimen/hucn_layout_margin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/hucn_bg_shape_corner"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/hucn_account_menu1"
+                style="@style/HUCNText"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:drawableRight="@drawable/hucn_icon_arrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/hucn_update_pwd" />
+
+            <View
+                android:id="@+id/hucn_account_line1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/hucn_account_menu1"
+                android:background="@color/hucn_bg" />
+
+            <TextView
+                android:id="@+id/hucn_account_menu2"
+                style="@style/HUCNText"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/hucn_account_line1"
+                android:drawableRight="@drawable/hucn_icon_arrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/hucn_binding_mobile" />
+
+            <TextView
+                android:id="@+id/hucn_account_mobile_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/hucn_account_menu2"
+                android:layout_marginLeft="120dp"
+                android:textColor="#cdcdcd"
+                android:textSize="@dimen/hucn_small_text_size" />
+
+            <TextView
+                android:id="@+id/hucn_account_mobile_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/hucn_account_menu2"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/hucn_account_binding_safe"
+                android:textColor="@color/hucn_orange"
+                android:textSize="@dimen/hucn_small_text_size" />
+
+            <View
+                android:id="@+id/hucn_account_line2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/hucn_account_menu2"
+                android:background="@color/hucn_bg" />
+
+            <TextView
+                android:id="@+id/hucn_account_menu3"
+                style="@style/HUCNText"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/hucn_account_line2"
+                android:drawableRight="@drawable/hucn_icon_arrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/hucn_setting_add_scret" />
+
+            <TextView
+                android:id="@+id/hucn_account_has_setsecret_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/hucn_account_menu3"
+                android:layout_marginLeft="120dp"
+                android:text="@string/hucn_setting_has_setsecert"
+                android:textColor="#cdcdcd"
+                android:textSize="@dimen/hucn_small_text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/hucn_bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <include layout="@layout/hucn_bottom_layout" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

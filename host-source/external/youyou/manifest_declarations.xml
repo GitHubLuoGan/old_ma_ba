@@ -1,0 +1,41 @@
+     <!-- youyou  SDK ↓↓↓ -->
+    <!-- 渠道商号 -->
+        <meta-data
+            android:name="CLOUDPOINT_APPID"
+            android:value="CPG54B7279A5A748" />
+        <!-- 游戏签名 -->
+        <meta-data
+            android:name="CLOUDPOINT_APPKEY"
+            android:value="06e344f93cf7c4bc975e6a810f673f33" />
+
+        <activity
+            android:name="com.cloudpoint.sdk.activitis.RegisterActivity"
+            android:screenOrientation="behind"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:theme="@style/dialog_activity" />
+        <activity
+            android:name="com.cloudpoint.sdk.activitis.FindPasswordActiviy"
+            android:screenOrientation="behind"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:theme="@style/dialog_activity" />
+        <activity
+            android:name="com.cloudpoint.sdk.activitis.ModifyPasswordActivity"
+            android:screenOrientation="behind"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:theme="@style/dialog_activity" />
+        <activity
+            android:name="com.cloudpoint.sdk.activitis.LoginActivity"
+            android:screenOrientation="behind"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:theme="@style/dialog_activity" />
+        <activity
+            android:name="com.cloudpoint.sdk.activitis.UserPayActivity"
+            android:screenOrientation="behind"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:theme="@style/dialog_activity" />
+        <activity
+            android:name="com.cloudpoint.sdk.activitis.YeePayActivity"
+            android:launchMode="standard"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:screenOrientation="behind" />
+             <!-- ↑↑↑ youyou end DK SDK ↑↑↑ -->

@@ -1,0 +1,198 @@
+  <!-- 充值模块 -->
+        <activity
+            android:name="com.kuyou.platform.ui.pay.activity.RechargeSelectActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.pay.activity.RechargeByMobileCardActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.pay.activity.RechargeResultActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.pay.activity.RechargeByAliOrUnionActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.pay.activity.RechargeByKubiActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <!-- 充值模块 -->
+
+        <!-- 用户中心模块 -->
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.LoginActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.RegisterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.GetPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.BindPhoneActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.ModifyPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.ResetPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.UserCenterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.PersonalCenterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.ChargeHistoryActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.MessageListActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.MessageDetailActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.RegisterByPhoneActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.kuyou.platform.ui.usercenter.activity.RegisterSetPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <!-- 用户中心模块 -->
+
+
+        <!-- 银联支付过渡页面 -->
+        <activity
+            android:name="com.kuyou.platform.core.internal.activity.UPPayBridgeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <!-- 银联支付过渡页面 -->
+
+
+        <!-- 银联支付 -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UPPay" />
+        <activity
+            android:name="com.unionpay.uppay.PayActivityEx"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UPPay"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 银联支付 -->
+        <!-- 游戏论坛 -->
+        <activity
+            android:name="com.kuyou.platform.ui.forum.activity.GameForumActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 游戏论坛 -->
+
+
+        <!-- 应用中心 start -->
+        <activity
+            android:name="com.kuyou.appcenter.activity.AppListFragmentActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode" >
+        </activity>
+        <activity
+            android:name="com.kuyou.appcenter.activity.AppSearchFragmentActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode" />
+        <activity
+            android:name="com.kuyou.appcenter.activity.GameDetailActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.kuyou.appcenter.activity.ScoreGameListActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode" />
+        <activity
+            android:name="com.kuyou.appcenter.activity.ScoreGameManageActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode" />
+        <activity
+            android:name="com.kuyou.appcenter.activity.ScoreTaskNoticeActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|uiMode" />
+
+        <receiver android:name="com.kuyou.appcenter.common.AppReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.kuyou.framework.download.DownloadService"
+            android:enabled="true" />
+        <!-- 应用中心 end -->
+
+
+        <!-- KugouSDK配置 -->
+        <activity
+            android:name="com.kugou.sdk.internal.activity.ValidateActivity"
+            android:configChanges="orientation|keyboardHidden|locale|navigation"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.kugou.sdk.internal.activity.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|locale|navigation"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.kugou.sdk.internal.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|locale|navigation"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service
+            android:name="com.kugou.sdk.internal.service.SSOService"
+            android:process="com.kugou.sdk.sso" >
+            <intent-filter>
+                <action android:name="com.kugou.sdk.action.sso_service" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <!-- KugouSDK配置 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process="com.kugou.sdk.bdlocation" />

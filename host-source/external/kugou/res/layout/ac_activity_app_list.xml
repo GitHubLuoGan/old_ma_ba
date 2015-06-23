@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ac_layout_common_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/ac_online_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:background="@drawable/ac_select_arror_left"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="8dip"
+        android:paddingTop="10dip" >
+
+        <RadioGroup
+            android:id="@+id/ac_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/ac_border_gray"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_online_game"
+                style="@style/AC_KYTheme.Widget.RadioButton.OnlineGame"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_margin="0.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/ac_selector_online_navigation_btn"
+                android:checked="true"
+                android:padding="3dip"
+                android:text="在线游戏"
+                android:textSize="@dimen/ac_common_large" />
+
+            <RadioButton
+                android:id="@+id/rb_download_manager"
+                style="@style/AC_KYTheme.Widget.RadioButton.OnlineGame"
+                android:layout_width="0dip"
+                android:layout_height="35dp"
+                android:layout_margin="0.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/ac_selector_online_navigation_btn"
+                android:maxWidth="90.0dip"
+                android:padding="3dip"
+                android:text="游戏管理"
+                android:textSize="@dimen/ac_common_large" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <com.kuyou.appcenter.widgets.ParentViewPager
+        android:id="@+id/appcenter_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

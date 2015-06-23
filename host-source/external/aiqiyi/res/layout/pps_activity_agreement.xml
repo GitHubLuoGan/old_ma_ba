@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ppsgame_bg" >
+    <RelativeLayout android:id="@+id/agreement_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ppsgame_top_bg"
+        android:orientation="horizontal">
+        <Button android:id="@+id/agreement_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            style="@style/ppsgame_back" />
+        
+        <TextView android:id="@+id/agreement_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pps_agreementTitle"
+            android:textColor="@color/button_color"
+            android:textSize="20.0sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    
+    <WebView android:id="@+id/agreement_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/agreement_title"/>
+        
+
+</RelativeLayout>

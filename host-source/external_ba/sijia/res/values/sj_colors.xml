@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="blue">#7addff</color>
+    <color name="white">#ffffff</color>
+    <color name="orage">#ff6719</color>
+    <color name="gray">#a0a0a0</color>
+    <color name="black">#000000</color>
+    <color name="gray_black">#6a6a6a</color>
+    <color name="findps_gray">#efefef</color>
+    <color name="transparent">#0000</color>
+    <color name="deep_blue">#07a1d3</color>
+    <color name="background">#ffffff</color>
+    <color name="deep_gray">#dad9d9</color>
+    <color name="listline_color">#cdcdcb</color>
+    <color name="list_blue">#3f95f5</color>
+    <color name="blue_one">#3277de</color>
+    
+    <color name="other_blue">#228ae3</color>
+    
+    <color name="game_info">#5bbee7</color>
+    <color name="raiders">#00a300</color>
+    <color name="fine_game">#fe8d51</color>
+    <color name="red">#ec1d1d</color>
+     <color name="gray_white_title">#f9f8f8</color>
+     <color name="gray_white">#f0f0f0</color>
+    
+</resources>

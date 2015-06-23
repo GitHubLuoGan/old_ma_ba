@@ -1,0 +1,5 @@
+<!-- unipay start --> 
+<meta-data android:name="wostore_billing_otherpay" android:value="false"/>
+<meta-data android:name="wostore_billing_chinaunicom" android:value="true"/>
+
+<!-- unipay  end -->

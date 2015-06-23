@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ql_transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="318dp"
+        android:layout_height="280dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ql_pop_up_box" >
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp" >
+
+            <ImageView
+                android:id="@+id/hw_logo"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ql_huawei_logo" >
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/hw_logo"
+                android:text="@string/ql_title"
+                android:textColor="@color/ql_title_color"
+                android:textSize="18sp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ql_close" >
+            </ImageView>
+        </RelativeLayout>
+        <!-- end of quicklogin top bar -->
+
+        <RelativeLayout
+            android:id="@+id/error_window"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_bar"
+            android:layout_marginBottom="19dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/retry_footer"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/ql_retry_hint"
+                    android:textColor="@color/ql_title_color"
+                    android:textSize="18sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/retry_footer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ql_quick_login_button"
+                    android:text="@string/ql_cacel"
+                    android:textColor="@color/ql_switch_login_type_color"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/retry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ql_quick_login_button"
+                    android:text="@string/ql_retry"
+                    android:textColor="@color/ql_switch_login_type_color"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- end of quicklogin errorwindow -->
+
+        <ImageView
+            android:id="@+id/divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_bar"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ql_divider_horizontal_gray" >
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/quick_login_body"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:layout_below="@+id/divide_line"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp" >
+
+            <RelativeLayout
+                android:id="@+id/quick_login_comp"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/ql_button_bg" >
+
+                <RelativeLayout
+                    android:id="@+id/loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/ql_loading"
+                        android:textColor="@color/ql_quick_login_color"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="9dp" >
+
+                        <ImageView
+                            android:id="@+id/loading_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ql_loading" >
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/progress_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/ql_quick_login_color"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/befor_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/mobile_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="9dp"
+                        android:paddingLeft="18dp"
+                        android:paddingTop="9dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ql_mobile" />
+
+                    <LinearLayout
+                        android:id="@+id/quick_login_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/mobile_icon"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/login_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ql_quick_login"
+                            android:textColor="@color/ql_quick_login_color"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/text_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ql_quick_login_hint"
+                            android:textColor="@color/ql_quick_login_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <!-- end of quicklogin comp -->
+
+            <RelativeLayout
+                android:id="@+id/quick_login_aggreement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/quick_login_comp"
+                android:layout_centerVertical="true" >
+
+                <CheckBox
+                    android:id="@+id/check_aggree"
+                    style="@style/ql_CheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@+id/check_aggree"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ql_aggreement_check"
+                        android:textColor="@color/ql_title_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ql_text_click_selector"
+                        android:clickable="true"
+                        android:text="@string/ql_service_aggreement"
+                        android:textColor="@color/ql_hyper_link_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="和"
+                        android:textColor="@color/ql_title_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/policy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ql_text_click_selector"
+                        android:clickable="true"
+                        android:text="@string/ql_privacy_policy"
+                        android:textColor="@color/ql_hyper_link_color"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- end of quicklogin aggreement -->
+        </RelativeLayout>
+        <!-- end of quicklogin body -->
+
+        <ImageView
+            android:id="@+id/divide_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quick_login_body"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ql_divider_horizontal_gray" >
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/quick_login_footer"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_below="@+id/divide_line1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ql_footer_selector"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/switch_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ql_switch_login"
+                    android:textColor="@color/ql_switch_login_type_color"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ql_right" >
+                </ImageView>
+            </LinearLayout>
+        </RelativeLayout>
+        <!-- end of quicklogin footer -->
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hucn_reset_pwd_result_layout"
+    style="@style/HUCNLoginLyout"
+    android:layout_marginLeft="@dimen/hucn_layout_margin"
+    android:layout_marginRight="@dimen/hucn_layout_margin"
+    android:layout_marginTop="@dimen/hucn_layout_margin"
+    android:background="@drawable/hucn_white_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/hucn_login_layout_padding" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/HUCNText"
+            android:text="@string/hucn_account" />
+
+        <TextView
+            android:id="@+id/hucn_update_account_tv"
+            style="@style/HUCNText"
+            android:textColor="@color/hucn_red"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/HUCNText"
+            android:text="@string/hucn_update_pwd_success_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/HUCNText"
+            android:text="@string/hucn_new_pwd_hint" />
+
+        <TextView
+            android:id="@+id/hucn_update_password_tv"
+            style="@style/HUCNText"
+            android:textColor="@color/hucn_red"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

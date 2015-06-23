@@ -1,0 +1,83 @@
+<!--onlinebus--> 
+ <activity
+            android:name="com.iapppay.mpay.ifmgr.PayManagerActivity"
+            android:configChanges="keyboardHidden|orientation|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 一键支付 -->
+
+        <activity
+            android:name="com.iapppay.oneclickpay.FastPayActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.oneclickpay.InputCardActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.oneclickpay.LLUnbindCardActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.oneclickpay.YPUnbindCardActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.oneclickpay.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.oneclickpay.AgreementActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.iapppay.oneclickpay.CommUnbindCardActivity"
+            android:configChanges="keyboardHidden|orientation|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.iapppay.oneclickpay.CallWaitingActivity"
+            android:configChanges="keyboardHidden|orientation|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.iapppay.oneclickpay.SmsVerifyActivity"
+            android:configChanges="keyboardHidden|orientation|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.iapppay.oneclickpay.SmsVerifyUnbindCardActivity"
+            android:configChanges="keyboardHidden|orientation|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 银联标准版 -->
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.UPPay" > 
+        </activity>
+        <activity
+            android:name="com.unionpay.uppay.PayActivityEx"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!--onlinebus-->

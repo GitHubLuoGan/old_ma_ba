@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mzw_sdk_login_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/mzw_pay_title_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/mzw_login_dialog_height_margin_size_20dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:src="@drawable/mzw_sdk_login_title_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dip"
+                    android:text="@string/mzw_account_name_login"
+                    android:textColor="@color/mzw_pay_title_text_color"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.01dp"
+            android:background="#cccccc" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            
+              <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/userNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/mzw_sdk_login_edittext_selector"
+                android:hint="@string/mzw_dialog_login_username_hint"
+                android:paddingLeft="@dimen/mzw_login_dialog_edit_hint_margin_size"
+                android:paddingRight="47dip"
+                android:singleLine="true"
+                android:textSize="@dimen/mzw_login_dialog_edit_hint_text_size" />
+
+            <TextView
+                android:layout_width="@dimen/mzw_login_dialog_edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/mzw_login_dialog_edit_text_margin_width"
+                android:text="@string/mzw_dialog_login_username"
+                android:textColor="@color/mzw_login_dialog_edit_text_color"
+                android:textSize="@dimen/mzw_login_dialog_edit_text_size" />
+
+            <CheckBox
+                android:id="@+id/moreUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:button="@drawable/mzw_sdk_login_show_more_username_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/passWordLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <EditText
+                android:id="@+id/passWord"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/mzw_sdk_login_edittext_selector"
+                android:hint="@string/mzw_dialog_login_password_hint"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/mzw_login_dialog_edit_hint_margin_size"
+                android:paddingRight="47dip"
+                android:singleLine="true"
+                android:textSize="@dimen/mzw_login_dialog_edit_hint_text_size" />
+
+            <TextView
+                android:layout_width="@dimen/mzw_login_dialog_edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/mzw_login_dialog_edit_text_margin_width"
+                android:text="@string/mzw_dialog_login_password"
+                android:textColor="@color/mzw_login_dialog_edit_text_color"
+                android:textSize="@dimen/mzw_login_dialog_edit_text_size" />
+
+            <CheckBox
+                android:id="@+id/showPsw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:button="@drawable/mzw_sdk_dialog_login_show_pwd_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="38dip"
+            android:layout_marginRight="7dip"
+            android:layout_weight="1"
+            android:background="@drawable/mzw_sdk_pay_dialog_btn_selector"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/mzw_dialog_login_reg"
+            android:textColor="@color/mzw_online_loginv2_white_color"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="38dip"
+            android:layout_marginLeft="7dip"
+            android:layout_weight="1"
+            android:background="@drawable/mzw_sdk_reg_btn_selector"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/mzw_dialog_login_game"
+            android:textColor="@color/mzw_online_loginv2_white_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/thirdLoginLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/sinaLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/mzw_sdk_login_weibo_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mzw_weibo_login_game"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/qqLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/mzw_sdk_login_qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mzw_qq_login_game"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+  
+
+</LinearLayout>

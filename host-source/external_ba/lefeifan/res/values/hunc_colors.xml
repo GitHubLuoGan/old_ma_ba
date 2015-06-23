@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="hucn_bg">#eaeaea</color>
+    <color name="hucn_text_color">#6e6a65</color>
+    <color name="hucn_text_gray">#41403c</color>
+    <color name="hucn_red">#ff3c00</color>
+    <color name="hucn_blue">#0166ff</color>
+    <color name="hucn_green">#63c606</color>
+    <color name="hucn_orange">#ff7802</color>
+    <color name="hucn_list_item_light_bg">#f2f2f2</color>
+    <color name="hucn_list_item_bg">#e3e3e3</color>
+    <color name="hucn_list_item_selected_bg">#0066ff</color>
+    <color name="hucn_list_item_divider">#3b3b3b</color>
+    <color name="hucn_light_gray">#b2b2b2</color>
+    <color name="hucn_light_gray_">#6e6a65</color>
+    <color name="hucn_trans">#9000</color>
+    <color name="hucn_image_default_bg">#c2c2c2</color>
+    
+    <drawable name="hucn_white">#ffffff</drawable>
+    <drawable name="hucn_gray">#6e6a65</drawable>
+    <drawable name="hucn_blue">#3c86ec</drawable>
+    
+    
+
+
+</resources>

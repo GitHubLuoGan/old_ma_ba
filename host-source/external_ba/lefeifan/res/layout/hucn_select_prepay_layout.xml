@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/HUCNBg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hucn_edittext_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/hucn_white_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <cn.edg.applib.view.HucnEditText
+            android:id="@+id/hucn_account_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            app:hint="@string/hucn_account_hint"
+            app:maxLength="15"
+            app:showdel="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hucn_games_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hucn_edittext_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/hucn_white_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Spinner
+            android:id="@+id/hucn_games_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <cn.edg.applib.view.DropView
+            android:id="@+id/hucn_games_drop_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hucn_servers_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hucn_edittext_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/hucn_white_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Spinner
+            android:id="@+id/hucn_servers_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <cn.edg.applib.view.DropView
+            android:id="@+id/hucn_servers_drop_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/hucn_pre_pay_next_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/hucn_btn_submit"
+        android:text="@string/hucn_next"
+        android:textColor="@drawable/hucn_btn_text_color"
+        android:textSize="18sp" />
+
+</LinearLayout>

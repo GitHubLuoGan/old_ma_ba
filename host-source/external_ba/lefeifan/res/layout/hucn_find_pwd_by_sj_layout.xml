@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNScrollView"
+    android:background="@color/hucn_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="50dp" >
+
+        <LinearLayout
+            android:id="@+id/hucn_setting_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/HUCNEditLayout"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp" >
+
+                <TextView
+                    android:id="@+id/hucn_setting_tip_tv"
+                    style="@style/HUCNEditTag"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/hucn_account" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_reg_account_tv"
+                    style="@style/HUCNEditText"
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hucn_reg_tip1"
+                style="@style/HUCNSmallText"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"
+                android:text="@string/hucn_account_error_tip"
+                android:textColor="@color/hucn_red"
+                android:visibility="gone" />
+
+            <LinearLayout
+                style="@style/HUCNEditLayout"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp" >
+
+                <TextView
+                    android:id="@+id/hucn_setting_tip_tv2"
+                    style="@style/HUCNEditTag"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/hucn_setting_input_mobile" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_reg_mobile_tv"
+                    style="@style/HUCNEditText"
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/hucn_yanzhenma_iv"
+                    android:layout_width="62dp"
+                    android:layout_height="@dimen/hucn_edittext_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:background="#cdcdcd"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/hucn_yanzhenma_refresh_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/hucn_edit_layout"
+                    style="@style/HUCNEditLayout"
+                    android:layout_height="@dimen/hucn_edittext_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toLeftOf="@+id/hucn_yanzhenma_iv"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp" >
+
+                    <TextView
+                        android:id="@+id/hucn_setting_ver_hint_tv"
+                        style="@style/HUCNEditTag"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/hucn_setting_yanzhenma" />
+
+                    <LinearLayout
+                        android:id="@+id/hucn_setting_ver_tv"
+                        style="@style/HUCNEditText"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hucn_setting_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/hucn_reg_tip"
+                style="@style/HUCNText"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="60dp"
+                android:text="" />
+
+            <LinearLayout
+                android:id="@+id/hucn_setting_edit_layout"
+                style="@style/HUCNEditLayout"
+                android:layout_height="@dimen/hucn_edittext_height"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/hucn_setting_yanzhengma_tv"
+                    style="@style/HUCNEditText"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/hucn_setting_getcode_btn"
+                    android:layout_width="130dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/hucn_setting_get_yanzhenma" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hucn_setting_layout3"
+            style="@style/HUCNEditLayout"
+            android:layout_height="@dimen/hucn_edittext_height"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/hucn_setting_tip_tv3"
+                style="@style/HUCNEditTag"
+                android:layout_marginRight="5dp"
+                android:text="@string/hucn_new_password" />
+
+            <LinearLayout
+                android:id="@+id/hucn_reg_account_tv3"
+                style="@style/HUCNEditText"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/hucn_find_pwd_result_layout"
+            layout="@layout/hucn_reset_pwd_result_layout"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/hucn_reg_tip2"
+            style="@style/HUCNSmallText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:text="@string/hucn_account_error_tip"
+            android:textColor="@color/hucn_red"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/hucn_submit_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hucn_edittext_height"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/hucn_btn_submit"
+            android:padding="13dp"
+            android:text="@string/hucn_next"
+            android:textColor="@drawable/hucn_btn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+    </LinearLayout>
+
+</ScrollView>

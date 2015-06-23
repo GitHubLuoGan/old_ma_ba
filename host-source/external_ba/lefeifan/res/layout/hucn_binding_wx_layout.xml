@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HUCNBg"
+    android:cacheColorHint="@android:color/transparent"
+    android:fadingEdge="none"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="50dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/hucn_setting_binding_wx_tip"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/hucn_setting_binding_wx_step1"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/hucn_text_color" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/hucn_setting_binding_wx_step1_todo"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/hucn_setting_binding_wx_step2"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/hucn_text_color" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/hucn_setting_binding_wx_step2_todo"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/hucn_setting_binding_wx_step2_geshi"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/hucn_setting_binding_wx_exp"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/hucn_setting_binding_wx_exp_tip"
+            android:textColor="@color/hucn_text_color"
+            android:textSize="@dimen/hucn_default_text_size" />
+    </LinearLayout>
+
+</ScrollView>

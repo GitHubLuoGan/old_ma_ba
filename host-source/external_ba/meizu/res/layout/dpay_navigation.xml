@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:paddingLeft="@dimen/dpay_default_padding"
+    android:paddingRight="@dimen/dpay_default_padding"  >
+
+    <com.bodong.dpaysdk.ui.SpinnerCheckBox
+        android:id="@id/dpay_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/dpay_cb_navigation_bg"
+        android:button="@android:color/transparent"
+        android:paddingRight="@dimen/dpay_default_padding" />
+
+    <ImageView
+        android:id="@id/dpay_closed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dpay_closed"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/dpay_btn_padding_left"
+        android:paddingRight="@dimen/dpay_default_padding" />
+
+</RelativeLayout>

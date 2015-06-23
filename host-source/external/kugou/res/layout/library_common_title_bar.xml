@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dip"
+    android:background="@drawable/library_common_title_bar_background" >
+
+    <Button
+        android:id="@+id/library_layer_back_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:text="返回"
+        android:textSize="18sp"
+        android:gravity="right|center_vertical"
+        android:paddingRight="5dp"
+        android:textColor="@color/library_common_white"
+        android:background="@drawable/library_layer_back_button_selector" />
+
+    <TextView
+        android:id="@+id/library_layer_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:shadowColor="#ff000000"
+        android:shadowRadius="1.0"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="#ffffffff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/library_layer_right_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/library_common_white"
+        android:background="@drawable/library_layer_person_button_selector"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

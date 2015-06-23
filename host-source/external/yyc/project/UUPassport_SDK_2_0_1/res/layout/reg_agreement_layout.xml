@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@id/pass_icon_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_agree_bottom_bg"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/margin_vertical"
+        android:paddingLeft="@dimen/margin_horizontal"
+        android:paddingRight="@dimen/margin_horizontal"
+        android:paddingTop="@dimen/margin_vertical" >
+
+        <Button
+            android:id="@id/sdk_btn_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/sdk_button_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/sdk_btn_gray_selector"
+            android:text="@string/sdk_confirm"
+            android:textColor="@color/sdk_btn_text_blue_selector"
+            android:textSize="@dimen/button_generic_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/pass_icon_container"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_small" >
+
+            <TextView
+                android:id="@id/sdk_tv_agreement_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_input_text"
+                android:textSize="@dimen/content_generic_medium_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

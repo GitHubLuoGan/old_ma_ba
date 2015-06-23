@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dpay_item_color"
+    android:padding="@dimen/dpay_default_padding" >
+
+    <ImageView
+        android:id="@id/dpay_goods_image"
+        android:layout_width="@dimen/dpay_default_image"
+        android:layout_height="@dimen/dpay_default_image"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/dpay_default_image" />
+
+    <TextView
+        android:id="@id/dpay_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/dpay_goods_image"
+        android:padding="@dimen/dpay_default_padding"
+        android:textColor="@color/dpay_black"
+        android:textSize="@dimen/dpay_subtitle_font_size" />
+
+    <TextView
+        android:id="@id/dpay_discount_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dpay_goods_name"
+        android:layout_toRightOf="@id/dpay_goods_image"
+        android:padding="@dimen/dpay_default_padding"
+        android:textColor="@color/dpay_red"
+        android:textSize="@dimen/dpay_subtitle_font_size" />
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body_lay"
+    android:layout_width="292dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/float_bg"
+    android:baselineAligned="false" >
+    
+    <!-- header区域 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:id="@+id/tv_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/mg_title_ic_back"
+            android:gravity="center_vertical"
+            android:text="@string/tv_gift"
+            android:textSize="@dimen/float_max_font"
+            android:textColor="@color/title_color" />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right|center_vertical">
+	        <TextView 
+	            android:id="@+id/tv_my_gift"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="12dp"
+	            android:text="我的礼包"
+	            android:textSize="@dimen/float_normal_font"
+	            android:textColor="@color/float_control_color" />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:visibility="gone">
+            
+            <ImageView
+	            android:id="@+id/close_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="#00000000"
+	            android:src="@drawable/float_ic_action_cancel" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/driver_color"/>
+    
+    <!-- body区域 -->
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/float_marin_padding"
+        android:layout_marginRight="@dimen/float_marin_padding"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical">
+        
+        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/tv_decript_alert"
+	            android:textSize="@dimen/float_normal_font"
+	            android:textColor="@color/title_color" />      
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/float_marin_padding"
+        android:layout_marginRight="@dimen/float_marin_padding"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/driver_color"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/float_marin_padding"
+        android:layout_marginRight="@dimen/float_marin_padding"
+        android:orientation="vertical">
+        
+        <ListView
+            android:id="@+id/my_gift_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/driver_color"
+            android:dividerHeight="1dp"
+            android:drawSelectorOnTop="false"
+            android:footerDividersEnabled="true"
+            android:scrollbars="vertical" />
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/float_version_padding_top_bottom"
+        android:layout_marginBottom="@dimen/float_version_padding_top_bottom"
+        android:text="@string/mogoo_version"
+        android:textSize="@dimen/float_min_font"
+        android:textColor="@color/descript_color"/>
+
+</LinearLayout>

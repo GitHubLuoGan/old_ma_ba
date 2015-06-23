@@ -1,0 +1,11 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="PayDialog" parent="@android:Theme.Dialog">        
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <!--<item name="android:backgroundDimEnabled">false</item>     --> 
+    <item name="android:windowBackground">@drawable/room_detail_bg</item>
+    <item name="android:windowIsFloating">true</item>        
+    <item name="android:windowContentOverlay">@null</item>    
+    </style>
+    
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hucn_selector_list"
+    android:fadingEdge="none"
+    android:paddingBottom="5dip"
+    android:paddingLeft="5dip"
+    android:paddingTop="5dip"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/hucn_gift_btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/hucn_gift_item_get_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/hucn_btn_blue"
+            android:gravity="center"
+            android:minWidth="58dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/hucn_gift_item_copy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/hucn_btn_blue"
+            android:gravity="center"
+            android:minWidth="58dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/hucn_gift_item_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/hucn_gift_item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/hucn_gift_btn_layout"
+        android:layout_toRightOf="@id/hucn_gift_item_iv"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/hucn_text_color"
+        android:textSize="@dimen/hucn_default_text_size" />
+
+    <TextView
+        android:id="@+id/hucn_gift_item_percent_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="55dp"
+        android:layout_toLeftOf="@id/hucn_gift_btn_layout"
+        android:textSize="12sp" />
+
+    <ProgressBar
+        android:id="@+id/hucn_gift_item_count_pb"
+        style="@style/HUCNProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/hucn_gift_item_name_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/hucn_gift_item_percent_tv"
+        android:layout_toRightOf="@id/hucn_gift_item_iv"
+        android:progress="100" />
+
+    <TextView
+        android:id="@+id/hucn_gift_item_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hucn_gift_item_count_pb"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/hucn_gift_btn_layout"
+        android:layout_toRightOf="@id/hucn_gift_item_iv"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/hucn_text_color"
+        android:textSize="14sp" />
+
+</RelativeLayout>

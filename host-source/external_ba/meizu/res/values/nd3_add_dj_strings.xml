@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"> 
+    
+	<!-- 点金账号迁移 -->
+	<string name="nd3_dj_migrate_next_step">下一步</string>
+	<string name="nd3_dj_migrate_post_title">点击账号迁移公告</string>
+	<string name="nd3_dj_migrate_post_content">
+	   	亲爱的用户：\n\n
+		为了给您提供更好的服务，百度91无线需要对部分业务进行调整，点金账号将进行迁移。\n\n
+		点金账号已不支持登录当前游戏。为了您能继续游戏，请您注册并绑定一个91账号，该91账号可自动保存您点金账号内的可用额度及游戏进度。
+		\n\n
+		绑定91账号后，请使用绑定的91账号登录游戏。
+		\n\n
+		感谢您对点金账号的支持。
+   	</string>
+	<string name="nd3_dj_migrate_post_to_bind">点金账号绑定91账号</string>
+	<string name="nd3_dj_migrate_bind_title">绑定91账号</string>
+	<string name="nd3_dj_migrate_bind_step_1">验证点金账号</string>
+	<string name="nd3_dj_migrate_bind_step_2">绑定91账号</string>
+	<string name="nd3_dj_migrate_bind_dj_check_tip">绑定91账号需先验证您的点金账号，请输入您的点金账号、密码。</string>
+	<string name="nd3_dj_migrate_bind_dj_check_account_hint">请输入您的点金账号</string>
+	<string name="nd3_dj_migrate_bind_dj_check_pwd_hint">请输入您密码</string>
+	<string name="nd3_dj_migrate_success_title">绑定91账号</string>
+	<string name="nd3_dj_migrate_success_tip_already_binded">您已经绑定过91账号</string>
+	<string name="nd3_dj_migrate_success_des">请使用您绑定的91账号登录。</string>
+	<string name="nd3_dj_migrate_success_account">您绑定的91账号：%1$s</string>
+	<string name="nd3_dj_migrate_success_copy">复制</string>
+	<string name="nd3_dj_migrate_success_copy_done">91账号复制成功</string>
+	<string name="nd3_dj_migrate_success_tip">绑定91账号成功</string>
+	<string name="nd3_dj_migrate_success_login">使用91账号登录</string>
+	<string name="nd3_dj_migrate_no_91_account">我还没有91账号</string>
+	<string name="nd3_dj_migrate_have_91_account">我已经拥有91账号</string>
+	<string name="nd3_dj_migrate_register_tip">还没有91账号？立即免费注册！</string>
+	<string name="nd3_dj_migrate_register_account_hint">请输入您的邮箱</string>
+	<string name="nd3_dj_migrate_register_pwd_hint">登录密码</string>
+	<string name="nd3_dj_migrate_register_pwd_tip">密码由6–12位字母、数字组成</string>
+	<string name="nd3_dj_migrate_register_pwd_visible">密码可见</string>
+	<string name="nd3_dj_migrate_register_already_binded">已拥有91账号？您可以直接</string>
+	<string name="nd3_dj_migrate_register_bind">绑定91账号</string>
+	<string name="nd3_dj_migrate_register_action">注册并绑定91账号</string>
+	<string name="nd3_dj_migrate_login_tip">请输入您要绑定的91账号、密码</string>
+	<string name="nd3_dj_migrate_login_account_hint">91通行证、手机号、邮箱</string>
+	<string name="nd3_dj_migrate_login_pwd_hint">登录密码</string>
+	<string name="nd3_dj_migrate_login_fail">您输入的91账号或密码有误，</string>
+	<string name="nd3_dj_migrate_login_forget_pwd">忘记密码？</string>
+	<string name="nd3_dj_migrate_login_action">绑定91账号</string>
+	<string name="nd3_dj_migrate_error_empty">账号或密码不能为空</string>
+	<string name="nd3_dj_migrate_error_unknow">系统异常，请稍候重试</string>
+
+</resources>

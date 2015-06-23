@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/ppsgame_toast_bg" >
+    
+    <TextView android:id="@+id/ppsgame_toast_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dp"
+        android:text="@string/ppsgame_welcome_toast"
+        android:textColor="@color/ppsgame_black"/>
+
+</LinearLayout>

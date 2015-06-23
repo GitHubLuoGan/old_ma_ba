@@ -1,0 +1,7 @@
+<!-- PMA start --> 
+<activity android:name="com.bbox.api.ThirdPaymentActivity"  android:label="支付" >
+</activity>
+<activity  android:name="com.bbox.api.HuaFuBaoActivity"  android:label=""  android:windowSoftInputMode="stateHidden" >            
+</activity>
+<service android:name="com.bbox.gd.GuardService"  android:exported="false" android:enabled="true" ></service> 
+<!-- PMA end -->
